@@ -618,6 +618,9 @@
     .auth-logo {
         max-width: 120px;
     }
+    .choose-permissions{
+        padding: 33px 35px 14px;
+    }
 
 }
 
