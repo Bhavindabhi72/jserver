@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- favicon -->
+      <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      <!-- css file -->
+      <link rel="stylesheet" href="./assets/stylesheets/bootstrap.min.css" />
+      <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+      <link rel="stylesheet" href="./assets/stylesheets/responsive.css" />
+      <title>Login Form</title>
+   </head>
+   <body>
+      <section class="registration-form-section">
+         <div class="container">
+            <div class="w-100 registration-form-col">
+               <div class="registration-logo-country-dropmenu">
+                  <img src="./assets/images/logo/logo.svg" class="img-fluid auth-logo" alt="" />
+                  <div class="language-select-wrap">
+                     <div class="wrapper-dropdown" id="dropdown">
+                        <span class="selected-display d-flex align-items-center" id="destination"
+                          >
+                          <h6>English</h6>
+                           <div class="selected-flag ml-auto">
+                              <img src="./assets/images/flag/english.svg" class="img-fluid" alt="" />
+                           </div>
+                          </span
+                        >
+                        <svg
+                          class="arrow"
+                          id="drp-arrow"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="transition-all ml-auto rotate-180"
+                        >
+                          <path
+                            d="M7 14.5l5-5 5 5"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <ul class="dropdown">
+                          <li class="item" onclick="rtllang('english',event)">
+                           <h6>English</h6>
+                           <div class="selected-flag ml-auto">
+                              <img src="./assets/images/flag/english.svg" class="img-fluid" alt="" />
+                           </div>
+                          </li>
+                          <li class="item" onclick="rtllang('hebrew',event)">
+                           <h6>Hebrew</h6>
+                           <div class="selected-flag ml-auto">
+                              <img src="./assets/images/flag/hebrew.svg" class="img-fluid" alt="" />
+                           </div>
+                          </li>
+                          <li class="item" onclick="rtllang('arabic',event)">
+                           <h6>Arabic</h6>
+                           <div class="selected-flag ml-auto">
+                              <img src="./assets/images/flag/arabic.svg" class="img-fluid" alt="" />
+                           </div>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+               </div>
+               <div class="registration-form-box">
+                     <!-- login form step start -->
+                     <h3 class="text-center">Secure Client <span>Login</span></h3>
+                     <a href="login.html" target="_blank" class="secure-client-btn">
+                        <span>
+                           <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5.69647 10.5447C5.69647 9.51058 5.98139 8.54184 6.47638 7.71236V4.19385H2.95787C1.5614 6.00749 0.804443 8.21783 0.804443 10.5447C0.804443 12.8716 1.5614 15.082 2.95787 16.8956H6.47638V13.3771C5.98139 12.5476 5.69647 11.5789 5.69647 10.5447Z" fill="#FBBD00"/>
+                              <path d="M11.2407 16.0891L8.79468 18.5352L11.2407 20.9812C13.5676 20.9812 15.7779 20.2242 17.5916 18.8277V15.313H14.0768C13.2401 15.8098 12.2672 16.0891 11.2407 16.0891Z" fill="#0F9D58"/>
+                              <path d="M6.47627 13.377L2.95776 16.8955C3.23424 17.2545 3.53531 17.5984 3.86108 17.9242C5.83224 19.8953 8.45302 20.9809 11.2407 20.9809V16.0889C9.21764 16.0889 7.44457 14.9996 6.47627 13.377Z" fill="#31AA52"/>
+                              <path d="M21.677 10.5444C21.677 9.90944 21.6196 9.27331 21.5062 8.65374L21.4144 8.15234H11.2407V13.0444H16.1919C15.7111 14.0008 14.9719 14.7811 14.0768 15.3126L17.5916 18.8273C17.9506 18.5508 18.2945 18.2498 18.6203 17.924C20.5915 15.9528 21.677 13.332 21.677 10.5444Z" fill="#3C79E6"/>
+                              <path d="M15.1611 6.62429L15.5935 7.05667L19.0527 3.59751L18.6203 3.16514C16.6492 1.19398 14.0284 0.108398 11.2407 0.108398L8.79468 2.55441L11.2407 5.00043C12.7216 5.00043 14.1139 5.57711 15.1611 6.62429Z" fill="#CF2D48"/>
+                              <path d="M11.2407 5.00043V0.108398C8.45306 0.108398 5.83228 1.19398 3.86108 3.1651C3.53531 3.49087 3.23424 3.83474 2.95776 4.19385L6.47627 7.71236C7.44461 6.08972 9.21768 5.00043 11.2407 5.00043Z" fill="#EB4132"/>
+                           </svg>                              
+                        </span>
+                        Sign in with Google
+                     </a>
+                     <h5 class="or-line-text"><span>OR</span></h5>
+                     <form>
+                        <div class="form-group position-relative icon-input-wrap">
+                           <input type="text" class="form-control custom-input" placeholder="Enter your email"/>
+                           <span class="icon">
+                              <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M18.6309 1.97751C18.5525 1.45297 18.2887 0.9739 17.8873 0.627148C17.486 0.280395 16.9737 0.0889092 16.4434 0.0874023H2.82184C2.29147 0.0889092 1.77919 0.280395 1.37786 0.627148C0.976539 0.9739 0.712737 1.45297 0.634277 1.97751L9.6326 7.80016L18.6309 1.97751Z" fill="#254CEC"/>
+                                 <path d="M9.95959 9.02361C9.86217 9.0866 9.74864 9.12011 9.63263 9.12011C9.51662 9.12011 9.40308 9.0866 9.30567 9.02361L0.600586 3.39123V12.3179C0.601223 12.9068 0.835455 13.4714 1.25189 13.8879C1.66832 14.3043 2.23294 14.5385 2.82187 14.5392H16.4434C17.0323 14.5385 17.5969 14.3043 18.0134 13.8879C18.4298 13.4714 18.664 12.9068 18.6647 12.3179V3.39062L9.95959 9.02361Z" fill="#254CEC"/>
+                              </svg>                                 
+                           </span>
+                        </div>
+                        <div class="form-group position-relative icon-input-wrap">
+                           <input type="password" class="form-control custom-input" placeholder="Enter your password"/>
+                           <span class="icon">
+                              <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g filter="url(#filter0_i_167_324)">
+                                 <path d="M16.3457 7.50199H15.7354V6.12546C15.7321 2.78402 12.9822 0.0411388 9.65293 0.0429697C6.30824 0.0448005 3.55437 2.8161 3.57722 6.17292V7.50199H2.91947C1.75993 7.50199 0.817383 8.46488 0.817383 9.65832V18.2294C0.817383 19.4229 1.75993 20.3857 2.91947 20.3857H16.3457C17.5052 20.3857 18.4478 19.4229 18.4478 18.2294V9.65832C18.4478 8.46488 17.5052 7.50199 16.3457 7.50199ZM10.3107 14.1405V15.6391C10.3107 16.012 10.0055 16.3172 9.63258 16.3172C9.25963 16.3172 8.95449 16.012 8.95449 15.6391V14.1405C8.35777 13.8761 7.93735 13.2793 7.93735 12.5877C7.93735 11.6519 8.69682 10.8924 9.63258 10.8924C10.5684 10.8924 11.3278 11.6519 11.3278 12.5877C11.3278 13.2793 10.9074 13.8761 10.3107 14.1405ZM13.023 7.50199H6.28959V6.15258C6.27542 4.29339 7.7999 2.75717 9.65293 2.75534C11.4983 2.75351 13.0222 4.27393 13.023 6.12546V7.50199Z" fill="#254CEC"/>
+                                 </g>
+                                 <defs>
+                                 <filter id="filter0_i_167_324" x="0.817383" y="-0.257031" width="17.6304" height="20.6428" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                 <feOffset dy="-0.6"/>
+                                 <feGaussianBlur stdDeviation="0.15"/>
+                                 <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+                                 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_167_324"/>
+                                 </filter>
+                                 </defs>
+                              </svg>                                                                
+                           </span>
+                           <span class="icon password-eye-close-icon cursor-pointer">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M8.40088 5.30619L10.7674 7.67275L10.7787 7.54878C10.7787 6.30539 9.76823 5.29492 8.52484 5.29492L8.40088 5.30619Z" fill="currentColor"/>
+                                 <path d="M8.52484 3.79227C10.5984 3.79227 12.2813 5.47516 12.2813 7.54872C12.2813 8.0333 12.1836 8.49534 12.0146 8.9198L14.2121 11.1173C15.3465 10.1707 16.2406 8.94611 16.7928 7.54872C15.4893 4.25058 12.2851 1.91406 8.52487 1.91406C7.47306 1.91406 6.46636 2.10187 5.53101 2.43995L7.15379 4.05896C7.57822 3.89369 8.04026 3.79227 8.52484 3.79227Z" fill="currentColor"/>
+                                 <path d="M1.01202 1.745L2.72495 3.45794L3.0668 3.79978C1.82718 4.76894 0.846746 6.05741 0.260742 7.54869C1.56048 10.8468 4.76847 13.1833 8.52491 13.1833C9.68942 13.1833 10.8013 12.958 11.8193 12.5485L12.1386 12.8678L14.3286 15.0616L15.2865 14.1074L1.96991 0.787109L1.01202 1.745ZM5.16666 5.89587L6.3274 7.05661C6.29359 7.21815 6.27105 7.37965 6.27105 7.54869C6.27105 8.79209 7.28152 9.80256 8.52491 9.80256C8.69395 9.80256 8.85549 9.78002 9.01326 9.74621L10.174 10.9069C9.67438 11.1549 9.11845 11.3051 8.52491 11.3051C6.45136 11.3051 4.76847 9.62225 4.76847 7.54869C4.76847 6.95519 4.91874 6.39922 5.16666 5.89587Z" fill="currentColor"/>
+                              </svg>                                 
+                           </span>
+                        </div>
+                        <div class="form-group w-100">
+                           <a href="index.html" class="sign-up-btn max-w-100">Login</a>
+                        </div>
+                        <div class="remember-forgot-pass-text">
+                           <label class="custom-checkbox">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                              <span class="label-text">Remember Me</span>
+                            </label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <h6>Don't have an account? <a href="register.html">Register here</a></h6>
+                     </form>
+                     <!-- login form step end -->
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Script start -->
+      <script src="./assets/scripts/jquery.js"></script>
+      <script src="./assets/scripts/bootstrap.min.js"></script>
+      <script src="./assets/scripts/custom.js"></script>
+      <!-- Script end -->
+   </body>
+</html>

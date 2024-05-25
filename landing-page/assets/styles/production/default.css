@@ -1,0 +1,418 @@
+/* _START >> GLOBAL PAGE SETTINGS << JS */
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+}
+
+body {
+    font-size: var(--body-font-size);
+    font-family: var(--font-alpha);
+    font-weight: var(--body-font-weight);
+    line-height: var(--body-line-height);
+    background-color: var(--body-color-bg);
+    color: var(--body-color-fg);
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+/* _ENDS >> GLOBAL PAGE SETTINGS << JS */
+
+/* _START >> GLOBAL PSEUDO STYLES << JS */
+::-moz-focus-inner {
+    border: 0px solid transparent;
+}
+
+::-webkit-focus-inner {
+    border: 0px solid transparent;
+}
+
+*::-moz-selection {
+    color: var(--select-text-color);
+    background: var(--select-back-color);
+}
+
+*::selection {
+    color: var(--select-text-color);
+    background: var(--select-back-color);
+}
+
+*::-moz-selection {
+    color: var(--select-text-color);
+    background: var(--select-back-color);
+}
+
+*::-webkit-selection {
+    color: var(--select-text-color);
+    background: var(--select-back-color);
+}
+
+/* USE !important TO PREVENT ISSUES WITH BROWSER OVERRIDE */
+*::-webkit-input-placeholder {
+    color: var(--placeholder-inactive-color) !important;
+    opacity: 1;
+}
+
+*::-moz-placeholder {
+    color: var(--placeholder-inactive-color) !important;
+    opacity: 1;
+}
+
+*:-moz-placeholder {
+    color: var(--placeholder-inactive-color) !important;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: var(--placeholder-inactive-color) !important;
+    opacity: 1;
+}
+
+*::-ms-input-placeholder {
+    color: var(--placeholder-inactive-color) !important;
+    opacity: 1;
+}
+
+*:focus::-webkit-input-placeholder {
+    color: var(--placeholder-focused-color) !important;
+}
+
+*:focus::-moz-placeholder {
+    color: var(--placeholder-focused-color) !important;
+}
+
+*:focus:-moz-placeholder {
+    color: var(--placeholder-focused-color) !important;
+}
+
+*:focus:-ms-input-placeholder {
+    color: var(--placeholder-focused-color) !important;
+}
+
+*:focus::-ms-input-placeholder {
+    color: var(--placeholder-focused-color) !important;
+}
+
+/* _ENDS >> GLOBAL PSEUDO STYLES << JS */
+
+/* _START >> GLOBAL FONTS & TEXT STYLES << JS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin: 0;
+    color: var(--color-black);
+    font-family: var(--font-alpha);
+    font-weight: var(--font-weight-headings);
+    line-height: var(--line-height-headings);
+}
+
+h1,
+.h1 {
+    --text-font-size: var(--font-size-heading1);
+    font-size: var(--text-font-size);
+}
+
+h2,
+.h2 {
+    --text-font-size: var(--font-size-heading2);
+    font-size: var(--text-font-size);
+}
+
+h3,
+.h3 {
+    --text-font-size: var(--font-size-heading3);
+    font-size: var(--text-font-size);
+}
+
+h4,
+.h4 {
+    --text-font-size: var(--font-size-heading4);
+    font-size: var(--text-font-size);
+}
+
+h5,
+.h5 {
+    --text-font-size: var(--font-size-heading5);
+    font-size: var(--text-font-size);
+}
+
+h6,
+.h6 {
+    --text-font-size: var(--font-size-heading6);
+    font-size: var(--text-font-size);
+}
+
+p,
+.p {
+    --text-font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    font-size: var(--text-font-size);
+    font-family: var(--font-alpha);
+    color: var(--color-black);
+}
+
+h1.small,
+.h1.small,
+h2.small,
+.h2.small,
+h3.small,
+.h3.small,
+h4.small,
+.h4.small,
+h5.small,
+.h5.small,
+h6.small,
+.h6.small,
+p.small,
+.p.small {
+    font-size: calc(80 * var(--text-font-size) / 100);
+}
+
+.ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.ellipsis-line-1 {
+    -webkit-line-clamp: 1;
+}
+
+.ellipsis-line-2 {
+    -webkit-line-clamp: 2;
+}
+
+.ellipsis-line-7 {
+    -webkit-line-clamp: 7;
+}
+
+
+.ellipsis-line-8 {
+    -webkit-line-clamp: 8;
+}
+
+
+.fw-100 {
+    font-weight: 100 !important;
+}
+
+.fw-200 {
+    font-weight: 200 !important;
+}
+
+.fw-300 {
+    font-weight: 300 !important;
+}
+
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.fw-800 {
+    font-weight: 800 !important;
+}
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+.fw-bold {
+    font-weight: bold !important;
+}
+
+/* _ENDS >> GLOBAL FONTS & TEXT STYLES << JS */
+
+/* _START >> DISPLAY STYLES << JS */
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-auto-0 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.mb-0{
+    margin-bottom: 0;
+}
+
+/* _ENDS >> DISPLAY STYLES << JS */
+
+/* _START >> IMAGE STYLES << JS */
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cover-image img,
+.cover-image svg,
+.cover-image video,
+.contain-image img,
+.contain-image svg,
+.contain-image video,
+.contain-image iframe {
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    max-height: inherit;
+}
+
+.contain-image svg,
+.contain-image img,
+.contain-image video,
+.contain-image iframe {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.cover-image svg,
+.cover-image img,
+.cover-image video {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/* _ENDS >> IMAGE STYLES << JS */
+
+/* _BEGIN >> LINK & ANCHOR LINK GLOBAL CUSTOM STYLES << JS */
+a {
+    color: var(--link-default-color);
+    text-decoration: none;
+    transition: all 0.35s;
+}
+
+a:active,
+a:focus,
+a:hover {
+    color: var(--link-hovered-color);
+    text-decoration: none;
+    transition: all 0.35s;
+}
+
+a[disabled],
+a[disabled]:hover,
+a[disabled]:focus,
+a[disabled]:active {
+    color: var(--link-disable-color);
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+/* _ENDS >> LINK & ANCHOR LINK GLOBAL CUSTOM STYLES << JS */
+
+ul {
+    font-family: var(--font-alpha);
+    list-style-type: none;
+    padding: 0;
+}
+
+.resize-none {
+    resize: none;
+}
+
+
+.ratio {
+    position: relative;
+    width: 100%
+}
+
+.ratio::before {
+    display: block;
+    padding-top: var(--js-aspect-ratio);
+    content: ""
+}
+
+.ratio>* {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.ratio-1x1 {
+    --js-aspect-ratio: 100%
+}
+
+.ratio-4x3 {
+    --js-aspect-ratio: 75%
+}
+
+.ratio-16x9 {
+    --js-aspect-ratio: 56.25%
+}
+
+.ratio-21x9 {
+    --js-aspect-ratio: 42.8571428571%
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+
+/* _BEGIN >> TEXT COLOR CLASSES << JS */
+.text-blue {
+    color: var(--color-blue) !important;
+}
+
+.text-white {
+    color: var(--color-white) !important;
+}
+
+/* _ENDS >> TEXT COLOR CLASSES << JS */

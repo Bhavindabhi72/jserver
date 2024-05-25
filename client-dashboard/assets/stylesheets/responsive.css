@@ -1,0 +1,553 @@
+/* Responsive start */
+/* Container start */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1540px;
+  }
+}
+
+/* Container end */
+/* Responsive start */
+@media (max-width: 1799px) {
+  .admin-dashboard-content-box h4 {
+    font-size: 18px;
+  }
+  .admin-dashboard-content-box h6 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1600px) {
+  .cloud-service-left-col {
+    max-width: calc(100% - var(--cloud-service-right-col));
+  }
+  .cloud-service-right-col {
+    max-width: var(--cloud-service-right-col);
+  }
+}
+@media (max-width: 1599px) {
+  .registration-form-box {
+    padding: 40px 130px;
+  }
+  .admin-card-box {
+    padding: 20px;
+  }
+  .cloud-service-row {
+    flex-direction: column;
+    grid-gap: 0;
+  }
+  .cloud-service-row .tab-container .tab-active {
+    text-align: center;
+  }
+  .comon-chart-style {
+    display: flex;
+    justify-content: center;
+  }
+  .cloud-service-right-col .tab .primary-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1439px) {
+  :root {
+    --dropdown-option-mt: 16px;
+    --sidebar-width: 270px;
+    --sidebar-xy-spacing: 20px;
+  }
+
+  .wrapper-dropdown {
+    margin-bottom: 0px;
+  }
+
+  .selected-display {
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+
+  .select-label {
+    padding-bottom: 5px;
+  }
+
+  .wrapper-dropdown .dropdown {
+    top: 100%;
+  }
+
+  .custom-checkbox .checkmark::after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border-width: 0 2px 2px 0;
+    transform: rotate(51deg);
+  }
+
+  .wrapper-dropdown .dropdown li {
+    padding: 6px 15px;
+  }
+  .wrapper-dropdown,
+  .wrapper-dropdown .dropdown {
+    font-size: 18px;
+  }
+  .admin-dashboard-services-detail-col.admin-form-group button {
+    min-width: 80px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .admin-dashboard-boxes-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1199px) {
+  .admin-dashboard-services-card-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cloud-service-left-col .admin-dashboard-boxes-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cloud-service-left-col .admin-card-box {
+    padding: 15px;
+  }
+  .admin-header h4 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .registration-form-data-wrap .divider {
+    width: calc(100% + 60px);
+    transform: translateX(-30px);
+  }
+  .direction-rtl .registration-form-data-wrap .divider {
+    width: calc(100% + 60px);
+    transform: translateX(30px);
+  }
+  .header-login-cloud-dropdown .dropdown li i,
+  .header-login-cloud-dropdown .selected-display i{
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .select-label {
+    font-size: 12px;
+  }
+
+  .wrapper-dropdown,
+  .wrapper-dropdown .dropdown {
+    font-size: 14px;
+  }
+
+  .wrapper-dropdown {
+    min-height: 34px;
+  }
+
+  .setting-description {
+    border-radius: 10px;
+  }
+
+  .wrapper-dropdown.active .dropdown {
+    border-radius: 10px;
+  }
+
+  .wrapper-dropdown .dropdown li:hover {
+    border-radius: 6px;
+  }
+
+  .i-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .sign-up-btn {
+    font-size: 14px;
+    padding: 6px 24px 8px 24px;
+  }
+
+  .custom-checkbox .checkmark {
+    height: 18px;
+    width: 18px;
+  }
+
+  .custom-checkbox .checkmark::after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+  }
+
+  .custom-radio,
+  .custom-checkbox .label-text {
+    font-size: 14px;
+  }
+
+  .checkmark {
+    top: 1px;
+  }
+
+  .checkbox-wrap,
+  .custom-radio-group {
+    grid-gap: 6px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  :root {
+    --sidebar-width: 220px;
+    --sidebar-xy-spacing: 10px;
+    --admin-body-y: 25px;
+    --admin-body-x: 25px;
+  }
+  .layout .sidebar .pro-sidebar-logo img {
+    max-width: 150px;
+  }
+  .welcome-admin-profile-wrap {
+    flex-direction: column;
+    align-items: start;
+  }
+  .welcome-icons-box-wrap {
+    margin: 15px 0 0;
+  }
+  .direction-rtl .welcome-icons-box-wrap {
+    margin-left: auto;
+    margin-right: unset;
+  }
+
+  .table-search-bar .search-bar-wrap input {
+    min-width: auto;
+  }
+  .table-search-bar {
+    margin-left: unset;
+  }
+  table {
+    margin: 15px 0;
+  }
+  .table-footer-wrap {
+    flex-direction: column;
+  }
+  .pagination-wrap,
+  .direction-rtl .table-footer-wrap .pagination-wrap {
+    margin-left: unset;
+    justify-content: center;
+    margin: 15px 0 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --admin-header: 70px;
+  }
+  .registration-form-box,
+  .registration-form-data-wrap.registration-form-box {
+    padding: 20px 30px;
+  }
+  .registration-form-box h3 {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+  .auth-logo {
+    margin: 0;
+  }
+  .form-step .divider {
+    margin-top: 20px;
+  }
+  .step-next-prev-btn-wrap button.navigate-prev-btn {
+    top: 30px;
+    left: 30px;
+  }
+  .admin-body-content {
+    height: auto;
+    overflow-y: unset;
+  }
+  .admin-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .admin-header-option ul {
+    grid-gap: 15px;
+  }
+  .admin-header-option {
+    padding-right: 20px;
+  }
+  .direction-rtl .sidebar-toggler {
+    left: 20px;
+    right: unset;
+  }
+  .direction-rtl .admin-header-option {
+    padding: 0 0 0 40px;
+  }
+  .header-login-cloud-dropdown .dropdown li span,
+  .header-login-cloud-dropdown .selected-display span{
+    display: none;
+  }
+  .custom-input.header-login-cloud-dropdown .selected-display{
+    line-height: 0;
+    margin-right: 15px;
+  }
+  .custom-input.header-login-cloud-dropdown .dropdown li{
+    text-align: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+@media (min-width: 576px) {
+  .checkbox-radio-wrap .custom-radio-group {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 575px) {
+  :root {
+    --admin-body-y: 15px;
+    --admin-body-x: 12px;
+  }
+  .col-12 {
+    width: 100%;
+  }
+
+  .checkbox-wrap,
+  .custom-radio-group {
+    margin-left: 20px;
+  }
+
+  .or-line-text {
+    margin: 0 0 24px;
+  }
+  a.secure-client-btn {
+    margin-bottom: 24px;
+  }
+  .remember-forgot-pass-text {
+    margin-bottom: 30px;
+  }
+  .registration-form-data-wrap.registration-form-box {
+    padding: 20px 15px;
+  }
+  a.secure-client-btn {
+    min-width: 220px;
+    min-height: 40px;
+    font-size: 14px;
+  }
+  .step-footer-wrap {
+    flex-direction: column;
+  }
+  .step-next-prev-btn-wrap {
+    justify-content: center;
+  }
+  .registration-form-wrap ul.form-stepper li a .form-stepper-circle {
+    width: 30px;
+    height: 30px;
+  }
+  .registration-form-wrap ul.form-stepper .form-stepper-circle span {
+    font-size: 14px;
+  }
+  .custom-input,
+  .form-group .wrapper-dropdown {
+    min-height: 45px;
+    border-radius: 8px;
+  }
+  .registration-form-wrap .form-stepper-horizontal li:not(:last-child):after {
+    left: 45px;
+    top: 20%;
+  }
+  .form-row,
+  .admin-dashboard-boxes-wrap {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+  .step-next-prev-btn-wrap button.navigate-prev-btn {
+    top: 30px;
+    left: 15px;
+  }
+  .registration-form-box h3 {
+    font-size: 20px;
+  }
+  .layout .footer {
+    padding-top: 0;
+  }
+  .admin-dashboard-services-detail-col {
+    flex-direction: column;
+    align-items: start;
+  }
+  .admin-dashboard-services-details {
+    flex-wrap: wrap;
+  }
+  .admin-dashboard-services-details .sign-up-btn {
+    margin: 15px 0 0;
+  }
+  .admin-dashboard-services-detail-col {
+    grid-gap: 0;
+  }
+  .welcome-user-content h4 {
+    font-size: 18px;
+  }
+  .welcome-user-profile {
+    width: 60px;
+    height: 60px;
+  }
+  .admin-body-content .admin-head {
+    margin-bottom: 20px;
+  }
+  .admin-header {
+    padding: 12px 15px;
+  }
+  .admin-header-option {
+    padding-right: 40px;
+  }
+  .notification-dropbox-wrap {
+    min-width: 350px;
+  }
+  .gap-1 {
+    grid-gap: 5px;
+  }
+  .gap-2 {
+    grid-gap: 10px;
+  }
+  .notification-dropbox-wrap ul li a {
+    padding: 14px 0;
+  }
+  .notifications-msg-dropbox-wrap.notification-dropbox-wrap {
+    right: -70px;
+  }
+  .notifications-msg-dropbox-wrap.notification-dropbox-wrap .arrow-up {
+    right: 72px;
+  }
+  .direction-rtl .notifications-msg-dropbox-wrap.notification-dropbox-wrap {
+    left: -70px;
+    right: unset;
+  }
+  .direction-rtl
+    .notifications-msg-dropbox-wrap.notification-dropbox-wrap
+    .arrow-up {
+    left: 72px;
+    right: unset;
+  }
+  .direction-rtl .notification-dropbox-wrap {
+    left: -10px;
+  }
+  .direction-rtl .notification-dropbox-wrap.top-extra-dropdown .arrow-up {
+    left: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkbox-wrap,
+  .custom-radio-group {
+    grid-gap: 15px 0;
+  }
+
+  .map-img {
+    display: block;
+  }
+  .checkbox-radio-wrap {
+    flex-direction: column;
+  }
+
+  .checkbox-wrap,
+  .custom-radio-group {
+    flex-direction: row;
+    grid-gap: 20px;
+  }
+
+  .custom-radio-group {
+    grid-gap: 40px;
+  }
+
+  .checkbox-radio-wrap {
+    gap: 20px;
+  }
+
+  .custom-checkbox {
+    padding-left: 25px;
+  }
+
+  .checkmark {
+    left: -24px;
+  }
+
+  .custom-radio {
+    margin-left: 25px;
+  }
+
+  .checkbox-wrap,
+  .custom-radio-group {
+    margin-left: 0;
+  }
+
+  .sign-up-btn {
+    font-size: 13px;
+    min-height: 40px;
+  }
+  .auth-logo {
+    max-width: 120px;
+  }
+}
+@media (max-width: 399px) {
+  .notification-dropbox-wrap {
+    min-width: 330px;
+  }
+}
+@media (max-width: 360px){
+  .custom-input.header-login-cloud-dropdown{
+    padding: 5px 15px 5px 4px;
+  }
+  .custom-input.header-login-cloud-dropdown .arrow {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .admin-header .country-dropdown-menu .selected-display {
+    margin-right: 15px;
+    margin-left: 10px;
+  }
+  .admin-header .wrapper-dropdown .dropdown li {
+    padding: 6px 5px;
+  }
+}
+@media (max-width: 349px) {
+  .registration-form-box {
+    padding: 15px;
+  }
+  .registration-form-wrap .form-stepper-horizontal li {
+    padding: 0 40px;
+  }
+  .notification-dropbox-wrap {
+    min-width: 270px;
+  }
+  .cloud-service-left-col .admin-dashboard-boxes-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* Responsive end */

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- favicon -->
+      <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      <!-- css file -->
+      <link rel="stylesheet" href="./assets/stylesheets/bootstrap.min.css" />
+      <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+      <link rel="stylesheet" href="./assets/stylesheets/responsive.css" />
+      <title>Registration Form</title>
+   </head>
+   <body>
+      <section class="registration-form-section">
+         <div class="container">
+            <div class="w-100 registration-form-col">
+               <div class="registration-logo-country-dropmenu">
+                  <img src="./assets/images/logo/logo.svg" class="img-fluid auth-logo" alt="" />
+                  <div class="language-select-wrap">
+                     <div class="wrapper-dropdown" id="dropdown">
+                        <span class="selected-display d-flex align-items-center" id="destination"
+                          >
+                          <h6>English</h6>
+                           <div class="selected-flag ml-auto">
+                              <img src="./assets/images/flag/english.svg" class="img-fluid" alt="" />
+                           </div>
+                          </span
+                        >
+                        <svg
+                          class="arrow"
+                          id="drp-arrow"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="transition-all ml-auto rotate-180"
+                        >
+                          <path
+                            d="M7 14.5l5-5 5 5"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <ul class="dropdown">
+                          <li class="item" onclick="rtllang('english',event)">
+                           <h6>English</h6>
+                           <div class="selected-flag ml-auto">
+                              <img src="./assets/images/flag/english.svg" class="img-fluid" alt="" />
+                           </div>
+                          </li>
+                          <li class="item" onclick="rtllang('hebrew',event)">
+                           <h6>Hebrew</h6>
+                           <div class="selected-flag ml-auto">
+                              <img src="./assets/images/flag/hebrew.svg" class="img-fluid" alt="" />
+                           </div>
+                          </li>
+                          <li class="item" onclick="rtllang('arabic',event)">
+                           <h6>Arabic</h6>
+                           <div class="selected-flag ml-auto">
+                              <img src="./assets/images/flag/arabic.svg" class="img-fluid" alt="" />
+                           </div>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+               </div>
+               <div class="registration-form-box registration-form-data-wrap">
+                  <!-- registration form step start -->
+                     <h3 class="text-center"><span>Register</span> To Jetserver</h3>
+                     <div class="divider"></div>
+                     <div id="multi-step-form-container" class="registration-form-wrap">
+                        <!-- Form Steps / Progress Bar -->
+                        <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+                           <!-- Step 1 -->
+                           <li class="form-stepper-active text-center form-stepper-list" step="1">
+                              <a class="mx-2 a-hover-underline-none">
+                                 <span class="form-stepper-circle">
+                                    <span class="check-icon">
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
+                                          <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
+                                       </svg>
+                                    </span>
+                                    <span class="step-number-text">1</span>
+                                 </span>
+                                 <span class="label">Personal <br/>Information</span>
+                              </a>
+                           </li>
+                           <!-- Step 2 -->
+                           <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+                              <a class="mx-2 a-hover-underline-none">
+                                 <span class="form-stepper-circle text-muted">
+                                    <span class="check-icon">
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
+                                          <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
+                                       </svg>
+                                    </span>
+                                    <span class="step-number-text">2</span>
+                                 </span>
+                                 <span class="label text-muted">Billing <br/>Address</span>
+                              </a>
+                           </li>
+                           <!-- Step 3 -->
+                           <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+                              <a class="mx-2 a-hover-underline-none">
+                                 <span class="form-stepper-circle text-muted">
+                                    <span class="check-icon">
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
+                                          <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
+                                       </svg>
+                                    </span>
+                                    <span class="step-number-text">3</span>
+                                 </span>
+                                 <span class="label text-muted">Additional <br/>Required</span>
+                              </a>
+                           </li>
+                           <!-- Step 4 -->
+                           <li class="form-stepper-unfinished text-center form-stepper-list" step="4">
+                              <a class="mx-2 a-hover-underline-none">
+                                 <span class="form-stepper-circle text-muted">
+                                    <span class="check-icon">
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
+                                          <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
+                                       </svg>
+                                    </span>
+                                    <span class="step-number-text">4</span>
+                                 </span>
+                                 <span class="label text-muted">Account <br/>Security</span>
+                              </a>
+                           </li>
+                        </ul>
+                        <!-- Step Wise Form Content -->
+                        <form id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
+                           <!-- Step 1 Content -->
+                           <section id="step-1" class="form-step">
+                              <div class="inner-form-field-wrap">
+                                 <div class="form-group">
+                                    <input type="text" class="form-control custom-input" placeholder="First Name"/>
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="text" class="form-control custom-input" placeholder="Last Name"/>
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="email" class="form-control custom-input" placeholder="Email"/>
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="number" class="form-control custom-input" placeholder="Phone Number"/>
+                                 </div>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="step-footer-wrap">
+                                     <a href="login.html" target="_blank" class="secure-client-btn">
+                                    <span>
+                                       <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M5.69647 10.5447C5.69647 9.51058 5.98139 8.54184 6.47638 7.71236V4.19385H2.95787C1.5614 6.00749 0.804443 8.21783 0.804443 10.5447C0.804443 12.8716 1.5614 15.082 2.95787 16.8956H6.47638V13.3771C5.98139 12.5476 5.69647 11.5789 5.69647 10.5447Z" fill="#FBBD00"/>
+                                          <path d="M11.2407 16.0891L8.79468 18.5352L11.2407 20.9812C13.5676 20.9812 15.7779 20.2242 17.5916 18.8277V15.313H14.0768C13.2401 15.8098 12.2672 16.0891 11.2407 16.0891Z" fill="#0F9D58"/>
+                                          <path d="M6.47627 13.377L2.95776 16.8955C3.23424 17.2545 3.53531 17.5984 3.86108 17.9242C5.83224 19.8953 8.45302 20.9809 11.2407 20.9809V16.0889C9.21764 16.0889 7.44457 14.9996 6.47627 13.377Z" fill="#31AA52"/>
+                                          <path d="M21.677 10.5444C21.677 9.90944 21.6196 9.27331 21.5062 8.65374L21.4144 8.15234H11.2407V13.0444H16.1919C15.7111 14.0008 14.9719 14.7811 14.0768 15.3126L17.5916 18.8273C17.9506 18.5508 18.2945 18.2498 18.6203 17.924C20.5915 15.9528 21.677 13.332 21.677 10.5444Z" fill="#3C79E6"/>
+                                          <path d="M15.1611 6.62429L15.5935 7.05667L19.0527 3.59751L18.6203 3.16514C16.6492 1.19398 14.0284 0.108398 11.2407 0.108398L8.79468 2.55441L11.2407 5.00043C12.7216 5.00043 14.1139 5.57711 15.1611 6.62429Z" fill="#CF2D48"/>
+                                          <path d="M11.2407 5.00043V0.108398C8.45306 0.108398 5.83228 1.19398 3.86108 3.1651C3.53531 3.49087 3.23424 3.83474 2.95776 4.19385L6.47627 7.71236C7.44461 6.08972 9.21768 5.00043 11.2407 5.00043Z" fill="#EB4132"/>
+                                       </svg>                              
+                                    </span>
+                                    Sign in with Google
+                                 </a>
+                                 <div class="d-flex align-items-center step-next-prev-btn-wrap">
+                                    <button class="sign-up-btn btn-navigate-form-step" type="button" step_number="2">Next</button>
+                                 </div>
+                              </div>
+                           </section>
+                           <!-- Step 2 Content, default hidden on page load. -->
+                           <section id="step-2" class="form-step d-none">
+                              <div class="inner-form-field-wrap">
+                                 <div class="form-group">
+                                    <input type="text" class="form-control custom-input" placeholder="Company name"/>
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="text" class="form-control custom-input" placeholder="Street address 1"/>
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="text" class="form-control custom-input" placeholder="Street address 2"/>
+                                 </div>
+                                 <div class="form-row">
+                                    <div class="form-col-md-6 form-group">
+                                       <input type="text" class="form-control custom-input" placeholder="City"/>
+                                    </div>
+                                    <div class="form-col-md-6 form-group">
+                                       <input type="text" class="form-control custom-input" placeholder="State"/>
+                                    </div>
+                                 </div>
+                                 <div class="form-row">
+                                    <div class="form-col-md-6 form-group">
+                                       <div class="wrapper-dropdown form-control custom-input" id="dropdown">
+                                          <span class="selected-display" id="destination"
+                                             >
+                                             India
+                                             </span
+                                          >
+                                          <svg
+                                             class="arrow"
+                                             id="drp-arrow"
+                                             width="24"
+                                             height="24"
+                                             viewBox="0 0 24 24"
+                                             fill="none"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             class="transition-all ml-auto rotate-180"
+                                          >
+                                             <path
+                                                d="M7 14.5l5-5 5 5"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                             ></path>
+                                          </svg>
+                                          <ul class="dropdown">
+                                             <li class="item">
+                                                India
+                                             </li>
+                                             <li class="item">
+                                                England
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="form-col-md-6 form-group">
+                                       <input type="number" class="form-control custom-input" placeholder="Postcode"/>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="step-footer-wrap">
+                                    <a href="login.html" target="_blank" class="secure-client-btn">
+                                       <span>
+                                          <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M5.69647 10.5447C5.69647 9.51058 5.98139 8.54184 6.47638 7.71236V4.19385H2.95787C1.5614 6.00749 0.804443 8.21783 0.804443 10.5447C0.804443 12.8716 1.5614 15.082 2.95787 16.8956H6.47638V13.3771C5.98139 12.5476 5.69647 11.5789 5.69647 10.5447Z" fill="#FBBD00"/>
+                                             <path d="M11.2407 16.0891L8.79468 18.5352L11.2407 20.9812C13.5676 20.9812 15.7779 20.2242 17.5916 18.8277V15.313H14.0768C13.2401 15.8098 12.2672 16.0891 11.2407 16.0891Z" fill="#0F9D58"/>
+                                             <path d="M6.47627 13.377L2.95776 16.8955C3.23424 17.2545 3.53531 17.5984 3.86108 17.9242C5.83224 19.8953 8.45302 20.9809 11.2407 20.9809V16.0889C9.21764 16.0889 7.44457 14.9996 6.47627 13.377Z" fill="#31AA52"/>
+                                             <path d="M21.677 10.5444C21.677 9.90944 21.6196 9.27331 21.5062 8.65374L21.4144 8.15234H11.2407V13.0444H16.1919C15.7111 14.0008 14.9719 14.7811 14.0768 15.3126L17.5916 18.8273C17.9506 18.5508 18.2945 18.2498 18.6203 17.924C20.5915 15.9528 21.677 13.332 21.677 10.5444Z" fill="#3C79E6"/>
+                                             <path d="M15.1611 6.62429L15.5935 7.05667L19.0527 3.59751L18.6203 3.16514C16.6492 1.19398 14.0284 0.108398 11.2407 0.108398L8.79468 2.55441L11.2407 5.00043C12.7216 5.00043 14.1139 5.57711 15.1611 6.62429Z" fill="#CF2D48"/>
+                                             <path d="M11.2407 5.00043V0.108398C8.45306 0.108398 5.83228 1.19398 3.86108 3.1651C3.53531 3.49087 3.23424 3.83474 2.95776 4.19385L6.47627 7.71236C7.44461 6.08972 9.21768 5.00043 11.2407 5.00043Z" fill="#EB4132"/>
+                                          </svg>                              
+                                       </span>
+                                       Sign in with Google
+                                    </a>
+                                    <div class="d-flex align-items-center step-next-prev-btn-wrap">
+                                       <button class="sign-up-btn btn-navigate-form-step navigate-prev-btn" type="button" step_number="1">
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+                                       </button>
+                                       <button class="sign-up-btn btn-navigate-form-step" type="button" step_number="3">Next</button>
+                                    </div>
+                              </div>
+                           </section>
+                           <!-- Step 3 Content, default hidden on page load. -->
+                           <section id="step-3" class="form-step d-none">
+                              <div class="inner-form-field-wrap">
+                                 <div class="form-group">
+                                    <label>Company Business Number / ID *</label>
+                                    <input type="text" class="form-control custom-input" placeholder="Company business ID"/>
+                                 </div>
+                                 <div class="form-group">
+                                    <label>How did you get to us? *</label>
+                                    <div class="wrapper-dropdown form-control custom-input" id="dropdown">
+                                       <span class="selected-display" id="destination"
+                                          >
+                                          Street address 1
+                                          </span
+                                       >
+                                       <svg
+                                          class="arrow"
+                                          id="drp-arrow"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          class="transition-all ml-auto rotate-180"
+                                       >
+                                          <path
+                                             d="M7 14.5l5-5 5 5"
+                                             stroke="currentColor"
+                                             stroke-width="1.5"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                          ></path>
+                                       </svg>
+                                       <ul class="dropdown">
+                                          <li class="item">
+                                             A-025 Vill Board road, USA.
+                                          </li>
+                                          <li class="item">
+                                             C-8965 North Block road, USA.
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <label class="error-label">We would like to know how you came to us :)</label>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="wrapper-dropdown form-control custom-input" id="dropdown">
+                                       <span class="selected-display" id="destination"
+                                          >
+                                          ILS
+                                          </span
+                                       >
+                                       <svg
+                                          class="arrow"
+                                          id="drp-arrow"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          class="transition-all ml-auto rotate-180"
+                                       >
+                                          <path
+                                             d="M7 14.5l5-5 5 5"
+                                             stroke="currentColor"
+                                             stroke-width="1.5"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                          ></path>
+                                       </svg>
+                                       <ul class="dropdown">
+                                          <li class="item">
+                                             ILS
+                                          </li>
+                                          <li class="item">
+                                             KPO
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="step-footer-wrap">
+                                    <a href="login.html" target="_blank" class="secure-client-btn">
+                                       <span>
+                                          <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M5.69647 10.5447C5.69647 9.51058 5.98139 8.54184 6.47638 7.71236V4.19385H2.95787C1.5614 6.00749 0.804443 8.21783 0.804443 10.5447C0.804443 12.8716 1.5614 15.082 2.95787 16.8956H6.47638V13.3771C5.98139 12.5476 5.69647 11.5789 5.69647 10.5447Z" fill="#FBBD00"/>
+                                             <path d="M11.2407 16.0891L8.79468 18.5352L11.2407 20.9812C13.5676 20.9812 15.7779 20.2242 17.5916 18.8277V15.313H14.0768C13.2401 15.8098 12.2672 16.0891 11.2407 16.0891Z" fill="#0F9D58"/>
+                                             <path d="M6.47627 13.377L2.95776 16.8955C3.23424 17.2545 3.53531 17.5984 3.86108 17.9242C5.83224 19.8953 8.45302 20.9809 11.2407 20.9809V16.0889C9.21764 16.0889 7.44457 14.9996 6.47627 13.377Z" fill="#31AA52"/>
+                                             <path d="M21.677 10.5444C21.677 9.90944 21.6196 9.27331 21.5062 8.65374L21.4144 8.15234H11.2407V13.0444H16.1919C15.7111 14.0008 14.9719 14.7811 14.0768 15.3126L17.5916 18.8273C17.9506 18.5508 18.2945 18.2498 18.6203 17.924C20.5915 15.9528 21.677 13.332 21.677 10.5444Z" fill="#3C79E6"/>
+                                             <path d="M15.1611 6.62429L15.5935 7.05667L19.0527 3.59751L18.6203 3.16514C16.6492 1.19398 14.0284 0.108398 11.2407 0.108398L8.79468 2.55441L11.2407 5.00043C12.7216 5.00043 14.1139 5.57711 15.1611 6.62429Z" fill="#CF2D48"/>
+                                             <path d="M11.2407 5.00043V0.108398C8.45306 0.108398 5.83228 1.19398 3.86108 3.1651C3.53531 3.49087 3.23424 3.83474 2.95776 4.19385L6.47627 7.71236C7.44461 6.08972 9.21768 5.00043 11.2407 5.00043Z" fill="#EB4132"/>
+                                          </svg>                              
+                                       </span>
+                                       Sign in with Google
+                                    </a>
+                                    <div class="d-flex align-items-center step-next-prev-btn-wrap">
+                                       <button class="sign-up-btn btn-navigate-form-step navigate-prev-btn" type="button" step_number="2">
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+                                       </button>
+                                       <button class="sign-up-btn btn-navigate-form-step" type="button" step_number="4">Next</button>
+                                    </div>
+                              </div>
+                           </section>
+                           <!-- Step 4 Content, default hidden on page load. -->
+                           <section id="step-4" class="form-step d-none">
+                              <div class="inner-form-field-wrap">
+                                 <div class="form-group">
+                                    <input type="password" class="form-control custom-input" placeholder="Password"/>
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="password" class="form-control custom-input" placeholder="Confirm Password"/>
+                                 </div>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="step-footer-wrap">
+                                    <a href="login.html" target="_blank" class="secure-client-btn">
+                                       <span>
+                                          <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M5.69647 10.5447C5.69647 9.51058 5.98139 8.54184 6.47638 7.71236V4.19385H2.95787C1.5614 6.00749 0.804443 8.21783 0.804443 10.5447C0.804443 12.8716 1.5614 15.082 2.95787 16.8956H6.47638V13.3771C5.98139 12.5476 5.69647 11.5789 5.69647 10.5447Z" fill="#FBBD00"/>
+                                             <path d="M11.2407 16.0891L8.79468 18.5352L11.2407 20.9812C13.5676 20.9812 15.7779 20.2242 17.5916 18.8277V15.313H14.0768C13.2401 15.8098 12.2672 16.0891 11.2407 16.0891Z" fill="#0F9D58"/>
+                                             <path d="M6.47627 13.377L2.95776 16.8955C3.23424 17.2545 3.53531 17.5984 3.86108 17.9242C5.83224 19.8953 8.45302 20.9809 11.2407 20.9809V16.0889C9.21764 16.0889 7.44457 14.9996 6.47627 13.377Z" fill="#31AA52"/>
+                                             <path d="M21.677 10.5444C21.677 9.90944 21.6196 9.27331 21.5062 8.65374L21.4144 8.15234H11.2407V13.0444H16.1919C15.7111 14.0008 14.9719 14.7811 14.0768 15.3126L17.5916 18.8273C17.9506 18.5508 18.2945 18.2498 18.6203 17.924C20.5915 15.9528 21.677 13.332 21.677 10.5444Z" fill="#3C79E6"/>
+                                             <path d="M15.1611 6.62429L15.5935 7.05667L19.0527 3.59751L18.6203 3.16514C16.6492 1.19398 14.0284 0.108398 11.2407 0.108398L8.79468 2.55441L11.2407 5.00043C12.7216 5.00043 14.1139 5.57711 15.1611 6.62429Z" fill="#CF2D48"/>
+                                             <path d="M11.2407 5.00043V0.108398C8.45306 0.108398 5.83228 1.19398 3.86108 3.1651C3.53531 3.49087 3.23424 3.83474 2.95776 4.19385L6.47627 7.71236C7.44461 6.08972 9.21768 5.00043 11.2407 5.00043Z" fill="#EB4132"/>
+                                          </svg>                              
+                                       </span>
+                                       Sign in with Google
+                                    </a>
+                                    <div class="d-flex align-items-center step-next-prev-btn-wrap">
+                                       <button class="sign-up-btn btn-navigate-form-step navigate-prev-btn" type="button" step_number="3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+                                       </button>
+                                       <button class="sign-up-btn submit-btn" type="submit">Submit</button>
+                                    </div>
+                              </div>
+                           </section>
+                           <h6>Already have an account? <a href="login.html">Login here</a></h6>
+                        </form>
+                     </div>
+                  <!-- registration form step end -->
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Script start -->
+      <script src="./assets/scripts/jquery.js"></script>
+      <script src="./assets/scripts/bootstrap.min.js"></script>
+      <script src="./assets/scripts/custom.js"></script>
+      <!-- Script end -->
+      <!-- registration form js start -->
+      <script>
+         const navigateToFormStep = (stepNumber) => {
+         document.querySelectorAll(".form-step").forEach((formStepElement) => {
+         formStepElement.classList.add("d-none");
+         });
+         document.querySelectorAll(".form-stepper-list").forEach((formStepHeader) => {
+         formStepHeader.classList.add("form-stepper-unfinished");
+         formStepHeader.classList.remove("form-stepper-active", "form-stepper-completed");
+         });
+         document.querySelector("#step-" + stepNumber).classList.remove("d-none");
+         const formStepCircle = document.querySelector('li[step="' + stepNumber + '"]');
+         formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-completed");
+         formStepCircle.classList.add("form-stepper-active");
+         for (let index = 0; index < stepNumber; index++) {
+         const formStepCircle = document.querySelector('li[step="' + index + '"]');
+         if (formStepCircle) {
+             formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-active");
+             formStepCircle.classList.add("form-stepper-completed");
+         }
+         }
+         };
+         document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn) => {
+         formNavigationBtn.addEventListener("click", () => {
+         const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
+         navigateToFormStep(stepNumber);
+         });
+         });
+      </script>
+      <!-- registration form js end -->
+   </body>
+</html>
