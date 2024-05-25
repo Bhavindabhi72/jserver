@@ -61,11 +61,18 @@ function handleDropdown(dropdown, arrow, open) {
 wrapperdropdown() 
 //language chane rtl
 function rtllang(lng,e){
+  let couldServiceClass = document.getElementsByClassName('cloud-service-row');
+
 	if(lng !== 'english'){
 		document.getElementsByTagName( 'html' )[0].setAttribute("class","direction-rtl");
-    callAmChart('rtl')
+    
+    if (couldServiceClass.length > 0) {
+        callAmChart('rtl')
+    }
 	}else{
-    callAmChart(null);
+    if (couldServiceClass.length > 0) {
+       callAmChart(null)
+    }
 		document.querySelector( 'html' ).classList.remove("direction-rtl");
 	}
 }
