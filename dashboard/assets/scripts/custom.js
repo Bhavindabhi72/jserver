@@ -79,3 +79,19 @@ $(document).ready(function(){
    });
 });
 // custom accordion end
+
+//Invite New User start
+window.addEventListener("click", function (e) {
+  if (e.target.closest(".wrapper-dropdown") === null) {
+    closeAllDropdowns();
+  }
+});
+//Invite New User start
+function PermissionsCheck(el){
+  if(el.value == 'choose-permission'){
+    document.getElementsByClassName("choose-permissions")[0].classList.remove('d-none');
+  }else{
+    document.getElementsByClassName("choose-permissions")[0].classList.add('d-none');
+  }
+}
+//Invite New User end

@@ -764,14 +764,74 @@
                   invitee already has an existing user account, they will be able to access your account using
                   their existing login credentials. If the user does not yet have a user account, they will be able to
                   create one.</p>
-                <form>
+                <form id="invite-new-user">
                   <input type="Email" class="form-control custom-input w-50" placeholder="name@example.com"><br>
-                  <label class="fw-400 label-indent" for="Permissions"><input type="radio"
-                      class="your-details-card-checkbox radio-btn" id="Permissions" name="permissions">All
+                  <label class="fw-400" for="Permissions"><input type="radio"
+                      class="your-details-card-checkbox radio-btn" id="Permissions" name="invitePermissions" value="all-permission" onchange="PermissionsCheck(this)">All
                     Permissions</label>
-                  <label class="fw-400 label-indent" for="Choose"><input type="radio"
-                      class="your-details-card-checkbox radio-btn" id="Choose" name="permissions">Choose
+                  <label class="fw-400" for="Choose"><input type="radio"
+                      class="your-details-card-checkbox radio-btn" id="Choose" name="invitePermissions" value="choose-permission" onchange="PermissionsCheck(this)">Choose
                     Permissions</label>
+                  <div class="choose-permissions row d-none">
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent" for="generalEmail"><input type="checkbox"
+                          class="your-details-card-checkbox" id="generalEmail"> Modify Master Account Profile - Access
+                        and modify the client profile information</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox" class="your-details-card-checkbox"> View
+                        & Manage Contacts - Access and manage contacts</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"> <input type="checkbox" class="your-details-card-checkbox">
+                        View Products & Services - View access to products, services and addons</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox" class="your-details-card-checkbox">View
+                        & Modify Product Passwords - Allow password resets and other actions</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox"
+                          class="your-details-card-checkbox ">Perform Single Sign-On - Allow single sign-on into
+                        services</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox" class="your-details-card-checkbox">View
+                        Domains - View access to domain registrations</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox"
+                          class="your-details-card-checkbox">Manage Domain Settings - Allow domain management eg.
+                        nameservers /whois /transfers</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox"
+                          class="your-details-card-checkbox col-sm-">View & Pay Invoices - View and payment access to
+                        invoices</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox" class="your-details-card-checkbox">View
+                        & Accept Quotes - View and acceptance permissions for quotes</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox" class="your-details-card-checkbox">View
+                        & Open Support Tickets - Access to open, respond and manage support tickets</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox"
+                          class="your-details-card-checkbox col-sm-">View & Manage Affiliate Account - Access to view
+                        and request withdrawals</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox" class="your-details-card-checkbox">View
+                        Emails - Access to view account email history</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent"><input type="checkbox"
+                          class="your-details-card-checkbox">Manage products & Firewall - Allow placing of new
+                        orders</label>
+                    </div>
+                  </div>
                 </form>
                 <button class="sign-up-btn send-btn">Send Invite</button>
               </div>

@@ -125,7 +125,9 @@ a:hover {
 .d-block {
     display: block;
 }
-
+.d-none{
+    display: none !important;
+}
 .d-align {
     display: flex;
     align-items: center;
@@ -3039,10 +3041,10 @@ input[type=checkbox], input[type=radio] {
 }
 
 .user-management-box table thead th {
-    padding: 13px 20px 13px 73px;
+    padding: 13px 60px;
 }
 .user-management-box table tbody td {
-    padding: 22px 20px 22px 73px;
+    padding: 13px 60px;
 }
 .user-management-box table tbody td h5 {
     font-size: 16px;
@@ -3098,11 +3100,6 @@ input[type=checkbox], input[type=radio] {
     border-radius: 8px;
 }
 
-
-.user-management-box .radio-btn{
-   margin-left: 41px;
-}
-
 .send-btn{
     margin-top: 20px;
 }
@@ -3115,4 +3112,17 @@ input[type=checkbox], input[type=radio] {
 .user-management-box .label-indent {
     padding-bottom: 0px;
 }
+.choose-permissions{
+    background-color:rgba(240, 248, 255, 1);
+    box-shadow: 0px 9px 12px 0px #0000000F;
+    margin: 20px;
+    border-radius: 9px;
+    padding: 33px 43px 14px ;
+    border: 1px solid transparent;
+}
+
+.choose-permissions .label-indent{
+    padding-bottom: 20px;
+}
+
 /* user-management-box css end */
