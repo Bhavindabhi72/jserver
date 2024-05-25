@@ -3020,3 +3020,98 @@ input[type=checkbox], input[type=radio] {
 	margin-right: 0;
 }
 /* your-details css end */
+/* user-management-box css start */
+
+.user-management-box h4{
+    font-size: 15px;
+}
+
+.user-management-box table thead th:not(:last-child) {
+    border: none;
+}
+
+.user-management-box table {
+    margin: 18px 0;
+}
+
+.user-management-box .w-70{
+    width: 65%;
+}
+
+.user-management-box table thead th {
+    padding: 13px 20px 13px 73px;
+}
+.user-management-box table tbody td {
+    padding: 22px 20px 22px 73px;
+}
+.user-management-box table tbody td h5 {
+    font-size: 16px;
+}
+
+.owner-box{
+    padding: 2px 7px ;
+    margin: 0px 10px !important;
+    background-color: rgba(37, 76, 236, 1);
+    color: var(--white);
+    border-radius: 4px;
+}
+
+.last-login{
+    font-size: 15px;
+    color: rgba(136, 147, 172, 1);
+}
+
+.permissions-btn , .remove-btn{
+    padding: 10px 19px;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 10px;
+    min-width: max-content;
+}
+
+.permissions-btn{
+    background-color: rgba(37, 76, 236, 1);
+}
+
+.remove-btn{
+    background-color: rgba(255, 66, 66, 1);
+    margin-left: 13px;
+}
+
+.permissions-btn svg , .remove-btn svg {
+    margin: 0px 3px;
+}
+.align-middle{
+	vertical-align: middle;	
+}
+.table-footer p{
+    font-size: 15px;
+    color: rgba(78, 79, 83, 1);
+}
+
+.user-management-box .form-control{
+    width: 50%;
+    background-color: rgba(240, 248, 255, 1) ;
+    border: 1px solid rgba(222, 232, 240, 1);
+}
+
+
+.user-management-box .radio-btn{
+   margin-left: 41px;
+}
+
+.send-btn{
+    margin-top: 20px;
+}
+
+.new-user-p{
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.user-management-box .label-indent {
+    padding-bottom: 0px;
+}
+/* user-management-box css end */

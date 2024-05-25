@@ -46,6 +46,9 @@
     .admin-dashboard-content-box h6 {
         font-size: 16px;
     }
+    .user-management-box .w-70{
+        width: 50%;
+    }
 }
 @media (min-width: 1600px) {
     .cloud-service-left-col {
@@ -136,6 +139,15 @@
 @media (max-width: 1360px) {
     .admin-dashboard-boxes-wrap {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .user-management-box table thead th {
+        padding: 13px 20px ;
+    }
+    .user-management-box table tbody td {
+        padding: 22px 20px ;
+    }
+    .remove-btn {
+        margin-left: 0px;
     }
 }
 
@@ -233,6 +245,9 @@
     .checkbox-wrap,
     .custom-radio-group {
         grid-gap: 6px 0;
+    }
+    .user-management-box .form-control{
+        width: 100%;
     }
 }
 
@@ -609,6 +624,9 @@
 @media (max-width: 399px) {
     .notification-dropbox-wrap {
         min-width: 330px;
+    }
+    .d-block399px{
+        display: block;
     }
 }
 
