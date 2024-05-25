@@ -532,6 +532,21 @@
     .direction-rtl .notification-dropbox-wrap.top-extra-dropdown .arrow-up {
         left: 24px;
     }
+	.account-details-form-btn{
+        display: block !important;
+    }
+	.cancel-btn,.save-btn{
+        margin-left: 0;
+	}
+    .w-xs-100{
+		width: 100%;
+	}
+	.email-preferences{
+		padding: 20px 40px;
+	}
+	.pr-xs-0{
+		padding-right:0px;
+	}
 }
 
 @media (max-width: 480px) {
