@@ -164,6 +164,12 @@
       .admin-header h4 {
         display: none;
       }
+	  .payment-method{
+        display: block !important;
+      }
+      .payment-method-btns{
+        margin-top: 20px;
+      }
 }
 
 @media (min-width: 768px) {
@@ -550,7 +556,7 @@
 	.account-details-form-btn{
         display: block !important;
     }
-	.cancel-btn,.save-btn{
+	.theme-btn{
         margin-left: 0;
 	}
     .w-xs-100{
@@ -561,6 +567,10 @@
 	}
 	.pr-xs-0{
 		padding-right:0px;
+	}
+	.mx-6{
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 
@@ -620,6 +630,9 @@
     }
     .choose-permissions{
         padding: 33px 35px 14px;
+    }
+	.terms-service-crad-box {
+        padding: 23px 16px 15px 16px
     }
 
 }

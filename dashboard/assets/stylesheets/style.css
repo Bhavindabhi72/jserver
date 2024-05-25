@@ -121,7 +121,9 @@ a:hover {
 .mt-0 {
     margin-top: 0;
 }
-
+.border-none{
+    border: none !important;
+}
 .d-block {
     display: block;
 }
@@ -142,10 +144,28 @@ a:hover {
 .d-grid {
     display: grid;
 }
-
+.align-self-cenrter{
+    align-self: center;
+}
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
+}
+.mb-1{
+    margin-bottom: 20px;
+}
+.mx-6{
+	margin: 0 16px;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.float-right{
+    float: right;
+}
+
+.mx-1{
+    margin: 0px 20px 0px 20px;
 }
 
 .line-height-0 {
@@ -787,7 +807,7 @@ a:focus {
 .sign-up-btn:hover,
 .primary-btn:hover {
     background: #0E6EFF;
-    color: var(--white);
+    color: var(--white) !important;
     text-decoration: none;
 }
 
@@ -2987,30 +3007,32 @@ table tbody tr:not(:last-child) {
 input[type=checkbox], input[type=radio] {
     margin: 4px 9px 0px;
 }
-.cancel-btn,.save-btn{
+.theme-btn{
 	border: 1px solid var(--primary-theme);
     color: var(--primary-theme);
     background-color: var(--white);
     padding: 15px 0px;
     border-radius: 7.5px;
-    margin-left: 20px;
     font-size: 16px;
     margin-bottom: 10px;
     width: 247px;
     text-align: center;
 }
-.save-btn{
-	background-color:var(--primary-theme);
-	color: var(--white);
-}
-.save-btn:hover{
-	background: #0E6EFF;
-    color: var(--white);
-}
-.cancel-btn:hover{
+.theme-btn:hover{
     color: var(--white);
     background-color: var(--primary-theme);
 }
+.theme-btn-active,.theme-btn-active svg path{
+	background-color:var(--primary-theme);
+	color: var(--white);
+	fill: var(--white);
+}
+.theme-btn-active:hover{
+	background: #0E6EFF;
+    color: var(--white);
+}
+
+
 .checkbox-div{
     padding-left: 28px;
 }
@@ -3126,3 +3148,165 @@ input[type=checkbox], input[type=radio] {
 }
 
 /* user-management-box css end */
+
+/* terms-service-crad-box css start */
+.terms-service-crad-box{
+ background-color: rgba(242, 245, 255, 1);
+ max-height: 487.2px;
+ overflow-y: scroll;
+ width: 100%;
+ padding:35px;
+ border-radius: 9px;
+}
+
+.signature{
+    background-color: var(--white);
+    border-color: rgba(212, 218, 239, 1);
+    height: 131px;
+}
+
+.i-agree-btn{
+    max-width: 252px;
+}
+
+.default-btn{
+    background-color:  rgba(141, 149, 184, 1);
+    padding: 8px 12px;
+}
+.default-btn:hover{
+    opacity: 1;
+}
+
+.span-active {
+    color: var(--exquisite-turquoise) ;
+}
+
+.payment-card{
+    margin: 0px 12px;
+}
+
+.svg-icon svg{
+    margin: 0px 10px -3px;
+}
+
+.svg-icon:hover path {
+    fill: white;
+    transition: fill 0s;
+}
+
+.delete-icon{
+    margin-top: 5px;
+}
+
+.add-icon{
+    margin-top: 7px;
+}
+/* terms-service-crad-box css end */
+
+/* payment-method css start */
+.payment-method-container table tbody td{
+	min-width: 240px;
+}
+/* payment-method  css end */
+/* Contacts css start */
+.go-btn{
+    max-width: 95px;
+    margin-top: 51px;
+}
+/* Contacts css start */
+
+/* account security css start */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 71px;
+    height: 37px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(224, 254, 240, 1);
+    transition: .4s;
+    border-radius: 24px;
+    border: 1px solid rgba(148, 211, 182, 1);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 31px;
+    width: 31px;
+    left: 3px;
+    bottom: 2px;
+    background-color: #66bb6a; 
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #fcbebe;
+    border: 1px solid #ff3d3d;
+}
+
+input:checked + .slider:before {
+    transform: translateX(31px);
+    background-color: #ff3d3d;
+}
+
+.slider .on-text,
+.slider .off-text {
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: #ff3d3d;
+    transition: .4s;
+}
+
+.slider .on-text{
+    color: 
+    rgba(22, 153, 90, 1);
+}
+
+.slider .off-text {
+    left: 5px;
+    opacity: 0;
+}
+
+.slider .on-text {
+    right: 8px;
+    opacity: 1;
+}
+
+input:checked + .slider .on-text {
+    opacity: 0;
+}
+
+input:checked + .slider .off-text {
+    opacity: 1;
+}
+
+.p-grey {
+    color: rgba(91, 101, 112, 1);
+}
+
+.account-security-crad-box{
+    overflow-y: unset;
+    padding: 28px 36px;
+}
+
+.account-security-crad-box{
+    color: rgba(85, 112, 223, 1);
+    border: 1px solid rgba(129, 195, 255, 1);
+}   background-color: #EAF5FF;
+/* account security css end */
