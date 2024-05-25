@@ -303,7 +303,10 @@
         margin-left: unset;
         justify-content: center;
         margin-top: 15px;
-    }
+    }	
+	.theme-btn{
+		width: 46%;
+	}
 }
 
 
@@ -634,6 +637,10 @@
 	.terms-service-crad-box {
         padding: 23px 16px 15px 16px
     }
+	.admin-card-box-style1{
+		padding: 20px 20px !important;
+		margin: 20px 0px;
+	}
 
 }
 
@@ -677,7 +684,7 @@
 
     .notification-dropbox-wrap {
         min-width: 270px;
-    }
+    }	
 }
 
 /* Responsive end */

@@ -155,7 +155,7 @@ a:hover {
     margin-bottom: 20px;
 }
 .mx-6{
-	margin: 0 16px;
+	margin: 0 6px;
 }
 .justify-content-between{
     justify-content: space-between;
@@ -3211,7 +3211,7 @@ input[type=checkbox], input[type=radio] {
 /* Contacts css start */
 .go-btn{
     max-width: 95px;
-    margin-top: 51px;
+    margin-top: 25px;
 }
 /* Contacts css start */
 
@@ -3308,5 +3308,18 @@ input:checked + .slider .off-text {
 .account-security-crad-box{
     color: rgba(85, 112, 223, 1);
     border: 1px solid rgba(129, 195, 255, 1);
-}   background-color: #EAF5FF;
+	background-color: #EAF5FF;
+}
+.admin-card-box-style1{
+	padding: 43px 48px !important;
+	margin: 25px 0px;
+}
+.admin-card-box-style2{
+	padding: 35px 35px !important;
+    margin: 25px 0px;
+}
+
+.account-security-crad-box-detail .account-security-crad-title{
+	margin-left: -10px;
+}
 /* account security css end */
