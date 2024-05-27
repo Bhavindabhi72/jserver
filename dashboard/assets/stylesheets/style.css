@@ -1847,7 +1847,10 @@ a.secure-client-btn:hover {
     position: relative;
     padding-left: 20px;
 }
-
+.direction-rtl .sub-menu-list .menu-title{
+    padding-right: 20px;  
+    padding-left: 0;
+}
 .sub-menu-list .menu-title::before {
     content: '';
     width: 10px;
@@ -1859,6 +1862,9 @@ a.secure-client-btn:hover {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+}
+.direction-rtl .sub-menu-list .menu-title::before{
+    right: 0;
 }
 
 .layout .sidebar .menu .menu-item a .menu-prefix,
