@@ -20,6 +20,7 @@
     --flintstone: #677381;
     --stowaway: #7a8396;
     --red: #E54E4E;
+    --carnelian:#b31a1a;
     --christmas-silver: #e0e0e0;
     --gravel-fint: #bbbbbb;
     --cool-grey: #8893ac;
@@ -237,6 +238,15 @@ hr {
     background-color: var(--joyful-orange) !important;
 }
 
+.flintstone-bg {
+    background-color: var(--flintstone) !important;
+}
+.red-bg {
+    background-color: var(--red) !important;
+}
+.carnelian-bg {
+    background-color: var(--carnelian) !important;
+}
 .small-text {
     font-size: 14px;
 }

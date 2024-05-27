@@ -596,11 +596,11 @@
                   <div class="tab-container">
                     <div class="tab-menu">
                       <ul class="d-flex align-items-center w-100">
-                          <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a" data-id="tab1">Active <span class="d-align-justify">1</span></a></li>
-                          <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1" data-id="tab2">Pending <span class="d-align-justify">0</span></a></li>
-                          <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1" data-id="tab3">Suspended <span class="d-align-justify">0</span></a></li>
-                          <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1" data-id="tab4">Terminated <span class="d-align-justify">0</span></a></li>
-                          <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1" data-id="tab5">Cancelled <span class="d-align-justify">0</span></a></li>
+                          <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a" data-id="tab1">Active <span class="d-align-justify">2</span></a></li>
+                          <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1" data-id="tab2">Pending <span class="d-align-justify">1</span></a></li>
+                          <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1" data-id="tab3">Suspended <span class="d-align-justify">1</span></a></li>
+                          <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1" data-id="tab4">Terminated <span class="d-align-justify">1</span></a></li>
+                          <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1" data-id="tab5">Cancelled <span class="d-align-justify">1</span></a></li>
                       </ul>
                     </div>
                     <div class="tab tab-active" data-id="tab1">
@@ -812,16 +812,756 @@
                     </div>   
                     </div>
                     <div class="tab" data-id="tab2">
-                        <h2>Coming soon</h2>
+                      <div class="admin-card-box table-wrap">
+                        <div class="d-flex align-items-center flex-wrap">
+                          <h5 class="mb-0">Showing 1 to 2 of 10 entries</h5>
+                          <div class="table-search-bar ms-auto d-flex align-items-center">
+                            <div class="search-bar-wrap position-relative">
+                              <input type="search" placeholder="Search" class="form-control custom-input" />
+                              <span class="search-icon position-absolute line-height-0">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z" fill="#848998"/>
+                                </svg>                              
+                              </span>
+                            </div>
+                            <button class="primary-btn">Go</button>
+                          </div>
+                        </div>
+                        <div class="table-responsive">
+                        <table class="w-100">
+                          <thead>
+                            <tr>
+                              <th class="text-center">
+                                <div
+                                  class="d-flex align-items-center justify-content-end gap-1"
+                                >
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Product/Service
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Pricing
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Date
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Status
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">
+                                <svg width="25" height="33" viewBox="0 0 25 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M23.0452 14.4341H22.1016V9.8573C22.1016 4.69898 17.906 0.501953 12.7477 0.501953C7.58937 0.501953 3.39381 4.69898 3.39381 9.85583V14.4327H2.45018C1.63757 14.4327 0.978058 15.0907 0.978058 15.9048V31.4165C0.978058 32.2306 1.63757 32.8887 2.45018 32.8887H23.0452C23.8578 32.8887 24.5173 32.2306 24.5173 31.4165V15.9063C24.5173 15.0922 23.8578 14.4341 23.0452 14.4341ZM16.7371 25.5693C17.3127 26.1449 17.3127 27.0753 16.7371 27.6509C16.4501 27.9379 16.0732 28.0822 15.6964 28.0822C15.3195 28.0822 14.9426 27.9379 14.6556 27.6509L12.7477 25.743L10.8398 27.6509C10.5528 27.9379 10.1759 28.0822 9.79902 28.0822C9.42216 28.0822 9.04529 27.9379 8.75823 27.6509C8.18263 27.0753 8.18263 26.1449 8.75823 25.5693L10.6661 23.6614L8.75823 21.7535C8.18263 21.1779 8.18263 20.2475 8.75823 19.6719C9.33383 19.0963 10.2642 19.0963 10.8398 19.6719L12.7477 21.5798L14.6556 19.6719C15.2312 19.0963 16.1615 19.0963 16.7371 19.6719C17.3127 20.2475 17.3127 21.1779 16.7371 21.7535L14.8293 23.6614L16.7371 25.5693ZM6.33806 9.85583C6.33806 6.32126 9.21312 3.4462 12.7477 3.4462C16.2823 3.4462 19.1573 6.32126 19.1573 9.85583V14.4327H6.33659L6.33806 9.85583Z" fill="#FF4242"/>
+                                </svg>                              
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">Personal Hosting Plan</h4>
+                                <a href="javascript:void(0)" class="text-primary-theme fw-500">testhostingserver-alyona.com</a>
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">$0.00USD Monthly</h4>
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">Saturday, June 1st, 2024</h4>
+                              </td>
+                              <td>
+                                <button class="primary-btn small-btn exquisite-turquoise-bg joyful-orange-bg">Pending</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </div>
+                        <div class="table-footer-wrap d-flex align-items-center flex-wrap">
+                          <div class="d-flex align-items-center">
+                            <h4 class="fw-500 mb-0">Show</h4>
+                            <div class="wrapper-dropdown form-control custom-input max w-max-content" id="dropdown">
+                              <span class="selected-display" id="destination"
+                                  >
+                                  10
+                                  </span
+                              >
+                              <svg
+                                  class="arrow"
+                                  id="drp-arrow"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="transition-all ml-auto rotate-180"
+                              >
+                                  <path
+                                    d="M7 14.5l5-5 5 5"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                              </svg>
+                              <ul class="dropdown">
+                                  <li class="item">
+                                    10
+                                  </li>
+                                  <li class="item">
+                                    09
+                                  </li>
+                              </ul>
+                            </div>
+                            <h4 class="fw-500 mb-0">entries</h4>
+                          </div>  
+                          <div class="ms-auto pagination-wrap d-flex align-items-center gap-1half5 flex-wrap">
+                              <span class="line-height-0 cursor-pointer transition-all-03">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z" fill="currentColor"/>
+                                </svg>                              
+                              </span>
+                              <ul class="d-flex align-items-center gap-1half5 flex-wrap">
+                                <li class="d-align-justify cursor-pointer transition-all-03">
+                                  <h6>1</h6>
+                                </li>
+                                <li class="d-align-justify cursor-pointer transition-all-03">
+                                  <h6>2</h6>
+                                </li>
+                              </ul>
+                              <span class="line-height-0 cursor-pointer transition-all-03">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z" fill="currentColor"/>
+                                </svg>                              
+                              </span>
+                          </div>
+                        </div>
+                      </div> 
                     </div>
                     <div class="tab" data-id="tab3">
-                        <h2>Coming soon</h2>
+                      <div class="admin-card-box table-wrap">
+                        <div class="d-flex align-items-center flex-wrap">
+                          <h5 class="mb-0">Showing 1 to 2 of 10 entries</h5>
+                          <div class="table-search-bar ms-auto d-flex align-items-center">
+                            <div class="search-bar-wrap position-relative">
+                              <input type="search" placeholder="Search" class="form-control custom-input" />
+                              <span class="search-icon position-absolute line-height-0">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z" fill="#848998"/>
+                                </svg>                              
+                              </span>
+                            </div>
+                            <button class="primary-btn">Go</button>
+                          </div>
+                        </div>
+                        <div class="table-responsive">
+                        <table class="w-100">
+                          <thead>
+                            <tr>
+                              <th class="text-center">
+                                <div
+                                  class="d-flex align-items-center justify-content-end gap-1"
+                                >
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Product/Service
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Pricing
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Date
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Status
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">
+                                <svg width="25" height="33" viewBox="0 0 25 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M23.0452 14.4341H22.1016V9.8573C22.1016 4.69898 17.906 0.501953 12.7477 0.501953C7.58937 0.501953 3.39381 4.69898 3.39381 9.85583V14.4327H2.45018C1.63757 14.4327 0.978058 15.0907 0.978058 15.9048V31.4165C0.978058 32.2306 1.63757 32.8887 2.45018 32.8887H23.0452C23.8578 32.8887 24.5173 32.2306 24.5173 31.4165V15.9063C24.5173 15.0922 23.8578 14.4341 23.0452 14.4341ZM16.7371 25.5693C17.3127 26.1449 17.3127 27.0753 16.7371 27.6509C16.4501 27.9379 16.0732 28.0822 15.6964 28.0822C15.3195 28.0822 14.9426 27.9379 14.6556 27.6509L12.7477 25.743L10.8398 27.6509C10.5528 27.9379 10.1759 28.0822 9.79902 28.0822C9.42216 28.0822 9.04529 27.9379 8.75823 27.6509C8.18263 27.0753 8.18263 26.1449 8.75823 25.5693L10.6661 23.6614L8.75823 21.7535C8.18263 21.1779 8.18263 20.2475 8.75823 19.6719C9.33383 19.0963 10.2642 19.0963 10.8398 19.6719L12.7477 21.5798L14.6556 19.6719C15.2312 19.0963 16.1615 19.0963 16.7371 19.6719C17.3127 20.2475 17.3127 21.1779 16.7371 21.7535L14.8293 23.6614L16.7371 25.5693ZM6.33806 9.85583C6.33806 6.32126 9.21312 3.4462 12.7477 3.4462C16.2823 3.4462 19.1573 6.32126 19.1573 9.85583V14.4327H6.33659L6.33806 9.85583Z" fill="#FF4242"/>
+                                </svg>                              
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">Personal Hosting Plan</h4>
+                                <a href="javascript:void(0)" class="text-primary-theme fw-500">testhostingserver-alyona.com</a>
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">$0.00USD Monthly</h4>
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">Saturday, June 1st, 2024</h4>
+                              </td>
+                              <td>
+                                <button class="primary-btn small-btn flintstone-bg">Suspended</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </div>
+                        <div class="table-footer-wrap d-flex align-items-center flex-wrap">
+                          <div class="d-flex align-items-center">
+                            <h4 class="fw-500 mb-0">Show</h4>
+                            <div class="wrapper-dropdown form-control custom-input max w-max-content" id="dropdown">
+                              <span class="selected-display" id="destination"
+                                  >
+                                  10
+                                  </span
+                              >
+                              <svg
+                                  class="arrow"
+                                  id="drp-arrow"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="transition-all ml-auto rotate-180"
+                              >
+                                  <path
+                                    d="M7 14.5l5-5 5 5"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                              </svg>
+                              <ul class="dropdown">
+                                  <li class="item">
+                                    10
+                                  </li>
+                                  <li class="item">
+                                    09
+                                  </li>
+                              </ul>
+                            </div>
+                            <h4 class="fw-500 mb-0">entries</h4>
+                          </div>  
+                          <div class="ms-auto pagination-wrap d-flex align-items-center gap-1half5 flex-wrap">
+                              <span class="line-height-0 cursor-pointer transition-all-03">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z" fill="currentColor"/>
+                                </svg>                              
+                              </span>
+                              <ul class="d-flex align-items-center gap-1half5 flex-wrap">
+                                <li class="d-align-justify cursor-pointer transition-all-03">
+                                  <h6>1</h6>
+                                </li>
+                                <li class="d-align-justify cursor-pointer transition-all-03">
+                                  <h6>2</h6>
+                                </li>
+                              </ul>
+                              <span class="line-height-0 cursor-pointer transition-all-03">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z" fill="currentColor"/>
+                                </svg>                              
+                              </span>
+                          </div>
+                        </div>
+                      </div> 
                     </div>
                     <div class="tab" data-id="tab4">
-                      <h2>Coming soon</h2>
+                      <div class="admin-card-box table-wrap">
+                        <div class="d-flex align-items-center flex-wrap">
+                          <h5 class="mb-0">Showing 1 to 2 of 10 entries</h5>
+                          <div class="table-search-bar ms-auto d-flex align-items-center">
+                            <div class="search-bar-wrap position-relative">
+                              <input type="search" placeholder="Search" class="form-control custom-input" />
+                              <span class="search-icon position-absolute line-height-0">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z" fill="#848998"/>
+                                </svg>                              
+                              </span>
+                            </div>
+                            <button class="primary-btn">Go</button>
+                          </div>
+                        </div>
+                        <div class="table-responsive">
+                        <table class="w-100">
+                          <thead>
+                            <tr>
+                              <th class="text-center">
+                                <div
+                                  class="d-flex align-items-center justify-content-end gap-1"
+                                >
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Product/Service
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Pricing
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Date
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Status
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">
+                                <svg width="25" height="33" viewBox="0 0 25 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M23.0452 14.4341H22.1016V9.8573C22.1016 4.69898 17.906 0.501953 12.7477 0.501953C7.58937 0.501953 3.39381 4.69898 3.39381 9.85583V14.4327H2.45018C1.63757 14.4327 0.978058 15.0907 0.978058 15.9048V31.4165C0.978058 32.2306 1.63757 32.8887 2.45018 32.8887H23.0452C23.8578 32.8887 24.5173 32.2306 24.5173 31.4165V15.9063C24.5173 15.0922 23.8578 14.4341 23.0452 14.4341ZM16.7371 25.5693C17.3127 26.1449 17.3127 27.0753 16.7371 27.6509C16.4501 27.9379 16.0732 28.0822 15.6964 28.0822C15.3195 28.0822 14.9426 27.9379 14.6556 27.6509L12.7477 25.743L10.8398 27.6509C10.5528 27.9379 10.1759 28.0822 9.79902 28.0822C9.42216 28.0822 9.04529 27.9379 8.75823 27.6509C8.18263 27.0753 8.18263 26.1449 8.75823 25.5693L10.6661 23.6614L8.75823 21.7535C8.18263 21.1779 8.18263 20.2475 8.75823 19.6719C9.33383 19.0963 10.2642 19.0963 10.8398 19.6719L12.7477 21.5798L14.6556 19.6719C15.2312 19.0963 16.1615 19.0963 16.7371 19.6719C17.3127 20.2475 17.3127 21.1779 16.7371 21.7535L14.8293 23.6614L16.7371 25.5693ZM6.33806 9.85583C6.33806 6.32126 9.21312 3.4462 12.7477 3.4462C16.2823 3.4462 19.1573 6.32126 19.1573 9.85583V14.4327H6.33659L6.33806 9.85583Z" fill="#FF4242"/>
+                                </svg>                              
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">Personal Hosting Plan</h4>
+                                <a href="javascript:void(0)" class="text-primary-theme fw-500">testhostingserver-alyona.com</a>
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">$0.00USD Monthly</h4>
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">Saturday, June 1st, 2024</h4>
+                              </td>
+                              <td>
+                                <button class="primary-btn small-btn carnelian-bg">Terminated</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </div>
+                        <div class="table-footer-wrap d-flex align-items-center flex-wrap">
+                          <div class="d-flex align-items-center">
+                            <h4 class="fw-500 mb-0">Show</h4>
+                            <div class="wrapper-dropdown form-control custom-input max w-max-content" id="dropdown">
+                              <span class="selected-display" id="destination"
+                                  >
+                                  10
+                                  </span
+                              >
+                              <svg
+                                  class="arrow"
+                                  id="drp-arrow"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="transition-all ml-auto rotate-180"
+                              >
+                                  <path
+                                    d="M7 14.5l5-5 5 5"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                              </svg>
+                              <ul class="dropdown">
+                                  <li class="item">
+                                    10
+                                  </li>
+                                  <li class="item">
+                                    09
+                                  </li>
+                              </ul>
+                            </div>
+                            <h4 class="fw-500 mb-0">entries</h4>
+                          </div>  
+                          <div class="ms-auto pagination-wrap d-flex align-items-center gap-1half5 flex-wrap">
+                              <span class="line-height-0 cursor-pointer transition-all-03">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z" fill="currentColor"/>
+                                </svg>                              
+                              </span>
+                              <ul class="d-flex align-items-center gap-1half5 flex-wrap">
+                                <li class="d-align-justify cursor-pointer transition-all-03">
+                                  <h6>1</h6>
+                                </li>
+                                <li class="d-align-justify cursor-pointer transition-all-03">
+                                  <h6>2</h6>
+                                </li>
+                              </ul>
+                              <span class="line-height-0 cursor-pointer transition-all-03">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z" fill="currentColor"/>
+                                </svg>                              
+                              </span>
+                          </div>
+                        </div>
+                      </div> 
                     </div>
                     <div class="tab" data-id="tab5">
-                      <h2>Coming soon</h2>
+                      <div class="admin-card-box table-wrap">
+                        <div class="d-flex align-items-center flex-wrap">
+                          <h5 class="mb-0">Showing 1 to 2 of 10 entries</h5>
+                          <div class="table-search-bar ms-auto d-flex align-items-center">
+                            <div class="search-bar-wrap position-relative">
+                              <input type="search" placeholder="Search" class="form-control custom-input" />
+                              <span class="search-icon position-absolute line-height-0">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z" fill="#848998"/>
+                                </svg>                              
+                              </span>
+                            </div>
+                            <button class="primary-btn">Go</button>
+                          </div>
+                        </div>
+                        <div class="table-responsive">
+                        <table class="w-100">
+                          <thead>
+                            <tr>
+                              <th class="text-center">
+                                <div
+                                  class="d-flex align-items-center justify-content-end gap-1"
+                                >
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Product/Service
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Pricing
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Date
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="d-flex align-items-center gap-1">
+                                  Status
+                                  <span class="line-height-0">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">
+                                <svg width="25" height="33" viewBox="0 0 25 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M23.0452 14.4341H22.1016V9.8573C22.1016 4.69898 17.906 0.501953 12.7477 0.501953C7.58937 0.501953 3.39381 4.69898 3.39381 9.85583V14.4327H2.45018C1.63757 14.4327 0.978058 15.0907 0.978058 15.9048V31.4165C0.978058 32.2306 1.63757 32.8887 2.45018 32.8887H23.0452C23.8578 32.8887 24.5173 32.2306 24.5173 31.4165V15.9063C24.5173 15.0922 23.8578 14.4341 23.0452 14.4341ZM16.7371 25.5693C17.3127 26.1449 17.3127 27.0753 16.7371 27.6509C16.4501 27.9379 16.0732 28.0822 15.6964 28.0822C15.3195 28.0822 14.9426 27.9379 14.6556 27.6509L12.7477 25.743L10.8398 27.6509C10.5528 27.9379 10.1759 28.0822 9.79902 28.0822C9.42216 28.0822 9.04529 27.9379 8.75823 27.6509C8.18263 27.0753 8.18263 26.1449 8.75823 25.5693L10.6661 23.6614L8.75823 21.7535C8.18263 21.1779 8.18263 20.2475 8.75823 19.6719C9.33383 19.0963 10.2642 19.0963 10.8398 19.6719L12.7477 21.5798L14.6556 19.6719C15.2312 19.0963 16.1615 19.0963 16.7371 19.6719C17.3127 20.2475 17.3127 21.1779 16.7371 21.7535L14.8293 23.6614L16.7371 25.5693ZM6.33806 9.85583C6.33806 6.32126 9.21312 3.4462 12.7477 3.4462C16.2823 3.4462 19.1573 6.32126 19.1573 9.85583V14.4327H6.33659L6.33806 9.85583Z" fill="#FF4242"/>
+                                </svg>                              
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">Personal Hosting Plan</h4>
+                                <a href="javascript:void(0)" class="text-primary-theme fw-500">testhostingserver-alyona.com</a>
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">$0.00USD Monthly</h4>
+                              </td>
+                              <td>
+                                <h4 class="fw-500 m-0 text-black">Saturday, June 1st, 2024</h4>
+                              </td>
+                              <td>
+                                <button class="primary-btn small-btn red-bg">Cancelled</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </div>
+                        <div class="table-footer-wrap d-flex align-items-center flex-wrap">
+                          <div class="d-flex align-items-center">
+                            <h4 class="fw-500 mb-0">Show</h4>
+                            <div class="wrapper-dropdown form-control custom-input max w-max-content" id="dropdown">
+                              <span class="selected-display" id="destination"
+                                  >
+                                  10
+                                  </span
+                              >
+                              <svg
+                                  class="arrow"
+                                  id="drp-arrow"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="transition-all ml-auto rotate-180"
+                              >
+                                  <path
+                                    d="M7 14.5l5-5 5 5"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                              </svg>
+                              <ul class="dropdown">
+                                  <li class="item">
+                                    10
+                                  </li>
+                                  <li class="item">
+                                    09
+                                  </li>
+                              </ul>
+                            </div>
+                            <h4 class="fw-500 mb-0">entries</h4>
+                          </div>  
+                          <div class="ms-auto pagination-wrap d-flex align-items-center gap-1half5 flex-wrap">
+                              <span class="line-height-0 cursor-pointer transition-all-03">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z" fill="currentColor"/>
+                                </svg>                              
+                              </span>
+                              <ul class="d-flex align-items-center gap-1half5 flex-wrap">
+                                <li class="d-align-justify cursor-pointer transition-all-03">
+                                  <h6>1</h6>
+                                </li>
+                                <li class="d-align-justify cursor-pointer transition-all-03">
+                                  <h6>2</h6>
+                                </li>
+                              </ul>
+                              <span class="line-height-0 cursor-pointer transition-all-03">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z" fill="currentColor"/>
+                                </svg>                              
+                              </span>
+                          </div>
+                        </div>
+                      </div> 
                     </div>
                   </div>
                 </div>
