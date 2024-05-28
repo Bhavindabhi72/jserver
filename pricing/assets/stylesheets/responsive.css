@@ -293,6 +293,9 @@
     .checkbox-radio-wrap .custom-radio-group{
         margin-left: 30px;
     }
+    .pricing-section::after {
+        display: none;
+    }
 }
 @media (max-width: 575px) {
     .col-12{
@@ -340,12 +343,15 @@
     .footer {
         padding-bottom: 100px;
     }
-}
-
-@media (max-width: 480px) {
+    .d-sm-none{
+        display: none;
+    }
     .footer-wrapper {
         justify-content: center;
     }
+}
+
+@media (max-width: 480px) {
 
     .footer-wrapper {
         grid-gap: 30px;

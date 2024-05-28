@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(83.68deg, #A8C7E4 -5.66%, #D8ECFF 14.35%, rgba(216, 237, 255, 0) 172.88%);
+    background-image: linear-gradient(83.68deg, #A8C7E4 -5.66%, #D8ECFF 14.35%, rgb(216, 237, 255) 172.88%);
     margin: 0;
     font-family: 'Outfit';
     background-position: center;
@@ -171,8 +171,9 @@ h3,
 /* Header start */
 .header {
     padding: 30px 0;
-    background: #B9DAF6;
-    border: 1.3px solid #E3EDFA;
+    background: #ffffff;
+    box-shadow: 0px 9px 12px 0px 
+    rgba(0, 0, 0, 0.06);
 }
 
 .pricing-nav {
@@ -182,8 +183,7 @@ h3,
     max-width: fit-content;
     padding: 12px;
     margin: auto;
-    background-color: #AAD4F8;
-    box-shadow: 0px 2px 4px 1px #00000033 inset;
+    background-color: rgba(231, 242, 253, 1);
     border-radius: 14px;
     min-height: 70px;
 }
@@ -192,19 +192,25 @@ h3,
     font-size: 18px;
     font-weight: 600;
     color: #01204D;
-    padding: 12px 24px;
+    padding: 12px 27px;
     text-decoration: none;
     min-height: 44px;
     cursor: pointer;
 }
 
 .pricing-nav .nav-link .active {
-    background: linear-gradient(180deg, #06A5FF 0%, #0E6EFF 46.5%, #005EA7 94.07%);
-    box-shadow: -5px -5px 1px 0px #00000040 inset;
-    color: var(--white);
+    background-color: #254CEC;
     border-radius: 8px;
-
+    border: none;
+    color: white;
 }
+
+
+.pricing-nav .nav-link .active:hover {
+    background: #0E6EFF;
+}
+
+
 
 /* Header end */
 
@@ -387,12 +393,12 @@ h3,
 .add-ons-btn {
     font-size: 20px;
     font-weight: 600;
-    color: #1262D3;
-    background-color: #BDDCFA;
-    border: 1px solid #A6C5E3;
+    color: rgba(37, 76, 236, 1);
+    background-color: rgba(226, 241, 255, 1);
+    border: 1px solid rgba(166, 197, 227, 1);
     padding: 25px 0;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 9px;
     margin-top: var(--dropdown-option-mt);
 }
 .add-ons-btn:hover{
@@ -411,6 +417,7 @@ h3,
     font-size: 56px;
     font-weight: 700;
     color: #0C4489;
+    padding: 0px 17px;
 }
 
 .footer-price span {
@@ -419,8 +426,7 @@ h3,
 }
 
 .sign-up-btn {
-    background: linear-gradient(180deg, #06A5FF 0%, #0E6EFF 46.5%, #005EA7 94.07%);
-    box-shadow: -5px -5px 1px 0px #00000040 inset;
+    background-color: #254CEC;
     border-radius: 8px;
     font-size: 17px;
     font-weight: 600;
@@ -433,7 +439,7 @@ h3,
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 
 .add-storage-box {
@@ -471,11 +477,11 @@ h3,
 }
 
 .sign-up-btn:hover {
-    background: linear-gradient(180deg, #06A5FF 120%, #0E6EFF 426.5%, #005EA7 4.07%);
+    background: #0E6EFF;
 }
 
 .sign-up-btn:active {
-    background: linear-gradient(180deg, #06A5FF 0%, #0E6EFF 46.5%, #005EA7 94.07%);
+    background: #0E6EFF;
 }
 
 
@@ -619,14 +625,14 @@ h3,
 
 /* DROPDOWN START */
 .setting-description {
-    background: linear-gradient(178deg, #FFFFFF 0%, #EEF6FF 54.04%, #DBEBFF 100%);
-    border-radius: 20px;
+    background: white;
+    border-radius: 9px;
     width: 100%;
-    box-shadow: 0px -2px 2px 0 rgba(0, 0, 0, 0.25) inset;
     position: relative;
     margin-top: var(--dropdown-option-mt);
+    box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.06);
 }
-.setting-description.boxshadow:after {
+/* .setting-description.boxshadow:after {
     content: "";
     position: absolute;
     width: 95%;
@@ -636,7 +642,7 @@ h3,
     border-radius: 48px;
     top: 50%;
     box-shadow: 0px 3px 18px #74A5D2;
-}
+} */
 .setting-description-text {
     padding-top: 18px;
     margin-left: 30px;
@@ -728,7 +734,7 @@ svg {
     z-index: 99;
     border-radius: 20px;
     box-shadow: inherit;
-    background: linear-gradient(180deg, #FFFFFF 0%, #EEF6FF 54.04%, #DBEBFF 100%);
+    background: #ffff;
     -webkit-transform-origin: top;
     -moz-transform-origin: top;
     -ms-transform-origin: top;
@@ -737,7 +743,7 @@ svg {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: #031B4E;
+    color: #000000;
     opacity: 0;
     font-size: 20px;
     font-weight: 600;
@@ -761,9 +767,8 @@ svg {
 }
 
 .wrapper-dropdown .dropdown li:hover {
-    background-color: rgb(35, 40, 49);
-    border-radius: 10px;
-    color: white;
+    background-color: rgb(223 235 245);
+    border-radius: 10px;;
 }
 
 .wrapper-dropdown.active .dropdown {
