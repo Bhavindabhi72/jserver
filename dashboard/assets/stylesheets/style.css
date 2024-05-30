@@ -3073,8 +3073,8 @@ input[type=checkbox], input[type=radio] {
 	margin-right: 0;
 }
 /* your-details css end */
-/* user-management-box css start */
 
+/* user-management-box css start */
 .user-management-box h4{
     font-size: 15px;
 }
@@ -3092,10 +3092,10 @@ input[type=checkbox], input[type=radio] {
 }
 
 .user-management-box table thead th {
-    padding: 13px 60px;
+    padding: 13px 50px;
 }
 .user-management-box table tbody td {
-    padding: 13px 60px;
+    padding: 13px 50px 13px;
 }
 .user-management-box table tbody td h5 {
     font-size: 16px;
