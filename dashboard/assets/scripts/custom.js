@@ -102,3 +102,17 @@ function PermissionsCheck(el){
   }
 }
 //Invite New User end
+
+
+// Password type change start
+
+function maskPassword(input) {
+  const value = input.value;
+  input.dataset.password = value;
+  input.value = '*'.repeat(value.length);
+}
+
+// Password type change end
+
+
+

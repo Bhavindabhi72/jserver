@@ -19,7 +19,7 @@
       <!-- layout css end -->
       <link rel="stylesheet" href="./assets/stylesheets/style.css" />
       <link rel="stylesheet" href="./assets/stylesheets/responsive.css" />
-      <title>Manage Firewall</title>
+      <title>Payment Method Add Card</title>
    </head>
    <body>
       <main class="admin-main-wrap">
@@ -58,7 +58,7 @@
                           <span class="menu-title">Dashboard</span>
                         </a>
                       </li>
-                      <li class="menu-item sub-menu">
+                      <li class="menu-item sub-menu open">
                         <a href="#">
                           <span class="menu-icon">
                           <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +90,7 @@
                                 <span class="menu-title">Contacts</span>
                               </a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item active">
                               <a href="account-security.html">
                                 <span class="menu-title">Account Security</span>
                               </a>
@@ -108,7 +108,7 @@
                           </ul>
                         </div>
                       </li>
-                      <li class="menu-item sub-menu open">
+                      <li class="menu-item sub-menu">
                         <a href="#" class="active-menu-item">
                           <span class="menu-icon">
                           <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +124,7 @@
                                 <span class="menu-title">My Services</span>
                               </a>
                             </li>
-                            <li class="menu-item active">
+                            <li class="menu-item">
                               <a href="manage-firewall.html">
                                 <span class="menu-title">Manage firewall</span>
                               </a>
@@ -335,9 +335,9 @@
                   </a>
                 </div>
                 <div class="admin-header d-align">
-                  <h4 class="fw-500 text-black m-0">Services</h4>
+                  <h4 class="fw-500 text-black m-0">Account Details</h4>
                   <div class="admin-header-option d-align">
-                    <div class="country-dropdown-menu">
+                      <div class="country-dropdown-menu">
                         <div class="language-select-wrap">
                           <div class="wrapper-dropdown" id="dropdown">
                             <span class="selected-display d-flex align-items-center" id="destination"
@@ -479,7 +479,7 @@
                                         <img src="./assets/images/profile/profile.jpg" class="img-fluid" alt="">
                                         <label class="custom-upload d-align-justify transition-all-03"><input type="file" name="upload_file" />
                                           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.48539 1.28601L6.9761 0.795302C7.55604 0.215368 8.56534 0.215368 9.14528 0.795302L9.54119 1.19122C9.83116 1.48118 9.99287 1.86595 9.99287 2.27302C9.99287 2.68009 9.83116 3.07043 9.54119 3.35482L9.05048 3.84553L6.48539 1.28044V1.28601ZM5.8943 1.8771L0.814309 6.9571C0.652597 7.11881 0.552223 7.33071 0.535495 7.55934L0.384935 9.19319C0.368206 9.39951 0.440698 9.60026 0.585681 9.75082C0.719512 9.88465 0.892377 9.95714 1.07639 9.95714H1.13773L2.77158 9.80658C3.00021 9.78427 3.21211 9.6839 3.37382 9.52219L8.45382 4.44219L5.88873 1.8771H5.8943Z" fill="white"/>
+                                            <path d="M6.48539 1.28601L6.9761 0.795302C7.55604 0.215368 8.56534 0.215368 9.14528 0.795302L9.54119 1.19122C9.83116 1.48118 9.99287 1.86595 9.99287 2.27302C9.99287 2.68009 9.83116 3.07043 9.54119 3.35482L9.05048 3.84553L6.48539 1.28044V1.28601ZM5.8943 1.8771L0.814309 6.9571C0.652597 7.11881 0.552223 7.33071 0.535495 7.55934L0.384935 9.19319C0.368206 9.39951 0.440698 9.60026 0.585681 9.75082C0.719512 9.88465 0.892377 9.95714 1.07639 9.95714H1.13773L2.77158 9.80658C3.00021 9.78427 3.21211 9.6839 3.37382 9.52219L8.45382 4.44219L5.88873 1.8771H5.8943Z" fill="#7A859D"/>
                                           </svg>                                        
                                         </label>
                                       </div>
@@ -591,192 +591,64 @@
                       </ul>
                   </div>
                 </div>
-                <div class="admin-body-content">
-                  <h4 class="admin-head m-0 head-line-border">Manage Firewall</h4>
-                  <div class="admin-card-box table-wrap">
-                    <div class="d-flex align-items-center flex-wrap">
-                      <h5 class="mb-0">Showing 1 to 1 of 1 entries</h5>
-                      <div class="table-search-bar ms-auto d-flex align-items-center">
-                        <div class="search-bar-wrap position-relative">
-                          <input type="search" placeholder="Search" class="form-control custom-input" />
-                          <span class="search-icon position-absolute line-height-0">
-                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z" fill="#848998"/>
-                            </svg>                              
-                          </span>
+                <div class="admin-body-content account-security-crad-box-detail">
+                    <h4 class="admin-head m-0 head-line-border">Payment Method</h4>
+                    <div class="admin-card-box admin-card-box-style1 payment-method-add-card">
+                        <div>
+                            <h4 class="fw-500 fs-16 text-black">Add New Payment Method</h4> 
+                            <p class="fs-15 text-grey">Third party applications leverage the Single Sign-On functionality to provide direct access to your billing account without you having to re-authenticate.</p>
                         </div>
-                        <button class="primary-btn">Go</button>
-                      </div>
+                        <div class="tab-container">
+                            <div class="tab-menu">
+                              <ul class="d-flex align-items-center w-100 account-security-tab">
+                                  <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a" data-id="tab1"><svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6127 5.84766C14.1054 5.84766 12.0706 7.88252 12.0706 10.3898C12.0706 12.897 14.1054 14.9319 16.6127 14.9319C19.1199 14.9319 21.1548 12.897 21.1548 10.3898C21.1548 7.88252 19.1199 5.84766 16.6127 5.84766ZM17.3298 9.67258V8.47729C17.3298 8.08141 17.0085 7.76012 16.6127 7.76012C16.2168 7.76012 15.8955 8.08141 15.8955 8.47729V9.67258H14.7002C14.3043 9.67258 13.983 9.99388 13.983 10.3898C13.983 10.7856 14.3043 11.1069 14.7002 11.1069H15.8955V12.3022C15.8955 12.6981 16.2168 13.0194 16.6127 13.0194C17.0085 13.0194 17.3298 12.6981 17.3298 12.3022V11.1069H18.5251C18.921 11.1069 19.2423 10.7856 19.2423 10.3898C19.2423 9.99388 18.921 9.67258 18.5251 9.67258H17.3298Z" fill="#7A859D"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3683 5.36865H0.595703V11.3451C0.595703 12.0422 0.87301 12.7116 1.36547 13.205C1.85889 13.6974 2.52825 13.9747 3.22534 13.9747H12.4453C11.6163 13.0118 11.1143 11.7582 11.1143 10.3889C11.1143 8.1532 12.4511 6.2283 14.3683 5.36865ZM7.05122 9.67169H4.18157C3.78569 9.67169 3.4644 9.99299 3.4644 10.3889C3.4644 10.7847 3.78569 11.106 4.18157 11.106H7.05122C7.4471 11.106 7.7684 10.7847 7.7684 10.3889C7.7684 9.99299 7.4471 9.67169 7.05122 9.67169ZM0.595703 3.9343H19.2422V2.73901C19.2422 2.04192 18.9649 1.37256 18.4725 0.879142C17.979 0.386682 17.3097 0.109375 16.6126 0.109375C13.3012 0.109375 6.53677 0.109375 3.22534 0.109375C2.52825 0.109375 1.85889 0.386682 1.36547 0.879142C0.87301 1.37256 0.595703 2.04192 0.595703 2.73901V3.9343Z" fill="#7A859D"/>
+                                    </svg>Credit Card </a></li>
+                                  <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1" data-id="tab1"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8617 7.74414C10.5315 7.74414 8.625 9.65065 8.625 11.9808C8.625 14.311 10.5315 16.2175 12.8617 16.2175C15.1919 16.2175 17.0984 14.311 17.0984 11.9808C17.0984 9.65065 15.1919 7.74414 12.8617 7.74414ZM14.4505 12.5104H13.3913V13.5696C13.3913 13.8873 13.1794 14.0992 12.8617 14.0992C12.5439 14.0992 12.3321 13.8873 12.3321 13.5696V12.5104H11.2729C10.9552 12.5104 10.7433 12.2986 10.7433 11.9808C10.7433 11.6631 10.9552 11.4512 11.2729 11.4512H12.3321V10.3921C12.3321 10.0743 12.5439 9.86249 12.8617 9.86249C13.1794 9.86249 13.3913 10.0743 13.3913 10.3921V11.4512H14.4505C14.7682 11.4512 14.98 11.6631 14.98 11.9808C14.98 12.2986 14.7682 12.5104 14.4505 12.5104Z" fill="#7A859D"/>
+                                    <path d="M14.7152 4.09123L7.83062 0.384126C7.67174 0.278208 7.45991 0.278208 7.35399 0.384126L0.469363 4.09123C0.257529 4.19715 0.151611 4.35603 0.151611 4.56786V6.15662C0.151611 6.47437 0.363446 6.68621 0.681198 6.68621H14.4505C14.7682 6.68621 14.98 6.47437 14.98 6.15662V4.56786C14.98 4.35603 14.8741 4.19715 14.7152 4.09123Z" fill="#7A859D"/>
+                                    <path d="M3.85854 11.9811C4.17629 11.9811 4.38812 11.7693 4.38812 11.4515V7.74443C4.38812 7.42668 4.17629 7.21484 3.85854 7.21484H2.79936C2.48161 7.21484 2.26978 7.42668 2.26978 7.74443V11.4515C2.26978 11.7693 2.48161 11.9811 2.79936 11.9811H3.85854Z" fill="#7A859D"/>
+                                    <path d="M0.681198 12.5117C0.363446 12.5117 0.151611 12.7236 0.151611 13.0413V14.6301C0.151611 14.9478 0.363446 15.1597 0.681198 15.1597H8.625C8.04245 14.4182 7.67174 13.5179 7.56583 12.5117H0.681198Z" fill="#7A859D"/>
+                                    <path d="M7.56601 11.9811C7.56601 10.816 7.98968 9.7039 8.62518 8.8036V7.74443C8.62518 7.42668 8.41335 7.21484 8.0956 7.21484H7.03642C6.71867 7.21484 6.50684 7.42668 6.50684 7.74443V11.4515C6.50684 11.7693 6.71867 11.9811 7.03642 11.9811H7.56601Z" fill="#7A859D"/>
+                                    </svg>
+                                    Bank Account </a></li>
+                              </ul>
+                            </div>
+                            <div class="tab tab-active" data-id="tab1">
+                              <form class="row your-details-card-form">
+                                <div class="col-xs-12">
+                                    <label for="Description" class="mt-label fw-500 text-black">Description (optional)</label>
+                                    <textarea id="Description"  rows="3" cols="50" class="form-control custom-input w-50">Enter description
+                                      </textarea>
+                                </div>
+                                <div class="col-xs-12">
+                                    <label for="Settings-Last-Name" class="mt-label fw-500 text-black">Card Number</label>
+                                    <input type="text" id="Settings-Last-Name" class="form-control custom-input w-50" placeholder="1234 5678 9100 1112">
+                                </div>
+                                
+                                  <div class="col-xs-12 col-md-3">
+                                      <label for="Expiry-Date" class="mt-label fw-500 text-black">Expiry Date</label>
+                                      <input type="text" id="Expiry-Date" class="form-control custom-input w-100" placeholder="MM/YY">
+                                    </div>
+                                  <div class="col-xs-12 col-md-3">
+                                      <label for="CVV" class="mt-label fw-500 text-black">CVV</label>
+                                      <input type="number" id="CVV" class="form-control custom-input w-100" placeholder="123">
+                                   </div>
+                                  <div class="col-xs-12" id="Settings-Email">
+                                      <label for="Billing-Address" class="mt-label fw-500 text-black">Billing Address</label>
+                                      <button id="Billing-Address" class="w-xs-100 theme-btn mx-6 fw-600 d-block m-0"> <span class="add-address-span">+</span> Add Your Address </button>
+                                   </div>
+                                   
+                                
+                                <div class="account-details-form-btn col-sm-12 w-100">
+                                    <input type="button" value="Cancel" class="w-xs-100 theme-btn mx-6 fw-600">
+                                    <input type="submit" value="Save Changes" class="w-xs-100 theme-btn theme-btn-active mx-6 fw-600">
+                                </div>
+                            </form> 
+                            </div>
+                          </div>
                     </div>
-                    <div class="table-responsive">
-                      <table class="w-100">
-                        <thead>
-                          <tr>
-                            <th class="d-flex">Product/Service</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="d-flex align-items-center gap-2">
-                              <div class="admin-dashboard-icon-box d-align-justify flex-0-auto">
-                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M21.0785 10.3176C20.8781 12.4377 18.9888 14.002 16.8598 14.002H16.2735C16.2735 10.9328 13.7772 8.43641 10.7079 8.43641C7.63864 8.43641 5.14227 10.9328 5.14227 14.002H4.19314C2.2422 14.002 0.502017 12.5676 0.332822 10.6248C0.187373 8.95142 1.15357 7.48432 2.57466 6.87803C2.36613 4.81207 4.20576 3.27373 6.12701 3.67817C7.04868 1.87862 8.91799 0.644531 11.0789 0.644531C13.9634 0.644531 16.3284 2.84036 16.6097 5.64989C16.6216 5.76639 16.7188 5.84876 16.836 5.84431C19.2997 5.73448 21.3138 7.82271 21.0785 10.3176Z" fill="url(#paint0_linear_311_196)"/>
-                                  <path d="M12.488 9.92188C13.9032 10.54 14.9325 11.8728 15.1247 13.4638H13.2739C13.216 12.1615 12.9481 10.8688 12.488 9.92188Z" fill="url(#paint1_linear_311_196)"/>
-                                  <path d="M10.7078 9.54883C10.7315 9.54883 10.7553 9.5518 10.779 9.55254C11.343 9.6683 12.0836 11.1488 12.1882 13.4641H9.22656C9.3312 11.1495 10.0718 9.66905 10.6358 9.55254C10.6603 9.5518 10.684 9.54883 10.7078 9.54883Z" fill="url(#paint2_linear_311_196)"/>
-                                  <path d="M10.7792 18.4506C10.7555 18.4513 10.7317 18.4543 10.708 18.4543C10.6842 18.4543 10.6605 18.4513 10.6368 18.4506C10.0728 18.3348 9.33217 16.8544 9.22754 14.5391H12.1892C12.0846 16.8544 11.3432 18.3348 10.7792 18.4506Z" fill="url(#paint3_linear_311_196)"/>
-                                  <path d="M15.1249 14.5391C14.9327 16.1308 13.9034 17.4629 12.4883 18.081C12.9484 17.1341 13.2163 15.8422 13.2741 14.5391H15.1249Z" fill="url(#paint4_linear_311_196)"/>
-                                  <path d="M6.29102 13.4638C6.48322 11.8721 7.51248 10.54 8.92764 9.92188C8.46755 10.8688 8.19965 12.1607 8.14177 13.4638H6.29102Z" fill="url(#paint5_linear_311_196)"/>
-                                  <path d="M8.92764 18.081C7.51248 17.4629 6.48322 16.1301 6.29102 14.5391H8.14177C8.19965 15.8414 8.46755 17.1341 8.92764 18.081Z" fill="url(#paint6_linear_311_196)"/>
-                                  <defs>
-                                  <linearGradient id="paint0_linear_311_196" x1="10.7078" y1="0.644531" x2="10.7078" y2="14.002" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint1_linear_311_196" x1="13.8063" y1="9.92188" x2="13.8063" y2="13.4638" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint2_linear_311_196" x1="10.7074" y1="9.54883" x2="10.7074" y2="13.4641" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint3_linear_311_196" x1="10.7084" y1="14.5391" x2="10.7084" y2="18.4543" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint4_linear_311_196" x1="13.8066" y1="14.5391" x2="13.8066" y2="18.081" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint5_linear_311_196" x1="7.60933" y1="9.92188" x2="7.60933" y2="13.4638" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint6_linear_311_196" x1="7.60933" y1="14.5391" x2="7.60933" y2="18.081" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  </defs>
-                                  </svg>                                                         
-                              </div>
-                              <div>
-                                <h4 class="fw-500 m-0 text-black">Web hosting - personal plan</h4>
-                                <a href="javascript:void(0)" class="text-primary-theme fw-500">testhostingserver-alyona.com</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="d-flex align-items-center gap-2">
-                              <div class="admin-dashboard-icon-box d-align-justify flex-0-auto">
-                                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M21.0785 10.3176C20.8781 12.4377 18.9888 14.002 16.8598 14.002H16.2735C16.2735 10.9328 13.7772 8.43641 10.7079 8.43641C7.63864 8.43641 5.14227 10.9328 5.14227 14.002H4.19314C2.2422 14.002 0.502017 12.5676 0.332822 10.6248C0.187373 8.95142 1.15357 7.48432 2.57466 6.87803C2.36613 4.81207 4.20576 3.27373 6.12701 3.67817C7.04868 1.87862 8.91799 0.644531 11.0789 0.644531C13.9634 0.644531 16.3284 2.84036 16.6097 5.64989C16.6216 5.76639 16.7188 5.84876 16.836 5.84431C19.2997 5.73448 21.3138 7.82271 21.0785 10.3176Z" fill="url(#paint0_linear_311_196)"/>
-                                  <path d="M12.488 9.92188C13.9032 10.54 14.9325 11.8728 15.1247 13.4638H13.2739C13.216 12.1615 12.9481 10.8688 12.488 9.92188Z" fill="url(#paint1_linear_311_196)"/>
-                                  <path d="M10.7078 9.54883C10.7315 9.54883 10.7553 9.5518 10.779 9.55254C11.343 9.6683 12.0836 11.1488 12.1882 13.4641H9.22656C9.3312 11.1495 10.0718 9.66905 10.6358 9.55254C10.6603 9.5518 10.684 9.54883 10.7078 9.54883Z" fill="url(#paint2_linear_311_196)"/>
-                                  <path d="M10.7792 18.4506C10.7555 18.4513 10.7317 18.4543 10.708 18.4543C10.6842 18.4543 10.6605 18.4513 10.6368 18.4506C10.0728 18.3348 9.33217 16.8544 9.22754 14.5391H12.1892C12.0846 16.8544 11.3432 18.3348 10.7792 18.4506Z" fill="url(#paint3_linear_311_196)"/>
-                                  <path d="M15.1249 14.5391C14.9327 16.1308 13.9034 17.4629 12.4883 18.081C12.9484 17.1341 13.2163 15.8422 13.2741 14.5391H15.1249Z" fill="url(#paint4_linear_311_196)"/>
-                                  <path d="M6.29102 13.4638C6.48322 11.8721 7.51248 10.54 8.92764 9.92188C8.46755 10.8688 8.19965 12.1607 8.14177 13.4638H6.29102Z" fill="url(#paint5_linear_311_196)"/>
-                                  <path d="M8.92764 18.081C7.51248 17.4629 6.48322 16.1301 6.29102 14.5391H8.14177C8.19965 15.8414 8.46755 17.1341 8.92764 18.081Z" fill="url(#paint6_linear_311_196)"/>
-                                  <defs>
-                                  <linearGradient id="paint0_linear_311_196" x1="10.7078" y1="0.644531" x2="10.7078" y2="14.002" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint1_linear_311_196" x1="13.8063" y1="9.92188" x2="13.8063" y2="13.4638" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint2_linear_311_196" x1="10.7074" y1="9.54883" x2="10.7074" y2="13.4641" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint3_linear_311_196" x1="10.7084" y1="14.5391" x2="10.7084" y2="18.4543" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint4_linear_311_196" x1="13.8066" y1="14.5391" x2="13.8066" y2="18.081" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint5_linear_311_196" x1="7.60933" y1="9.92188" x2="7.60933" y2="13.4638" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  <linearGradient id="paint6_linear_311_196" x1="7.60933" y1="14.5391" x2="7.60933" y2="18.081" gradientUnits="userSpaceOnUse">
-                                  <stop stop-color="#366FFB"/>
-                                  <stop offset="1" stop-color="#1652E5"/>
-                                  </linearGradient>
-                                  </defs>
-                                  </svg>                                                         
-                              </div>
-                              <div>
-                                <h4 class="fw-500 m-0 text-black">Web hosting - Business plan</h4>
-                                <a href="javascript:void(0)" class="text-primary-theme fw-500">testhostingserver-alyona.com</a>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="table-footer-wrap d-flex align-items-center flex-wrap">
-                      <div class="d-flex align-items-center">
-                        <h4 class="fw-500 mb-0">Show</h4>
-                        <div class="wrapper-dropdown form-control custom-input max w-max-content" id="dropdown">
-                          <span class="selected-display" id="destination"
-                             >
-                             10
-                             </span
-                          >
-                          <svg
-                             class="arrow"
-                             id="drp-arrow"
-                             width="24"
-                             height="24"
-                             viewBox="0 0 24 24"
-                             fill="none"
-                             xmlns="http://www.w3.org/2000/svg"
-                             class="transition-all ml-auto rotate-180"
-                          >
-                             <path
-                                d="M7 14.5l5-5 5 5"
-                                stroke="currentColor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                             ></path>
-                          </svg>
-                          <ul class="dropdown">
-                             <li class="item">
-                                10
-                             </li>
-                             <li class="item">
-                                09
-                             </li>
-                          </ul>
-                       </div>
-                        <h4 class="fw-500 mb-0">entries</h4>
-                      </div>  
-                      <div class="ms-auto pagination-wrap d-flex align-items-center gap-1half5 flex-wrap">
-                          <span class="line-height-0 cursor-pointer transition-all-03">
-                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z" fill="currentColor"/>
-                            </svg>                              
-                          </span>
-                          <ul class="d-flex align-items-center gap-1half5 flex-wrap">
-                            <li class="d-align-justify cursor-pointer transition-all-03">
-                              <h6>1</h6>
-                            </li>
-                            <li class="d-align-justify cursor-pointer transition-all-03">
-                              <h6>2</h6>
-                            </li>
-                          </ul>
-                          <span class="line-height-0 cursor-pointer transition-all-03">
-                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z" fill="currentColor"/>
-                            </svg>                              
-                          </span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                
                 <footer class="footer d-align-justify flex-wrap">
@@ -812,5 +684,3 @@
       <!-- script end -->
    </body>
 </html>
-
-

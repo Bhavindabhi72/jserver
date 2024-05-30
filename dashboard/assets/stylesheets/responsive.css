@@ -46,18 +46,35 @@
     .admin-dashboard-content-box h6 {
         font-size: 16px;
     }
-    .user-management-box .w-70{
+
+    .user-management-box .w-70 {
         width: 50%;
     }
+	.global-data-map{
+        max-width: 80%;
+    }
 }
+
 @media (min-width: 1600px) {
     .cloud-service-left-col {
-      max-width: calc(100% - var(--cloud-service-right-col));
+        max-width: calc(100% - var(--cloud-service-right-col));
     }
+
     .cloud-service-right-col {
-      max-width: var(--cloud-service-right-col);
+        max-width: var(--cloud-service-right-col);
     }
-  }
+
+}
+
+@media (min-width: 1024px) {
+    .w-53 {
+        width: 53% !important;
+    }
+    .w-50{
+        width: 50% !important;
+    }
+}
+
 @media (max-width: 1599px) {
     .registration-form-box {
         padding: 40px 130px;
@@ -84,6 +101,34 @@
     .cloud-service-right-col .tab .primary-btn {
         margin-left: auto;
         margin-right: auto;
+    }
+.cloud-servers-about-boxs {
+        padding: 35px 25px;
+    }
+    .build-your-servers {
+        padding: 24px;
+         margin-bottom: 250px;
+    } 
+    .js-footer-clouds-image{
+        width: 100vw;
+    }
+    .admin-cloud-servers-flex {
+        grid-gap: 0;
+    }
+    .admin-cloud-servers-flex .admin-cloud-servers-col{
+        width: 33.33%;
+    }
+    .admin-cloud-servers-col-2{
+        padding: 0 20px;
+    }
+    .cloud-servers-about-boxs h3{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .cloud-servers-optimized h1{
+        font-size: 50px;
     }
 }
 
@@ -140,39 +185,88 @@
     .admin-dashboard-boxes-wrap {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .user-management-box table thead th {
-        padding: 13px 20px ;
+        padding: 13px 20px;
     }
+
     .user-management-box table tbody td {
-        padding: 22px 20px ;
+        padding: 22px 20px;
     }
+
     .remove-btn {
         margin-left: 0px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1330px) {
+    .js-pricing-plan-benefits-list {
+        padding: 0px;
     }
 }
 
 @media (max-width: 1199px) {
     .admin-dashboard-services-card-wrap {
         grid-template-columns: repeat(1, 1fr);
-      }
-      .cloud-service-left-col .admin-dashboard-boxes-wrap {
+    }
+
+    .cloud-service-left-col .admin-dashboard-boxes-wrap {
         grid-template-columns: repeat(2, 1fr);
-      }
-      .cloud-service-left-col .admin-card-box {
+    }
+
+    .cloud-service-left-col .admin-card-box {
         padding: 15px;
-      }
-      .admin-header h4 {
+    }
+
+   /*  .admin-header h4 {
         display: none;
-      }
-	  .payment-method{
+    } */
+
+    .payment-method {
         display: block !important;
-      }
-      .payment-method-btns{
+    }
+
+    .payment-method-btns {
         margin-top: 20px;
-      }
+    }
+	.cloud-servers-optimized-img{
+       min-height: auto;
+    }
+
+    .build-your-servers {
+        margin-bottom: 35%;
+        flex-direction: column;
+    }
+    .admin-cloud-servers-flex .admin-cloud-servers-col {
+        width: 50%;
+    }
+    .build-your-servers-avter{
+        margin: 0 auto 30px;
+    }
+    .could-hero-image{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .admin-cloud-servers-col-2{
+        padding: 0;
+    }
+    .js-footer-nav-title{
+        margin-bottom: 10px;
+    }
+    
+    .copy-right-msg{
+        padding: 20px;
+    }
+    .build-your-servers-order-1{
+        order: 1;
+    }
+    .build-your-servers-order-2{
+        order: 2;
+    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .registration-form-data-wrap .divider {
         width: calc(100% + 60px);
         transform: translateX(-30px);
@@ -186,6 +280,20 @@
     .header-login-cloud-dropdown .dropdown li i,
     .header-login-cloud-dropdown .selected-display i {
         display: none;
+    }
+	.cloud-servers-content-padding{
+        padding: 30px 50px;
+		align-items: center;
+    }
+	.cloud-servers-content-padding .row{
+		align-items: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .admin-cloud-servers-col-2,
+    .admin-cloud-servers-col-4{
+        padding: 0 0 0 20px;
     }
 }
 
@@ -252,8 +360,13 @@
     .custom-radio-group {
         grid-gap: 6px 0;
     }
-    .user-management-box .form-control{
+
+    .user-management-box .form-control {
         width: 100%;
+    }
+
+    .change-password-btns{
+        margin-top: 30px;
     }
 }
 
@@ -303,10 +416,50 @@
         margin-left: unset;
         justify-content: center;
         margin-top: 15px;
-    }	
-	.theme-btn{
-		width: 46%;
+    }
+
+    .theme-btn {
+        width: 35%;
+    }
+
+    .text-alinggn-center-lg{
+        text-align: center;
+    }
+	.js-pricing-plan-card{
+		max-width: 470px;
+		margin: auto;
 	}
+	.js-footer .row>:nth-child(1) {
+        order: 1;
+    }
+
+    .js-footer .row>:nth-child(2) {
+        order: 3;
+    }
+.js-footer .row>:nth-child(3) {
+        order: 2;
+    }
+
+    .js-footer .row>:nth-child(4) {
+        order: 4;
+    }
+    .build-your-servers h3 {
+        font-size: 23px;
+    }
+    .build-your-servers p {
+        font-size: 13px;
+        line-height: 21px;
+        padding: 6px 0px 17px 0px;
+        letter-spacing: 1px;
+    }   
+    
+    .cloud-servers-optimized::before{ 
+        height: 70%;
+    }
+
+    .admin-cloud-servers-flex .admin-cloud-servers-col{
+        width: 100%;
+    }
 }
 
 
@@ -378,6 +531,21 @@
 
     .custom-input.header-login-cloud-dropdown .dropdown li {
         text-align: center;
+    }
+    #Settings-Email{
+        margin-bottom: 5rem;
+    }
+.cloud-servers-optimized h1 {
+        font-size: 37px;
+    }
+    .cloud-servers-content-paddding {
+        padding: 15px 25px;
+    }
+    .cloud-servers-optimized p {
+        font-size: 15px;
+    }
+    .build-your-servers .primary-btn {
+        margin: auto;
     }
 }
 
@@ -556,25 +724,61 @@
     .direction-rtl .notification-dropbox-wrap.top-extra-dropdown .arrow-up {
         left: 24px;
     }
-	.account-details-form-btn{
+
+    .account-details-form-btn {
         display: block !important;
     }
-	.theme-btn{
+
+    .theme-btn {
         margin-left: 0;
-	}
-    .w-xs-100{
-		width: 100%;
-	}
-	.email-preferences{
-		padding: 20px 40px;
-	}
-	.pr-xs-0{
-		padding-right:0px;
-	}
-	.mx-6{
-		margin-left: 0;
-		margin-right: 0;
-	}
+    }
+
+    .w-xs-100 {
+        width: 100%;
+    }
+
+    .email-preferences {
+        padding: 20px 40px;
+    }
+
+    .pr-xs-0 {
+        padding-right: 0px;
+    }
+
+    .mx-6 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .modal-content{
+        padding: 62px 20px 47px;
+    }
+
+.build-your-servers {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .build-your-servers p {
+        padding: 24px 0px 29px 0px;
+    }
+    .video-play-btn .video {
+        padding: 14px 16px;
+    }
+    .order-1{
+        order: 0;
+    }
+    .order-2{
+        order: 1;
+    }
+    .order-3{
+        order: 2;
+    }
+    .cloud-servers-optimized::before{ 
+        height: 80%;
+    }
+    .cloud-servers-optimized p {
+        padding: 0 0px 18px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -631,16 +835,19 @@
     .auth-logo {
         max-width: 120px;
     }
-    .choose-permissions{
+
+    .choose-permissions {
         padding: 33px 35px 14px;
     }
-	.terms-service-crad-box {
+
+    .terms-service-crad-box {
         padding: 23px 16px 15px 16px
     }
-	.admin-card-box-style1{
-		padding: 20px 20px !important;
-		margin: 20px 0px;
-	}
+
+    .admin-card-box-style1 {
+        padding: 20px 20px !important;
+        margin: 20px 0px;
+    }
 
 }
 
@@ -648,7 +855,8 @@
     .notification-dropbox-wrap {
         min-width: 330px;
     }
-    .d-block399px{
+
+    .d-block399px {
         display: block;
     }
 }
@@ -684,7 +892,7 @@
 
     .notification-dropbox-wrap {
         min-width: 270px;
-    }	
+    }
 }
 
 /* Responsive end */
