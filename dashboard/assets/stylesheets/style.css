@@ -2589,11 +2589,12 @@ a {
 
 /* custom dropdown css end */
 /* admin-body-content css end */
+
 /* manage firewall css start */
 .head-line-border {
     padding-left: 10px;
     border-left: 4px solid var(--brilliant-azure);
-    line-height: 0.7;
+    line-height: 3rem;
 }
 
 .direction-rtl .head-line-border {
@@ -3076,11 +3077,11 @@ input[type=radio] {
     border: 1px solid var(--primary-theme);
     color: var(--primary-theme);
     background-color: var(--white);
-    padding: 15px 0px;
+    padding: 14px;
     border-radius: 7.5px;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 10px;
-    width: 247px;
+    width: 250px;
     text-align: center;
 }
 
@@ -3400,7 +3401,7 @@ input:checked+.slider .off-text {
 }
 
 .admin-card-box-style2 {
-    padding: 15px 20px !important;
+    padding: 35px;
     margin: 25px 0px;
 }
 
@@ -3672,6 +3673,33 @@ align-content-center {
     color: var(--primary-theme) !important;
 }
 
+.could-video .modal-content{
+    padding: 1px;
+    border-radius: 0;
+    background:var(--black);
+    position: relative;
+}
+.could-video-contain{
+    display: contents;
+}
+.could-video .btn-default{
+    position: absolute;
+    right: 0;
+    top: -11%;
+    background: transparent;
+    border: none;
+    color: var(--white);
+    font-size: 24px;
+    padding: 0;
+}
+.direction-rtl .could-video .btn-default{
+    right: auto;
+    left: 0;
+}
+.could-video .btn-default:focus,.could-video .btn-default:active{
+    outline: none;
+    background: transparent;
+}
 .js-footer {
     position: relative;
     background-color: var(--white);
@@ -3821,7 +3849,7 @@ align-content-center {
     margin: 20px 0px;
 }
 
-#Settings-Email {
+.settings-email {
     margin-bottom: 12rem;
 }
 
@@ -3872,7 +3900,7 @@ align-content-center {
 .copy-btn {
     padding: 8px 15px !important;
     max-width: 50px;
-    margin: 0px 10px;
+    margin: 5px 10px;
 }
 
 .modal-dialog {

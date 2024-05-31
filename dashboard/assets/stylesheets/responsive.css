@@ -231,10 +231,6 @@
         display: none;
     } */
 
-    .payment-method {
-        display: block !important;
-    }
-
     .payment-method-btns {
         margin-top: 20px;
     }
@@ -285,6 +281,10 @@
         max-width: 500px;
         margin: auto;
         width: auto;
+    }
+    .theme-btn {
+        margin-left: 0;
+        width: 45%;
     }
 }
 
@@ -393,6 +393,11 @@
     .change-password-btns {
         margin-top: 30px;
     }
+    .payment-method {
+        display: block !important;
+    }
+    
+    
 }
 
 @media (max-width: 991px) {
@@ -441,10 +446,6 @@
         margin-left: unset;
         justify-content: center;
         margin-top: 15px;
-    }
-
-    .theme-btn {
-        width: 35%;
     }
 
     .text-alinggn-center-lg {
@@ -562,7 +563,7 @@
         text-align: center;
     }
 
-    #Settings-Email {
+    .settings-email {
         margin-bottom: 5rem;
     }
 
@@ -581,6 +582,7 @@
     .build-your-servers .primary-btn {
         margin: auto;
     }
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -763,12 +765,6 @@
         display: block !important;
     }
 
-    .theme-btn {
-        margin-left: 0;
-        max-width: 47%;
-        font-size: 14px;
-    }
-
     .w-xs-100 {
         width: 100%;
     }
@@ -890,6 +886,10 @@
         padding: 20px 20px !important;
         margin: 20px 0px;
     }
+    
+    .theme-btn {
+        width: 100%;
+    }
 
 }
 
@@ -934,9 +934,6 @@
 
     .notification-dropbox-wrap {
         min-width: 270px;
-    }
-    .theme-btn {
-        max-width: 100%;
     }
 }
 
