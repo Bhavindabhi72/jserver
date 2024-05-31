@@ -116,3 +116,23 @@ function maskPassword(input) {
 
 
 
+// counter progressbar js start
+$(function() {
+
+  $(".progress").each(function() {
+
+      var $bar1 = $(this).find("#blue_curve");
+      var $val = $(this).find("span");
+      var perc = parseInt($val.text());
+    
+      $({ counter: 0 }).animate({ counter: perc },              {
+          duration: 3000,
+          step: function(p) {
+              $bar1.css({
+                  strokeDashoffset: ((perc * 144)/100)-144, });
+              $val.text(p | 0);
+          }
+      });
+  });
+});
+// counter progressbar js end

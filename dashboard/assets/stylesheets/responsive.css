@@ -54,6 +54,11 @@
     .global-data-map {
         max-width: 80%;
     }
+    .personal-hosting-plan-card{
+        padding: 20px;
+        flex-direction: column;
+        align-items: start;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -133,6 +138,9 @@
     .cloud-servers-about-boxs h3 {
         font-size: 18px;
     }
+    .quick-shortcuts-row{
+        grid-gap: 10px;   
+    }
 }
 
 @media (min-width: 1400px) {
@@ -188,6 +196,9 @@
         min-width: 80px;
         font-size: 14px;
     }
+    .quick-shortcuts-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 1360px) {
@@ -208,6 +219,11 @@
     }
 }
 
+@media (max-width: 1279px){
+    .billing-overview-col {
+        --billing-overview-col-width: 150px;
+    }
+}
 @media (min-width: 991px) and (max-width: 1330px) {
     .js-pricing-plan-benefits-list {
         padding: 0px;
@@ -285,6 +301,9 @@
     .theme-btn {
         margin-left: 0;
         width: 45%;
+    }
+    .quick-shortcuts-row {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -493,7 +512,8 @@
         height: 70%;
     }
 
-    .admin-cloud-servers-flex .admin-cloud-servers-col {
+    .admin-cloud-servers-flex .admin-cloud-servers-col,
+    .usage-statistics-col {
         width: 100%;
     }
     .manage-product-content-box .remove-btn {
@@ -501,6 +521,13 @@
     }
     .manage-product-content-box-table-tab-2{
         grid-template-columns : auto ;
+    }
+    .usage-statistics-col:first-child{
+        border-width: 0 0 2px 0;
+        border-bottom: 2px solid #EBEEF0;
+    }
+    .usage-statistics-col{
+        padding: 20px;
     }
 }
 
@@ -667,7 +694,13 @@
         min-height: 45px;
         border-radius: 8px;
     }
+    .quick-email-acc-wrap input:first-child{
+        border-radius: 8px 0 0 8px;
+    }
 
+    .quick-email-acc-wrap input:last-child {
+        border-radius: 0 8px 8px 0;
+    }
     .registration-form-wrap .form-stepper-horizontal li:not(:last-child):after {
         left: 45px;
         top: 20%;
@@ -678,7 +711,9 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0;
     }
-
+    .quick-shortcuts-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .step-next-prev-btn-wrap button.navigate-prev-btn {
         top: 30px;
         left: 15px;
@@ -828,6 +863,13 @@
     .generated-password-hr{
         margin: 20px 0px;
     }
+    .personal-hosting-plan-icon{
+        width: 50px;
+        height: 50px;
+    }
+    .additional-information-row h5{
+        padding-left: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -924,6 +966,9 @@
     .d-block399px {
         display: block;
     }
+    .billing-overview-col {
+        --billing-overview-col-width: 100px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -943,6 +988,12 @@
 
     .admin-header .wrapper-dropdown .dropdown li {
         padding: 6px 5px;
+    }
+    .quick-shortcuts-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .personal-hosting-plan-flex {
+        flex-direction: column;
     }
 }
 

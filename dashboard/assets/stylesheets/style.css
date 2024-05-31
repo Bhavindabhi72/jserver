@@ -21,7 +21,9 @@
     --flintstone: #677381;
     --stowaway: #7a8396;
     --blue-metal: #5b6570;
+    --pearl-white: #f7f7fb;
     --red: #E54E4E;
+    --gainsboro: #dcdcdc;
     --carnelian: #b31a1a;
     --christmas-silver: #e0e0e0;
     --gravel-fint: #bbbbbb;
@@ -92,7 +94,7 @@ h6 {
     font-weight: 700;
 }
 
-.text-black,
+.text-black,.black.text-black,
 .service-billing-domain-inner-box .text-black {
     color: var(--black);
 }
@@ -156,6 +158,9 @@ a:hover {
     justify-content: center;
 }
 
+.flex-column{
+    flex-direction: column;
+}
 .d-grid {
     display: grid;
 }
@@ -2596,7 +2601,7 @@ a {
 .head-line-border {
     padding-left: 10px;
     border-left: 4px solid var(--brilliant-azure);
-    line-height: 3rem;
+    line-height: 1;
 }
 
 .direction-rtl .head-line-border {
@@ -4277,3 +4282,149 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     max-height: 35px;
 }
 /* manage product end */
+/* active product service css start */
+.personal-hosting-plan-card{
+    background-color: var(--pearl-white);
+    padding: 50px;
+    justify-content: space-between;
+}
+.personal-hosting-plan-icon{
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-theme);
+    border-radius: 100%;
+}
+.personal-hosting-plan-flex h5{
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--blue-metal);
+    margin-bottom: 5px;
+}
+.personal-hosting-plan-flex h4{
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--black);
+}
+.personal-hosting-plan-flex a{
+    font-size: 16px;
+    font-weight: 500;
+}
+.personal-hosting-plan-card .primary-btn{
+    min-width: auto;
+    max-width: max-content  ;
+}
+.quick-shortcuts-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.quick-shortcuts-col{
+    border: 1px solid var(--gainsboro);
+    border-radius: 14px;
+    padding: 20px;
+}
+.quick-shortcuts-col:hover{
+    border-color: var(--primary-theme);
+}
+.quick-shortcuts-col h6{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--black);
+}
+.quick-email-acc-wrap input:first-child{
+    border-radius: 14px 0 0 14px;
+    width: 60%;
+}
+.quick-email-acc-wrap input:last-child{
+    border-radius: 0 14px 14px 0;
+    width: 40%;
+}
+.quick-email-acc-wrap input:last-child::placeholder{
+    color: var(--black) !important;
+}
+.billing-overview-col{
+    --billing-overview-col-width: 200px;
+}
+.billing-overview-col:not(:last-child){
+    padding-bottom: 20px;
+}
+.billing-overview-col h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--blue-metal);
+    padding-right: 20px;
+    width: var(--billing-overview-col-width);
+}
+.billing-overview-col h6{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+    width: calc(100% - var(--billing-overview-col-width));
+}
+.additional-information-row h5{
+    width: calc(100% - var(--billing-overview-col-width));
+}
+.additional-information-row h6{
+    width: var(--billing-overview-col-width);
+}
+.usage-statistics-col{
+    width: 50%;
+    padding: 0 20px;
+}
+.usage-statistics-col:first-child{
+    border-right: 2px solid #EBEEF0;
+}
+.usage-statistics-col h6,
+.usage-statistics-col h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--blue-metal);
+    margin-bottom: 20px;
+}
+/*  counter progressbar css start */
+.counter-progress-wrap {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    max-width:250px;
+    text-align: center;
+    font-size:42px;
+    background-color: transparent;
+    border-radius: unset;
+    box-shadow: unset;
+}
+.counter-progress-wrap .number{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+}
+
+.counter-progress-wrap .number span{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.counter-progress-wrap #blue_curve {
+    stroke-dasharray: 144px;
+    stroke-dashoffset: -144px;
+    transition: all 3s; 
+}
+
+.counter-progress-wrap .fill-circle {
+    width: 200px;
+    margin: 0 auto;
+}
+.counter-progress-wrap .st0,
+.counter-progress-wrap .st1 {
+    fill: none;
+    stroke: #EAEAF8;
+    stroke-width: 5;
+    stroke-linecap: round;
+}
+
+.counter-progress-wrap .st1 {
+    stroke: var(--primary-binary);
+}
+/*  counter progressbar css end */
+/* active product service css end */
