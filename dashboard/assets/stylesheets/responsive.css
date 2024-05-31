@@ -396,7 +396,12 @@
     .payment-method {
         display: block !important;
     }
-    
+    .recent-news-content .admin-card-box {
+        min-height: 500px;
+    }
+    .manage-product-content-box{
+        display: block; 
+    }
     
 }
 
@@ -490,6 +495,12 @@
 
     .admin-cloud-servers-flex .admin-cloud-servers-col {
         width: 100%;
+    }
+    .manage-product-content-box .remove-btn {
+        margin: 10px 24px;
+    }
+    .manage-product-content-box-table-tab-2{
+        grid-template-columns : auto ;
     }
 }
 
@@ -889,6 +900,18 @@
     
     .theme-btn {
         width: 100%;
+    }
+    .manage-product-content-box div{
+        display: block; 
+    }
+    .manage-product-content-box .remove-btn {
+        margin: 10px 0px;
+    }
+    .manage-product-content-box-icon{
+        margin: 0px;
+    }
+    .manage-product-content-box-table .tab-container .tab-menu ul li a {
+        padding: 5px 2px;
     }
 
 }

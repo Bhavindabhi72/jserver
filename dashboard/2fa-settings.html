@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <!-- css file -->
   <link rel="stylesheet" href="./assets/stylesheets/bootstrap.min.css" />
   <!-- layout css start -->
@@ -20,7 +20,7 @@
   <!-- layout css end -->
   <link rel="stylesheet" href="./assets/stylesheets/style.css" />
   <link rel="stylesheet" href="./assets/stylesheets/responsive.css" />
-  <title>Cloud Services</title>
+  <title>2FA settings</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
                     <span class="menu-title">Dashboard</span>
                   </a>
                 </li>
-                <li class="menu-item sub-menu">
+                <li class="menu-item sub-menu open">
                   <a href="#">
                     <span class="menu-icon">
                       <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +106,7 @@
                           <span class="menu-title">Account Security</span>
                         </a>
                       </li>
-                      <li class="menu-item">
+                      <li class="menu-item active">
                         <a href="2fa-settings.html">
                           <span class="menu-title">2FA Settings</span>
                         </a>
@@ -128,7 +128,7 @@
                           fill="currentColor" />
                       </svg>
                     </span>
-                    <span class="menu-title">Services</span>
+                    <span class="menu-title">Service</span>
                   </a>
                   <div class="sub-menu-list">
                     <ul>
@@ -374,46 +374,8 @@
             </a>
           </div>
           <div class="admin-header d-align">
-            <h4 class="fw-500 text-black m-0">Cloud Services</h4>
+            <h4 class="fw-500 text-black m-0">Account Details</h4>
             <div class="admin-header-option d-align">
-              <div
-                class="wrapper-dropdown form-control custom-input flex d-flex align-items-center header-login-cloud-dropdown"
-                id="dropdown">
-                <span class="selected-display" id="destination">
-                  <i class="line-height-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                      fill="currentColor" width="24" height="24">
-                      <path
-                        d="M17 7C13.5705 7 10.6449 9.15804 9.50734 12.1903L11.3805 12.8927C12.2337 10.6185 14.4278 9 17 9C17.6983 9 18.3687 9.11928 18.992 9.33857C21.3265 10.16 23 12.3846 23 15C23 18.3137 20.3137 21 17 21H7C3.68629 21 1 18.3137 1 15C1 12.3846 2.67346 10.16 5.00804 9.33857C5.0027 9.22639 5 9.11351 5 9C5 5.13401 8.13401 2 12 2C15.242 2 17.9693 4.20399 18.7652 7.19539C18.1973 7.0675 17.6065 7 17 7Z">
-                      </path>
-                    </svg></i>
-                  <span>Login to the Cloud</span>
-                </span>
-                <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
-                  <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                </svg>
-                <ul class="dropdown">
-                  <li class="item">
-                    <i class="line-height-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        fill="currentColor" width="24" height="24">
-                        <path
-                          d="M10 11H4V3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V13H10V16L15 12L10 8V11Z">
-                        </path>
-                      </svg></i>
-                    <span>Login</span>
-                  </li>
-                  <li class="item">
-                    <i class="line-height-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        fill="currentColor" width="24" height="24">
-                        <path
-                          d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM6.02332 15.4163C7.49083 17.6069 9.69511 19 12.1597 19C14.6243 19 16.8286 17.6069 18.2961 15.4163C16.6885 13.9172 14.5312 13 12.1597 13C9.78821 13 7.63095 13.9172 6.02332 15.4163ZM12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z">
-                        </path>
-                      </svg></i>
-                    <span>Register</span>
-                  </li>
-                </ul>
-              </div>
               <div class="country-dropdown-menu">
                 <div class="language-select-wrap">
                   <div class="wrapper-dropdown" id="dropdown">
@@ -474,17 +436,15 @@
                         fill="currentColor" />
                     </svg>
                   </a>
-                  <div class="count-msg-number-box d-align-justify">
-                    <span class="fw-600 text-white m-0 text-ellipsis-1">9</span>
-                  </div>
+                  <div class="count-msg-number-box d-align-justify"><span
+                      class="fw-600 text-white m-0 text-ellipsis-1">9</span></div>
                   <div class="notification-dropbox-wrap notifications-msg-dropbox-wrap position-absolute">
                     <div class="arrow-up"></div>
                     <div class="notifications-head d-flex align-items-center">
                       <div class="d-flex align-items-center gap-1">
                         <h3 class="fw-500 m-0">Notifications</h3>
-                        <div class="count-msg-number-box d-align-justify">
-                          <span class="fw-600 text-white m-0 text-ellipsis-1">9</span>
-                        </div>
+                        <div class="count-msg-number-box d-align-justify"><span
+                            class="fw-600 text-white m-0 text-ellipsis-1">9</span></div>
                       </div>
                       <a href="javascript:void(0)" class="ms-auto fw-500 m-0 small-text text-primary-theme">Mark all as
                         read</a>
@@ -507,9 +467,8 @@
                             </svg>
                           </div>
                           <div class="">
-                            <h5 class="fw-400 m-0 transition-all-03 position-relative show-unactive">
-                              Your payment method is successfully updated!
-                            </h5>
+                            <h5 class="fw-400 m-0 transition-all-03 position-relative show-unactive">Your payment method
+                              is successfully updated!</h5>
                             <h6 class="fw-400 m-0">1 hour ago</h6>
                           </div>
                         </a>
@@ -534,10 +493,8 @@
                             </svg>
                           </div>
                           <div class="">
-                            <h5 class="fw-400 m-0 transition-all-03 position-relative">
-                              Congrats! Your bank account has been added
-                              successfully!
-                            </h5>
+                            <h5 class="fw-400 m-0 transition-all-03 position-relative">Congrats! Your bank account has
+                              been added successfully!</h5>
                             <h6 class="fw-400 m-0">2 hour ago</h6>
                           </div>
                         </a>
@@ -556,9 +513,8 @@
                             </svg>
                           </div>
                           <div class="">
-                            <h5 class="fw-400 m-0 transition-all-03 position-relative show-unactive">
-                              Your password has been successfully changed.
-                            </h5>
+                            <h5 class="fw-400 m-0 transition-all-03 position-relative show-unactive">Your password has
+                              been successfully changed.</h5>
                             <h6 class="fw-400 m-0">3 hour ago</h6>
                           </div>
                         </a>
@@ -580,7 +536,7 @@
                       <div class="notifications-head text-center w-100">
                         <div class="position-relative w-max-content mx-auto">
                           <div class="welcome-user-profile profile-img flex-0-auto mx-auto">
-                            <img src="./assets/images/profile/profile.jpg" class="img-fluid" alt="" />
+                            <img src="./assets/images/profile/profile.jpg" class="img-fluid" alt="">
                             <label class="custom-upload d-align-justify transition-all-03"><input type="file"
                                 name="upload_file" />
                               <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
@@ -649,12 +605,8 @@
                             </div>
                             <div class="d-flex align-items-center w-100">
                               <div>
-                                <h5 class="fw-400 m-0 h5 transition-all-03">
-                                  Account Information
-                                </h5>
-                                <h6 class="fw-400 m-0 h6">
-                                  View & Update Your Account Details
-                                </h6>
+                                <h5 class="fw-400 m-0 h5 transition-all-03">Account Information</h5>
+                                <h6 class="fw-400 m-0 h6">View & Update Your Account Details</h6>
                               </div>
                               <span class="ms-auto line-height-0 direction-left-right-arrow">
                                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
@@ -679,12 +631,8 @@
                             </div>
                             <div class="d-flex align-items-center w-100">
                               <div>
-                                <h5 class="fw-400 m-0 h5 transition-all-03">
-                                  Support Tickets
-                                </h5>
-                                <h6 class="fw-400 m-0 h6">
-                                  View & Open Support Tickets
-                                </h6>
+                                <h5 class="fw-400 m-0 h5 transition-all-03">Support Tickets</h5>
+                                <h6 class="fw-400 m-0 h6">View & Open Support Tickets</h6>
                               </div>
                               <span class="ms-auto line-height-0 direction-left-right-arrow">
                                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
@@ -712,12 +660,8 @@
                             </div>
                             <div class="d-flex align-items-center w-100">
                               <div>
-                                <h5 class="fw-400 m-0 h5 transition-all-03">
-                                  Generated Password
-                                </h5>
-                                <h6 class="fw-400 m-0 h6">
-                                  Generate New Password
-                                </h6>
+                                <h5 class="fw-400 m-0 h5 transition-all-03">Generated Password</h5>
+                                <h6 class="fw-400 m-0 h6">Generate New Password</h6>
                               </div>
                               <span class="ms-auto line-height-0 direction-left-right-arrow">
                                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
@@ -750,175 +694,252 @@
             </div>
           </div>
           <div class="admin-body-content">
-            <div class="cloud-service-row w-100">
-              <div class="cloud-service-left-col w-100">
-                <div class="admin-dashboard-boxes-wrap">
-                  <div class="admin-dashboard-box-col d-align admin-card-box">
-                    <div class="admin-dashboard-icon-box d-align-justify flex-0-auto">
-                      <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M3.75199 11.9915C3.2198 11.993 2.6989 12.1423 2.24957 12.4221C1.80024 12.7019 1.44083 13.1009 1.21292 13.5727C0.98502 14.0446 0.897932 14.5702 0.961738 15.0886C1.02554 15.6071 1.23763 16.0972 1.57347 16.5023L8.73279 25.1077C8.98806 25.4187 9.31526 25.6655 9.68724 25.8275C10.0592 25.9895 10.4652 26.0621 10.8715 26.0392C11.7405 25.9935 12.525 25.5373 13.0252 24.7874L27.897 1.28621C27.8994 1.28231 27.9019 1.27841 27.9046 1.27457C28.0441 1.06435 27.9988 0.647729 27.7108 0.386005C27.6317 0.314132 27.5384 0.258914 27.4367 0.223751C27.335 0.188588 27.2271 0.174225 27.1195 0.181545C27.012 0.188866 26.9071 0.217716 26.8113 0.266319C26.7155 0.314921 26.6309 0.382247 26.5626 0.46415C26.5573 0.470589 26.5518 0.476932 26.5462 0.483177L11.5478 17.1108C11.4908 17.1741 11.4214 17.2256 11.3439 17.2624C11.2664 17.2992 11.1822 17.3205 11.0962 17.325C11.0102 17.3296 10.9241 17.3173 10.843 17.289C10.7619 17.2606 10.6873 17.2168 10.6236 17.1599L5.64598 12.7152C5.129 12.2502 4.45331 11.992 3.75199 11.9915Z"
-                          fill="#254CEC" />
-                      </svg>
-                    </div>
-                    <div class="admin-dashboard-content-box">
-                      <h4 class="fw-600 m-0">8 Servers</h4>
-                      <h6 class="m-0 fw-500">Cloud Servers</h6>
-                      <small>As of Apr 6, 2024</small>
-                    </div>
-                  </div>
-                  <div class="admin-dashboard-box-col d-align admin-card-box">
-                    <div class="admin-dashboard-icon-box d-align-justify flex-0-auto">
-                      <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M3.8071 0.167969C2.81089 0.17102 1.85636 0.568113 1.15193 1.27254C0.447508 1.97697 0.0504145 2.9315 0.0473633 3.9277V13.7608C0.0503595 13.99 0.142732 14.209 0.3048 14.371C0.466867 14.5331 0.685815 14.6255 0.914994 14.6285H6.6992C6.92837 14.6255 7.14732 14.5331 7.30939 14.371C7.47146 14.209 7.56383 13.99 7.56683 13.7608V3.9277C7.56378 2.9315 7.16668 1.97697 6.46226 1.27254C5.75783 0.568113 4.8033 0.17102 3.8071 0.167969Z"
-                          fill="#193BC8" />
-                        <path
-                          d="M24.9194 5.66268V24.1721C24.9164 24.4013 24.824 24.6203 24.662 24.7823C24.4999 24.9444 24.281 25.0368 24.0518 25.0398C23.3157 25.0467 22.6045 24.7738 22.062 24.2762C21.9472 24.1514 21.8077 24.0518 21.6524 23.9837C21.4971 23.9155 21.3293 23.8803 21.1597 23.8803C20.9901 23.8803 20.8223 23.9155 20.667 23.9837C20.5117 24.0518 20.3722 24.1514 20.2573 24.2762C19.7132 24.7673 19.0063 25.039 18.2734 25.039C17.5404 25.039 16.8335 24.7673 16.2894 24.2762C16.1745 24.1514 16.035 24.0518 15.8797 23.9837C15.7244 23.9155 15.5567 23.8803 15.3871 23.8803C15.2174 23.8803 15.0497 23.9155 14.8944 23.9837C14.7391 24.0518 14.5996 24.1514 14.4847 24.2762C13.9387 24.7681 13.2298 25.0403 12.4949 25.0403C11.7601 25.0403 11.0512 24.7681 10.5052 24.2762C10.3884 24.1527 10.2476 24.0542 10.0915 23.9869C9.93533 23.9196 9.76709 23.8849 9.59706 23.8849C9.42703 23.8849 9.25879 23.9196 9.10264 23.9869C8.94649 24.0542 8.80572 24.1527 8.68894 24.2762C8.14644 24.7738 7.43523 25.0467 6.69918 25.0398C6.47 25.0368 6.25105 24.9444 6.08898 24.7823C5.92692 24.6203 5.83454 24.4013 5.83155 24.1721V3.92742C5.83289 3.22886 5.69205 2.53734 5.41759 1.89495C5.16179 1.29622 4.79491 0.751855 4.33678 0.290433C4.29333 0.246671 4.31588 0.17566 4.37616 0.188662C4.38236 0.189999 4.3887 0.190827 4.39505 0.190827H19.4244C20.8778 0.190814 22.272 0.766572 23.3018 1.79208C24.3317 2.8176 24.9133 4.20933 24.9194 5.66268Z"
-                          fill="#254CEC" />
-                        <path
-                          d="M15.1163 16.7269C14.4358 16.7269 13.8403 16.5926 13.3299 16.324C12.8285 16.0554 12.3719 15.6614 11.96 15.142L12.9942 14.1078C13.2538 14.4839 13.5583 14.7884 13.9075 15.0212C14.2567 15.254 14.6775 15.3704 15.17 15.3704C15.6894 15.3704 16.1012 15.2585 16.4057 15.0346C16.7191 14.8107 16.8758 14.4929 16.8758 14.081C16.8758 13.7676 16.7952 13.5124 16.634 13.3154C16.4728 13.1184 16.2579 12.9572 15.9893 12.8319C15.7297 12.6976 15.4386 12.5812 15.1163 12.4827C14.8029 12.3752 14.485 12.2588 14.1627 12.1335C13.8493 11.9991 13.5583 11.8335 13.2896 11.6365C13.03 11.4395 12.8196 11.1843 12.6584 10.8709C12.4972 10.5575 12.4166 10.1591 12.4166 9.67555C12.4166 9.12039 12.5509 8.6503 12.8196 8.26527C13.0971 7.87129 13.4687 7.57133 13.9343 7.36538C14.4 7.15944 14.9193 7.05646 15.4924 7.05646C16.0475 7.05646 16.5624 7.17734 17.037 7.41911C17.5115 7.66087 17.901 7.96979 18.2055 8.34586L17.1713 9.38006C16.9026 9.07562 16.6251 8.83834 16.3385 8.66821C16.061 8.49808 15.7655 8.41301 15.4521 8.41301C14.9506 8.41301 14.5656 8.51151 14.297 8.7085C14.0284 8.89654 13.8941 9.18307 13.8941 9.5681C13.8941 9.85463 13.9746 10.0874 14.1358 10.2665C14.3059 10.4366 14.5253 10.5844 14.7939 10.7098C15.0626 10.8262 15.3536 10.9381 15.667 11.0455C15.9893 11.153 16.3117 11.2739 16.634 11.4082C16.9564 11.5425 17.2519 11.7171 17.5205 11.932C17.7891 12.1379 18.004 12.4066 18.1652 12.7379C18.3353 13.0692 18.4204 13.4855 18.4204 13.987C18.4204 14.8287 18.1204 15.4957 17.5205 15.9882C16.9295 16.4807 16.1281 16.7269 15.1163 16.7269ZM14.9014 17.9357V5.84766H15.9759V17.9357H14.9014Z"
-                          fill="white" />
-                      </svg>
-                    </div>
-                    <div class="admin-dashboard-content-box">
-                      <h4 class="fw-600 m-0">250.86 USD</h4>
-                      <h6 class="m-0 fw-500">Estimated Billing</h6>
-                      <small>As of Apr 6, 2024</small>
-                    </div>
-                  </div>
-                  <div class="admin-dashboard-box-col d-align admin-card-box">
-                    <div class="admin-dashboard-icon-box d-align-justify flex-0-auto">
-                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M8.35791 18.1498C8.35791 19.7611 9.66408 21.0673 11.2753 21.0673H24.8899C26.5012 21.0673 27.8073 19.7611 27.8073 18.1498C27.8073 16.5386 26.5012 15.2324 24.8899 15.2324H11.2753C9.66408 15.2324 8.35791 16.5386 8.35791 18.1498ZM23.9175 17.6636C23.9175 17.3948 24.1349 17.1774 24.4037 17.1774C24.6725 17.1774 24.8899 17.3948 24.8899 17.6636V18.6361C24.8899 18.9048 24.6725 19.1223 24.4037 19.1223C24.1349 19.1223 23.9175 18.9048 23.9175 18.6361V17.6636ZM21.9725 17.6636C21.9725 17.3948 22.19 17.1774 22.4587 17.1774C22.7275 17.1774 22.945 17.3948 22.945 17.6636V18.6361C22.945 18.9048 22.7275 19.1223 22.4587 19.1223C22.19 19.1223 21.9725 18.9048 21.9725 18.6361V17.6636ZM20.0276 17.6636C20.0276 17.3948 20.245 17.1774 20.5138 17.1774C20.7826 17.1774 21 17.3948 21 17.6636V18.6361C21 18.9048 20.7826 19.1223 20.5138 19.1223C20.245 19.1223 20.0276 18.9048 20.0276 18.6361V17.6636ZM18.0826 17.6636C18.0826 17.3948 18.3001 17.1774 18.5689 17.1774C18.8376 17.1774 19.0551 17.3948 19.0551 17.6636V18.6361C19.0551 18.9048 18.8376 19.1223 18.5689 19.1223C18.3001 19.1223 18.0826 18.9048 18.0826 18.6361V17.6636Z"
-                          fill="#254CEC" />
-                        <path
-                          d="M24.8899 8.42578H11.2753C9.66657 8.42578 8.35791 9.73444 8.35791 11.3432C8.35791 12.9544 9.66408 14.2606 11.2753 14.2606H24.8899C26.5012 14.2606 27.8073 12.9544 27.8073 11.3432C27.8073 9.73444 26.4987 8.42578 24.8899 8.42578ZM19.0551 11.8294C19.0551 12.0982 18.8376 12.3157 18.5689 12.3157C18.3001 12.3157 18.0826 12.0982 18.0826 11.8294V10.857C18.0826 10.5882 18.3001 10.3707 18.5689 10.3707C18.8376 10.3707 19.0551 10.5882 19.0551 10.857V11.8294ZM21 11.8294C21 12.0982 20.7826 12.3157 20.5138 12.3157C20.245 12.3157 20.0276 12.0982 20.0276 11.8294V10.857C20.0276 10.5882 20.245 10.3707 20.5138 10.3707C20.7826 10.3707 21 10.5882 21 10.857V11.8294ZM22.945 11.8294C22.945 12.0982 22.7275 12.3157 22.4587 12.3157C22.19 12.3157 21.9725 12.0982 21.9725 11.8294V10.857C21.9725 10.5882 22.19 10.3707 22.4587 10.3707C22.7275 10.3707 22.945 10.5882 22.945 10.857V11.8294ZM24.8899 11.8294C24.8899 12.0982 24.6725 12.3157 24.4037 12.3157C24.1349 12.3157 23.9175 12.0982 23.9175 11.8294V10.857C23.9175 10.5882 24.1349 10.3707 24.4037 10.3707C24.6725 10.3707 24.8899 10.5882 24.8899 10.857V11.8294Z"
-                          fill="#254CEC" />
-                        <path
-                          d="M8.35791 24.9565C8.35791 26.5652 9.66657 27.8739 11.2753 27.8739H24.8899C26.4987 27.8739 27.8073 26.5652 27.8073 24.9565C27.8073 23.3452 26.5012 22.0391 24.8899 22.0391H11.2753C9.66408 22.0391 8.35791 23.3452 8.35791 24.9565ZM23.9175 24.4702C23.9175 24.2015 24.1349 23.984 24.4037 23.984C24.6725 23.984 24.8899 24.2015 24.8899 24.4702V25.4427C24.8899 25.7115 24.6725 25.9289 24.4037 25.9289C24.1349 25.9289 23.9175 25.7115 23.9175 25.4427V24.4702ZM21.9725 24.4702C21.9725 24.2015 22.19 23.984 22.4587 23.984C22.7275 23.984 22.945 24.2015 22.945 24.4702V25.4427C22.945 25.7115 22.7275 25.9289 22.4587 25.9289C22.19 25.9289 21.9725 25.7115 21.9725 25.4427V24.4702ZM20.0276 24.4702C20.0276 24.2015 20.245 23.984 20.5138 23.984C20.7826 23.984 21 24.2015 21 24.4702V25.4427C21 25.7115 20.7826 25.9289 20.5138 25.9289C20.245 25.9289 20.0276 25.7115 20.0276 25.4427V24.4702ZM18.0826 24.4702C18.0826 24.2015 18.3001 23.984 18.5689 23.984C18.8376 23.984 19.0551 24.2015 19.0551 24.4702V25.4427C19.0551 25.7115 18.8376 25.9289 18.5689 25.9289C18.3001 25.9289 18.0826 25.7115 18.0826 25.4427V24.4702Z"
-                          fill="#254CEC" />
-                        <path
-                          d="M11.2753 6.47936C11.5558 6.47936 11.83 6.50394 12.0965 6.55078C13.5531 6.8068 14.9648 7.45183 16.4438 7.45183H17.9857C18.8218 7.45183 19.6236 7.1196 20.2146 6.52827C20.5945 6.1484 20.5945 5.53301 20.2146 5.15313L17.4639 2.40239C17.084 2.02252 16.4686 2.02252 16.0888 2.40239L15.3666 3.12419C15.1719 3.31887 14.8769 3.36783 14.6225 3.26248C14.3678 3.15703 14.1927 2.91331 14.1927 2.63766V1.617C14.1927 1.07996 13.7573 0.644531 13.2203 0.644531H9.33037C8.79333 0.644531 8.3579 1.07996 8.3579 1.617V2.63765C8.3579 2.91331 8.18285 3.15703 7.92816 3.26248C7.67372 3.36783 7.37877 3.31887 7.18399 3.12419L6.46186 2.40239C6.08199 2.02252 5.4666 2.02252 5.08673 2.40239L2.33598 5.15313C1.95611 5.53301 1.95611 6.1484 2.33598 6.52827L3.05778 7.25039C3.25247 7.44517 3.30143 7.74012 3.19608 7.99457C3.09063 8.24925 2.8469 8.4243 2.57125 8.4243H1.5506C1.01355 8.4243 0.578125 8.85973 0.578125 9.39678V13.2867C0.578125 13.8237 1.01355 14.2591 1.5506 14.2591H2.57125C2.8469 14.2591 3.09063 14.4342 3.19608 14.6889C3.30143 14.9433 3.25247 15.2383 3.05778 15.433L2.33598 16.1552C1.95611 16.535 1.95611 17.1504 2.33598 17.5303L5.08673 20.2811C5.4666 20.6609 6.08199 20.6609 6.46186 20.2811C7.0532 19.69 7.38543 18.8882 7.38543 18.0521V15.2316V14.2591C7.38543 14.2418 7.37982 14.2249 7.36953 14.211C6.7759 13.4051 6.41296 12.4195 6.41296 11.3417C6.41296 8.65632 8.58992 6.47936 11.2753 6.47936Z"
-                          fill="#254CEC" />
-                      </svg>
-                    </div>
-                    <div class="admin-dashboard-content-box">
-                      <h4 class="fw-600 m-0">6/8 - Managed Server</h4>
-                      <h6 class="m-0 fw-500">Managed Servers</h6>
-                      <small>As of Apr 6, 2024</small>
-                    </div>
-                  </div>
-                  <div class="admin-dashboard-box-col d-align admin-card-box">
-                    <div class="admin-dashboard-icon-box d-align-justify flex-0-auto">
-                      <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M0.635036 6.81C0.88999 6.74526 1.205 6.68859 1.5161 6.68849C2.67384 6.75146 3.32995 7.22855 3.8572 7.6119C4.3617 7.97868 4.72618 8.24368 5.54647 8.24368C6.36664 8.24368 6.73108 7.97868 7.23547 7.61184C7.80559 7.1972 8.51514 6.68114 9.84346 6.68114C11.1718 6.68114 11.8813 7.1972 12.4514 7.61184C12.9558 7.97868 13.3203 8.24368 14.1404 8.24368C14.9607 8.24368 15.3252 7.97868 15.8297 7.6119C16.357 7.22855 17.0131 6.75146 18.1708 6.68849C18.4821 6.68864 18.7968 6.74526 19.0519 6.81L19.4764 1.69471C19.5142 1.23866 19.1543 0.847656 18.6968 0.847656H0.990149C0.532585 0.847656 0.17268 1.23866 0.210493 1.69466L0.635036 6.81Z"
-                          fill="#254CEC" />
-                        <path
-                          d="M17.3958 16.0566C14.2316 16.0566 11.6665 18.6218 11.6665 21.786C11.6665 24.9502 14.2316 27.5153 17.3958 27.5153C20.56 27.5153 23.1251 24.9502 23.1251 21.786C23.1251 18.6218 20.56 16.0566 17.3958 16.0566ZM20.292 21.0883L17.167 24.2134C16.8618 24.5185 16.3672 24.5185 16.0621 24.2134L14.4995 22.6509C14.1944 22.3458 14.1944 21.8511 14.4995 21.546C14.8047 21.2409 15.2993 21.2409 15.6044 21.546L16.6146 22.5561L19.1872 19.9835C19.4923 19.6784 19.9869 19.6784 20.292 19.9835C20.5972 20.2886 20.5972 20.7833 20.292 21.0883Z"
-                          fill="#254CEC" />
-                        <path
-                          d="M17.3957 14.4943C17.7393 14.4943 18.0772 14.5187 18.4083 14.5649L18.9191 8.40899C18.7203 8.32638 18.4969 8.27107 18.2132 8.25174C17.5447 8.29727 17.2092 8.54118 16.7485 8.87614C16.1783 9.29073 15.4687 9.80668 14.1404 9.80668C12.8121 9.80668 12.1025 9.29063 11.5324 8.87598C11.028 8.50915 10.6636 8.24414 9.84341 8.24414C9.02323 8.24414 8.65879 8.50915 8.15441 8.87598C7.58429 9.29063 6.87474 9.80668 5.54642 9.80668C4.21816 9.80668 3.5085 9.29073 2.93833 8.87614C2.47759 8.54118 2.14216 8.29727 1.47366 8.25174C1.1899 8.27107 0.966455 8.32643 0.7677 8.40899L1.96424 22.8279H10.1785C10.1296 22.4875 10.1038 22.1398 10.1038 21.7862C10.1038 17.7654 13.375 14.4943 17.3957 14.4943Z"
-                          fill="#254CEC" />
-                        <path
-                          d="M10.585 24.3887H2.09399L2.29384 26.7971C2.32749 27.2021 2.66604 27.5138 3.07246 27.5138H12.89C11.8643 26.7053 11.0604 25.6277 10.585 24.3887Z"
-                          fill="#254CEC" />
-                      </svg>
-                    </div>
-                    <div class="admin-dashboard-content-box">
-                      <h4 class="fw-600 m-0">06</h4>
-                      <h6 class="m-0 fw-500">Active Snapshots</h6>
-                      <small>As of Apr 6, 2024</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="admin-card-box">
-                  <div class="d-flex align-items-center flex-wrap gap-2 admind-details-head">
-                    <div>
-                      <div class="d-flex align-items-center gap-1 flex-wrap">
-                        <h4 class="admin-head m-0 head-line-border">
-                          Why Jetserver Cloud?
-                        </h4>
-                        <button class="primary-btn small-btn exquisite-turquoise-bg">
-                          New
-                        </button>
-                      </div>
-                      <!-- <h5 class="fw-500 text-flintstone fs-15 text-left">Mar 09, 2024 to Apr 06, 2024</h5> -->
-                    </div>
-                    <button class="primary-btn ms-auto min-w-small primary-btn-max-content">
-                      Past 30 days
-                    </button>
-                  </div>
+            <h4 class="admin-head m-0 head-line-border">2FA settings</h4>
+            <div class="tab-container">
+              <div class="tab-menu">
+                <ul class="d-flex align-items-center w-100 account-security-tab">
+                  <li><a href="#"
+                      class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a"
+                      data-id="tab1">Security Settings </a></li>
+                  <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
+                      data-id="tab2">Your Profile </a></li>
+                  <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
+                      data-id="tab3">Change Password </a></li>
+                </ul>
+              </div>
+              <div class="tab tab-active" data-id="tab1">
+                <div class="admin-card-box table-wrap settings-2fa">
                   <div>
-                    <div id="columnchart_material" class="comon-chart-style" lang="en" dir="ltr"></div>
+                    <h4 class="mb-0 fs-16 fw-500 text-black">Security Settings</h4>
+                    <p class="fw-400 fs-15 text-grey">The following security settings apply to your user account.</p>
+                    <hr>
+                    <h4 class="mb-0 fs-16 fw-500 text-black">Linked Accounts</h4>
+                    <p class="fw-400 fs-15 text-grey">Connect your account with any of the services below to simplify
+                      your sign-in experience. We only use this information to verify your account and will never post
+                      on your behalf.</p>
+                    <a href="login.html" target="_blank" class="secure-client-btn">
+                      <span>
+                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M5.69647 10.5447C5.69647 9.51058 5.98139 8.54184 6.47638 7.71236V4.19385H2.95787C1.5614 6.00749 0.804443 8.21783 0.804443 10.5447C0.804443 12.8716 1.5614 15.082 2.95787 16.8956H6.47638V13.3771C5.98139 12.5476 5.69647 11.5789 5.69647 10.5447Z"
+                            fill="#FBBD00"></path>
+                          <path
+                            d="M11.2407 16.0891L8.79468 18.5352L11.2407 20.9812C13.5676 20.9812 15.7779 20.2242 17.5916 18.8277V15.313H14.0768C13.2401 15.8098 12.2672 16.0891 11.2407 16.0891Z"
+                            fill="#0F9D58"></path>
+                          <path
+                            d="M6.47627 13.377L2.95776 16.8955C3.23424 17.2545 3.53531 17.5984 3.86108 17.9242C5.83224 19.8953 8.45302 20.9809 11.2407 20.9809V16.0889C9.21764 16.0889 7.44457 14.9996 6.47627 13.377Z"
+                            fill="#31AA52"></path>
+                          <path
+                            d="M21.677 10.5444C21.677 9.90944 21.6196 9.27331 21.5062 8.65374L21.4144 8.15234H11.2407V13.0444H16.1919C15.7111 14.0008 14.9719 14.7811 14.0768 15.3126L17.5916 18.8273C17.9506 18.5508 18.2945 18.2498 18.6203 17.924C20.5915 15.9528 21.677 13.332 21.677 10.5444Z"
+                            fill="#3C79E6"></path>
+                          <path
+                            d="M15.1611 6.62429L15.5935 7.05667L19.0527 3.59751L18.6203 3.16514C16.6492 1.19398 14.0284 0.108398 11.2407 0.108398L8.79468 2.55441L11.2407 5.00043C12.7216 5.00043 14.1139 5.57711 15.1611 6.62429Z"
+                            fill="#CF2D48"></path>
+                          <path
+                            d="M11.2407 5.00043V0.108398C8.45306 0.108398 5.83228 1.19398 3.86108 3.1651C3.53531 3.49087 3.23424 3.83474 2.95776 4.19385L6.47627 7.71236C7.44461 6.08972 9.21768 5.00043 11.2407 5.00043Z"
+                            fill="#EB4132"></path>
+                        </svg>
+                      </span>
+                      Sign in with Google
+                    </a>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="w-100">
+                      <thead>
+                        <tr>
+                          <th class="border-none">
+                            <div class="d-flex align-items-center gap-1 fw-500 text-black">
+                              Provider
+                              <span class="line-height-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                  <path
+                                    d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
+                                  </path>
+                                </svg>
+                              </span>
+                            </div>
+                          </th>
+                          <th class="border-none">
+                            <div class="d-flex align-items-center gap-1 fw-500 text-black">
+                              Name
+                              <span class="line-height-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                  <path
+                                    d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
+                                  </path>
+                                </svg>
+                              </span>
+                            </div>
+                          </th>
+                          <th class="border-none">
+                            <div class="d-flex align-items-center gap-1 fw-500 text-black">
+                              Email Address
+                              <span class="line-height-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                  <path
+                                    d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
+                                  </path>
+                                </svg>
+                              </span>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="d-flex align-items-center gap-1 fw-500 text-black">
+                              Actions
+                              <span class="line-height-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                  <path
+                                    d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
+                                  </path>
+                                </svg>
+                              </span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <h4 class="fw-500 m-0 text-black fs-15">Jet Server</h4>
+
+                          </td>
+                          <td>
+                            <h4 class="fw-500 m-0 text-black fs-15">Google</h4>
+                          </td>
+                          <td>
+                            <h4 class="fw-500 m-0 text-black fs-15">testhostingserver-alyona.com</h4>
+                          </td>
+                          <td>
+                            <button class="primary-btn small-btn exquisite-turquoise-bg">Active</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr>
+                  </div>
+                  <div class="table-footer-wrap d-flex align-items-center flex-wrap">
+                    <div class="align-items-center text-alinggn-center-lg">
+                      <h4 class="fs-16 fw-500 text-black">Two-Factor Authentication</h4>
+                      <p class="text-grey fs-15">Two-factor authentication is currently <span
+                          class="disabled-span">disabled</span></p>
+                    </div>
+                    <div class="ms-auto pagination-wrap align-items-center">
+                      <button class="sign-up-btn ms-auto exquisite-turquoise-bg">Enable</button>
+                      <p class="text-grey fw-500">(Click here to Enable)</p>
+                    </div>
+                  </div>
+                  <div class="terms-service-crad-box account-security-crad-box">
+                    <p class="fs-16 m-0">We recommend enabling two-factor authentication to provide an extra layer of
+                      security to your account.</p>
                   </div>
                 </div>
               </div>
-              <div class="cloud-service-right-col w-100">
-                <div class="admin-card-box">
-                  <div class="d-flex align-items-center gap-1 flex-wrap">
-                    <h4 class="admin-head m-0 head-line-border">
-                      Why Jetserver Cloud?
-                    </h4>
-                    <button class="primary-btn small-btn exquisite-turquoise-bg">
-                      New
-                    </button>
+              <div class="tab" data-id="tab2">
+                <div class="admin-card-box table-wrap settings-2fa">
+                  <div class="align-items-center">
+                    <h4 class="mb-0 fs-16 fw-500 text-black">Security Settings</h4>
+                    <p class="fw-400 fs-15 text-grey">The following security settings apply to your user account.</p>
                   </div>
-                  <div class="tab-container">
-                    <div class="tab-menu">
-                      <ul class="d-flex align-items-center w-100">
-                        <li>
-                          <a href="#"
-                            class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a"
-                            data-id="tab1">Past 30 days</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                            data-id="tab2">Past Year</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                            data-id="tab3">YTD</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tab tab-active" data-id="tab1">
-                      <h5 class="m-0 fw-500 text-flintstone fs-15">
-                        Mar 09, 2024 to Apr 06, 2024
-                      </h5>
-                      <div>
-                        <!-- piechart_3d start -->
-                        <!-- <div id="piechart_3d" class="comon-chart-style"></div> -->
-                        <!-- piechart_3d end -->
-                        <!-- amcharts start -->
-                        <div id="chartdiv" class="amcharts-wrap"></div>
-                        <!-- amcharts end -->
+                  <div>
+                    <form class="row your-details-card-form">
+                      <div class="col-xs-12">
+                        <label for="first-name" class="mt-label fw-500">First Name</label>
+                        <input type="text" id="first-name" class="form-control custom-input w-53"
+                          placeholder="First Name">
                       </div>
-                      <div class="cloud-service-chart-content">
-                        <h5 class="ls-2 fs-15 fw-400 text-black">
-                          Jetserver Cloud helps you save get the most out of
-                          your cloud storage.
-                        </h5>
-                        <h5 class="ls-2 fs-15 fw-400 text-black">
-                          We estimate you have saved $2,755 in the past 30
-                          days.
-                        </h5>
+                      <div class="col-xs-12">
+                        <label for="last-name" class="mt-label fw-500">Last Name</label>
+                        <input type="text" id="last-name" class="form-control custom-input w-53"
+                          placeholder="Last Name">
                       </div>
-                      <button class="primary-btn primary-btn-max-content">
-                        Learn about RCS
-                      </button>
-                    </div>
-                    <div class="tab" data-id="tab2">
-                      <h5 class="m-0 fw-500 text-flintstone">Coming soon</h5>
-                    </div>
-                    <div class="tab" data-id="tab3">
-                      <h5 class="m-0 fw-500 text-flintstone">Coming soon</h5>
-                    </div>
+                      <div class="col-xs-12">
+                        <label for="wmail" class="mt-label fw-500">Email</label>
+                        <input type="email" id="email" class="settings-email form-control custom-input w-53"
+                          placeholder="Email">
+                      </div>
+                      <div class="account-details-form-btn col-sm-12 w-100">
+                        <input type="button" value="Cancel" class="theme-btn mx-6 fw-600">
+                        <input type="submit" value="Save Changes" class="theme-btn theme-btn-active mx-6 fw-600">
+                      </div>
+                    </form>
                   </div>
+                </div>
+              </div>
+              <div class="tab" data-id="tab3">
+                <div class="admin-card-box table-wrap settings-2fa">
+                  <div class="align-items-center">
+                    <h4 class="mb-0 fs-16 fw-500 text-black">Change Password</h4>
+                    <p class="fw-400 fs-15 text-grey">The password will additionally protect your account from hacking
+                    </p>
+                  </div>
+                  <div>
+                    <form class="row your-details-card-form">
+                      <div class="col-xs-12 password-input position-relative">
+                        <label for="current-password" class="mt-label fw-500">Current Password</label>
+                        <input type="text" id="current-password"
+                          class="form-control custom-input w-53 fw-500 text-black" placeholder="*************"
+                          oninput="maskPassword(this)">
+                      </div>
+                      <div class="col-xs-12 password-input position-relative">
+                        <label for="new-password" class="mt-label fw-500 d-align w-53 justify-content-between">
+                          <div>New Password</div>
+                          <div class="generate-password">
+                            <button type="button" class="border-none" data-toggle="modal"
+                              data-target="#myModal">Generate Password</button>
+                          </div>
+
+                        </label>
+                        <input type="text" id="new-password" class="form-control custom-input w-53 fw-500 text-black"
+                          placeholder="*************" oninput="maskPassword(this)">
+                      </div>
+                      <div class="container">
+                        <div class="progress w-53">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100" style="width:50%">
+                            <span class="sr-only">70% Complete</span>
+                          </div>
+                        </div>
+                        <div
+                          class="terms-service-crad-box account-security-crad-box w-53 tips-good-password-card d-flex">
+                          <svg width="18" height="27" viewBox="0 0 18 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M9.03348 4.29496C9.44231 4.29496 9.77375 3.96352 9.77375 3.55469V1.53129C9.77375 1.12246 9.44231 0.791016 9.03348 0.791016C8.62466 0.791016 8.29321 1.12246 8.29321 1.53129V3.55469C8.29321 3.96352 8.62466 4.29496 9.03348 4.29496Z"
+                              fill="#E89534" />
+                            <path
+                              d="M17.4531 3.42386C17.164 3.13476 16.6953 3.13476 16.4062 3.42386L14.8269 5.0031C14.5378 5.29215 14.5378 5.76089 14.8269 6.04999C15.116 6.33909 15.5847 6.33909 15.8738 6.04999L17.4531 4.47075C17.7422 4.18165 17.7422 3.71291 17.4531 3.42386Z"
+                              fill="#E89534" />
+                            <path
+                              d="M3.23993 6.04999C3.52903 5.76094 3.52903 5.2922 3.23993 5.0031L1.66069 3.42386C1.37164 3.13476 0.902898 3.13476 0.613798 3.42386C0.324698 3.71291 0.324698 4.18165 0.613798 4.47075L2.19304 6.04999C2.48219 6.33914 2.95088 6.33909 3.23993 6.04999Z"
+                              fill="#E89534" />
+                            <path
+                              d="M9.03359 5.97266C4.9245 5.97266 1.58154 9.31562 1.58154 13.4247C1.58154 17.2342 5.13484 19.099 5.13484 21.3209H8.29332V17.5964C7.37637 17.2867 6.71408 16.4189 6.71408 15.3988C6.71408 14.9899 7.04552 14.6585 7.45435 14.6585C7.86318 14.6585 8.19462 14.9899 8.19462 15.3988C8.19462 15.8614 8.57097 16.2377 9.03359 16.2377C9.49621 16.2377 9.87256 15.8614 9.87256 15.3988C9.87256 14.9899 10.204 14.6585 10.6128 14.6585C11.0217 14.6585 11.3531 14.9899 11.3531 15.3988C11.3531 16.4189 10.6908 17.2867 9.77386 17.5964V21.3209H12.9323C12.9323 19.0983 16.4856 17.2358 16.4856 13.4247C16.4856 9.31562 13.1427 5.97266 9.03359 5.97266Z"
+                              fill="#E89534" />
+                            <path
+                              d="M5.13477 23.7385C5.13477 25.0174 6.17529 26.058 7.45428 26.058H10.6128C11.8918 26.058 12.9323 25.0174 12.9323 23.7385V22.8008H5.13477V23.7385Z"
+                              fill="#E89534" />
+                          </svg>
+                          <div class="ms-1">
+                            <p class="fw-500 text-black m-0">Tips for a good password</p>
+                            <p class="text-grey">Use both upper and lowercase characters Include at least one symbol (#
+                              $ ! % & etc...) Don't use dictionary words</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 password-input position-relative">
+                        <label for="confirm-password" class="mt-label fw-500">Confirm Current Password</label>
+                        <input type="text" id="confirm-password"
+                          class="form-control custom-input w-53 fw-500 text-black" placeholder="*************** "
+                          oninput="maskPassword(this)">
+                      </div>
+                      <div class="account-details-form-btn col-sm-12 w-100 change-password-btns">
+                        <input type="button" value="Cancel" class="theme-btn mx-6 fw-600">
+                        <input type="submit" value="Save Changes" class="theme-btn theme-btn-active mx-6 fw-600">
+                      </div>
+                    </form>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -945,195 +966,55 @@
       </div>
     </div>
     <!-- layout html end -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog ">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class=" text-center">
+            <h4 class="modal-title text-black fw-500">Generate Password</h4>
+          </div>
+          <div class="col-xs-12">
+            <label for="Password-Length" class="mt-label fw-500">Password Length</label>
+            <input type="number" id="Password-Length" class="form-control custom-input fw-500 text-black"
+              placeholder="12 ">
+          </div>
+          <div class="col-xs-12">
+            <label for="Generated-Password" class="mt-label fw-500">Generated Password</label>
+            <input type="password" id="Generated-Password" class="form-control custom-input  fw-500 text-black"
+              placeholder="gly1fP-_fO#e&">
+            <div class="generate-new-password">
+              <button class="exquisite-turquoise-bg new-password fs-16 border-none text-white">+ Generate New
+                Password</button>
+              <button class=" theme-btn theme-btn-active copy-btn"><svg width="19" height="19" viewBox="0 0 19 19"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.39058 16.5802H13.4977C13.2327 17.2425 12.7751 17.8099 12.1841 18.2093C11.5931 18.6086 10.8958 18.8214 10.1825 18.8202H3.91061C3.43992 18.8203 2.97382 18.7277 2.53894 18.5476C2.10405 18.3676 1.70891 18.1036 1.37608 17.7708C1.04325 17.4379 0.779266 17.0428 0.599203 16.6079C0.419139 16.173 0.326528 15.7069 0.32666 15.2362V8.06829C0.327721 7.19553 0.646655 6.35304 1.22382 5.69838C1.80099 5.04371 2.59686 4.6217 3.4626 4.51126V11.6523C3.4626 14.3671 5.67569 16.5802 8.39058 16.5802ZM16.0065 4.70832H17.906C17.8509 4.62757 17.7879 4.55254 17.7178 4.48434L14.6625 1.42887C14.5965 1.35912 14.5211 1.2989 14.4385 1.24995V3.14035C14.4405 3.5556 14.6063 3.95327 14.9 4.24689C15.1936 4.54052 15.5912 4.70635 16.0065 4.70832ZM16.0065 6.05231C15.2346 6.05082 14.4948 5.74355 13.9491 5.19778C13.4033 4.652 13.096 3.9122 13.0945 3.14035V0.900391H8.39058C7.91989 0.900258 7.45379 0.992869 7.0189 1.17293C6.58401 1.353 6.18886 1.61698 5.85603 1.94981C5.5232 2.28263 5.25921 2.67778 5.07914 3.11266C4.89908 3.54755 4.80646 4.01365 4.80659 4.48434V11.6523C4.80647 12.123 4.89909 12.5891 5.07916 13.024C5.25923 13.4588 5.52322 13.854 5.85605 14.1868C6.18888 14.5196 6.58402 14.7836 7.01891 14.9637C7.45379 15.1437 7.91989 15.2364 8.39058 15.2362H14.6625C15.1332 15.2364 15.5993 15.1437 16.0342 14.9637C16.4691 14.7836 16.8642 14.5196 17.197 14.1868C17.5298 13.854 17.7938 13.4588 17.9739 13.024C18.154 12.5891 18.2466 12.123 18.2465 11.6523V6.05231H16.0065Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </div>
+            <hr class="generated-password-hr">
+          </div>
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+          <div class="account-details-form-btn justify-content-center d-flex w-100">
+            <input type="button" value="Cancel" class="theme-btn mx-6 fw-600" data-dismiss="modal">
+            <input type="submit" value="Save Changes" class="theme-btn theme-btn-active mx-6 fw-600">
+          </div>
+        </div>
+
+      </div>
+    </div>
   </main>
   <!-- script start -->
   <script src="./assets/scripts/jquery.js"></script>
   <script src="./assets/scripts/bootstrap.min.js"></script>
   <script src="./assets/scripts/popper.min.js"></script>
-  <!-- google chart js start -->
-  <script type="text/javascript" src="./assets/scripts/loader.js"></script>
-  <!-- google chart js end -->
-  <!-- am chart js start -->
-  <script src="./assets/scripts/amcharts.js"></script>
-  <script src="./assets/scripts/pie.js"></script>
-  <!-- am chart js end -->
-  <!-- layout js (chart) start -->
+  <!-- layout js start -->
   <script src="./assets/scripts/page-layout.js"></script>
-  <!-- layout js (chart) end -->
+  <!-- layout js end -->
   <script src="./assets/scripts/custom.js"></script>
   <!-- script end -->
-  <script>
-    // bar chart start
-    google.charts.load("current", { packages: ["bar"] });
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable([
-        ["Year", "", { role: "style" }],
-        ["2010", 5, "color: #000"],
-        ["2011", 11, "color: #000"],
-        ["2012", 6, "color: #000"],
-        ["2013", 8, "color: #000"],
-        ["2014", 3, "color: #000"],
-        ["2015", 6, "color: #000"],
-        ["2016", 9, "color: #000"],
-        ["2017", 12, "color: #000"],
-        ["2018", 10, "color: #000"],
-        ["2019", 2, "color: #000"],
-        ["2020", 4, "color: #000"],
-        ["2021", 5, "color: #000"],
-        ["2022", 7, "color: #000"],
-        ["2023", 1, "color: #000"],
-        ["2024", 8, "color: #000"],
-        ["2010", 5, "color: #000"],
-        ["2011", 11, "color: #000"],
-        ["2012", 6, "color: #000"],
-        ["2013", 8, "color: #000"],
-        ["2014", 3, "color: #000"],
-        ["2015", 6, "color: #000"],
-        ["2016", 9, "color: #000"],
-        ["2017", 12, "color: #000"],
-        ["2018", 10, "color: #000"],
-        ["2019", 2, "color: #000"],
-        ["2020", 4, "color: #000"],
-        ["2021", 5, "color: #000"],
-        ["2022", 7, "color: #000"],
-        ["2023", 1, "color: #000"],
-        ["2024", 8, "color: #000"],
-      ]);
-      var options = {
-        legend: { position: 'none' },
-        chart: {
-          // bar: {groupWidth: "10"},
-          // title: 'Company Performance',
-          subtitle: "Mar 09, 2024 to Apr 06, 2024",
-        },
-      };
-
-      var chart = new google.charts.Bar(
-        document.getElementById("columnchart_material")
-      );
-
-      chart.draw(data, google.charts.Bar.convertOptions(options));
-    }
-    // bar chart end
-
-    // amcharts js start
-    function callAmChart(rtl) {
-      if (rtl == 'rtl') {
-        var amchart = AmCharts.makeChart("chartdiv", {
-          "type": "pie",
-          "startDuration": 0,
-          "parseDates": false,
-          "hideCredits": true,
-          "colorField": "color",
-          "labelRadius": -50,
-          "startAngle": 0,
-          "responsive": {
-            "enabled": true
-          },
-          "dataProvider": [{
-            "title": "Your Jetserver Cloud Rate",
-            "price": "$722",
-            "value": 30,
-            "color": "#09CFA0",
-          },
-          {
-            "title": "AWS",
-            "price": "$3,477",
-            "value": 80,
-            "color": "#FFBE5F",
-          }
-          ].reverse(),
-          "titleField": "title",
-          "valueField": "value",
-          "labelText": "[[price]]",
-          "radius": "50%",
-          "outlineAlpha": 0,
-          "depth3D": 50,
-          "balloonText": "",
-          "angle": 55,
-
-          "align": 'right',
-          "export": {
-            "enabled": true
-          },
-          "legend": {
-            "align": "center",
-            "divId": "PieDivID",
-            "autoMargins": false,
-            "enabled": true,
-            "maxColumns": 1,
-            "spacing": 1,
-            "markerType": "circle",
-            "horizontalGap": 10,
-            "valueText": "",
-            "labelText": "[[title]]",
-            "position": "bottom",
-            //"textClickEnabled": true,
-          }
-        });
-
-      } else {
-
-        var amchart = AmCharts.makeChart("chartdiv", {
-          "type": "pie",
-          "startDuration": 0,
-          "parseDates": false,
-          "hideCredits": true,
-          "colorField": "color",
-          "labelRadius": -50,
-          "startAngle": 0,
-          "responsive": {
-            "enabled": true
-          },
-          "dataProvider": [{
-            "title": "Your Jetserver Cloud Rate",
-            "price": "$722",
-            "value": 30,
-            "color": "#09CFA0",
-          },
-          {
-            "title": "AWS",
-            "price": "$3,477",
-            "value": 80,
-            "color": "#FFBE5F",
-          }
-          ],
-          "titleField": "title",
-          "valueField": "value",
-          "labelText": "[[price]]",
-          "radius": "50%",
-          "outlineAlpha": 0,
-          "depth3D": 50,
-          "balloonText": "",
-          "angle": 55,
-
-          "align": 'right',
-          "export": {
-            "enabled": true
-          },
-          "legend": {
-            "align": "center",
-            "divId": "PieDivID",
-            "autoMargins": false,
-            "enabled": true,
-            "maxColumns": 2,
-            "spacing": 10,
-            "markerType": "circle",
-            "horizontalGap": 10,
-            "valueText": "",
-            "labelText": "[[title]]",
-            "position": "bottom",
-            //"textClickEnabled": true,
-          }
-        });
-      }
-    }
-    callAmChart(null);
-
-    // amcharts js end
-  </script>
 </body>
 
 </html>
