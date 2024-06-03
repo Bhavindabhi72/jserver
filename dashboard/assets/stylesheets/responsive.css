@@ -141,6 +141,15 @@
     .quick-shortcuts-row{
         grid-gap: 10px;   
     }
+	.counter-progress-wrap .fill-circle{
+        width: 160px;
+    }
+    .usage-statistics-col{
+        padding: 0 10px;
+    }
+    .ticket-reopen-footer-wrap .welcome-user-content h4{
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -235,17 +244,13 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .cloud-service-left-col .admin-dashboard-boxes-wrap {
+    .cloud-service-left-col .admin-dashboard-boxes-wrap,.upgrade-card-contain {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .cloud-service-left-col .admin-card-box {
         padding: 15px;
     }
-
-    /*  .admin-header h4 {
-        display: none;
-    } */
 
     .payment-method-btns {
         margin-top: 20px;
@@ -304,6 +309,22 @@
     }
     .quick-shortcuts-row {
         grid-template-columns: repeat(3, 1fr);
+    }
+	.upgrade-card-btns {
+        justify-content: unset;
+        margin-top: 30px;
+    }
+	.support-ticket-repaly-head-wrap,.support-ticket-repaly-body-wrap{
+        padding: 15px;
+    }
+    .support-ticket-repaly-wrap{
+        margin-top: 20px;
+    }
+    .ticket-reopen-footer-wrap .welcome-admin-profile-wrap{
+        margin: 25px 0 20px;
+    }
+    .admin-head{
+        font-size: 16px;
     }
 }
 
@@ -529,8 +550,23 @@
     .usage-statistics-col{
         padding: 20px;
     }
+	.support-ticket-repaly-body-row{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+    }
+	 .service-domain-box{
+        display: block;
+    }
+    .domain-card{
+        margin: 10px 0px;
+    }
 }
 
+@media (min-width: 767px) {
+	.modal-dialog-style-one{
+		width: 450px;
+	}
+}
 @media (max-width: 767px) {
     :root {
         --admin-header: 70px;
@@ -621,6 +657,19 @@
         margin: auto;
     }
 
+    .admin-header h4 {
+        display: none;
+        font-size: 14px;
+    }
+    .sign-up-btn,
+    .primary-btn{
+      font-size: 14px;
+      padding: 10px;
+      min-height: 45px;
+    }
+    .small-btn{
+        min-height: 25px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -632,6 +681,14 @@
 @media (min-width: 576px) {
     .checkbox-radio-wrap .custom-radio-group {
         margin-left: 30px;
+    }
+	.admin-dashboard-services-detail-col.admin-form-group.cc-recipients-field-wrap input{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .admin-dashboard-services-detail-col.admin-form-group.cc-recipients-field-wrap button{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 }
 
@@ -711,8 +768,12 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0;
     }
-    .quick-shortcuts-row {
+    .quick-shortcuts-row,.options-tab .form-row,.upgrade-card-contain  {
         grid-template-columns: repeat(2, 1fr);
+    }
+	
+	.upgrade-card-contain{
+        grid-template-columns: repeat(1, 1fr);   
     }
     .step-next-prev-btn-wrap button.navigate-prev-btn {
         top: 30px;
@@ -860,7 +921,7 @@
     .cloud-servers-optimized p {
         padding: 0 0px 18px;
     }
-    .generated-password-hr{
+    .model-hr{
         margin: 20px 0px;
     }
     .personal-hosting-plan-icon{
@@ -869,6 +930,12 @@
     }
     .additional-information-row h5{
         padding-left: 10px;
+    }
+	.admin-dashboard-services-detail-col input{
+        margin-bottom: 15px;
+    }
+    .admin-card-box {
+        padding: 15px;
     }
 }
 
@@ -955,6 +1022,18 @@
     .manage-product-content-box-table .tab-container .tab-menu ul li a {
         padding: 5px 2px;
     }
+	.manage-product-content-box div,.manage-product-content-box h3{
+        display: block; 
+    }
+	.manage-product-content-box button,.manage-product-content-box-icon{
+		margin:0px;
+	}
+	.manage-product-content-box-icon{
+		padding: 10px 20px;
+	}
+	.manage-product-content-box-icon svg{
+		width: 20px;
+	}
 
 }
 
@@ -968,6 +1047,9 @@
     }
     .billing-overview-col {
         --billing-overview-col-width: 100px;
+    }
+	.account-cancellation-request-box {
+        padding: 13px 13px;
     }
 }
 
@@ -1009,6 +1091,9 @@
     .notification-dropbox-wrap {
         min-width: 270px;
     }
+	.manage-product-content-box-table-tab{
+		padding: 28px 19px;
+	}
 }
 
 /* Responsive end */

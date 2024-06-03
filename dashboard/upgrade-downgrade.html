@@ -20,7 +20,7 @@
   <!-- layout css end -->
   <link rel="stylesheet" href="./assets/stylesheets/style.css" />
   <link rel="stylesheet" href="./assets/stylesheets/responsive.css" />
-  <title>2FA settings</title>
+  <title>Upgrade/Downgrade</title>
 </head>
 
 <body>
@@ -86,7 +86,7 @@
                           <span class="menu-title">Your Details</span>
                         </a>
                       </li>
-                      <li class="menu-item">
+                      <li class="menu-item active">
                         <a href="user-management.html">
                           <span class="menu-title">User Management</span>
                         </a>
@@ -106,13 +106,13 @@
                           <span class="menu-title">Account Security</span>
                         </a>
                       </li>
-                      <li class="menu-item active">
+                      <li class="menu-item">
                         <a href="2fa-settings.html">
                           <span class="menu-title">2FA Settings</span>
                         </a>
                       </li>
                       <li class="menu-item">
-                        <a href="email-history.html">
+                        <a href="#">
                           <span class="menu-title">Email History</span>
                         </a>
                       </li>
@@ -374,7 +374,7 @@
             </a>
           </div>
           <div class="admin-header d-align">
-            <h4 class="fw-500 text-black m-0">Account Details</h4>
+            <h4 class="fw-500 text-black m-0">Dashboard</h4>
             <div class="admin-header-option d-align">
               <div class="country-dropdown-menu">
                 <div class="language-select-wrap">
@@ -693,258 +693,238 @@
               </ul>
             </div>
           </div>
-          <div class="admin-body-content">
-            <h4 class="admin-head m-0 head-line-border">2FA settings</h4>
-            <div class="tab-container">
-              <div class="tab-menu">
-                <ul class="d-flex align-items-center w-100 account-security-tab">
-                  <li><a href="#"
-                      class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a"
-                      data-id="tab1">Security Settings </a></li>
-                  <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                      data-id="tab2">Your Profile </a></li>
-                  <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                      data-id="tab3">Change Password </a></li>
+          <div class="admin-body-content user-management-content">
+            <h4 class="fw-500 text-black fs-19 m-0 head-line-border">Upgrade/Downgrade</h4>
+            <div class="admin-card-box admin-card-box-style1 upgrade-downgrade-box">
+              <div class="d-flex service-domain-box mb-1">
+                <div class="account-cancellation-request-box">
+                  <p class="text-grey mb-0">Product/Service: <span class="text-black">Shared Hosting - Personal Hosting
+                      Plan</span></p>
+                </div>
+                <div class="mx-6 account-cancellation-request-box domain-card">
+                  <p class="text-grey mb-0">Domain: <span class="text-blue">testhostingserver-bhavin.com</span></p>
+                </div>
+              </div>
+              <p class="fs-15 text-grey mb-1">Choose the package you want to upgrade/downgrade your current package to
+                from the options below.</p>
+              <div class="account-cancellation-request-box">
+                <p class="fw-500 fs-16 text-grey">Current Configuration:</p>
+                <p class="fw-500 fs-17 text-black">Shared Hosting - Personal Hosting Plan <span
+                    class="text-blue">(testhostingserver-alyona.com)</span></p>
+              </div>
+            </div>
+            <h4 class="fw-500 text-black fs-16 m-0 head-line-border">New Configuration:</h4>
+
+            <div class="row admin-card-box admin-card-box-style1  align-items-center upgrade-card-view">
+              <div class="col-sm-12 col-lg-8">
+                <h3 class="fw-500 shared-hosting-main-tital p-0 text-black m-0 mb-1">Shared Hosting - Business Hosting
+                  Plan:</h3>
+                <ul class="upgrade-card-contain">
+                  <li class="js-pricing-plan-benefits-list-item">
+                    <div class="js-pricing-plan-benefits-content"><i data-icon="jsIconCheckMarkRounded"
+                        class="ratio ratio-1x1 flex-center contain-image flex-auto-0"><svg width="21" height="20"
+                          viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.2549 19.9907C15.7686 19.9907 20.2549 15.5048 20.2549 9.99072C20.2549 9.03898 20.122 8.10107 19.859 7.20284C19.7294 6.76115 19.2681 6.50745 18.8252 6.63704C18.3831 6.76624 18.1302 7.22908 18.2594 7.67078C18.4773 8.41703 18.5882 9.19788 18.5882 9.99072C18.5882 14.5857 14.8498 18.3241 10.2549 18.3241C5.65995 18.3241 1.92155 14.5857 1.92155 9.99072C1.92155 5.39579 5.65995 1.65739 10.2549 1.65739C11.9248 1.65739 13.5315 2.14567 14.9011 3.06913C15.2823 3.3265 15.8007 3.22538 16.0577 2.84412C16.3149 2.46244 16.2146 1.94446 15.8329 1.6873C14.187 0.577474 12.2583 -0.00927734 10.2549 -0.00927734C4.74117 -0.00927734 0.254883 4.4766 0.254883 9.99072C0.254883 15.5048 4.74117 19.9907 10.2549 19.9907Z"
+                            fill="#254cec"></path>
+                          <path
+                            d="M18.8319 1.90121L10.2544 10.4783L7.51026 7.73455C7.18474 7.40923 6.6574 7.40923 6.33188 7.73455C6.00656 8.06007 6.00656 8.58741 6.33188 8.91293L9.66521 12.2463C9.82818 12.4092 10.041 12.4904 10.2544 12.4904C10.4678 12.4904 10.6806 12.4092 10.8436 12.2463L20.0103 3.0796C20.3356 2.75408 20.3356 2.22674 20.0103 1.90121C19.6847 1.5759 19.1574 1.5759 18.8319 1.90121Z"
+                            fill="#254cec"></path>
+                        </svg></i>
+                      <span class="text-black">Unlimited Disk Space</span>
+                    </div>
+                  </li>
+
+                  <li class="js-pricing-plan-benefits-list-item">
+                    <div class="js-pricing-plan-benefits-content"><i data-icon="jsIconCheckMarkRounded"
+                        class="ratio ratio-1x1 flex-center contain-image flex-auto-0"><svg width="21" height="20"
+                          viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.2549 19.9907C15.7686 19.9907 20.2549 15.5048 20.2549 9.99072C20.2549 9.03898 20.122 8.10107 19.859 7.20284C19.7294 6.76115 19.2681 6.50745 18.8252 6.63704C18.3831 6.76624 18.1302 7.22908 18.2594 7.67078C18.4773 8.41703 18.5882 9.19788 18.5882 9.99072C18.5882 14.5857 14.8498 18.3241 10.2549 18.3241C5.65995 18.3241 1.92155 14.5857 1.92155 9.99072C1.92155 5.39579 5.65995 1.65739 10.2549 1.65739C11.9248 1.65739 13.5315 2.14567 14.9011 3.06913C15.2823 3.3265 15.8007 3.22538 16.0577 2.84412C16.3149 2.46244 16.2146 1.94446 15.8329 1.6873C14.187 0.577474 12.2583 -0.00927734 10.2549 -0.00927734C4.74117 -0.00927734 0.254883 4.4766 0.254883 9.99072C0.254883 15.5048 4.74117 19.9907 10.2549 19.9907Z"
+                            fill="#254cec"></path>
+                          <path
+                            d="M18.8319 1.90121L10.2544 10.4783L7.51026 7.73455C7.18474 7.40923 6.6574 7.40923 6.33188 7.73455C6.00656 8.06007 6.00656 8.58741 6.33188 8.91293L9.66521 12.2463C9.82818 12.4092 10.041 12.4904 10.2544 12.4904C10.4678 12.4904 10.6806 12.4092 10.8436 12.2463L20.0103 3.0796C20.3356 2.75408 20.3356 2.22674 20.0103 1.90121C19.6847 1.5759 19.1574 1.5759 18.8319 1.90121Z"
+                            fill="#254cec"></path>
+                        </svg></i>
+                      <span class="text-black">Unlimited Traffic</span>
+                    </div>
+                  </li>
+                  <li class="js-pricing-plan-benefits-list-item">
+                    <div class="js-pricing-plan-benefits-content"><i data-icon="jsIconCheckMarkRounded"
+                        class="ratio ratio-1x1 flex-center contain-image flex-auto-0"><svg width="21" height="20"
+                          viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.2549 19.9907C15.7686 19.9907 20.2549 15.5048 20.2549 9.99072C20.2549 9.03898 20.122 8.10107 19.859 7.20284C19.7294 6.76115 19.2681 6.50745 18.8252 6.63704C18.3831 6.76624 18.1302 7.22908 18.2594 7.67078C18.4773 8.41703 18.5882 9.19788 18.5882 9.99072C18.5882 14.5857 14.8498 18.3241 10.2549 18.3241C5.65995 18.3241 1.92155 14.5857 1.92155 9.99072C1.92155 5.39579 5.65995 1.65739 10.2549 1.65739C11.9248 1.65739 13.5315 2.14567 14.9011 3.06913C15.2823 3.3265 15.8007 3.22538 16.0577 2.84412C16.3149 2.46244 16.2146 1.94446 15.8329 1.6873C14.187 0.577474 12.2583 -0.00927734 10.2549 -0.00927734C4.74117 -0.00927734 0.254883 4.4766 0.254883 9.99072C0.254883 15.5048 4.74117 19.9907 10.2549 19.9907Z"
+                            fill="#254cec"></path>
+                          <path
+                            d="M18.8319 1.90121L10.2544 10.4783L7.51026 7.73455C7.18474 7.40923 6.6574 7.40923 6.33188 7.73455C6.00656 8.06007 6.00656 8.58741 6.33188 8.91293L9.66521 12.2463C9.82818 12.4092 10.041 12.4904 10.2544 12.4904C10.4678 12.4904 10.6806 12.4092 10.8436 12.2463L20.0103 3.0796C20.3356 2.75408 20.3356 2.22674 20.0103 1.90121C19.6847 1.5759 19.1574 1.5759 18.8319 1.90121Z"
+                            fill="#254cec"></path>
+                        </svg></i>
+                      <span class="text-black">Unlimited Domains</span>
+                    </div>
+                  </li>
+                  <li class="js-pricing-plan-benefits-list-item">
+                    <div class="js-pricing-plan-benefits-content"><i data-icon="jsIconCheckMarkRounded"
+                        class="ratio ratio-1x1 flex-center contain-image flex-auto-0"><svg width="21" height="20"
+                          viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.2549 19.9907C15.7686 19.9907 20.2549 15.5048 20.2549 9.99072C20.2549 9.03898 20.122 8.10107 19.859 7.20284C19.7294 6.76115 19.2681 6.50745 18.8252 6.63704C18.3831 6.76624 18.1302 7.22908 18.2594 7.67078C18.4773 8.41703 18.5882 9.19788 18.5882 9.99072C18.5882 14.5857 14.8498 18.3241 10.2549 18.3241C5.65995 18.3241 1.92155 14.5857 1.92155 9.99072C1.92155 5.39579 5.65995 1.65739 10.2549 1.65739C11.9248 1.65739 13.5315 2.14567 14.9011 3.06913C15.2823 3.3265 15.8007 3.22538 16.0577 2.84412C16.3149 2.46244 16.2146 1.94446 15.8329 1.6873C14.187 0.577474 12.2583 -0.00927734 10.2549 -0.00927734C4.74117 -0.00927734 0.254883 4.4766 0.254883 9.99072C0.254883 15.5048 4.74117 19.9907 10.2549 19.9907Z"
+                            fill="#254cec"></path>
+                          <path
+                            d="M18.8319 1.90121L10.2544 10.4783L7.51026 7.73455C7.18474 7.40923 6.6574 7.40923 6.33188 7.73455C6.00656 8.06007 6.00656 8.58741 6.33188 8.91293L9.66521 12.2463C9.82818 12.4092 10.041 12.4904 10.2544 12.4904C10.4678 12.4904 10.6806 12.4092 10.8436 12.2463L20.0103 3.0796C20.3356 2.75408 20.3356 2.22674 20.0103 1.90121C19.6847 1.5759 19.1574 1.5759 18.8319 1.90121Z"
+                            fill="#254cec"></path>
+                        </svg></i>
+                      <span class="text-black">Shared IP Address</span>
+                    </div>
+                  </li>
                 </ul>
               </div>
-              <div class="tab tab-active" data-id="tab1">
-                <div class="admin-card-box table-wrap settings-2fa">
-                  <div>
-                    <h4 class="mb-0 fs-16 fw-500 text-black">Security Settings</h4>
-                    <p class="fw-400 fs-15 text-grey">The following security settings apply to your user account.</p>
-                    <hr>
-                    <h4 class="mb-0 fs-16 fw-500 text-black">Linked Accounts</h4>
-                    <p class="fw-400 fs-15 text-grey">Connect your account with any of the services below to simplify
-                      your sign-in experience. We only use this information to verify your account and will never post
-                      on your behalf.</p>
-                    <a href="login.html" target="_blank" class="secure-client-btn">
-                      <span>
-                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M5.69647 10.5447C5.69647 9.51058 5.98139 8.54184 6.47638 7.71236V4.19385H2.95787C1.5614 6.00749 0.804443 8.21783 0.804443 10.5447C0.804443 12.8716 1.5614 15.082 2.95787 16.8956H6.47638V13.3771C5.98139 12.5476 5.69647 11.5789 5.69647 10.5447Z"
-                            fill="#FBBD00"></path>
-                          <path
-                            d="M11.2407 16.0891L8.79468 18.5352L11.2407 20.9812C13.5676 20.9812 15.7779 20.2242 17.5916 18.8277V15.313H14.0768C13.2401 15.8098 12.2672 16.0891 11.2407 16.0891Z"
-                            fill="#0F9D58"></path>
-                          <path
-                            d="M6.47627 13.377L2.95776 16.8955C3.23424 17.2545 3.53531 17.5984 3.86108 17.9242C5.83224 19.8953 8.45302 20.9809 11.2407 20.9809V16.0889C9.21764 16.0889 7.44457 14.9996 6.47627 13.377Z"
-                            fill="#31AA52"></path>
-                          <path
-                            d="M21.677 10.5444C21.677 9.90944 21.6196 9.27331 21.5062 8.65374L21.4144 8.15234H11.2407V13.0444H16.1919C15.7111 14.0008 14.9719 14.7811 14.0768 15.3126L17.5916 18.8273C17.9506 18.5508 18.2945 18.2498 18.6203 17.924C20.5915 15.9528 21.677 13.332 21.677 10.5444Z"
-                            fill="#3C79E6"></path>
-                          <path
-                            d="M15.1611 6.62429L15.5935 7.05667L19.0527 3.59751L18.6203 3.16514C16.6492 1.19398 14.0284 0.108398 11.2407 0.108398L8.79468 2.55441L11.2407 5.00043C12.7216 5.00043 14.1139 5.57711 15.1611 6.62429Z"
-                            fill="#CF2D48"></path>
-                          <path
-                            d="M11.2407 5.00043V0.108398C8.45306 0.108398 5.83228 1.19398 3.86108 3.1651C3.53531 3.49087 3.23424 3.83474 2.95776 4.19385L6.47627 7.71236C7.44461 6.08972 9.21768 5.00043 11.2407 5.00043Z"
-                            fill="#EB4132"></path>
-                        </svg>
-                      </span>
-                      Sign in with Google
-                    </a>
-                  </div>
-                  <div class="table-responsive">
-                    <table class="w-100">
-                      <thead>
-                        <tr>
-                          <th class="border-none">
-                            <div class="d-flex align-items-center gap-1 fw-500 text-black">
-                              Provider
-                              <span class="line-height-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                  <path
-                                    d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                  </path>
-                                </svg>
-                              </span>
-                            </div>
-                          </th>
-                          <th class="border-none">
-                            <div class="d-flex align-items-center gap-1 fw-500 text-black">
-                              Name
-                              <span class="line-height-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                  <path
-                                    d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                  </path>
-                                </svg>
-                              </span>
-                            </div>
-                          </th>
-                          <th class="border-none">
-                            <div class="d-flex align-items-center gap-1 fw-500 text-black">
-                              Email Address
-                              <span class="line-height-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                  <path
-                                    d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                  </path>
-                                </svg>
-                              </span>
-                            </div>
-                          </th>
-                          <th>
-                            <div class="d-flex align-items-center gap-1 fw-500 text-black">
-                              Actions
-                              <span class="line-height-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                  <path
-                                    d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                  </path>
-                                </svg>
-                              </span>
-                            </div>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <h4 class="fw-500 m-0 text-black fs-15">Jet Server</h4>
-
-                          </td>
-                          <td>
-                            <h4 class="fw-500 m-0 text-black fs-15">Google</h4>
-                          </td>
-                          <td>
-                            <h4 class="fw-500 m-0 text-black fs-15">testhostingserver-alyona.com</h4>
-                          </td>
-                          <td>
-                            <button class="primary-btn small-btn exquisite-turquoise-bg">Active</button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <hr>
-                  </div>
-                  <div class="table-footer-wrap d-flex align-items-center flex-wrap">
-                    <div class="align-items-center text-alinggn-center-lg">
-                      <h4 class="fs-16 fw-500 text-black">Two-Factor Authentication</h4>
-                      <p class="text-grey fs-15">Two-factor authentication is currently <span
-                          class="disabled-span">disabled</span></p>
-                    </div>
-                    <div class="ms-auto pagination-wrap align-items-center">
-                      <button class="sign-up-btn ms-auto exquisite-turquoise-bg">Enable</button>
-                      <p class="text-grey fw-500">(Click here to Enable)</p>
-                    </div>
-                  </div>
-                  <div class="terms-service-crad-box account-security-crad-box">
-                    <p class="fs-16 m-0">We recommend enabling two-factor authentication to provide an extra layer of
-                      security to your account.</p>
+              <div class="col-sm-12 col-lg-4 p-0 upgrade-card-btns d-grid">
+                <div class="d-flex your-details-card-form ">
+                  <div
+                    class="d-flex wrapper-dropdown form-control custom-input max w-max-content align-items-center align-items-center"
+                    id="dropdown">
+                    <span class="selected-display text-black" id="destination ">
+                      $17.43 / Monthly
+                    </span>
+                    <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                    <ul class="dropdown">
+                      <li class="item text-black">
+                        $20.10 / Monthly
+                      </li>
+                      <li class="item text-black">
+                        $50.80 / Monthlyy
+                      </li>
+                    </ul>
                   </div>
                 </div>
+                <button class="primary-btn mt-1">Choose Product</button>
               </div>
-              <div class="tab" data-id="tab2">
-                <div class="admin-card-box table-wrap settings-2fa">
-                  <div class="align-items-center">
-                    <h4 class="mb-0 fs-16 fw-500 text-black">Security Settings</h4>
-                    <p class="fw-400 fs-15 text-grey">The following security settings apply to your user account.</p>
-                  </div>
-                  <div>
-                    <form class="row your-details-card-form">
-                      <div class="col-xs-12">
-                        <label for="first-name" class="mt-label fw-500">First Name</label>
-                        <input type="text" id="first-name" class="form-control custom-input w-53"
-                          placeholder="First Name">
-                      </div>
-                      <div class="col-xs-12">
-                        <label for="last-name" class="mt-label fw-500">Last Name</label>
-                        <input type="text" id="last-name" class="form-control custom-input w-53"
-                          placeholder="Last Name">
-                      </div>
-                      <div class="col-xs-12">
-                        <label for="wmail" class="mt-label fw-500">Email</label>
-                        <input type="email" id="email" class="settings-email form-control custom-input w-53"
-                          placeholder="Email">
-                      </div>
-                      <div class="account-details-form-btn col-sm-12 w-100">
-                        <input type="button" value="Cancel" class="theme-btn mx-6 fw-600">
-                        <input type="submit" value="Save Changes" class="theme-btn theme-btn-active mx-6 fw-600">
-                      </div>
-                    </form>
-                  </div>
-                </div>
+            </div>
+
+            <div class="row admin-card-box admin-card-box-style1  align-items-center upgrade-card-view">
+              <div class="col-sm-12 col-lg-8">
+                <h3 class="fw-500 shared-hosting-main-tital p-0 text-black m-0 mb-1">Shared Hosting - Business Hosting
+                  Plan:</h3>
+                <ul class="upgrade-card-contain upgrade-card-grid-3">
+                  <li class="js-pricing-plan-benefits-list-item">
+                    <div class="js-pricing-plan-benefits-content"><i data-icon="jsIconCheckMarkRounded"
+                        class="ratio ratio-1x1 flex-center contain-image flex-auto-0"><svg width="21" height="20"
+                          viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.2549 19.9907C15.7686 19.9907 20.2549 15.5048 20.2549 9.99072C20.2549 9.03898 20.122 8.10107 19.859 7.20284C19.7294 6.76115 19.2681 6.50745 18.8252 6.63704C18.3831 6.76624 18.1302 7.22908 18.2594 7.67078C18.4773 8.41703 18.5882 9.19788 18.5882 9.99072C18.5882 14.5857 14.8498 18.3241 10.2549 18.3241C5.65995 18.3241 1.92155 14.5857 1.92155 9.99072C1.92155 5.39579 5.65995 1.65739 10.2549 1.65739C11.9248 1.65739 13.5315 2.14567 14.9011 3.06913C15.2823 3.3265 15.8007 3.22538 16.0577 2.84412C16.3149 2.46244 16.2146 1.94446 15.8329 1.6873C14.187 0.577474 12.2583 -0.00927734 10.2549 -0.00927734C4.74117 -0.00927734 0.254883 4.4766 0.254883 9.99072C0.254883 15.5048 4.74117 19.9907 10.2549 19.9907Z"
+                            fill="#254cec"></path>
+                          <path
+                            d="M18.8319 1.90121L10.2544 10.4783L7.51026 7.73455C7.18474 7.40923 6.6574 7.40923 6.33188 7.73455C6.00656 8.06007 6.00656 8.58741 6.33188 8.91293L9.66521 12.2463C9.82818 12.4092 10.041 12.4904 10.2544 12.4904C10.4678 12.4904 10.6806 12.4092 10.8436 12.2463L20.0103 3.0796C20.3356 2.75408 20.3356 2.22674 20.0103 1.90121C19.6847 1.5759 19.1574 1.5759 18.8319 1.90121Z"
+                            fill="#254cec"></path>
+                        </svg></i>
+                      <span class="text-black">Unlimited Disk Space</span>
+                    </div>
+                  </li>
+
+                  <li class="js-pricing-plan-benefits-list-item">
+                    <div class="js-pricing-plan-benefits-content"><i data-icon="jsIconCheckMarkRounded"
+                        class="ratio ratio-1x1 flex-center contain-image flex-auto-0"><svg width="21" height="20"
+                          viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.2549 19.9907C15.7686 19.9907 20.2549 15.5048 20.2549 9.99072C20.2549 9.03898 20.122 8.10107 19.859 7.20284C19.7294 6.76115 19.2681 6.50745 18.8252 6.63704C18.3831 6.76624 18.1302 7.22908 18.2594 7.67078C18.4773 8.41703 18.5882 9.19788 18.5882 9.99072C18.5882 14.5857 14.8498 18.3241 10.2549 18.3241C5.65995 18.3241 1.92155 14.5857 1.92155 9.99072C1.92155 5.39579 5.65995 1.65739 10.2549 1.65739C11.9248 1.65739 13.5315 2.14567 14.9011 3.06913C15.2823 3.3265 15.8007 3.22538 16.0577 2.84412C16.3149 2.46244 16.2146 1.94446 15.8329 1.6873C14.187 0.577474 12.2583 -0.00927734 10.2549 -0.00927734C4.74117 -0.00927734 0.254883 4.4766 0.254883 9.99072C0.254883 15.5048 4.74117 19.9907 10.2549 19.9907Z"
+                            fill="#254cec"></path>
+                          <path
+                            d="M18.8319 1.90121L10.2544 10.4783L7.51026 7.73455C7.18474 7.40923 6.6574 7.40923 6.33188 7.73455C6.00656 8.06007 6.00656 8.58741 6.33188 8.91293L9.66521 12.2463C9.82818 12.4092 10.041 12.4904 10.2544 12.4904C10.4678 12.4904 10.6806 12.4092 10.8436 12.2463L20.0103 3.0796C20.3356 2.75408 20.3356 2.22674 20.0103 1.90121C19.6847 1.5759 19.1574 1.5759 18.8319 1.90121Z"
+                            fill="#254cec"></path>
+                        </svg></i>
+                      <span class="text-black">Unlimited Traffic</span>
+                    </div>
+                  </li>
+                  <li class="js-pricing-plan-benefits-list-item">
+                    <div class="js-pricing-plan-benefits-content"><i data-icon="jsIconCheckMarkRounded"
+                        class="ratio ratio-1x1 flex-center contain-image flex-auto-0"><svg width="21" height="20"
+                          viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.2549 19.9907C15.7686 19.9907 20.2549 15.5048 20.2549 9.99072C20.2549 9.03898 20.122 8.10107 19.859 7.20284C19.7294 6.76115 19.2681 6.50745 18.8252 6.63704C18.3831 6.76624 18.1302 7.22908 18.2594 7.67078C18.4773 8.41703 18.5882 9.19788 18.5882 9.99072C18.5882 14.5857 14.8498 18.3241 10.2549 18.3241C5.65995 18.3241 1.92155 14.5857 1.92155 9.99072C1.92155 5.39579 5.65995 1.65739 10.2549 1.65739C11.9248 1.65739 13.5315 2.14567 14.9011 3.06913C15.2823 3.3265 15.8007 3.22538 16.0577 2.84412C16.3149 2.46244 16.2146 1.94446 15.8329 1.6873C14.187 0.577474 12.2583 -0.00927734 10.2549 -0.00927734C4.74117 -0.00927734 0.254883 4.4766 0.254883 9.99072C0.254883 15.5048 4.74117 19.9907 10.2549 19.9907Z"
+                            fill="#254cec"></path>
+                          <path
+                            d="M18.8319 1.90121L10.2544 10.4783L7.51026 7.73455C7.18474 7.40923 6.6574 7.40923 6.33188 7.73455C6.00656 8.06007 6.00656 8.58741 6.33188 8.91293L9.66521 12.2463C9.82818 12.4092 10.041 12.4904 10.2544 12.4904C10.4678 12.4904 10.6806 12.4092 10.8436 12.2463L20.0103 3.0796C20.3356 2.75408 20.3356 2.22674 20.0103 1.90121C19.6847 1.5759 19.1574 1.5759 18.8319 1.90121Z"
+                            fill="#254cec"></path>
+                        </svg></i>
+                      <span class="text-black">Unlimited Domains</span>
+                    </div>
+                  </li>
+                  <li class="js-pricing-plan-benefits-list-item">
+                    <div class="js-pricing-plan-benefits-content"><i data-icon="jsIconCheckMarkRounded"
+                        class="ratio ratio-1x1 flex-center contain-image flex-auto-0"><svg width="21" height="20"
+                          viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.2549 19.9907C15.7686 19.9907 20.2549 15.5048 20.2549 9.99072C20.2549 9.03898 20.122 8.10107 19.859 7.20284C19.7294 6.76115 19.2681 6.50745 18.8252 6.63704C18.3831 6.76624 18.1302 7.22908 18.2594 7.67078C18.4773 8.41703 18.5882 9.19788 18.5882 9.99072C18.5882 14.5857 14.8498 18.3241 10.2549 18.3241C5.65995 18.3241 1.92155 14.5857 1.92155 9.99072C1.92155 5.39579 5.65995 1.65739 10.2549 1.65739C11.9248 1.65739 13.5315 2.14567 14.9011 3.06913C15.2823 3.3265 15.8007 3.22538 16.0577 2.84412C16.3149 2.46244 16.2146 1.94446 15.8329 1.6873C14.187 0.577474 12.2583 -0.00927734 10.2549 -0.00927734C4.74117 -0.00927734 0.254883 4.4766 0.254883 9.99072C0.254883 15.5048 4.74117 19.9907 10.2549 19.9907Z"
+                            fill="#254cec"></path>
+                          <path
+                            d="M18.8319 1.90121L10.2544 10.4783L7.51026 7.73455C7.18474 7.40923 6.6574 7.40923 6.33188 7.73455C6.00656 8.06007 6.00656 8.58741 6.33188 8.91293L9.66521 12.2463C9.82818 12.4092 10.041 12.4904 10.2544 12.4904C10.4678 12.4904 10.6806 12.4092 10.8436 12.2463L20.0103 3.0796C20.3356 2.75408 20.3356 2.22674 20.0103 1.90121C19.6847 1.5759 19.1574 1.5759 18.8319 1.90121Z"
+                            fill="#254cec"></path>
+                        </svg></i>
+                      <span class="text-black">Free Personal IP Address</span>
+                    </div>
+                  </li>
+                  <li class="js-pricing-plan-benefits-list-item">
+                    <div class="js-pricing-plan-benefits-content"><i data-icon="jsIconCheckMarkRounded"
+                        class="ratio ratio-1x1 flex-center contain-image flex-auto-0"><svg width="21" height="20"
+                          viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.2549 19.9907C15.7686 19.9907 20.2549 15.5048 20.2549 9.99072C20.2549 9.03898 20.122 8.10107 19.859 7.20284C19.7294 6.76115 19.2681 6.50745 18.8252 6.63704C18.3831 6.76624 18.1302 7.22908 18.2594 7.67078C18.4773 8.41703 18.5882 9.19788 18.5882 9.99072C18.5882 14.5857 14.8498 18.3241 10.2549 18.3241C5.65995 18.3241 1.92155 14.5857 1.92155 9.99072C1.92155 5.39579 5.65995 1.65739 10.2549 1.65739C11.9248 1.65739 13.5315 2.14567 14.9011 3.06913C15.2823 3.3265 15.8007 3.22538 16.0577 2.84412C16.3149 2.46244 16.2146 1.94446 15.8329 1.6873C14.187 0.577474 12.2583 -0.00927734 10.2549 -0.00927734C4.74117 -0.00927734 0.254883 4.4766 0.254883 9.99072C0.254883 15.5048 4.74117 19.9907 10.2549 19.9907Z"
+                            fill="#254cec"></path>
+                          <path
+                            d="M18.8319 1.90121L10.2544 10.4783L7.51026 7.73455C7.18474 7.40923 6.6574 7.40923 6.33188 7.73455C6.00656 8.06007 6.00656 8.58741 6.33188 8.91293L9.66521 12.2463C9.82818 12.4092 10.041 12.4904 10.2544 12.4904C10.4678 12.4904 10.6806 12.4092 10.8436 12.2463L20.0103 3.0796C20.3356 2.75408 20.3356 2.22674 20.0103 1.90121C19.6847 1.5759 19.1574 1.5759 18.8319 1.90121Z"
+                            fill="#254cec"></path>
+                        </svg></i>
+                      <span class="text-black">Free SSL Certificate</span>
+                    </div>
+                  </li>
+                  <li class="js-pricing-plan-benefits-list-item">
+                    <div class="js-pricing-plan-benefits-content"><i data-icon="jsIconCheckMarkRounded"
+                        class="ratio ratio-1x1 flex-center contain-image flex-auto-0"><svg width="21" height="20"
+                          viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.2549 19.9907C15.7686 19.9907 20.2549 15.5048 20.2549 9.99072C20.2549 9.03898 20.122 8.10107 19.859 7.20284C19.7294 6.76115 19.2681 6.50745 18.8252 6.63704C18.3831 6.76624 18.1302 7.22908 18.2594 7.67078C18.4773 8.41703 18.5882 9.19788 18.5882 9.99072C18.5882 14.5857 14.8498 18.3241 10.2549 18.3241C5.65995 18.3241 1.92155 14.5857 1.92155 9.99072C1.92155 5.39579 5.65995 1.65739 10.2549 1.65739C11.9248 1.65739 13.5315 2.14567 14.9011 3.06913C15.2823 3.3265 15.8007 3.22538 16.0577 2.84412C16.3149 2.46244 16.2146 1.94446 15.8329 1.6873C14.187 0.577474 12.2583 -0.00927734 10.2549 -0.00927734C4.74117 -0.00927734 0.254883 4.4766 0.254883 9.99072C0.254883 15.5048 4.74117 19.9907 10.2549 19.9907Z"
+                            fill="#254cec"></path>
+                          <path
+                            d="M18.8319 1.90121L10.2544 10.4783L7.51026 7.73455C7.18474 7.40923 6.6574 7.40923 6.33188 7.73455C6.00656 8.06007 6.00656 8.58741 6.33188 8.91293L9.66521 12.2463C9.82818 12.4092 10.041 12.4904 10.2544 12.4904C10.4678 12.4904 10.6806 12.4092 10.8436 12.2463L20.0103 3.0796C20.3356 2.75408 20.3356 2.22674 20.0103 1.90121C19.6847 1.5759 19.1574 1.5759 18.8319 1.90121Z"
+                            fill="#254cec"></path>
+                        </svg></i>
+                      <span class="text-black">Free Domain</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <div class="tab" data-id="tab3">
-                <div class="admin-card-box table-wrap settings-2fa">
-                  <div class="align-items-center">
-                    <h4 class="mb-0 fs-16 fw-500 text-black">Change Password</h4>
-                    <p class="fw-400 fs-15 text-grey">The password will additionally protect your account from hacking
-                    </p>
+              <div class="col-sm-12 col-lg-4  p-0 upgrade-card-btns d-grid">
+                <div class="d-flex your-details-card-form ">
+                  <div
+                    class="d-flex wrapper-dropdown form-control custom-input max w-max-content align-items-center align-items-center"
+                    id="dropdown">
+                    <span class="selected-display text-black" id="destination ">
+                      $17.43 / Monthly
+                    </span>
+                    <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                    <ul class="dropdown">
+                      <li class="item text-black">
+                        $20.10 / Monthly
+                      </li>
+                      <li class="item text-black">
+                        $50.80 / Monthlyy
+                      </li>
+                    </ul>
                   </div>
-                  <div>
-                    <form class="row your-details-card-form">
-                      <div class="col-xs-12 password-input position-relative">
-                        <label for="current-password" class="mt-label fw-500">Current Password</label>
-                        <input type="text" id="current-password"
-                          class="form-control custom-input w-53 fw-500 text-black" placeholder="*************"
-                          oninput="maskPassword(this)">
-                      </div>
-                      <div class="col-xs-12 password-input position-relative">
-                        <label for="new-password" class="mt-label fw-500 d-align w-53 justify-content-between">
-                          <div>New Password</div>
-                          <div class="generate-password">
-                            <button type="button" class="border-none" data-toggle="modal"
-                              data-target="#verification">Generate Password</button>
-                          </div>
-
-                        </label>
-                        <input type="text" id="new-password" class="form-control custom-input w-53 fw-500 text-black"
-                          placeholder="*************" oninput="maskPassword(this)">
-                      </div>
-                      <div class="container">
-                        <div class="progress w-53">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                            aria-valuemax="100" style="width:50%">
-                            <span class="sr-only">70% Complete</span>
-                          </div>
-                        </div>
-                        <div
-                          class="terms-service-crad-box account-security-crad-box w-53 tips-good-password-card d-flex">
-                          <svg width="18" height="27" viewBox="0 0 18 27" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M9.03348 4.29496C9.44231 4.29496 9.77375 3.96352 9.77375 3.55469V1.53129C9.77375 1.12246 9.44231 0.791016 9.03348 0.791016C8.62466 0.791016 8.29321 1.12246 8.29321 1.53129V3.55469C8.29321 3.96352 8.62466 4.29496 9.03348 4.29496Z"
-                              fill="#E89534" />
-                            <path
-                              d="M17.4531 3.42386C17.164 3.13476 16.6953 3.13476 16.4062 3.42386L14.8269 5.0031C14.5378 5.29215 14.5378 5.76089 14.8269 6.04999C15.116 6.33909 15.5847 6.33909 15.8738 6.04999L17.4531 4.47075C17.7422 4.18165 17.7422 3.71291 17.4531 3.42386Z"
-                              fill="#E89534" />
-                            <path
-                              d="M3.23993 6.04999C3.52903 5.76094 3.52903 5.2922 3.23993 5.0031L1.66069 3.42386C1.37164 3.13476 0.902898 3.13476 0.613798 3.42386C0.324698 3.71291 0.324698 4.18165 0.613798 4.47075L2.19304 6.04999C2.48219 6.33914 2.95088 6.33909 3.23993 6.04999Z"
-                              fill="#E89534" />
-                            <path
-                              d="M9.03359 5.97266C4.9245 5.97266 1.58154 9.31562 1.58154 13.4247C1.58154 17.2342 5.13484 19.099 5.13484 21.3209H8.29332V17.5964C7.37637 17.2867 6.71408 16.4189 6.71408 15.3988C6.71408 14.9899 7.04552 14.6585 7.45435 14.6585C7.86318 14.6585 8.19462 14.9899 8.19462 15.3988C8.19462 15.8614 8.57097 16.2377 9.03359 16.2377C9.49621 16.2377 9.87256 15.8614 9.87256 15.3988C9.87256 14.9899 10.204 14.6585 10.6128 14.6585C11.0217 14.6585 11.3531 14.9899 11.3531 15.3988C11.3531 16.4189 10.6908 17.2867 9.77386 17.5964V21.3209H12.9323C12.9323 19.0983 16.4856 17.2358 16.4856 13.4247C16.4856 9.31562 13.1427 5.97266 9.03359 5.97266Z"
-                              fill="#E89534" />
-                            <path
-                              d="M5.13477 23.7385C5.13477 25.0174 6.17529 26.058 7.45428 26.058H10.6128C11.8918 26.058 12.9323 25.0174 12.9323 23.7385V22.8008H5.13477V23.7385Z"
-                              fill="#E89534" />
-                          </svg>
-                          <div class="ms-1">
-                            <p class="fw-500 text-black m-0">Tips for a good password</p>
-                            <p class="text-grey">Use both upper and lowercase characters Include at least one symbol (#
-                              $ ! % & etc...) Don't use dictionary words</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-xs-12 password-input position-relative">
-                        <label for="confirm-password" class="mt-label fw-500">Confirm Current Password</label>
-                        <input type="text" id="confirm-password"
-                          class="form-control custom-input w-53 fw-500 text-black" placeholder="*************** "
-                          oninput="maskPassword(this)">
-                      </div>
-                      <div class="account-details-form-btn col-sm-12 w-100 change-password-btns">
-                        <input type="button" value="Cancel" class="theme-btn mx-6 fw-600">
-                        <input type="submit" value="Save Changes" class="theme-btn theme-btn-active mx-6 fw-600">
-                      </div>
-                    </form>
-                  </div>
-
                 </div>
+                <button class="primary-btn mt-1">Choose Product</button>
               </div>
             </div>
           </div>
-
           <footer class="footer d-align-justify flex-wrap">
             <small class="fw-500 text-flintstone">
               Copyright &copy; 2024 Jetserver Cloud.
@@ -966,47 +946,6 @@
       </div>
     </div>
     <!-- layout html end -->
-	<!-- Model Start -->
-    <div class="modal fade model-center" id="verification" role="dialog">
-      <div class="modal-dialog m-auto">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class=" text-center">
-            <h4 class="modal-title text-black fw-500">Generate Password</h4>
-          </div>
-          <div class="col-xs-12">
-            <label for="Password-Length" class="mt-label fw-500">Password Length</label>
-            <input type="number" id="Password-Length" class="form-control custom-input fw-500 text-black"
-              placeholder="12 ">
-          </div>
-          <div class="col-xs-12">
-            <label for="Generated-Password" class="mt-label fw-500">Generated Password</label>
-            <input type="password" id="Generated-Password" class="form-control custom-input  fw-500 text-black"
-              placeholder="gly1fP-_fO#e&">
-            <div class="generate-new-password">
-              <button class="exquisite-turquoise-bg new-password fs-16 border-none text-white">+ Generate New
-                Password</button>
-              <button class=" theme-btn theme-btn-active copy-btn"><svg width="19" height="19" viewBox="0 0 19 19"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M8.39058 16.5802H13.4977C13.2327 17.2425 12.7751 17.8099 12.1841 18.2093C11.5931 18.6086 10.8958 18.8214 10.1825 18.8202H3.91061C3.43992 18.8203 2.97382 18.7277 2.53894 18.5476C2.10405 18.3676 1.70891 18.1036 1.37608 17.7708C1.04325 17.4379 0.779266 17.0428 0.599203 16.6079C0.419139 16.173 0.326528 15.7069 0.32666 15.2362V8.06829C0.327721 7.19553 0.646655 6.35304 1.22382 5.69838C1.80099 5.04371 2.59686 4.6217 3.4626 4.51126V11.6523C3.4626 14.3671 5.67569 16.5802 8.39058 16.5802ZM16.0065 4.70832H17.906C17.8509 4.62757 17.7879 4.55254 17.7178 4.48434L14.6625 1.42887C14.5965 1.35912 14.5211 1.2989 14.4385 1.24995V3.14035C14.4405 3.5556 14.6063 3.95327 14.9 4.24689C15.1936 4.54052 15.5912 4.70635 16.0065 4.70832ZM16.0065 6.05231C15.2346 6.05082 14.4948 5.74355 13.9491 5.19778C13.4033 4.652 13.096 3.9122 13.0945 3.14035V0.900391H8.39058C7.91989 0.900258 7.45379 0.992869 7.0189 1.17293C6.58401 1.353 6.18886 1.61698 5.85603 1.94981C5.5232 2.28263 5.25921 2.67778 5.07914 3.11266C4.89908 3.54755 4.80646 4.01365 4.80659 4.48434V11.6523C4.80647 12.123 4.89909 12.5891 5.07916 13.024C5.25923 13.4588 5.52322 13.854 5.85605 14.1868C6.18888 14.5196 6.58402 14.7836 7.01891 14.9637C7.45379 15.1437 7.91989 15.2364 8.39058 15.2362H14.6625C15.1332 15.2364 15.5993 15.1437 16.0342 14.9637C16.4691 14.7836 16.8642 14.5196 17.197 14.1868C17.5298 13.854 17.7938 13.4588 17.9739 13.024C18.154 12.5891 18.2466 12.123 18.2465 11.6523V6.05231H16.0065Z"
-                    fill="white" />
-                </svg>
-              </button>
-            </div>
-            <hr class="model-hr">
-          </div>
-          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-          <div class="account-details-form-btn justify-content-center d-flex w-100">
-            <input type="button" value="Cancel" class="theme-btn mx-6 fw-600" data-dismiss="modal">
-            <input type="submit" value="Tips for a good password" class="theme-btn theme-btn-active mx-6 fw-600">
-          </div>
-        </div>
-
-      </div>
-    </div>
-	<!-- Model end -->
   </main>
   <!-- script start -->
   <script src="./assets/scripts/jquery.js"></script>

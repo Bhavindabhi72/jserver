@@ -136,3 +136,20 @@ $(function() {
   });
 });
 // counter progressbar js end
+// text editor js start
+$('#summernote').summernote({
+  placeholder: '',
+  tabsize: 2,
+  height: 100,
+  toolbar: [
+    ['style', ['style']],
+    ['font', ['bold', 'underline', 'clear']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['table', ['table']],
+    ['insert', ['link', 'picture', 'video']],
+    ['view', ['fullscreen', 'codeview', 'help']]
+  ],
+  fontNames: ['Arial']
+});
+// text editor js end

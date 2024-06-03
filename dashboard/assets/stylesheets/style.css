@@ -107,6 +107,11 @@ h6 {
     color: var(--stowaway);
 }
 
+.b-radius-8,
+.radius.b-radius-8{
+    border-radius: 8px;
+}
+
 a:hover {
     color: var(--stowaway) !important;
 }
@@ -118,21 +123,41 @@ a:hover {
 .text-red {
     color: var(--red) !important;
 }
+.text-decoration-none:hover{
+    text-decoration: none;
+}
 
 .m-0 {
     margin: 0px !important;
 }
 
+.p-0{
+    padding: 0 !important;
+}
+
+.p-1{
+    padding: 20px  0!important;
+}
+.my-1{
+    margin: 35px 0px;
+}
+
+.mx-5{
+    margin: 0px 62px;
+}
 .m-auto {
     margin: auto;
 }
-
 .mt-0 {
     margin-top: 0;
 }
 
-.mb-0 {
-    margin-bottom: 0;
+.mt-1{
+    margin-top: 10px ;
+}
+
+.width-max-content {
+    min-width: max-content !important;
 }
 
 .border-none {
@@ -235,7 +260,8 @@ li {
     overflow: hidden;
 }
 
-.text-primary-theme {
+.text-primary-theme,
+.hover-text-primary-theme:hover {
     color: var(--primary-theme) !important;
 }
 
@@ -268,7 +294,9 @@ hr {
 .exquisite-turquoise-bg {
     background-color: var(--malted-mint-madness) !important;
 }
-
+.blue-metal-bg{
+    background-color: var(--blue-metal) !important;
+}
 .joyful-orange-bg {
     background-color: var(--joyful-orange) !important;
 }
@@ -384,6 +412,9 @@ h3,
 /* .ms-4{
     margin-left: 15px;
 } */
+.gap.gap-0,.gap-0{
+    grid-gap: 0;
+}
 .gap-5 {
     grid-gap: 30px;
 }
@@ -405,7 +436,7 @@ h3,
 }
 
 .d-flex,
-.flex.d-flex {
+.flex.d-flex{
     display: flex;
 }
 
@@ -851,7 +882,14 @@ a:focus {
     justify-content: center;
     transition: all 0.3s;
 }
-
+.transparent-btn{
+    background-color: transparent;
+    border: 1px solid var(--primary-theme);
+    color: var(--primary-binary);
+}
+.mx-w-auto{
+    max-width: max-content;
+}
 .sign-up-btn:hover,
 .primary-btn:hover {
     background: #0E6EFF;
@@ -1724,7 +1762,7 @@ a.secure-client-btn:hover {
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
-    background-color: #0c1e35;
+    background-color: #b5cee8;
 }
 
 .sidebar .image-wrapper {
@@ -3183,10 +3221,14 @@ input[type=radio] {
     background-color: rgba(37, 76, 236, 1);
 }
 
-.remove-btn {
+.remove-btn,.request-cancellation-btn{
     background-color: rgba(255, 66, 66, 1);
+    border: 1px solid rgba(255, 66, 66, 1);
 }
 
+.remove-btn:hover , .request-cancellation-btn:hover{
+    background-color:  rgb(245, 75, 75);
+}
 .permissions-btn svg,
 .remove-btn svg {
     margin: 0px 3px;
@@ -3851,6 +3893,7 @@ align-content-center {
     margin-bottom: 7px;
 }
 
+
 .settings-2fa .account-security-crad-box {
     padding: 18px 36px;
     margin: 20px 0px;
@@ -3910,21 +3953,18 @@ align-content-center {
     margin: 5px 10px;
 }
 
-.modal-dialog {
-    width: 760px;
-}
 .generate-new-password {
     margin: 20px 0px;
 }
 
-.generated-password-hr {
+.model-hr {
     margin: 40px 0px;
 }
 
 .modal-content {
     padding: 62px 50px 47px;
     border-radius: 37px;
-    margin-top: 20%;
+   /*  margin-top: 20%; */
 }
 
 .modal-content .custom-input {
@@ -3936,6 +3976,9 @@ align-content-center {
     padding-bottom: 30px;
 }
 
+.model-center.in{
+    display: flex !important;
+}
 /* account security security settings end */
 
 
@@ -4234,7 +4277,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     padding: 20px 25px;
     margin: auto 20px;
     border-radius: 50%;
-    max-width: 78px;
+    max-width: max-content;
 }
 
 .manage-product-content-box-text{
@@ -4266,7 +4309,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 
 .manage-product-content-box-table-tab-2{
     display: grid;
-    grid-template-columns : 300px 300px 300px;
+    grid-template-columns : repeat(3, 1fr);
     grid-gap : 20px;
 }
 
@@ -4428,3 +4471,169 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 }
 /*  counter progressbar css end */
 /* active product service css end */
+
+/* account cancellation request start */
+.account-cancellation-request-box{
+    background-color: rgba(242, 245, 255, 1);
+    padding: 30px 43px;
+    border-radius: 6px;
+}
+.text-blue{
+    color: var(--primary-theme);
+}
+/* account cancellation request end */
+
+/* upgrade downgrade start */
+.service-domain-box .account-cancellation-request-box{
+    padding: 16px 26px;
+}
+.upgrade-card-btns .wrapper-dropdown , .upgrade-card-btns .primary-btn {
+    min-width: 242px ;
+    max-width: 242px;
+}
+.upgrade-card-view{
+    grid-gap: unset;
+}
+.upgrade-card-contain{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 35px 62px;
+    margin-top: 30px;
+    justify-content: start;
+}
+.upgrade-card-btns {
+    justify-content: end;
+}
+.upgrade-card-grid-3{
+    grid-template-columns: repeat(3, auto);  
+}
+/* upgrade downgrade end */
+
+/* support-ticket-reply-view css start */
+.ticket-generate-col{
+    background-color: #EBEFFF;
+    border-radius: 8px;
+    padding: 14px 13px;
+}
+.ticket-generate-col h6{
+    font-size: 14px;
+    font-weight: 400;
+    color: #7A859D;
+}
+.ticket-generate-col .small-btn{
+    font-size: 12px;
+    min-height: 20px;
+    padding: 2px 10px;
+}
+.repaly-option-head-wrap a{
+    font-size: 15px;
+    font-weight: 400;
+    color: #636B7E;
+}
+.repaly-option-head-wrap .closed-text{
+    color: #FF4242;
+}
+.repaly-option-head-wrap b{
+    color: #C8CBD4; 
+}
+.cc-recipients-field-wrap{
+    max-width: 900px;
+}
+.ticket-reopen-msg-wrap{
+    background-color: #FFF9F1;
+    border: 1px solid #F3DCBD;
+    padding: 16px;
+    border-radius: 8px;
+    display: inline-flex;
+    margin: 0 auto;
+}
+.ticket-reopen-msg-wrap p{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #4A4A4A;
+}
+.ticket-reopen-footer-wrap .welcome-admin-profile-wrap{
+    margin: 37px 0 20px;
+}
+.ticket-reopen-footer-wrap .welcome-user-profile{
+    width: 50px;
+    height: 50px;
+    box-shadow: unset;
+}
+.support-ticket-repaly-wrap{
+    border: 2px solid #E6EEF6;
+    margin-top: 36px;
+    border-radius: 8px;
+}
+.support-ticket-repaly-head-wrap{
+    background-color: #E5F2FE;
+    padding: 20px 25px;
+}
+.support-ticket-repaly-body-wrap{
+    padding: 20px 25px;
+}
+.support-ticket-repaly-body-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 22px;
+}
+.ticket-generate-row{
+    grid-gap: 10px 14px;
+}
+/* file upload css start */
+.custom-upload-wrap{
+    background-color: #F0F8FF;
+    padding: 17px;
+    min-height: 145px;
+    border-radius: 8px;
+}
+.custom-upload-box {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    min-height: inherit;
+  }
+.custom-upload-box .upload__input {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    min-height: inherit;
+}
+.custom-upload-box .upload__btn{
+    border: 2px dashed #C7D2DD;
+    color: #5B6570;
+    background-color: white;
+    padding: 8px 20px 8px 32px;
+    font-size: 15px;
+    font-weight: 400;
+    background: url(http://annavlasenko.com/files-for-codepen/upload.png);
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    min-height: inherit;
+    border-radius: 8px;
+}
+/* file upload css end */
+.custom-upload-wrap h5{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--blue-metal);
+}
+/* text editor css start */
+.note-editor.note-frame {
+    border: 1px solid #DEE8F0;
+    background-color: #F6FBFF;
+    border-radius: 8px;
+}
+.note-popover .note-popover-content, .note-toolbar{
+    background-color: #E5F2FE;
+}
+.note-editor.note-frame .note-editing-area .note-editable{
+    background-color: #F6FBFF;
+}
+/* text editor css end */
+/* support-ticket-reply-view css end */
