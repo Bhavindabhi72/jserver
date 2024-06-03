@@ -218,7 +218,9 @@ a:hover {
 .float-right {
     float: right;
 }
-
+.text-align-end{
+	text-align: end;
+}
 .mx-1 {
     margin: 0px 20px 0px 20px;
 }
@@ -2766,6 +2768,7 @@ table tbody tr:not(:last-child) {
 .table-footer-wrap h4 {
     font-size: 14px;
     color: #8893AC;
+	margin: 0;
 }
 
 .pagination-wrap ul li {

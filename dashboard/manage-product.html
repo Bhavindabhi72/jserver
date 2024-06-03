@@ -405,7 +405,7 @@
                       class="fw-600 text-white m-0 text-ellipsis-1">9</span></div>
                   <div class="notification-dropbox-wrap notifications-msg-dropbox-wrap position-absolute">
                     <div class="arrow-up"></div>
-                    <div class="notifications-head d-flex align-items-center">
+                    <div class="notifications-head d-flex align-items-center justify-content-between">
                       <div class="d-flex align-items-center gap-1">
                         <h3 class="fw-500 m-0">Notifications</h3>
                         <div class="count-msg-number-box d-align-justify"><span
@@ -670,7 +670,7 @@
             </div>
             <div class="admin-card-box manage-product-content-box position-relative d-flex justify-content-between">
                 <div class="d-flex">
-                    <div class="m-auto manage-product-content-box-icon">
+                    <div class="manage-product-content-box-icon">
                         <svg width="29" height="34" viewBox="0 0 29 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.8187 18.9374C15.325 18.9528 14.8314 18.9613 14.34 18.9613C13.8469 18.9613 13.3515 18.9533 12.8567 18.9374C8.69117 18.8234 5.37169 18.235 2.98165 17.3957C1.85814 17.0167 0.896335 16.5707 0.153564 16.0605V20.0956V20.3793V20.663V21.3944C1.76848 23.0803 7.18634 24.635 14.3394 24.635C21.4925 24.635 26.9103 23.0803 28.5253 21.3944V20.663V20.3793V20.0956V16.0605C27.7774 16.5741 26.8071 17.0235 25.6739 17.4037C23.285 18.2389 19.9723 18.8239 15.8187 18.9374Z" fill="white"/>
                             <path d="M0.153564 8.62109V12.6561V12.9398V13.2236V13.955C1.65045 15.5177 6.41406 16.968 12.7994 17.1712C12.8646 17.1735 12.9316 17.174 12.9974 17.1757C13.1824 17.1808 13.3668 17.1859 13.5546 17.1888C13.814 17.1933 14.0756 17.1956 14.3394 17.1956C14.6033 17.1956 14.8649 17.1933 15.1242 17.1893C15.3114 17.1865 15.4964 17.1814 15.6814 17.1763C15.7472 17.1746 15.8142 17.1735 15.8794 17.1718C22.2648 16.968 27.0284 15.5177 28.5253 13.9555V13.2236V12.9398V12.6561V8.62109C25.7636 10.518 19.9252 11.5212 14.3394 11.5212C8.75359 11.5212 2.91583 10.518 0.153564 8.62109Z" fill="white"/>
@@ -685,12 +685,29 @@
                 </div>
                 <button class="remove-btn ">Request Cancellation</button>
             </div>
-            <div class="admin-card-box user-management-box admin-card-box-style1 manage-product-content-box-text d-flex">
-               <p class="text-grey">Server Location: <span class="fs-15 fw-500 text-black mx-1">Tuesday, May 28th, 2024</span></p>
-               <p class="text-grey">Recurring Amount: <span class="fs-15 fw-500 text-black mx-1">$0.00USD</span></p>
-               <p class="text-grey">Billing Cycle: <span class="fs-15 fw-500 text-black mx-1">Monthly</span></p>
-               <p class="text-grey">Next Due Date: <span class="fs-15 fw-500 text-black mx-1">Friday, June 28th, 2024</span></p>
-               <p class="text-grey">Payment Method: <span class="fs-15 fw-500 text-black mx-1">Credit Card</span></p>
+            <div class="admin-card-box user-management-box admin-card-box-style1 d-flex">
+               <div class="options-tab">
+                <div class="form-row">
+                  <p class="text-grey">Server Location: </p>
+                  <span class="fs-15 text-black fw-500">Tuesday, May 28th, 2024</span>
+                </div>
+                <div class="form-row">
+                  <p class="text-grey">Recurring Amount: </p>
+                  <span class="fs-15 text-black fw-500">$0.00USD</span>
+                </div>
+                <div class="form-row">
+                  <p class="text-grey">Billing Cycle: </p>
+                  <span class="fs-15 text-black fw-500">Monthly</span>
+                </div>
+                <div class="form-row">
+                  <p class="text-grey">Next Due Date: </p>
+                  <span class="fs-15 text-black fw-500">Friday, June 28th, 2024</span>
+                </div>
+                <div class="form-row">
+                  <p class="text-grey">Payment Method:</p>
+                  <span class="fs-15 text-black fw-500">Credit Card</span>
+                </div>
+               </div>
             </div>
             <div class="admin-card-box manage-product-content-box-table">
                 <div class="tab-container">
@@ -702,7 +719,7 @@
                   </div>
                   <div class="tab tab-active"  data-id="tab1">
                     <div class="manage-product-content-box-table-tab manage-product-content-box-table-tab-1 position-relative w-100">
-                      <p class="text-grey">Payment Method: <span class="fs-15 fw-500 text-black mx-1">Credit Card</span></p>
+                      <p class="text-grey">Hostname:: <span class="fs-15 fw-500 text-black mx-1">JetServer</span></p>
                       <p class="text-center">The provided server id not exists</p>
                     </div>
                   </div>
