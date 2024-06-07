@@ -28,6 +28,7 @@
     --christmas-silver: #e0e0e0;
     --gravel-fint: #bbbbbb;
     --cool-grey: #8893ac;
+	--color-ghost-white:#f2f5ff;
     --dropdown-option-mt: 30px;
     --sidebar-width: 308px;
     --sidebar-xy-spacing: 37px;
@@ -229,6 +230,10 @@ a:hover {
     line-height: 0;
 }
 
+.mx-2 {
+    margin-left: 14px;
+    margin-right: 14px;
+}
 .ms-auto {
     margin-left: auto;
 }
@@ -313,6 +318,9 @@ hr {
 
 .carnelian-bg {
     background-color: var(--carnelian) !important;
+}
+.bg-ghost{
+	background-color: var(--color-ghost-white);
 }
 
 .small-text {
@@ -444,10 +452,6 @@ h3,
 
 .align-items-center {
     align-items: center;
-}
-
-.justify-content-between {
-    justify-content: space-between;
 }
 
 .justify-content-center {
@@ -2005,7 +2009,7 @@ a.secure-client-btn:hover {
     color: var(--primary-secondary);
 }
 
-.layout .sidebar .menu .menu-item.sub-menu .menu-item a:hover .menu-title::before {
+.layout .sidebar .menu .menu-item.sub-menu .menu-item a:hover .menu-title::before,.menu-item.active .menu-title::before{
     background-color: var(--primary-secondary);
 }
 
@@ -2322,7 +2326,8 @@ a {
 
 .active-menu-item .menu-icon svg path,
 .layout .sidebar .menu .menu-item a:hover svg path,
-.layout .sidebar .menu .menu-item.sub-menu.open>a svg path {
+.layout .sidebar .menu .menu-item.sub-menu.open>a svg path,
+.layout .sidebar .menu .menu-item.sub-menu-active>a svg path  {
     color: var(--primary-theme);
 }
 
@@ -3448,7 +3453,7 @@ input:checked+.slider .off-text {
 }
 
 .admin-card-box-style1 {
-    padding: 43px 48px !important;
+    padding: 43px 48px;
     margin: 25px 0px;
 }
 
@@ -3464,7 +3469,7 @@ input:checked+.slider .off-text {
 /* account security css end */
 
 /* cloud servers page css start*/
-align-content-center {
+.align-content-center {
     align-content: center;
 }
 
@@ -4476,23 +4481,24 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 /* active product service css end */
 
 /* account cancellation request start */
-.account-cancellation-request-box{
-    background-color: rgba(242, 245, 255, 1);
-    padding: 30px 43px;
+.card-ghost-style{
+	padding: 30px 43px;
     border-radius: 6px;
 }
+
 .text-blue{
     color: var(--primary-theme);
 }
 /* account cancellation request end */
 
 /* upgrade downgrade start */
-.service-domain-box .account-cancellation-request-box{
+.service-domain-box .card-ghost-style{
     padding: 16px 26px;
 }
 .upgrade-card-btns .wrapper-dropdown , .upgrade-card-btns .primary-btn {
     min-width: 242px ;
     max-width: 242px;
+	margin: 7px;
 }
 .upgrade-card-view{
     grid-gap: unset;
@@ -4640,3 +4646,208 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 }
 /* text editor css end */
 /* support-ticket-reply-view css end */
+
+/* manage firewall firewall start */
+
+.manage-firewall-firewall-content .billing-overview-row{
+    margin: 52px 0px 150px;
+}
+
+.manage-firewall-firewall-content .tab-container .tab-menu ul li a {
+    min-width: 0px;
+    padding: 7px 15px;
+}
+
+.unblock-ip-tab .ip-address{
+    background-color: rgba(255, 249, 241, 1);
+    border: 1px solid  rgba(243, 220, 189, 1);
+}
+
+.temporary-ip-tab .ip-address{
+    background-color: rgba(233, 255, 246, 1);
+    border: 1px solid rgba(183, 243, 218, 1);
+}
+
+.temporary-ip-tab .ip-address  i{
+    background-color: rgba(75, 174, 79, 1);
+    padding: 2px 4px 3px;
+}
+.temporary-ip-tab .ip-address  p{
+    color: #303237;
+}
+
+.email-key-tab .action-icon{
+    margin-top: 15px;
+}
+
+/* manage firewall firewall end */
+
+ /* affiliates start */
+
+.affiliates-content .permissions-btn{
+    padding: 14px ;
+    max-height: 49px;
+}
+
+.affiliates-content .amount-card-box div{
+    padding: 0px 36px;
+}
+
+.affiliates-content div.card-ghost-style{
+    padding: 14px 36px;
+}
+
+/* affiliates end*/
+
+/* open ticket start */
+
+.open-ticket-content .admin-dashboard-icon-box{
+    width: 65px;
+    height: 65px;
+}
+
+/* open ticket end */
+
+
+#billingAddress .wrapper-dropdown{
+    align-items: center;
+    display: flex;
+    min-height: 50px;
+}
+
+/* #billingAddress .modal-content {
+    max-height: 771px !important;
+}
+ */
+.bill-form-data{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 400px;
+}
+/* choose domain start */
+
+.choose-domain-box-tab{
+    border: 1px solid  #DDDDDD;
+    border-radius: 12px;
+}
+
+.choose-domain-content .admin-card-box , .choose-domain-content  .your-details-card-form{
+    flex-direction: column;
+}
+
+.choose-domain-content .your-details-card-form{
+    padding: 76px 0px 90px ;
+}
+
+.choose-domain-content .manage-product-content-box-table .tab-container .tab-menu ul li a{
+    padding: 7px 31px;
+}
+
+.choose-domain-content .manage-product-content-box-table .tab-container .tab-menu ul li{
+    min-width: max-content;
+}
+
+.choose-domain-box-tab .theme-btn-active{
+    margin: 30px 0px 0px ;
+}
+
+.w-70{
+    width: 70%;
+}
+/* choose domain end */
+
+/* product addons start */
+
+.product-addons-crad-box h3{
+    font-size: 32px !important;
+}
+.product-addons-crad-box .primary-btn{
+    padding: 11px 0px;
+    max-width: 131px;
+    max-height: 50px;
+}
+
+.product-addons-content span{
+    padding: 0px 3px;
+}
+
+/* product addons end */
+
+
+/* review checkout start */
+
+.review-checkout-card-box-col{
+    border: 1px solid #EAE7E7;
+    padding: 40px 29px;
+}
+
+.bg-litepurple{
+    background-color: #F8F8FF !important;
+}
+
+.review-checkout-card-box-col .js-footer-nav-title{
+    margin-bottom: 60px;
+}
+
+.review-checkout-card-box-col .product-addons-crad-box{
+    padding: 22px;
+}
+
+.review-checkout-card-box-col-order{
+    padding: 25px 29px;
+}
+/* review checkout end */
+
+/* domain renewal start */
+
+.viwe-cart-btn{
+    max-width: 157px !important;
+}
+
+.review-checkout-card-box-col .span-box {
+    background-color: #E8F8F5;
+    padding: 9px 53px;
+    border-radius: 7px;
+    max-width: max-content;
+}
+
+/* domain renewal end */
+
+/* register domain start */
+
+.fs-21{
+    font-size: 21px;
+}
+
+.register-domain-content .viwe--btn{
+    max-height: 42px;
+    background-color: var(--white);
+    max-width: 106.62px;
+    color: var(--black);
+    padding: 10px 20px;
+}
+
+.register-domain-content .manage-product-content-box-icon{
+    padding: 20px 25px;
+}
+.register-domain-content .manage-product-content-box-icon svg{
+    min-width: 46px;
+}
+
+.register-domain-content .viwe--btn svg{
+    margin: 0px 5px;
+}
+.register-domain-content .viwe--btn:hover{
+    opacity: 0.5;
+    color: var(--black) !important;
+}
+
+.transfer-domain-card-box{
+    background-color: #151D3A;
+}
+
+.register-domain-content .tab-container .tab-menu ul li a{
+    min-width: 0;
+}
+
+/* register domain end */}
