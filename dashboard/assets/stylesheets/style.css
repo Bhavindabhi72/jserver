@@ -4390,6 +4390,15 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     border-radius: 0 14px 14px 0;
     width: 40%;
 }
+.direction-rtl .quick-email-acc-wrap input:first-child{
+	border-radius: 0 14px 14px 0;
+}
+.direction-rtl .quick-email-acc-wrap input:last-child{
+	border-radius: 14px 0 0 14px;
+}
+.quick-email-acc-wrap .form-control[disabled]{
+	background-color: rgba(209, 231, 251, 1);
+}
 .quick-email-acc-wrap input:last-child::placeholder{
     color: var(--black) !important;
 }
