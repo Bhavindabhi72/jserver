@@ -716,6 +716,7 @@
 	
 	.choose-domain-content .your-details-card-form{
 		padding: 10px 0px 30px ;
+		max-width: 80%;
 	}
 }
 
@@ -1024,9 +1025,13 @@
     .bill-form-data{
 		max-height: 300px;
 	}
-	.choose-domain-box-tab-width{
-		width:80%;
-	}
+	.setting-box {
+        padding: 16px 15px 7px;
+    }
+    .manage-nameservers .renew-domain-btn{
+        width: max-content ;
+        padding: 14px 30px;
+    }
 }
 
 @media (max-width: 480px) {

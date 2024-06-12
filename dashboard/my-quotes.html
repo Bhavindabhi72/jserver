@@ -20,7 +20,7 @@
   <!-- layout css end -->
   <link rel="stylesheet" href="./assets/stylesheets/style.css" />
   <link rel="stylesheet" href="./assets/stylesheets/responsive.css" />
-  <title>Choose a Domain</title>
+  <title>My Quotes</title>
 </head>
 
 <body>
@@ -316,7 +316,7 @@
                     <span class="menu-title">Affiliates</span>
                   </a>
                 </li>
-                <li class="menu-item sub-menu">
+                <li class="menu-item sub-menu open">
                   <a href="#">
                     <span class="menu-icon">
                       <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -334,7 +334,7 @@
                           <span class="menu-title">My Invoices</span>
                         </a>
                       </li>
-                      <li class="menu-item">
+                      <li class="menu-item active">
                         <a href="my-quotes.html">
                           <span class="menu-title">My Quotes</span>
                         </a>
@@ -449,7 +449,7 @@
             </a>
           </div>
           <div class="admin-header d-align">
-            <h4 class="fw-500 text-black m-0">Services</h4>
+            <h4 class="fw-500 text-black m-0">Billing</h4>
             <div class="admin-header-option d-align">
               <div class="country-dropdown-menu">
                 <div class="language-select-wrap">
@@ -768,113 +768,224 @@
               </ul>
             </div>
           </div>
-          <div class="admin-body-content choose-domain-content">
-            <h4 class="admin-head m-0 head-line-border">Choose a Domain</h4>
-            <div class="admin-card-box table-wrap manage-product-content-box-table">
-              <div class="tab-container">
-                <div class="tab-menu">
-                  <ul class="d-flex align-items-center w-100 account-security-tab">
-                    <li><a href="#"
-                        class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a"
-                        data-id="new-domain">Register a new domain</a></li>
-                    <li><a href="#"
-                        class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                        data-id="another-registrar">Transfer your domain from another registrar</a></li>
-                    <li><a href="#"
-                        class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                        data-id="existing-domain">I will use my existing domain and update my nameservers </a></li>
-                  </ul>
-                </div>
-                <div class="tab tab-active" data-id="new-domain">
-                  <div class="choose-domain-box-tab">
-                    <form class="your-details-card-form">
-                      <div class="choose-domain-box-tab-width">
-                        <label for="subject" class="mt-label fw-500">Domain</label>
-                        <input type="text" id="subject" class="form-control custom-input"
-                          placeholder="Enter domain name">
-                      </div>
-                      <div class="choose-domain-box-tab-width">
-                        <label for="department" class="mt-label fw-500">Required</label>
-                        <div
-                          class="d-flex wrapper-dropdown form-control custom-input max w-max-content  align-items-center"
-                          id="department">
-                          <span class="selected-display" id="destination">
-                            com
-                          </span>
-                          <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          <div class="admin-body-content">
+            <h4 class="admin-head m-0 head-line-border">My Quotes</h4>
+            <div class="tab-container">
+              <div class="tab-menu">
+                <ul class="d-flex align-items-center w-100">
+                  <li><a href="#"
+                      class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a"
+                      data-id="delivered">Delivered<span class="d-align-justify">0</span></a></li>
+                  <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
+                      data-id="accepted">Accepted <span class="d-align-justify">0</span></a></li>
+                </ul>
+              </div>
+              <div class="tab tab-active" data-id="delivered">
+                <div class="admin-card-box table-wrap">
+                  <div class="d-flex align-items-center flex-wrap">
+                    <h5 class="mb-0">Showing 1 to 5 of 10 entries</h5>
+                    <div class="table-search-bar ms-auto d-flex align-items-center">
+                      <div class="search-bar-wrap position-relative">
+                        <input type="search" placeholder="Search" class="form-control custom-input" />
+                        <span class="search-icon position-absolute line-height-0">
+                          <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round"></path>
+                            <path
+                              d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z"
+                              fill="#848998" />
                           </svg>
-                          <ul class="dropdown">
-                            <li class="item">
-                              com
-                            </li>
-                            <li class="item">
-                              in
-                            </li>
-                          </ul>
-                        </div>
+                        </span>
                       </div>
-                      <div class="mt-1 choose-domain-box-tab-width">
-                        <input type="submit" value="Check" class="theme-btn theme-btn-active mx-6 fw-600 ms-auto">
-                      </div>
-                    </form>
+                      <button class="primary-btn">Go</button>
+                    </div>
                   </div>
-                </div>
-                <div class="tab" data-id="another-registrar">
-                  <div class="choose-domain-box-tab">
-                    <form class="your-details-card-form">
-                      <div class="choose-domain-box-tab-width">
-                        <label for="subject" class="mt-label fw-500">Domain</label>
-                        <input type="text" id="subject" class="form-control custom-input"
-                          placeholder="Enter domain name">
-                      </div>
-                      <div class="choose-domain-box-tab-width">
-                        <label for="department" class="mt-label fw-500">Required</label>
-                        <div
-                          class="d-flex wrapper-dropdown form-control custom-input max w-max-content  align-items-center"
-                          id="department">
-                          <span class="selected-display" id="destination">
-                            com
-                          </span>
-                          <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round"></path>
-                          </svg>
-                          <ul class="dropdown">
-                            <li class="item">
-                              com
-                            </li>
-                            <li class="item">
-                              in
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="mt-1 choose-domain-box-tab-width">
-                        <input type="submit" value="Transfer" class="theme-btn theme-btn-active mx-6 fw-600 ms-auto">
-                      </div>
-                    </form>
+                  <div class="table-responsive">
+                    <table class="w-100">
+                      <thead>
+                        <tr>
+                          <th class="border-none">
+                            <div class="text-black d-flex align-items-center gap-1">Quote #
+                            </div>
+                          </th>
+                          <th class="border-none">
+                            <div class="text-black d-flex align-items-center gap-1">
+                              Subject
+                            </div>
+                          </th>
+                          <th class="border-none">
+                            <div class="text-black d-flex align-items-center gap-1">
+                              Date Created
+                            </div>
+                          </th>
+                          <th class="border-none">
+                            <div class="text-black d-flex align-items-center gap-1">
+                              Valid Until
+                            </div>
+                          </th>
+                          <th class="border-none">
+                            <div class="text-black d-flex align-items-center gap-1">
+                              Stage
+                            </div>
+                          </th>
+                          <th class="border-none">
+                            <div class="text-black d-flex align-items-center gap-1">
+                              Action
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">957920 </h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Testing Purpose</h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Testing Purpose</h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Saturday, June 1st, 2024</h4>
+                          </td>
+                          <td>
+                            -
+                          </td>
+                          <td>
+                            -
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">959635 </h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Testing Purpose</h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Tuesday, May 28th, 2024</h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Tuesday, May 28th, 2024</h4>
+                          </td>
+                          <td>
+                            -
+                          </td>
+                          <td>
+                            -
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">959653 </h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Testing Purpose</h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Wednesday, May 29th, 2024</h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Tuesday, May 28th, 2024</h4>
+                          </td>
+                          <td>
+                            -
+                          </td>
+                          <td>
+                            -
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">947282 </h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Testing Purpose</h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Thursday, April 18th, 2024</h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Wednesday, May 1st, 2024</h4>
+                          </td>
+                          <td>
+                            -
+                          </td>
+                          <td>
+                            -
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">947240 </h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Testing Purpose</h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Thursday, April 18th, 2024</h4>
+                          </td>
+                          <td>
+                            <h4 class="fs-15 fw-400 text-black">Wednesday, April 17th, 2024</h4>
+                          </td>
+                          <td>
+                            -
+                          </td>
+                          <td>
+                            -
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
                   </div>
-                </div>
-                <div class="tab" data-id="existing-domain">
-                  <div class="choose-domain-box-tab">
-                    <form class="your-details-card-form">
-                      <div class="choose-domain-box-tab-width">
-                        <label for="subject" class="mt-label fw-500">Domain</label>
-                        <input type="text" id="subject" class="form-control custom-input"
-                          placeholder="Enter domain name">
+                  <div class="table-footer-wrap d-flex align-items-center flex-wrap">
+                    <div class="d-flex align-items-center">
+                      <h4 class="fw-500 mb-0">Show</h4>
+                      <div class="wrapper-dropdown form-control custom-input max w-max-content" id="dropdown">
+                        <span class="selected-display" id="destination">
+                          10
+                        </span>
+                        <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                          <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        </svg>
+                        <ul class="dropdown">
+                          <li class="item">
+                            10
+                          </li>
+                          <li class="item">
+                            09
+                          </li>
+                        </ul>
                       </div>
-                      <div class="choose-domain-box-tab-width">
-                        <label for="department" class="mt-label fw-500">Required</label>
-                        <input type="text" id="domain-name" class="form-control custom-input" placeholder=".com">
-                      </div>
-                      <div class="mt-1 choose-domain-box-tab-width">
-                        <input type="submit" value="Use" class="theme-btn theme-btn-active mx-6 fw-600">
-                      </div>
-                    </form>
+                      <h4 class="fw-500 mb-0">entries</h4>
+                    </div>
+                    <div class="ms-auto pagination-wrap d-flex align-items-center gap-1half5 flex-wrap">
+                      <span class="line-height-0 cursor-pointer transition-all-03">
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                      <ul class="d-flex align-items-center gap-1half5 flex-wrap">
+                        <li class="d-align-justify cursor-pointer transition-all-03">
+                          <h6>1</h6>
+                        </li>
+                        <li class="d-align-justify cursor-pointer transition-all-03">
+                          <h6>2</h6>
+                        </li>
+                      </ul>
+                      <span class="line-height-0 cursor-pointer transition-all-03">
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z"
+                            fill="currentColor" />
+                        </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>

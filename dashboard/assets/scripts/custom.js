@@ -155,3 +155,42 @@ if($('#summernote').length){
 	});
 }
 // text editor js end
+
+//action popup start
+var oldId = [];
+function toggleActionCard(cardId) {
+	
+	if (oldId.length > 0 && oldId[0] != cardId) {
+		var cardToToggleOld = document.getElementById(oldId);	
+		cardToToggleOld.style.display = cardToToggleOld.style.display === 'block' ? 'none' : 'block';
+		cardToToggleOld.style.visibility = cardToToggleOld.style.visibility === 'visible' ? 'hidden' : 'visible';
+		cardToToggleOld.style.opacity = cardToToggleOld.style.opacity === '1' ? '0' : '1';
+		oldId = [];
+	}
+	
+	var cardToToggle = document.getElementById(cardId);	
+	if (cardToToggle) {
+		cardToToggle.style.display = cardToToggle.style.display === 'block' ? 'none' : 'block';
+		cardToToggle.style.visibility = cardToToggle.style.visibility === 'visible' ? 'hidden' : 'visible';
+		cardToToggle.style.opacity = cardToToggle.style.opacity === '1' ? '0' : '1';
+		
+		if (oldId[0] != cardId) {
+			oldId.push(cardId);
+		}else{
+			oldId = [];
+		}		
+	}	
+}
+//action popup end
+
+// manage nameservers js start
+function Nameservers(el) {
+  if (el.value == 'use-default') {
+      document.getElementsByClassName("use-default")[0].classList.remove('d-none');
+      document.getElementsByClassName("use-customs")[0].classList.add('d-none');
+  } else if (el.value == 'use-custom') {
+      document.getElementsByClassName("use-customs")[0].classList.remove('d-none');
+      document.getElementsByClassName("use-default")[0].classList.add('d-none');
+  }
+}
+// manage nameservers js end

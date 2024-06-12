@@ -20,7 +20,7 @@
   <!-- layout css end -->
   <link rel="stylesheet" href="./assets/stylesheets/style.css" />
   <link rel="stylesheet" href="./assets/stylesheets/responsive.css" />
-  <title>Choose a Domain</title>
+  <title>Transfer in a Domain</title>
 </head>
 
 <body>
@@ -254,7 +254,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="menu-item sub-menu">
+                <li class="menu-item sub-menu open">
                   <a href="#">
                     <span class="menu-icon">
                       <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -282,7 +282,7 @@
                           <span class="menu-title">Register a New Domain</span>
                         </a>
                       </li>
-                      <li class="menu-item">
+                      <li class="menu-item active">
                         <a href="transfer-domain.html">
                           <span class="menu-title">Transfer in a Domain</span>
                         </a>
@@ -449,7 +449,7 @@
             </a>
           </div>
           <div class="admin-header d-align">
-            <h4 class="fw-500 text-black m-0">Services</h4>
+            <h4 class="fw-500 text-black m-0">Store</h4>
             <div class="admin-header-option d-align">
               <div class="country-dropdown-menu">
                 <div class="language-select-wrap">
@@ -768,116 +768,39 @@
               </ul>
             </div>
           </div>
-          <div class="admin-body-content choose-domain-content">
-            <h4 class="admin-head m-0 head-line-border">Choose a Domain</h4>
-            <div class="admin-card-box table-wrap manage-product-content-box-table">
-              <div class="tab-container">
-                <div class="tab-menu">
-                  <ul class="d-flex align-items-center w-100 account-security-tab">
-                    <li><a href="#"
-                        class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a"
-                        data-id="new-domain">Register a new domain</a></li>
-                    <li><a href="#"
-                        class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                        data-id="another-registrar">Transfer your domain from another registrar</a></li>
-                    <li><a href="#"
-                        class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                        data-id="existing-domain">I will use my existing domain and update my nameservers </a></li>
-                  </ul>
+          <div class="admin-body-content transfer-domain-body-content">
+            <h4 class="admin-head  head-line-border">Transfer in a Domain</h4>
+            <div class="admin-card-box account-details-card-box">
+              <h5 class="fs-19 fw-500 text-black">Transfer your domain to us: <span class="fs-15 text-grey"> Transfer
+                  now to extend your domain by 1 year!*</span></h5>
+              <p class="fs-15 text-grey">Transfer your domain from another registrar (Single domain transfer)</p>
+              <form class="your-details-card-form">
+                <div class="w-50">
+                  <label for="domain" class="mt-label fw-500">Domain</label>
+                  <input type="text" id="domain" class="form-control custom-input" placeholder="Enter Domain Name">
                 </div>
-                <div class="tab tab-active" data-id="new-domain">
-                  <div class="choose-domain-box-tab">
-                    <form class="your-details-card-form">
-                      <div class="choose-domain-box-tab-width">
-                        <label for="subject" class="mt-label fw-500">Domain</label>
-                        <input type="text" id="subject" class="form-control custom-input"
-                          placeholder="Enter domain name">
-                      </div>
-                      <div class="choose-domain-box-tab-width">
-                        <label for="department" class="mt-label fw-500">Required</label>
-                        <div
-                          class="d-flex wrapper-dropdown form-control custom-input max w-max-content  align-items-center"
-                          id="department">
-                          <span class="selected-display" id="destination">
-                            com
-                          </span>
-                          <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round"></path>
-                          </svg>
-                          <ul class="dropdown">
-                            <li class="item">
-                              com
-                            </li>
-                            <li class="item">
-                              in
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="mt-1 choose-domain-box-tab-width">
-                        <input type="submit" value="Check" class="theme-btn theme-btn-active mx-6 fw-600 ms-auto">
-                      </div>
-                    </form>
-                  </div>
+                <div class="w-50 mb-1">
+                  <label for="code-required" class="mt-label fw-500">Code Required</label>
+                  <input type="text" id="code-required" class="form-control custom-input"
+                    placeholder="Epp Code / Auth code">
                 </div>
-                <div class="tab" data-id="another-registrar">
-                  <div class="choose-domain-box-tab">
-                    <form class="your-details-card-form">
-                      <div class="choose-domain-box-tab-width">
-                        <label for="subject" class="mt-label fw-500">Domain</label>
-                        <input type="text" id="subject" class="form-control custom-input"
-                          placeholder="Enter domain name">
-                      </div>
-                      <div class="choose-domain-box-tab-width">
-                        <label for="department" class="mt-label fw-500">Required</label>
-                        <div
-                          class="d-flex wrapper-dropdown form-control custom-input max w-max-content  align-items-center"
-                          id="department">
-                          <span class="selected-display" id="destination">
-                            com
-                          </span>
-                          <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round"></path>
-                          </svg>
-                          <ul class="dropdown">
-                            <li class="item">
-                              com
-                            </li>
-                            <li class="item">
-                              in
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="mt-1 choose-domain-box-tab-width">
-                        <input type="submit" value="Transfer" class="theme-btn theme-btn-active mx-6 fw-600 ms-auto">
-                      </div>
-                    </form>
-                  </div>
+                <div class="mt-1 d-flex justify-content-between align-items-center w-50 display-xl-block">
+                  <button class="primary-btn"><svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" class="mx-6 mb-1">
+                      <path
+                        d="M17.2427 16.0342C15.8383 16.0328 14.6987 17.1703 14.6973 18.5747C14.6959 19.9791 15.8333 21.1188 17.2378 21.1201C18.6422 21.1215 19.7818 19.9841 19.7832 18.5796C19.7832 18.5788 19.7832 18.578 19.7832 18.5772C19.7819 17.1742 18.6456 16.0369 17.2427 16.0342Z"
+                        fill="white"></path>
+                      <path
+                        d="M21.753 3.86165C21.6922 3.84987 21.6303 3.84388 21.5684 3.84379H6.08493L5.83971 2.20322C5.68692 1.1137 4.75497 0.30307 3.65477 0.302734H1.66107C1.11933 0.302734 0.680176 0.741887 0.680176 1.28363C0.680176 1.82538 1.11933 2.26453 1.66107 2.26453H3.65721C3.78193 2.26362 3.88749 2.35649 3.90244 2.48035L5.41301 12.8337C5.62011 14.1493 6.75173 15.1199 8.08351 15.1241H18.2873C19.5695 15.1258 20.6756 14.2246 20.9333 12.9686L22.5297 5.01105C22.6326 4.47917 22.2849 3.96458 21.753 3.86165Z"
+                        fill="white"></path>
+                      <path
+                        d="M11.0131 18.4658C10.9534 17.1026 9.82835 16.0295 8.46376 16.0342C7.06047 16.0909 5.96884 17.2745 6.02555 18.6778C6.07996 20.0243 7.17528 21.0945 8.52263 21.1177H8.58393C9.98703 21.0562 11.0746 19.8689 11.0131 18.4658Z"
+                        fill="white"></path>
+                    </svg>
+                    Add to Cart</button>
+                  <p class="fs-15 text-grey mb-0 p-1 mx-6">* Excludes certain TLDs and recently renewed domains </p>
                 </div>
-                <div class="tab" data-id="existing-domain">
-                  <div class="choose-domain-box-tab">
-                    <form class="your-details-card-form">
-                      <div class="choose-domain-box-tab-width">
-                        <label for="subject" class="mt-label fw-500">Domain</label>
-                        <input type="text" id="subject" class="form-control custom-input"
-                          placeholder="Enter domain name">
-                      </div>
-                      <div class="choose-domain-box-tab-width">
-                        <label for="department" class="mt-label fw-500">Required</label>
-                        <input type="text" id="domain-name" class="form-control custom-input" placeholder=".com">
-                      </div>
-                      <div class="mt-1 choose-domain-box-tab-width">
-                        <input type="submit" value="Use" class="theme-btn theme-btn-active mx-6 fw-600">
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
 
@@ -902,6 +825,27 @@
       </div>
     </div>
     <!-- layout html end -->
+
+    <!-- Model Start -->
+    <div class="modal fade model-center" id="deletemsg" role="dialog">
+      <div class="modal-dialog m-auto modal-dialog-style-one">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class=" text-center">
+            <h4 class="modal-title text-black fw-500">Are you sure?</h4>
+          </div>
+          <div class="col-xs-12">
+            <p class="mb-1 text-center">Are you sure you want to delete this payment method?</p>
+          </div>
+          <div class="account-details-form-btn justify-content-center d-flex w-100">
+            <input type="button" value="No" class="theme-btn mx-6 fw-600" data-dismiss="modal">
+            <input type="submit" value="Yes" class="theme-btn theme-btn-active mx-6 fw-600">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Model end -->
   </main>
   <!-- script start -->
   <script src="./assets/scripts/jquery.js"></script>

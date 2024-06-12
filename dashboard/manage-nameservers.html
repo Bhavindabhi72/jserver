@@ -20,7 +20,7 @@
   <!-- layout css end -->
   <link rel="stylesheet" href="./assets/stylesheets/style.css" />
   <link rel="stylesheet" href="./assets/stylesheets/responsive.css" />
-  <title>Choose a Domain</title>
+  <title>Manage Nameservers</title>
 </head>
 
 <body>
@@ -449,7 +449,7 @@
             </a>
           </div>
           <div class="admin-header d-align">
-            <h4 class="fw-500 text-black m-0">Services</h4>
+            <h4 class="fw-500 text-black m-0">Domains</h4>
             <div class="admin-header-option d-align">
               <div class="country-dropdown-menu">
                 <div class="language-select-wrap">
@@ -515,7 +515,7 @@
                       class="fw-600 text-white m-0 text-ellipsis-1">9</span></div>
                   <div class="notification-dropbox-wrap notifications-msg-dropbox-wrap position-absolute">
                     <div class="arrow-up"></div>
-                    <div class="notifications-head d-flex align-items-center justify-content-between">
+                    <div class="notifications-head d-flex align-items-center">
                       <div class="d-flex align-items-center gap-1">
                         <h3 class="fw-500 m-0">Notifications</h3>
                         <div class="count-msg-number-box d-align-justify"><span
@@ -768,113 +768,208 @@
               </ul>
             </div>
           </div>
-          <div class="admin-body-content choose-domain-content">
-            <h4 class="admin-head m-0 head-line-border">Choose a Domain</h4>
-            <div class="admin-card-box table-wrap manage-product-content-box-table">
-              <div class="tab-container">
-                <div class="tab-menu">
-                  <ul class="d-flex align-items-center w-100 account-security-tab">
-                    <li><a href="#"
-                        class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a"
-                        data-id="new-domain">Register a new domain</a></li>
-                    <li><a href="#"
-                        class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                        data-id="another-registrar">Transfer your domain from another registrar</a></li>
-                    <li><a href="#"
-                        class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                        data-id="existing-domain">I will use my existing domain and update my nameservers </a></li>
-                  </ul>
-                </div>
-                <div class="tab tab-active" data-id="new-domain">
-                  <div class="choose-domain-box-tab">
-                    <form class="your-details-card-form">
-                      <div class="choose-domain-box-tab-width">
-                        <label for="subject" class="mt-label fw-500">Domain</label>
-                        <input type="text" id="subject" class="form-control custom-input"
-                          placeholder="Enter domain name">
-                      </div>
-                      <div class="choose-domain-box-tab-width">
-                        <label for="department" class="mt-label fw-500">Required</label>
-                        <div
-                          class="d-flex wrapper-dropdown form-control custom-input max w-max-content  align-items-center"
-                          id="department">
-                          <span class="selected-display" id="destination">
-                            com
-                          </span>
-                          <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round"></path>
-                          </svg>
-                          <ul class="dropdown">
-                            <li class="item">
-                              com
-                            </li>
-                            <li class="item">
-                              in
-                            </li>
-                          </ul>
+          <div class="admin-body-content manage-firewall-firewall-content manage-nameservers">
+            <h4 class="admin-head m-0 head-line-border">Managing bhvain-domain.co.il</h4>
+            <div class="tab-container">
+              <div class="tab-menu">
+                <ul class="d-flex align-items-center w-100">
+                  <li><a href="#"
+                      class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a"
+                      data-id="overview">Overview</a></li>
+                  <li><a href="#"
+                      class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 width-max-content"
+                      data-id="auto-renew">Auto Renew</a></li>
+                  <li><a href="#"
+                      class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 width-max-content"
+                      data-id="addons">Addons</a></li>
+                  <li><a href="#"
+                      class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 width-max-content"
+                      data-id="dns-management">DNS Management</a></li>
+                </ul>
+              </div>
+              <div class="tab tab-active manage-nameservers-content ">
+                <div class="admin-card-box">
+                  <h3 class="fw-600 shared-hosting-main-tital p-0 text-black">Nameservers</h3>
+                  <p class="fs-16 m-0">You can change where your domain points to here. Please be aware changes can take
+                    up to 24 hours to propagate.</p>
+                  <form id="invite-new-user">
+                    <label class="fw-400  mt-3" for="Permissions">
+                      <input type="radio" class="your-details-card-checkbox radio-btn" id="Permissions"
+                        name="invitePermissions" value="use-default" onchange="Nameservers(this)">Use default
+                      nameservers
+                    </label>
+                    <label class="fw-400" for="usecustom">
+                      <input type="radio" class="your-details-card-checkbox radio-btn" id="usecustom"
+                        name="invitePermissions" value="use-custom" onchange="Nameservers(this)" checked>Use custom
+                      nameservers (enter below)
+                    </label>
+                    <div class="use-default row d-none your-details-card-form mt-3">
+                      <fieldset disabled>
+                        <div class="col-sm-6 col-xs-12">
+                          <label for="nameserver-disabled-one" class="mt-label fw-500">Nameserver 1</label>
+                          <input type="text" id="nameserver-disabled-one" class="form-control custom-input">
                         </div>
+                        <div class="col-sm-6 col-xs-12">
+                          <label for="nameserver-disabled-tow" class="mt-label fw-500">Nameserver 2</label>
+                          <input type="text" id="nameserver-disabled-tow" class="form-control custom-input">
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                          <label for="nameserver-disabled-three" class="mt-label fw-500">Nameserver 3</label>
+                          <input type="text" id="nameserver-disabled-three" class="form-control custom-input">
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                          <label for="nameserver-disabled-four" class="mt-label fw-500">Nameserver 4</label>
+                          <input type="text" id="nameserver-disabled-four" class="form-control custom-input">
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                          <label for="nameserver-disabled-five" class="mt-label fw-500">Nameserver 5</label>
+                          <input type="text" id="nameserver-disabled-five" class="form-control custom-input mb-1">
+                        </div>
+                        </fieldse>
+                    </div>
+                    <div class="use-customs row your-details-card-form mt-3">
+                      <div class="col-sm-6 col-xs-12">
+                        <label for="nameserver-one" class="mt-label fw-500">Nameserver 1</label>
+                        <input type="text" id="nameserver-one" class="form-control custom-input">
                       </div>
-                      <div class="mt-1 choose-domain-box-tab-width">
-                        <input type="submit" value="Check" class="theme-btn theme-btn-active mx-6 fw-600 ms-auto">
+                      <div class="col-sm-6 col-xs-12">
+                        <label for="nameserver-tow" class="mt-label fw-500">Nameserver 2</label>
+                        <input type="text" id="nameserver-tow" class="form-control custom-input">
                       </div>
-                    </form>
+                      <div class="col-sm-6 col-xs-12">
+                        <label for="nameserver-three" class="mt-label fw-500">Nameserver 3</label>
+                        <input type="text" id="nameserver-three" class="form-control custom-input">
+                      </div>
+                      <div class="col-sm-6 col-xs-12">
+                        <label for="nameserver-four" class="mt-label fw-500">Nameserver 4</label>
+                        <input type="text" id="nameserver-four" class="form-control custom-input">
+                      </div>
+                      <div class="col-sm-6 col-xs-12">
+                        <label for="nameserver-five" class="mt-label fw-500">Nameserver 5</label>
+                        <input type="text" id="nameserver-five" class="form-control custom-input mb-1">
+                      </div>
+                    </div>
+                    <button class="sign-up-btn send-btn">Change Name Server</button>
+                  </form>
+                </div>
+              </div>
+              <div class="tab" data-id="overview">
+                <div class="admin-card-box">
+                  <div class="account-cancellation-request-box mb-1">
+                    <p class="fw-500 fs-16 text-grey">Domain</p>
+                    <div class="d-flex gap-2 flex-wrap align-items-center">
+                      <P class="fw-700 shared-hosting-main-tital p-0 text-black mb-0">alyona-domain.co.il</P>
+                      <button class="sign-up-btn small-btn flex-0-auto exquisite-turquoise-bg">Active</button>
+                    </div>
+                  </div>
+                  <div class="billing-overview-row">
+                    <hr>
+                    <div class="billing-overview-col d-flex p-0">
+                      <h5 class="mt-0 mb-0">First Payment Amount:</h5>
+                      <h6 class="mt-0 mb-0">$0.00USD</h6>
+                    </div>
+                    <hr>
+                    <div class="billing-overview-col d-flex p-0">
+                      <h5 class="mt-0 mb-0">Registration Date:</h5>
+                      <h6 class="mt-0 mb-0">Wednesday, April 17th, 2024</h6>
+                    </div>
+                    <hr>
+                    <div class="billing-overview-col d-flex p-0">
+                      <h5 class="mt-0 mb-0">Recurring Amount:</h5>
+                      <h6 class="mt-0 mb-0">$0.00USD Every 1 Year/s</h6>
+                    </div>
+                    <hr>
+                    <div class="billing-overview-col d-flex p-0">
+                      <h5 class="mt-0 mb-0">Next Due Date:</h5>
+                      <h6 class="mt-0 mb-0">Tuesday, April 13th, 2038</h6>
+                    </div>
+                    <hr>
+                    <div class="billing-overview-col d-flex p-0">
+                      <h5 class="mt-0 mb-0">Payment Method:</h5>
+                      <h6 class="mt-0 mb-0">Credit Card</h6>
+                    </div>
+                    <hr>
+                    <div class="billing-overview-col d-flex p-0">
+                      <h5 class="mt-0 mb-0">Status:</h5>
+                      <h6 class="mt-0 mb-0 text-green">Active</h6>
+                    </div>
+                    <hr>
+                  </div>
+                  <div
+                    class="account-cancellation-request-box d-flex justify-content-between align-items-center flex-wrap">
+                    <P class="fw-500 shared-hosting-main-tital p-0 text-black mb-0">What would you like to do today?</P>
+                    <button class="theme-btn theme-btn-active mx-0 fw-600 renew-domain-btn mt-1">Renew Your
+                      Domain</button>
                   </div>
                 </div>
-                <div class="tab" data-id="another-registrar">
-                  <div class="choose-domain-box-tab">
-                    <form class="your-details-card-form">
-                      <div class="choose-domain-box-tab-width">
-                        <label for="subject" class="mt-label fw-500">Domain</label>
-                        <input type="text" id="subject" class="form-control custom-input"
-                          placeholder="Enter domain name">
-                      </div>
-                      <div class="choose-domain-box-tab-width">
-                        <label for="department" class="mt-label fw-500">Required</label>
-                        <div
-                          class="d-flex wrapper-dropdown form-control custom-input max w-max-content  align-items-center"
-                          id="department">
-                          <span class="selected-display" id="destination">
-                            com
-                          </span>
-                          <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round"></path>
-                          </svg>
-                          <ul class="dropdown">
-                            <li class="item">
-                              com
-                            </li>
-                            <li class="item">
-                              in
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="mt-1 choose-domain-box-tab-width">
-                        <input type="submit" value="Transfer" class="theme-btn theme-btn-active mx-6 fw-600 ms-auto">
-                      </div>
-                    </form>
+              </div>
+              <div class="tab" data-id="auto-renew">
+                <div class="admin-card-box">
+                  <h3 class="fw-600 shared-hosting-main-tital p-0 text-black">Auto Renew</h3>
+                  <div class="terms-service-crad-box account-security-crad-box mb-1">
+                    <p class="fs-16 m-0">Enable auto renew to have us automatically send you a renewal invoice before
+                      your domain expires.</p>
+                  </div>
+                  <div class="d-flex flex-column align-items-center gap-5 mb-1 mt-3">
+                    <p class="fw-500 text-grey fs-16 d-flex align-items-center">Auto Renewal Status:  <span><button
+                          class="sign-up-btn small-btn flex-0-auto exquisite-turquoise-bg">Enable</button></span></p>
+                    <button class="remove-btn border-radius">Disable Auto-Renewal</button>
                   </div>
                 </div>
-                <div class="tab" data-id="existing-domain">
-                  <div class="choose-domain-box-tab">
-                    <form class="your-details-card-form">
-                      <div class="choose-domain-box-tab-width">
-                        <label for="subject" class="mt-label fw-500">Domain</label>
-                        <input type="text" id="subject" class="form-control custom-input"
-                          placeholder="Enter domain name">
+              </div>
+              <div class="tab" data-id="addons">
+                <div class="admin-card-box">
+                  <h3 class="fw-600 shared-hosting-main-tital p-0 text-black">Auto Renew</h3>
+                  <p class="fs-16 m-0">Enable auto renew to have us automatically send you a renewal invoice before your
+                    domain expires.</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center account-cancellation-request-box mb-1 flex-wrap mt-label">
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="manage-product-content-box-icon m-0">
+                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.645752 3.13642C0.645752 1.79254 1.73517 0.703125 3.07904 0.703125H27.4119C28.7558 0.703125 29.8452 1.79254 29.8452 3.13642V6.3808C29.8452 7.72468 28.7558 8.81409 27.4119 8.81409H3.07904C1.73517 8.81409 0.645752 7.72468 0.645752 6.3808V3.13642ZM6.32343 4.75861C6.32343 5.65451 5.59714 6.3808 4.70124 6.3808C3.80533 6.3808 3.07904 5.65451 3.07904 4.75861C3.07904 3.8627 3.80533 3.13642 4.70124 3.13642C5.59714 3.13642 6.32343 3.8627 6.32343 4.75861Z"
+                            fill="#254CEC" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.645752 12.8708C0.645752 11.5269 1.73517 10.4375 3.07904 10.4375H12.9305C14.7394 10.4375 15.9159 12.3411 15.1069 13.959L13.4848 17.2033C13.0726 18.0277 12.23 18.5485 11.3084 18.5485H3.07904C1.73517 18.5485 0.645752 17.459 0.645752 16.1152V12.8708ZM6.32343 14.493C6.32343 15.3889 5.59714 16.1152 4.70124 16.1152C3.80533 16.1152 3.07904 15.3889 3.07904 14.493C3.07904 13.5971 3.80533 12.8708 4.70124 12.8708C5.59714 12.8708 6.32343 13.5971 6.32343 14.493Z"
+                            fill="#254CEC" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.645752 22.6032C0.645752 21.2594 1.73517 20.1699 3.07904 20.1699H11.6285C12.7884 20.1699 13.787 20.9886 14.0145 22.126L14.6634 25.3703C14.9645 26.8761 13.8129 28.2809 12.2774 28.2809H3.07904C1.73517 28.2809 0.645752 27.1914 0.645752 25.8476V22.6032ZM6.32343 24.2254C6.32343 25.1213 5.59714 25.8476 4.70124 25.8476C3.80533 25.8476 3.07904 25.1213 3.07904 24.2254C3.07904 23.3295 3.80533 22.6032 4.70124 22.6032C5.59714 22.6032 6.32343 23.3295 6.32343 24.2254Z"
+                            fill="#254CEC" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.7473 18.6431L17.6413 17.9478C17.4575 17.8385 17.2979 17.6944 17.172 17.5241C17.0461 17.3536 16.9564 17.1606 16.9084 16.9558C16.8604 16.7513 16.8547 16.5394 16.892 16.3326C16.9293 16.1259 17.0088 15.9285 17.1256 15.7522C17.2424 15.5758 17.3942 15.424 17.5722 15.3056C17.7502 15.1873 17.9507 15.1049 18.1619 15.0632C18.3731 15.0217 18.5906 15.0215 18.8018 15.0631C19.013 15.1046 19.2135 15.187 19.3917 15.3053L20.4977 15.9989C21.0963 15.4972 21.7966 15.1237 22.553 14.9025V13.6316C22.553 13.2144 22.723 12.8143 23.0259 12.5193C23.3287 12.2243 23.7393 12.0586 24.1676 12.0586C24.5958 12.0586 25.0064 12.2243 25.3093 12.5193C25.6121 12.8143 25.7821 13.2144 25.7821 13.6316V14.9025C26.5475 15.1258 27.2466 15.5033 27.8374 15.9989L28.9435 15.3036C29.3031 15.0983 29.7301 15.0361 30.1356 15.1301C30.541 15.2241 30.8935 15.4673 31.1193 15.8085C31.3453 16.1498 31.427 16.5628 31.3477 16.9615C31.2684 17.3601 31.0341 17.7134 30.6938 17.9478L29.5878 18.6431C29.8845 19.6402 29.8845 20.6989 29.5878 21.696L30.6938 22.3929C30.8776 22.5023 31.0372 22.6463 31.1631 22.8167C31.289 22.987 31.3787 23.1802 31.4267 23.3848C31.4747 23.5895 31.4804 23.8013 31.4431 24.008C31.4058 24.2148 31.3263 24.4122 31.2095 24.5886C31.0927 24.7649 30.9409 24.9167 30.7629 25.035C30.585 25.1534 30.3845 25.2358 30.1732 25.2774C29.962 25.3191 29.7445 25.3191 29.5333 25.2775C29.3221 25.236 29.1216 25.1538 28.9435 25.0355L27.8374 24.3402C27.2389 24.842 26.5386 25.2154 25.7821 25.4367V26.7075C25.7821 27.1247 25.6121 27.5249 25.3093 27.8198C25.0064 28.1147 24.5958 28.2805 24.1676 28.2805C23.7393 28.2805 23.3287 28.1147 23.0259 27.8198C22.723 27.5249 22.553 27.1247 22.553 26.7075V25.4367C21.7966 25.2154 21.0963 24.842 20.4977 24.3402L19.3917 25.0355C19.0314 25.2607 18.5942 25.3379 18.1758 25.2499C17.7575 25.1622 17.3917 24.9166 17.1585 24.5668C16.9269 24.216 16.8479 23.7898 16.9387 23.3822C17.0296 22.9745 17.2828 22.6186 17.6429 22.3929L18.7473 21.696C18.4506 20.6989 18.4506 19.6402 18.7473 18.6431ZM24.1676 17.8203C22.8372 17.8203 21.7554 18.8742 21.7554 20.1704C21.7554 21.4665 22.8372 22.5203 24.1676 22.5203C25.4979 22.5203 26.5798 21.4665 26.5798 20.1704C26.5798 18.8742 25.4979 17.8203 24.1676 17.8203Z"
+                            fill="#254CEC" />
+                        </svg>
                       </div>
-                      <div class="choose-domain-box-tab-width">
-                        <label for="department" class="mt-label fw-500">Required</label>
-                        <input type="text" id="domain-name" class="form-control custom-input" placeholder=".com">
+                      <div>
+                        <h5 class="text-black fs-19 fw-500">DNS Host Record Management</h5>
+                        <p class="fs-15">We provide free DNS management! Recommended!</p>
                       </div>
-                      <div class="mt-1 choose-domain-box-tab-width">
-                        <input type="submit" value="Use" class="theme-btn theme-btn-active mx-6 fw-600">
-                      </div>
-                    </form>
+                    </div>
+                    <div class="mt-1">
+                      <button class="permissions-btn border-radius">Manage</button>
+                      <button class="remove-btn border-radius">Disable </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab" data-id="dns-management">
+                <div class="admin-card-box">
+                  <h3 class="fw-600 shared-hosting-main-tital p-0 text-black">DNS Zone not found for domain
+                    bhvain-domain.co.il</h3>
+                  <div
+                    class="d-flex justify-content-between align-items-center tips-good-password-card mb-1 flex-wrap mt-label ">
+                    <p class="fs-18 mb-0">Would you like to create a new DNS Zone for domain bhvain-domain.co.il ?</p>
+                    <button class="primary-btn mt-1 d-flex align-items-center b-radius-8 gap-1"><svg width="19"
+                        height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1.92383 16.4414H3.75977C4.46844 16.4414 5.04492 15.8649 5.04492 15.1562V6.71094C5.04492 6.00227 4.46844 5.42578 3.75977 5.42578H1.92383C1.21516 5.42578 0.638672 6.00227 0.638672 6.71094V15.1562C0.638672 15.8649 1.21516 16.4414 1.92383 16.4414Z"
+                          fill="white" />
+                        <path
+                          d="M10.0247 0.101562C9.29034 0.101562 8.92316 0.46875 8.92316 2.30469C8.92316 4.04956 7.23336 5.45369 6.14648 6.17705V15.2745C7.32222 15.8187 9.67589 16.625 13.3294 16.625H14.5044C15.9364 16.625 17.1555 15.5969 17.3978 14.1869L18.2203 9.41344C18.5288 7.61422 17.1482 5.97656 15.3269 5.97656H11.8607C11.8607 5.97656 12.4114 4.875 12.4114 3.03906C12.4114 0.835938 10.7591 0.101562 10.0247 0.101562Z"
+                          fill="white" />
+                      </svg>
+                      <span class="fw-500 fs-16">Yes, Create Zone</span></button>
                   </div>
                 </div>
               </div>
