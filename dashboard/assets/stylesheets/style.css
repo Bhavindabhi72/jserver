@@ -15,6 +15,9 @@
     --mozart: #495480;
     --exquisite-turquoise: #0cd9c0;
     --malted-mint-madness: #11c99d;
+    --mainly-green: #07AE9A ;
+    --mint-light: #ADEED6 ;
+    --mint-cream : #F0FEF9 ;
     --joyful-orange: #fb9536;
     --beijing-blue: #3e7bac;
     --brilliant-white: #eef1ff;
@@ -23,8 +26,11 @@
     --blue-metal: #5b6570;
     --pearl-white: #f7f7fb;
     --red: #E54E4E;
+    --venetian-red: #D80027;
+    --mainly-red: #F3BDBD;
     --gainsboro: #dcdcdc;
     --carnelian: #b31a1a;
+    --sefid-withe: #FFF1F1 ;
     --christmas-silver: #e0e0e0;
     --gravel-fint: #bbbbbb;
     --cool-grey: #8893ac;
@@ -5077,3 +5083,49 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     opacity: 1;
 }
 /* manage nameservers end */
+
+/* register domain unavailable start */
+
+.register-domain-unavailable-crad-box .account-security-crad-box{
+    background-color: var(--sefid-withe);
+    border-color: var(--mainly-red);
+}
+
+.register-domain-unavailable-crad-box .account-security-crad-box p{
+    color: var(--venetian-red);
+}
+
+.register-domain-unavailable-crad-box .suggested-p{
+    color: var(--blue-metal) ;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.register-domain-unavailable-crad-box a{
+    color: var(--mainly-green) ;
+    padding-top: 20px;
+}
+
+.register-domain-unavailable-crad-box .add-to-card-btn{
+    max-width: 174px;
+}
+
+/* register domain unavailable end */
+
+/* register domain available start */
+
+.register-domain-available-crad-box .account-security-crad-box{
+    background-color: var(--mint-cream);
+    border-color: var(--mint-light) ;
+}
+
+.register-domain-available-crad-box .account-security-crad-box h5{
+    color: var(--mainly-green) ;
+}
+
+.register-domain-available-crad-box .account-security-crad-box p{
+    color: var(--black) ;
+}
+/* register domain available end */
