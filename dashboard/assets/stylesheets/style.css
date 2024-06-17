@@ -3969,7 +3969,7 @@ input:checked+.slider .off-text {
 
 .tips-good-password-card {
     background-color: #FFF9F1 !important;
-    border-color: #F3DCBD !important;
+    border: 1px solid #F3DCBD !important;
     padding: 18px 17px !important;
 }
 
@@ -5129,3 +5129,74 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     color: var(--black) ;
 }
 /* register domain available end */
+
+
+/* add new server site start */
+
+.add-new-server-body-content .tips-good-password-card{
+    padding: 39px 52px !important; 
+}
+
+.venetian-red{
+    color: var(--venetian-red);
+}
+
+.add-new-server-body-content .your-details-card-form{
+    grid-gap: 0;
+    padding-top: 7px;
+    box-shadow: none;
+}
+
+.add-new-server-body-content .your-details-card-form:hover{
+    border-color: var(--white) ;
+}
+
+.delete-btn{
+    border-color: rgba(255, 66, 66, 1);
+    color: rgba(255, 66, 66, 1);
+}
+.delete-btn:hover{
+    background-color : rgba(255, 66, 66, 1);
+}
+
+/* add new server site end */
+
+
+/* backup servers start */
+
+.backup-servers-content .admin-card-box {
+    min-height: 714.11px;
+}
+
+.backup-servers-content .tab-menu h6{
+    min-width: 105px;
+}
+
+.backup-servers-content h3{
+    font-size: 26px;
+}
+
+.back-up-servers-card{
+    background-color: var(--primary-theme);
+    padding: 45px 59px;
+    border-radius: 12px;
+    max-height: 338px;
+}
+
+.back-up-servers-card p span{
+    font-size: 33px;
+}
+
+.back-up-servers-card p{
+    color: #9FCCFC;
+    margin: 30px 0px 37px;
+}
+
+.out-of-stock{
+    background-color: var(--white);
+    padding: 16px 18px; 
+    color: var(--primary-theme);
+    max-width: 330px;
+}
+
+/* backup servers end */

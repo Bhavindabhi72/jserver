@@ -18,11 +18,9 @@
   <!-- layout css start -->
   <link rel="stylesheet" href="./assets/stylesheets/css-pro-layout.css" />
   <!-- layout css end -->
-  <!-- text editor css start -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" />
   <link rel="stylesheet" href="./assets/stylesheets/style.css" />
   <link rel="stylesheet" href="./assets/stylesheets/responsive.css" />
-  <title>Open Ticket Form</title>
+  <title>Add New Server / Site</title>
 </head>
 
 <body>
@@ -121,7 +119,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="menu-item sub-menu">
+                <li class="menu-item sub-menu open">
                   <a href="#">
                     <span class="menu-icon">
                       <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -451,7 +449,7 @@
             </a>
           </div>
           <div class="admin-header d-align">
-            <h4 class="fw-500 text-black m-0">Dashboard</h4>
+            <h4 class="fw-500 text-black m-0">Contact Us</h4>
             <div class="admin-header-option d-align">
               <div class="country-dropdown-menu">
                 <div class="language-select-wrap">
@@ -770,144 +768,99 @@
               </ul>
             </div>
           </div>
-          <div class="admin-body-content open-ticket-content">
-            <div class="d-flex align-items-center justify-content-between">
-              <h4 class="admin-head m-0 head-line-border">Open Ticket</h4>
-              <a href="add-new-server-site.html" class="primary-btn gap-1 mx-w-auto">
-                <span class="line-height-0">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M0.705078 7.05089V4.94489H11.7291V7.05089H0.705078ZM5.15108 0.212891H7.30908V11.7829H5.15108V0.212891Z"
-                      fill="white"></path>
-                  </svg>
-                </span>
-                Add New Servers / Site
-              </a>
-            </div>
-            <div class="admin-card-box account-details-card-box table-wrap admin-card-box-style2">
-              <form class="row your-details-card-form">
-                <div class="col-sm-6 col-xs-12">
-                  <label for="your-name" class="mt-label fw-500">Name</label>
-                  <input type="text" id="your-name" class="form-control custom-input" placeholder="Alyona Dev Wilson"
-                    disabled="disabled">
+          <div class="admin-body-content add-new-server-body-content">
+            <h4 class="admin-head m-0 head-line-border">Add New Server / Site</h4>
+            <div class="admin-card-box">
+                <div class="card-ghost-style mt-1 tips-good-password-card border-1 mb-1">
+                    <h6 class="shared-hosting-main-tital p-0 text-black mb-1 mt-0">Secure Login Details</h6>
+                    <p class="text-black">The following information will assist our Support with your issue.</p>
+                    <p class="text-black">Some issues may require login information for resolution, and failure to provide access will increase the time required to resolve your issue.</p>
+                    <p class="text-black mb-1">Your privacy is important to us!</p>
+                    <p class="venetian-red">* Your login information will be encrypted in our database and visible to our staff only.</p>
+                    <p class="venetian-red mt-1">* All login information will be automatically removed from our database once your ticket is closed.</p>
                 </div>
-                <div class="col-sm-6 col-xs-12">
-                  <label for="your-email" class="mt-label fw-500">Email</label>
-                  <input type="email" id="your-email" class="form-control custom-input"
-                    placeholder="testhostingserver-alyona@gmail.com" disabled="disabled">
+                <div class="d-flex gap-2 mb-1 flex-wrap"> 
+                    <button class="primary-btn gap-1 mx-w-auto">
+                        <span class="line-height-0">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.705078 7.05089V4.94489H11.7291V7.05089H0.705078ZM5.15108 0.212891H7.30908V11.7829H5.15108V0.212891Z" fill="white"></path>
+                          </svg>
+                        </span>
+                        Add New Servers / Site
+                    </button>
+                    <button class="primary-btn gap-1 mx-w-auto remove-btn border-radius m-0">
+                        <span class="line-height-0">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.3423 2.6875H1.20369C0.995368 2.6875 0.795579 2.77026 0.648274 2.91756C0.500968 3.06487 0.418213 3.26466 0.418213 3.47298C0.418213 3.6813 0.500968 3.88109 0.648274 4.02839C0.795579 4.1757 0.995368 4.25845 1.20369 4.25845H2.77464V13.6842C2.77483 14.3091 3.02316 14.9083 3.46503 15.3502C3.90691 15.7921 4.50617 16.0404 5.13107 16.0406H11.4149C12.0398 16.0404 12.6391 15.7921 13.0809 15.3502C13.5228 14.9084 13.7711 14.3091 13.7713 13.6842V4.25845H15.3423C15.5506 4.25845 15.7504 4.1757 15.8977 4.02839C16.045 3.88109 16.1277 3.6813 16.1277 3.47298C16.1277 3.26466 16.045 3.06487 15.8977 2.91756C15.7504 2.77026 15.5506 2.6875 15.3423 2.6875ZM7.4875 11.3277C7.4875 11.5361 7.40475 11.7359 7.25744 11.8832C7.11014 12.0305 6.91035 12.1132 6.70203 12.1132C6.4937 12.1132 6.29392 12.0305 6.14661 11.8832C5.99931 11.7359 5.91655 11.5361 5.91655 11.3277V7.40036C5.91655 7.19204 5.99931 6.99225 6.14661 6.84494C6.29392 6.69764 6.4937 6.61488 6.70203 6.61488C6.91035 6.61488 7.11014 6.69764 7.25744 6.84494C7.40475 6.99225 7.4875 7.19204 7.4875 7.40036V11.3277ZM10.6294 11.3277C10.6294 11.5361 10.5467 11.7359 10.3993 11.8832C10.252 12.0305 10.0523 12.1132 9.84393 12.1132C9.63561 12.1132 9.43582 12.0305 9.28852 11.8832C9.14121 11.7359 9.05846 11.5361 9.05846 11.3277V7.40036C9.05846 7.19204 9.14121 6.99225 9.28852 6.84494C9.43582 6.69764 9.63561 6.61488 9.84393 6.61488C10.0523 6.61488 10.252 6.69764 10.3993 6.84494C10.5467 6.99225 10.6294 7.19204 10.6294 7.40036V11.3277Z" fill="white"/>
+                                <path d="M6.70203 1.90298H9.84393C10.0523 1.90298 10.252 1.82023 10.3993 1.67292C10.5467 1.52562 10.6294 1.32583 10.6294 1.11751C10.6294 0.909187 10.5467 0.709397 10.3993 0.562092C10.252 0.414787 10.0523 0.332031 9.84393 0.332031H6.70203C6.4937 0.332031 6.29392 0.414787 6.14661 0.562092C5.99931 0.709397 5.91655 0.909187 5.91655 1.11751C5.91655 1.32583 5.99931 1.52562 6.14661 1.67292C6.29392 1.82023 6.4937 1.90298 6.70203 1.90298Z" fill="white"/>
+                            </svg>                                
+                        </span>
+                        Remove All Servers / Sites
+                    </button>
                 </div>
-                <div class="col-sm-6 col-xs-12">
-                  <label for="subject" class="mt-label fw-500">Subject</label>
-                  <input type="text" id="subject" class="form-control custom-input" placeholder="Wilson">
-                </div>
-                <div class="col-sm-6 col-xs-12">
-                  <label for="department" class="mt-label fw-500">Department</label>
-                  <div class="d-flex wrapper-dropdown form-control custom-input max w-max-content  align-items-center"
-                    id="department">
-                    <span class="selected-display" id="destination">
-                      Presales
-                    </span>
-                    <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                    </svg>
-                    <ul class="dropdown">
-                      <li class="item">
-                        Presales
-                      </li>
-                      <li class="item">
-                        clerk
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-xs-12">
-                  <label for="related-service" class="mt-label fw-500">Related Service</label>
-                  <div class="d-flex wrapper-dropdown form-control custom-input max w-max-content  align-items-center"
-                    id="related-service">
-                    <span class="selected-display" id="destination">
-                      None
-                    </span>
-                    <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                    </svg>
-                    <ul class="dropdown">
-                      <li class="item">
-                        None
-                      </li>
-                      <li class="item">
-                        yes
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-xs-12">
-                  <label for="priority" class="mt-label fw-500">Priority</label>
-                  <div class="d-flex wrapper-dropdown form-control custom-input max w-max-content  align-items-center"
-                    id="priority">
-                    <span class="selected-display" id="destination">
-                      Medium
-                    </span>
-                    <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                    </svg>
-                    <ul class="dropdown">
-                      <li class="item">
-                        Smaall
-                      </li>
-                      <li class="item">
-                        Medium
-                      </li>
-                      <li class="item">
-                        Big
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="support-ticket-repaly-body-wrap w-100">
-                  <div class="form-group">
-                    <label>Message</label>
-                    <!-- text editor html start -->
-                    <div id="summernote"></div>
-                    <!-- text editor html end -->
-                  </div>
-                  <div class="form-group">
-                    <label>Attachments <span class="text-primary-theme">(Maximum Upload File Size: 10MB)</span></label>
-                    <div class="custom-upload-wrap w-100">
-                      <div class="custom-upload-box w-100">
-                        <button class="upload__btn w-100">
-                          <span class="line-height-0 d-block">
-                            <svg width="37" height="27" viewBox="0 0 37 27" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M28.8711 26.2652H23.0954H21.5402H21.2043V18.5181H23.738C24.3806 18.5181 24.7602 17.7879 24.3806 17.2622L19.4519 10.4423C19.1379 10.0042 18.488 10.0042 18.1741 10.4423L13.2454 17.2622C12.8657 17.7879 13.2381 18.5181 13.8879 18.5181H16.4216V26.2652H16.0858H14.5305H7.83478C4.00135 26.0535 0.949219 22.4683 0.949219 18.5838C0.949219 15.904 2.40227 13.5675 4.55629 12.3043C4.35914 11.7712 4.25691 11.2017 4.25691 10.603C4.25691 7.8648 6.46935 5.65237 9.20751 5.65237C9.79895 5.65237 10.3685 5.75459 10.9015 5.95174C12.486 2.59293 15.9032 0.263672 19.8754 0.263672C25.0158 0.270974 29.2508 4.20662 29.7327 9.22293C33.683 9.90199 36.684 13.5602 36.684 17.7003C36.684 22.1251 33.2376 25.9586 28.8711 26.2652Z"
-                                fill="#8893AC" />
-                            </svg>
-                          </span>
-                          Choose File
-                        </button>
-                        <input class="upload__input w-100 h-100" type="file" name="myfile" />
-                      </div>
-                      <h5 class="mb-0">Allowed File Extensions: .jpg, .gif, .jpeg, .png, .psd, .zip, .rar, .bmp, .doc,
-                        .pdf, .docx, .txt, .xlsx, .csv (maxFileSize). <span class="text-black fw-500">You can select
-                          multiple files as attachments.</span></h5>
+                <form class="bg-ghost card-ghost-style">
+                    <div class="row admin-card-box mx-auto your-details-card-form">
+                        <div class="col-sm-6 col-xs-12">
+                            <label for="site-url" class="fw-500 mt-label">Site URL</label>
+                            <input type="text" id="site-url" class="form-control custom-input">
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <label for="admin-folder" class="fw-500 mt-label">Admin Folder</label>
+                            <input type="text" id="admin-folder" class="form-control custom-input">
+                        </div>
                     </div>
-                  </div>
-                  <div class="form-group d-align gap-2">
-                    <button class="primary-btn transparent-btn">Cancel</button>
-                    <button class="primary-btn">Submit</button>
-                  </div>
-                </div>
-              </form>
+                    <div class="row admin-card-box mx-auto your-details-card-form">
+                        <div class="col-sm-6 col-xs-12">
+                            <label for="admin-Puser" class="fw-500 mt-label">Admin User</label>
+                            <input type="text" id="admin-user" class="form-control custom-input">
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <label for="admin-password" class="fw-500 mt-label">Admin Password</label>
+                            <input type="text" id="admin-password" class="form-control custom-input">
+                        </div>
+                    </div>
+                    <div class="row admin-card-box mx-auto your-details-card-form">
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <label for="generic-server-name" class="mt-label fw-500">Generic Server Name</label>
+                            <input type="text" id="generic-server-name" class="form-control custom-input">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <label for="ip-address" class="mt-label fw-500">IP Address</label>
+                            <input type="text" id="ip-address" class="form-control custom-input">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <label for="port" class="mt-label fw-500">Port</label>
+                            <input type="text" id="port" class="form-control custom-input">
+                        </div>
+                    </div>
+                    <div class="row admin-card-box mx-auto your-details-card-form">
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <label for="root-password" class="mt-label fw-500">Root Password</label>
+                            <input type="text" id="root-password" class="form-control custom-input">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <label for="username" class="mt-label fw-500">Username (if no root)</label>
+                            <input type="text" id="username" class="form-control custom-input">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <label for="username-password" class="mt-label fw-500">Username's password</label>
+                            <input type="text" id="username-password" class="form-control custom-input">
+                        </div>
+                    </div>
+                    <div class="row admin-card-box mx-auto your-details-card-form mb-1">
+                        <div class="col-xs-12">
+                            <label for="notes" class="fw-500 mt-label">Notes (Free Text)</label>
+                            <textarea id="notes" rows="5" cols="50" class="form-control custom-input w-100 mb-1"></textarea>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <input type="button" value="Delete" class="theme-btn delete-btn mx-6 fw-600 m-0">
+                        <input type="submit" value="Save" class="theme-btn theme-btn-active m-0 fw-600">
+                    </div>
+                </form>
             </div>
-
-
           </div>
+
           <footer class="footer d-align-justify flex-wrap">
             <small class="fw-500 text-flintstone">
               Copyright &copy; 2024 Jetserver Cloud.
@@ -934,7 +887,6 @@
   <script src="./assets/scripts/jquery.js"></script>
   <script src="./assets/scripts/bootstrap.min.js"></script>
   <script src="./assets/scripts/popper.min.js"></script>
-  <script src="./assets/scripts/summernote-lite.js"></script>
   <!-- layout js start -->
   <script src="./assets/scripts/page-layout.js"></script>
   <!-- layout js end -->

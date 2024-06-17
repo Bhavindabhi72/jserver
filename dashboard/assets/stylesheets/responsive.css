@@ -219,7 +219,7 @@
         min-width: 80px;
         font-size: 14px;
     }
-    .quick-shortcuts-row{
+    .quick-shortcuts-row {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -240,7 +240,7 @@
     .remove-btn {
         margin-left: 0px;
     }
-	.product-addons-content .manage-product-content-box-table-tab-2 {
+	.product-addons-content .manage-product-content-box-table-tab-2 , .backup-servers-content  .manage-product-content-box-table-tab-2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -571,7 +571,7 @@
     .manage-product-content-box .remove-btn {
         margin: 10px 24px;
     }
-    .manage-product-content-box-table-tab-2{
+    .manage-product-content-box-table-tab-2 {
         grid-template-columns : auto ;
     }
     .usage-statistics-col:first-child{
@@ -581,7 +581,7 @@
     .usage-statistics-col{
         padding: 20px;
     }
-	.support-ticket-repaly-body-row{
+	.support-ticket-repaly-body-row {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0;
     }
@@ -593,7 +593,7 @@
     }
 }
 @media (max-width: 900px) {
-    .product-addons-content .manage-product-content-box-table-tab-2 {
+    .product-addons-content .manage-product-content-box-table-tab-2 , .backup-servers-content  .manage-product-content-box-table-tab-2{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 	}
@@ -1031,6 +1031,10 @@
     .manage-nameservers .renew-domain-btn{
         width: max-content ;
         padding: 14px 30px;
+    }
+    .back-up-servers-card {
+        background-color: var(--primary-theme);
+        padding: 45px 25px;
     }
 }
 
