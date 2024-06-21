@@ -250,6 +250,9 @@
     .billing-overview-col {
         --billing-overview-col-width: 150px;
     }
+    .d-block-xl{
+        display: block !important; 
+    }
 }
 @media (min-width: 991px) and (max-width: 1330px) {
     .js-pricing-plan-benefits-list {
@@ -1035,6 +1038,9 @@
     .back-up-servers-card {
         background-color: var(--primary-theme);
         padding: 45px 25px;
+    }
+    .checkout-content .card-ghost-style{
+        padding: 20px  !important;
     }
 }
 

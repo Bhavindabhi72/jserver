@@ -1103,6 +1103,7 @@ svg,
     opacity: 1;
     visibility: visible;
     border-radius: 20px;
+    display: block !important;
 }
 
 .wrapper-dropdown .dropdown {
@@ -3872,7 +3873,7 @@ input:checked+.slider .off-text {
     padding: 30px;
 }
 
-.copy-right-msg span {
+.copy-right-msg span , .fs-13 {
     font-size: 13px;
 }
 
@@ -3969,7 +3970,7 @@ input:checked+.slider .off-text {
 
 .tips-good-password-card {
     background-color: #FFF9F1 !important;
-    border: 1px solid #F3DCBD !important;
+    border-color: 1px solid #F3DCBD !important;
     padding: 18px 17px !important;
 }
 
@@ -5086,7 +5087,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 
 /* register domain unavailable start */
 
-.register-domain-unavailable-crad-box .account-security-crad-box{
+.register-domain-unavailable-crad-box .account-security-crad-box , .edit-dns-zone-content .account-security-crad-box{
     background-color: var(--sefid-withe);
     border-color: var(--mainly-red);
 }
@@ -5200,3 +5201,252 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 }
 
 /* backup servers end */
+
+/* domains configuration start */
+
+.domains-configuration-content .remove-btn{
+    max-height: 43px;
+    min-height: 43px;
+}
+
+.domains-configuration-content  .domain-available-content{
+    padding: 30px;
+}
+
+.domains-configuration-content  .lock-icon{
+    top: 31%;
+    left: 30px;
+}
+
+.domains-configuration-content .domain-available-content .custom-input{
+    padding-left: 58px;
+}
+
+.click-to-add{
+    background-color: var(--exquisite-turquoise);
+    border-color: var(--exquisite-turquoise);
+}
+
+.click-to-add:hover{
+    background-color: var(--exquisite-turquoise);
+    border-color: var(--exquisite-turquoise);
+    opacity: 0.7;
+}
+
+.domains-configuration-content  .input-field-box{
+    background-color: var(--white);
+    padding: 28px;
+    border: 1px solid var(--white);
+}
+
+.domains-configuration-content  .input-field-box label{
+    min-width: 152px;
+}
+
+.domains-configuration-content  .input-field-box:hover{
+    box-shadow: 0px 9px 12px 0px #0000000F;
+    border-color: var(--primary-theme);
+}
+
+/* domains configuration end */
+
+
+/* checkout start */
+
+.usd-color{
+    color: #517AD4;
+    padding: 5px 11px;
+    border-radius: 5px;
+}
+
+.checkout-content .input-field-box{
+    border: 1px solid #D4D4D4;
+    padding: 17px;
+    min-height: 99px;
+}
+
+
+
+.checkout-content .input-field-box:hover , .checkout-content .input-field-box.checked{
+    border: 1px solid  var(--primary-secondary) ;
+    box-shadow: 0px 5px 14px 0px #0000001A;
+    
+}
+
+.checkout-content .border-grey{
+        border: 1px solid #D4D4D4;
+        padding: 28px;
+}
+
+.checkout-content .card-ghost-style ul li{
+    list-style: disc;
+
+}
+
+.checkout-content .card-ghost-style{
+    padding: 20px 50px !important;
+}
+
+.payment-details-checkbox {
+    background-color: #EFF3FD;
+    padding: 18px;
+}
+
+.payment-details-checkbox.checked ,   .payment-details-checkbox:hover{
+    color: var(--white);
+    background-color: var(--primary-theme);
+}
+
+.payment-details-checkbox input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(71, 71, 71) ;
+    border-radius: 50%;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.payment-details-checkbox input[type="radio"]:hover{
+    border: 2px solid rgb(255, 255, 255) ;
+}
+
+.payment-details-checkbox input[type="radio"]:checked {
+    background-color: var(--primary-theme);
+    border: 2px solid rgb(255, 255, 255) ;
+}
+
+.payment-details-checkbox input[type="radio"]:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 2px solid rgb(255, 255, 255) !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkout-content .review-checkout-card-box-col {
+    height: fit-content;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+
+.order-summary-card{
+    max-width: 572px;
+}
+
+.company-business-box{
+    background-color: #F0F0F3;
+    padding: 20px 21px 45px;
+}
+
+.company-business-box  .form-control{
+    background-color: var(--white);
+    border-color: var(--white);
+}
+
+.credit-card-input-detail{
+    display: none;
+}
+
+.credit-card-input-detail.active{
+    display: block;
+}
+
+/* checkout end */
+
+/* review & checkout start */
+
+.your-domains-box{
+  padding: 15px 20px;  
+} 
+
+.review-checkout .terms-service-crad-box .form-control{
+    max-width: 111px;
+    background-color: #63759F ;
+    border-color: #63759F;
+    color: var(--white);
+}
+
+.review-checkout .wrapper-dropdown .dropdown li{
+    padding: 6px 12px;
+}
+
+
+/* review & checkout end */
+
+.add-record-tr-border{
+    border-top: 11px solid var(--white) !important;
+    border-radius: 20px ;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.edit-dns-zone-content table thead{
+    background-color: #E1E5F4;
+}
+
+.edit-dns-zone-content .form-control{
+    background-color: var(--white);
+    border-color: var(--white);
+}
+
+.jetdns-net-box{
+    padding: 9px 30px;
+    border-radius: 3px;
+}
+
+.add-record-btn{
+    background-color: var(--white);
+    border: 1px solid #E0E0E0 ;
+    border-radius: 6px;
+    height: 43px;
+    padding: 0px 17px;
+}
+
+.add-record-btn:hover{
+    border: 1px solid var(--primary-theme);
+    box-shadow: 0px 3px 6px 0px #485FBE54;
+
+}
+
+.warning-btns button{
+    max-height: 42px;
+    max-width: 121px;
+    min-height: 0 ;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.warning-btns button:hover{
+    opacity: 0.7;
+}
+
+.hostname-input{
+    max-width: 287px !important;
+    background-color: #DADFEF !important;
+    min-width: 200px;
+}
+
+.ttl-Value-input{
+    max-width: 257px !important;
+    min-width: 200px;
+}
+
+.p-input{
+    max-width: 61px;
+    min-width: 61px;
+}
+
+.add-record-tr-border .wrapper-dropdown{
+    min-width: 78px;
+}
