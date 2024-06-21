@@ -5450,3 +5450,33 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 .add-record-tr-border .wrapper-dropdown{
     min-width: 78px;
 }
+.theme-radio-btn-gry{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--cool-grey);
+    border-radius: 50%;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.theme-radio-btn-gry:checked,.theme-radio-btn-gry:focus {
+    background-color: var(--primary-theme);
+    border: 2px solid var(--primary-theme) !important;
+    outline: unset !important;
+}
+
+.theme-radio-btn-gry:checked::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 2px solid var(--white) !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, -50%);
+}
