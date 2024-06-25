@@ -148,6 +148,9 @@
     .pricing-js-hosting-plan .js-pricing-plan-card{
         margin-top: var(--js-pricing-plan-top-space);
     }
+    .js-section-wordPress-sites h1{
+        padding: 40px 1rem 20px;
+    }
 }
 
 @media (max-width:767px) {
@@ -170,8 +173,12 @@
         order: 2;
     }
 
-    .js-section-hero .row>:nth-child(2) {
+    .js-section-hero .row>:nth-child(2)  , .js-section-wordpress-sites .row>:nth-child(1) {
         order: 1;
+    }
+
+    .js-section-hero .row>:nth-child(3) {
+        order: 3;
     }
 
     .js-nav-tabs {
@@ -222,6 +229,12 @@
 
     .js-website-hosting-content-col ul{
         grid-gap: 2rem;
+    }
+    .js-section-wordpress-sites h1{
+        padding: 30px 0px;
+    }
+    .js-information-step-sticky{
+        display: none;
     }
 }
 
@@ -285,6 +298,9 @@
     } */
     .js-website-hosting-col-1 .js-website-hosting-img-col::before {
         top: calc(100% - 60%);
+    }
+    .js-blogs-information-box-card{
+        padding: 5.25rem 2rem;
     }
 }
 

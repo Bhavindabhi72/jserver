@@ -422,7 +422,6 @@
     flex-direction: column;
     grid-gap: 1rem;
     color: var(--js-pricing-card-text-color);
-    /* margin: 0; */
 }
 
 .js-pricing-plan-card-dark .js-pricing-plan-benefits-list {
@@ -967,3 +966,386 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: normal;
 }
 /* _ENDS >> JS-SECTION-WEBSITE-HOSTING << JS */
+
+
+/* _BIGINS >> JS-SECTION-DOAMIAN << JS */
+
+.js-pricing-amount-delete {
+    color: var(--color-gray-light-4);
+    font-size: 23px;
+}
+
+.js-section-domain-certified .js-pricing-plan-benefits-list {
+    grid-gap: 2rem;
+}
+
+.js-section-israeli p{
+    padding-bottom: 35px;
+}
+
+.js-section-domain-plan .js-tab-content{
+    margin-top: calc(var(--js-pricing-plan-top-space) + 3rem);
+}
+
+.js-section-israeli{
+    padding: 6rem 0 3rem;
+}
+
+/* _ENDS >> JS-SECTION-DOAMIAN << JS */
+
+/* _BIGINS >> JS-SECTION-DATABASE << JS */
+
+.js-section-database .js-section-database-imput-box input{
+    min-height: 51px;
+    border-radius: 8px;
+    border: 0px;
+    width: 100%;
+    padding: 0px 55px;
+}
+
+.js-section-database input ::placeholder{
+    color: var(--color-gray-light-5) ;
+}
+
+.js-section-database input:focus-visible{
+    outline: none;
+}
+
+.js-section-database-search{
+    position: absolute;
+    left: 25px;
+    top: 16px;
+}
+
+.js-section-database-imput-box{
+    position: relative;
+    max-width: 992.86px;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+.js-section-database-search-history-card{
+    background-color: var(--color-white);
+    position: absolute;
+    top: 9rem;
+    padding: 20px 38px ;
+    box-shadow: 8px 10px 14px 0px var(--color-mainly-blue);
+    border-radius: 8px;
+    z-index: 99;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.js-section-database-search-history-card li:not(:last-child){
+    border-bottom: 1px solid  var(--color-gray-dark);
+   
+}
+
+.js-section-database-search-history-card li{
+    padding: 18px 0px;
+}
+
+.js-section-database-search-history-card a{
+    font-size: 17px;
+    text-decoration: underline;
+    color: var(--color-blue);
+}
+
+.js-section-database-search-history-card p{
+    font-size: 15px;
+    color: var(--color-gray-dark);
+    margin: 0%;
+    line-height: 24px;
+}
+
+.d-none{
+    display: none !important;
+}
+
+.js-section-database .js-hero-text{
+    max-width: 648.25px;
+}
+
+.js-blogs-banner:hover{
+    box-shadow: 0px 18px 67px 0px #0000002E;
+    transition: 0.5s;
+}
+
+/* _ENDS >> JS-SECTION-DATABASE << JS */
+
+
+/* _BIGINS >> JS-SECTION-WEB-HOSTING-BLOG << JS */
+
+.js-section-blog {
+    padding: 4.5rem 0;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(0deg, #EDF6FF 0%, #E6F3FF 52.09%, #F2F9FF 100%);
+}
+
+
+.js-blogs-banner{
+    background: var(--color-white); 
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding:35px 50px ;
+}
+
+.js-blogs-banner .js-feature-banner-avatar img{
+    box-shadow: 0px 7.04px 17.6px 0px #1D395B80;
+}
+
+.js-blogs-banner .contain-image img{
+    object-fit: cover;
+    max-height: 198.14px;
+    border-radius: 12px;
+    max-width: 230.69px;
+}
+
+.js-blogs-banner .js-feature-banner-content{
+    grid-gap: 0px;
+}
+
+.js-blogs-banner h4{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.js-blogs-banner p{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.js-blogs-banner-date{
+    color: var(--color-gray);
+}
+
+.js-blogs-banner a{
+    color: var(--color-blue);
+    text-decoration: underline;
+}
+
+.js-blogs-cards{
+    margin-top: 30px;
+}
+
+.js-blogs-pages-number{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.js-blogs-pages{
+    position: relative;
+    margin: auto;
+    width: max-content;
+}
+
+.js-blogs-pages-number li a{
+    background-color: var(--color-alice-blue); 
+    border: 1px solid var(--color-pattens-blue);  
+    padding: 8px 13px;
+    border-radius: 50%;
+    display: flex;
+    max-width: 34.68px;
+    max-height: 34.68px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+ 
+}
+
+.js-blogs-pages-number li a:hover , .js-blogs-pages-number li a.active {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.js-blogs-pages-number-left-arrow , .js-blogs-pages-number-right-arrow {
+    position: absolute;
+    top: 58%;
+}
+
+.js-blogs-pages-number-left-arrow{
+    left: -14px;
+}
+
+.js-blogs-pages-number-right-arrow {
+    right: -14px;
+}
+
+/* _ENDS >> JS-SECTION-WEB-HOSTING-BLOG << JS */
+
+/* _BIGINS >> JS-SECTION-WORDPRESS-SITES << JS */
+
+
+
+.js-section-wordpress-sites .js-hero-text , .js-section-wordpress-sites h1{
+    text-align: center;
+}
+
+.js-section-wordpress-sites p{
+    margin-top: 10px;
+}
+
+.js-section-wordpress-sites h1{
+    padding: 40px 13rem 20px;
+}
+
+.js-information-step-sticky{
+    position: sticky;
+    align-self: start;
+    top: 0%;
+    max-width: 407.91px;
+    max-height: 80vh;
+    overflow-y: scroll;
+    z-index: 4;
+    padding: 54px;
+    border-radius: 16px ;
+    background-color: var(--color-white);
+    overflow: auto;
+
+}
+
+.js-information-box{
+    display: flex;
+    gap: 30px;
+}
+
+.js-blogs-information-box-card{
+    background-color: var(--color-white);
+    width: 100%;
+    padding: 5.25rem 6.5rem ;
+    border-radius: 16px;
+}
+
+.js-security-expert{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px 0 ;
+}
+
+.js-security-expert img{
+    border-radius: 50%;
+}
+
+.js-security-expert p{
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 600;
+    
+}
+
+.js-security-expert p span{
+    color: var(--color-gray);
+}
+
+.js-information-security-image{
+    max-width: 850.95px;
+    max-height: 422.32px;
+    border-radius: 11px;
+    width: 100%;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.js-blogs-information-box-card h6{
+    font-size: 16px;
+    padding: 20px 0 30px;
+}
+
+.js-information-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.js-information-details p{
+    line-height: 31px;
+    color: var(--color-gray);
+}
+
+.js-information-illustration-image{
+    max-width: 825.2px;
+    max-height: 270.59px;
+    border-radius: 11px;
+    margin: 20px 0px 50px ;
+    width: 100%;
+}
+
+.js-information-illustration2-image{
+    max-width: 825.2px;
+    max-height: 575.34px;
+    border-radius: 11px ; 
+    width: 100%;
+    margin: 20px 0px 50px ;
+}
+
+#step3 p , #step3 li{
+    color: var(--color-gray);
+}
+
+#step3 li{
+    list-style: disc;    
+}
+
+#step3 span{
+    color: var(--color-blue);
+}
+
+#step3 ul{
+    padding: 10px 30px 20px;
+}
+
+.js-rewritecond{
+    background-color: var(--color-white-smoke);
+    border: 1px solid var(--color-gray-dark);
+    padding: 5px 27px;
+    border-radius: 6px;
+    margin-top: 20px ;
+}
+
+.js-rewritecond p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.js-section-information{
+    overflow: unset;
+}
+
+.js-information-step-sticky a p{
+    color: var(--color-gray-light-5);
+}
+
+.js-information-step-sticky a:hover p{
+    color: var(--color-black);
+}
+
+.sep-arrow::after{
+    content: "»";
+    color: var(--color-white);
+}
+
+.js-security-wordpress{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.js-security-wordpress li a , .js-security-wordpress li {
+    color: var(--color-white);
+    font-size: 16px;
+}
+
+.direction-rtl .js-section-database-search {
+    right: 25px;
+}
+
+.js-section-wordpress-sites{
+    max-height: 550px;
+}
+
+/* _ENDS >> JS-SECTION-WORDPRESS-SITES << JS */
+
+  

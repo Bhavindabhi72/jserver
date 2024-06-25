@@ -43,3 +43,20 @@ if (isHeaderExist && isHeaderExist) {
 } else {
     console.log("Header is Not Available");
 }
+
+
+let inputField = document.getElementById('autosearchbar');
+inputField.addEventListener('input', changeAutoCompleteSearch);
+
+
+function changeAutoCompleteSearch({ target }) {
+    let data = target.value;
+    let searchListContain = document.getElementById('searchListContain');
+
+    if (data.length > 0) {
+        searchListContain.classList.remove("d-none");
+    }else{
+        searchListContain.classList.add("d-none");
+    } 
+}
+

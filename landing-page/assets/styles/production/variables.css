@@ -34,7 +34,13 @@
     --color-gray-dark: #4F5357;
     --color-gray-light-2: #ECECEC;
     --color-gray-light-3: #3E434F;
+    --color-gray-light-4: #8B8CAA;
+    --color-gray-light-5: #BFC0C5;
     --color-green-light-1: #22D3B4;
+    --color-mainly-blue: #0000002E;
+    --color-alice-blue: #F1F9FF;
+    --color-pattens-blue:  #C7E4FE;
+    --color-white-smoke: #F4F4F4;
 
     /* LINK COLORS */
     --link-default-color: var(--color-gray);
