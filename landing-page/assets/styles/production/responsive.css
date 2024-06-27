@@ -168,6 +168,9 @@
     .js-section-wordPress-sites h1{
         padding: 40px 1rem 20px;
     }
+    .js-hosting-price-table thead tr th{
+        font-size: 22px;
+    }
 }
 
 @media (max-width:767px) {

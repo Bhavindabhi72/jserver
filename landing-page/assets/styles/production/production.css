@@ -1442,3 +1442,50 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* _ENDS >>  ABOUT US << JS */
+
+/* _BIGINS >> HOSTING PRICE << JS */
+
+.js-hosting-price-table{
+    width: 100%;
+    min-width: 800px;  
+}
+
+.js-hosting-price-table tbody tr {
+    border-top: 1px solid #D5E1EE;
+}
+
+.js-hosting-price-table tbody tr td , .js-hosting-price-table thead tr th{
+    padding: 18px;
+}
+
+.js-hosting-price-table tbody tr td {
+    font-size: 16px;
+}
+
+.js-hosting-price-table thead tr th{
+    font-size: 25px;
+}
+
+.js-hosting-price-table tbody tr td a{ 
+    max-width: max-content;
+    padding: 9px 20px !important;
+}
+
+.sub-heading{
+    background-color: #F3F4F9;
+}
+
+.sub-heading td{
+    font-size: 20px ;
+    font-weight: 500;
+}
+
+.js-hosting-price-details .js-section-website-details-box{
+    overflow: auto;
+}
+
+.text-align{
+    text-align: unset;
+}
+
+/* _ENDS >>  HOSTING PRICE << JS */
