@@ -2,6 +2,10 @@
     .container {
         width: 1530px;
     }
+    .js-section-website-details-content{
+        max-width: 700px;
+    }
+      
 }
 
 @media (max-width:1599px) {
@@ -21,6 +25,10 @@
         line-height: 170%;
         word-spacing: 2px;
     }
+    .js-section-website-details-content{
+        max-width: 550px;
+    }
+      
 }
 
 @media (max-width:1399px) {
@@ -49,12 +57,21 @@
     .js-tab-content-gutter-space{
         margin-top: 4rem;
     }
+    .js-section-we-help .js-section-website-details-box , .js-section-about-us-details-box {
+        display: block;
+    }
+    .js-section-website-details-content{
+        max-width: none;
+    }
+
+      
 }
 
 @media (min-width: 992px){
     .pricing-js-hosting-plan .js-pricing-plan-card.js-pricing-plan-card-dark{
         margin-top: calc(10px - var(--js-pricing-plan-top-space));
     }
+   
 }
 
 @media (max-width:991px) {
@@ -235,6 +252,12 @@
     }
     .js-information-step-sticky{
         display: none;
+    }
+    .js-section-website-details-box {
+        padding: 18px;
+    }
+    .js-section-website-details-box ol {
+        padding: 0px;
     }
 }
 
