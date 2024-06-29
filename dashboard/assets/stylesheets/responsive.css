@@ -244,6 +244,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .domain-price-box{
+        max-width: 200px;
+        min-height: 200px;
+    }
 }
 
 @media (max-width: 1279px){
@@ -471,9 +476,7 @@
     .manage-product-content-box{
         display: block; 
     }
-   /*  #billingAddress .modal-content {
-        padding: 30px 15px;
-    } */
+
 	.register-domain-content .viwe--btn{
         margin: 10px 20px;
     }

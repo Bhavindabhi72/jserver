@@ -5480,3 +5480,31 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     left: 50%;
     transform: translate(-46%, -50%);
 }
+
+
+ /* suggested domains start */
+
+
+.domain-price-box-content{
+    margin: 67px 0px 130px ;
+}
+
+
+.suggested-domains-box .account-security-crad-box{
+    background-color: var(--sefid-withe);
+    border: 1px solid var(--mainly-red)
+} 
+
+.domain-price-box{
+    background-color: #F8FBFF;
+    border: 1px solid #D9E3FA;
+    max-width: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+}
+
+.domain-price-box  h3{
+    font-size: 36px;
+}
+
+/* suggested domains end */
