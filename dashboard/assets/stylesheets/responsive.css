@@ -264,6 +264,10 @@
     .domain-required-box {
         padding: 42px 30px;
     }
+    .unpaid-invoice-box button{
+        padding: 9px 15px;
+        width: 141px;
+    }
 }
 @media (min-width: 991px) and (max-width: 1330px) {
     .js-pricing-plan-benefits-list {
@@ -616,6 +620,12 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 	}
+    .unpaid-invoice-box{
+        display: block;
+    }
+    .unpaid-invoice-box button{
+        margin-top: 10px;
+    }
 }
 @media (min-width: 767px) {
 	.modal-dialog-style-one{
@@ -1054,6 +1064,13 @@
 	.setting-box {
         padding: 16px 15px 7px;
     }
+    
+    .my-domains-body-content .my-services-dropdown{
+        margin-bottom: 20px;
+    }
+    .my-domains-body-content .table-search-bar .search-bar-wrap input{
+        margin: 20px 0px 10px;
+    }
     .manage-nameservers .renew-domain-btn{
         width: max-content ;
         padding: 14px 30px;
@@ -1070,6 +1087,23 @@
     }
     .chosse-domain-required {
         padding: 0px 10px;
+    }
+    .quick-actions-box ul{
+        padding: 35px 15px;
+    }
+    
+    .quick-actions-box ul li a{
+        width: 122px;
+        height: 93.2px;
+    }
+    .unpaid-invoice-box div{
+       display: block;
+    }
+    .domain-points .theme-btn{
+      padding: 14px;
+    }
+    .temporary-ip-tab .your-details-card-form {
+        padding: 0px;
     }
 }
 

@@ -775,32 +775,51 @@
           <div class="admin-body-content">
             <h4 class="admin-head m-0 head-line-border">My Quotes</h4>
             <div class="tab-container">
-              <div class="tab-menu">
-                <ul class="d-flex align-items-center w-100">
-                  <li><a href="#"
-                      class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a"
-                      data-id="delivered">Delivered<span class="d-align-justify">0</span></a></li>
-                  <li><a href="#" class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                      data-id="accepted">Accepted <span class="d-align-justify">0</span></a></li>
-                </ul>
-              </div>
-              <div class="tab tab-active" data-id="delivered">
                 <div class="admin-card-box table-wrap">
-                  <div class="d-flex align-items-center flex-wrap">
+                  <div class="d-flex align-items-center flex-wrap justify-content-between">
                     <h5 class="mb-0">Showing 1 to 5 of 10 entries</h5>
-                    <div class="table-search-bar ms-auto d-flex align-items-center">
-                      <div class="search-bar-wrap position-relative">
-                        <input type="search" placeholder="Search" class="form-control custom-input" />
-                        <span class="search-icon position-absolute line-height-0">
-                          <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z"
-                              fill="#848998" />
-                          </svg>
+                    <div class="table-search-bar d-flex align-items-center ">
+                      <div class="d-flex wrapper-dropdown form-control custom-input  align-items-center my-services-dropdown"
+                        id="language">
+                        <span class="selected-display d-flex align-items-center" id="destination">
+                          Select 
                         </span>
+                        <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        </svg>
+                        <ul class="dropdown">
+                          <li class="item d-flex align-items-center gap-1">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.61035 0.871094C4.21629 0.871094 0.610352 4.47703 0.610352 8.87109C0.610352 13.2652 4.21629 16.8711 8.61035 16.8711C13.0044 16.8711 16.6104 13.2652 16.6104 8.87109C16.6104 4.47703 13.0044 0.871094 8.61035 0.871094ZM7.6422 12.5098L4.13891 9.00659L5.4646 7.68091L7.70354 9.91984L12.1983 5.83384L13.4599 7.22087L7.6422 12.5098Z" fill="#16CDB7"/>
+                            </svg>
+                            <span>Accepted  - 1</span>                                
+                          </li>
+                          <li class="item d-flex align-items-center gap-1">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M9.6104 18.6406C14.5842 18.6406 18.6163 14.6112 18.6163 9.64062C18.6163 4.67006 14.5842 0.640625 9.6104 0.640625C4.63658 0.640625 0.604492 4.67006 0.604492 9.64062C0.604492 14.6112 4.63658 18.6406 9.6104 18.6406Z" fill="#FE585D"/>
+                              <path d="M5.45996 6.68359L6.65361 5.48995L13.7588 12.5951L12.5651 13.7888L5.45996 6.68359Z" fill="white"/>
+                              <path d="M5.45996 12.5938L12.5651 5.48858L13.7588 6.68222L6.65361 13.7874L5.45996 12.5938Z" fill="white"/>
+                            </svg>                              
+                            <span>Delivered - 1</span>                              
+                          </li>
+                        </ul>
                       </div>
-                      <button class="primary-btn">Go</button>
+                      <div class="d-flex align-items-center gap-1">
+                        <div class="search-bar-wrap position-relative">
+                          <input type="search" placeholder="Search" class="form-control custom-input" />
+                          <span class="search-icon position-absolute line-height-0">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z"
+                                fill="#848998" />
+                            </svg>
+                          </span>
+                        </div>
+                        <button class="primary-btn">Go</button>
+                      </div>
                     </div>
                   </div>
                   <div class="table-responsive">
@@ -853,7 +872,7 @@
                             <h4 class="fs-15 fw-400 text-black">Saturday, June 1st, 2024</h4>
                           </td>
                           <td>
-                            -
+                            <button class="primary-btn small-btn exquisite-turquoise-bg">Accepted</button>
                           </td>
                           <td>
                             -
@@ -873,73 +892,12 @@
                             <h4 class="fs-15 fw-400 text-black">Tuesday, May 28th, 2024</h4>
                           </td>
                           <td>
-                            -
+                            <button class="primary-btn small-btn exquisite-turquoise-bg red-bg">Delivered</button>
                           </td>
                           <td>
                             -
                           </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">959653 </h4>
-                          </td>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">Testing Purpose</h4>
-                          </td>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">Wednesday, May 29th, 2024</h4>
-                          </td>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">Tuesday, May 28th, 2024</h4>
-                          </td>
-                          <td>
-                            -
-                          </td>
-                          <td>
-                            -
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">947282 </h4>
-                          </td>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">Testing Purpose</h4>
-                          </td>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">Thursday, April 18th, 2024</h4>
-                          </td>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">Wednesday, May 1st, 2024</h4>
-                          </td>
-                          <td>
-                            -
-                          </td>
-                          <td>
-                            -
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">947240 </h4>
-                          </td>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">Testing Purpose</h4>
-                          </td>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">Thursday, April 18th, 2024</h4>
-                          </td>
-                          <td>
-                            <h4 class="fs-15 fw-400 text-black">Wednesday, April 17th, 2024</h4>
-                          </td>
-                          <td>
-                            -
-                          </td>
-                          <td>
-                            -
-                          </td>
-                        </tr>
-
+                        </tr> 
                       </tbody>
                     </table>
                   </div>
@@ -992,7 +950,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
 
