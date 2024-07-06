@@ -113,6 +113,19 @@ function maskPassword(input) {
 
 // Password type change end
 
+// active product start
+
+document.addEventListener('DOMContentLoaded', function() {
+  const quickActionsBtn = document.getElementById('quickActionsBtn');
+  const quickActionsBox = document.getElementById('quickActionsBox');
+
+  quickActionsBtn.addEventListener('click', function() {
+    quickActionsBox.classList.toggle('active');
+  });
+});
+
+// active product end
+
 // counter progressbar js start
 $(function () {
   $(".progress").each(function () {
@@ -249,3 +262,30 @@ function getCheckoutAccount(value) {
 }
 
 // checkout page js end
+
+
+function toggleVisibility(element) {
+  var div = document.querySelector('.support-ticket-repaly-body-wraps');
+  if (div.classList.contains('open')) {
+    div.classList.remove('open');
+    element.textContent = '+';
+  } else {
+    div.classList.add('open');
+    element.textContent = '-';
+  }
+}
+
+// check out start
+
+document.getElementById('toggle-arrow').addEventListener('click', function() {
+  const domainContainer = document.getElementById('domain-container');
+  const arrow = document.getElementById('toggle-arrow');
+
+  domainContainer.classList.toggle('hidden');
+  arrow.classList.toggle('rotate');
+});
+
+document.getElementById('domain-container').classList.remove('hidden');
+
+// check out end
+

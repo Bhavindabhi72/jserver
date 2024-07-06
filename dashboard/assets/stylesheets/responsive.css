@@ -160,6 +160,9 @@
     .ticket-reopen-footer-wrap .welcome-user-content h4{
         font-size: 16px;
     }
+    .accept-invite-crad-box{
+        padding: 50px 30px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -257,6 +260,9 @@
     }
     .d-block-xl{
         display: block !important; 
+    }
+    .domain-required-box {
+        padding: 42px 30px;
     }
 }
 @media (min-width: 991px) and (max-width: 1330px) {
@@ -480,6 +486,9 @@
 	.register-domain-content .viwe--btn{
         margin: 10px 20px;
     }
+    .domain-required-box{
+        display: block;
+    }
 }
 
 @media (max-width: 991px) {
@@ -596,6 +605,10 @@
     }
     .domain-card{
         margin: 10px 0px;
+    }
+    .login-register-form{
+        flex-direction: column;
+
     }
 }
 @media (max-width: 900px) {
@@ -724,6 +737,13 @@
 		padding: 10px 0px 30px ;
 		max-width: 80%;
 	}
+    .enter-promo-code{
+        display: block;
+    }
+    .enter-promo-code input{
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1045,6 +1065,22 @@
     .checkout-content .card-ghost-style{
         padding: 20px  !important;
     }
+    .year-renewal{
+        gap: 10px;
+    }
+    .chosse-domain-required {
+        padding: 0px 10px;
+    }
+    .quick-actions-box ul{
+        width: 292px;
+        min-height: 387px;
+        padding: 35px 15px;
+    }
+    
+    .quick-actions-box ul li a{
+        width: 122px;
+        height: 93.2px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1150,6 +1186,17 @@
     }
     .register-domain-content .viwe--btn{
         margin: 10px 0px;
+    }
+    .manage-nameservers-domain-box{
+        padding: 25px 15px;
+    }
+    .table-search-bar{
+        display: block;
+    }
+    .my-services-dropdown {
+        min-width: 100%;
+        max-width: 100%;
+        margin: 10px 0px ;
     }
 }
 
