@@ -710,6 +710,7 @@ a:focus {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+    width: fit-content;
 }
 
 .notification-dropbox-wrap .count-msg-number-box {
@@ -4536,7 +4537,6 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 
 .quick-actions-box ul{
     max-width: 558px;
-    min-height: 387px;
     background-color: var(--white);
     box-shadow: 5px 10px 24px 0px #0000001C;
     padding: 35px;
@@ -4551,6 +4551,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     border: 1px solid #DCDCDC;
     color: #7A859D;
     border-radius: 14px;
+    padding: 0px 5px;
 }
 
 .quick-actions-box ul li a:hover{
@@ -4574,6 +4575,10 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     filter: drop-shadow(5px 10px 24px #0000001C);
 }
 
+.direction-rtl  .arrow-svg{
+    right: 112px;
+}
+
 .quick-btn{
     max-width: 165.71px;
 }
@@ -4585,6 +4590,24 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 .quick-actions-box.active {
     display: block; 
   }
+
+.unpaid-invoice-box{
+    border: 1px solid #F3DCBD;
+    background-color:#FFF9F1;
+    padding: 24px 34px;  
+}
+
+.unpaid-invoice-box p{
+    color: #303237;
+}
+
+.unpaid-invoice-box button{
+    border: 1px solid #AA7F47;
+    color: #462C08;
+    width: 124px;
+    background-color: transparent;
+    padding: 9px 24px;
+}
 
 /*  counter progressbar css start */
 .counter-progress-wrap {
@@ -4854,7 +4877,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 /* manage firewall firewall start */
 
 .manage-firewall-firewall-content .billing-overview-row {
-    margin: 52px 0px 150px;
+    margin: 52px 0px;
 }
 
 .manage-firewall-firewall-content .tab-container .tab-menu ul li a {
@@ -5176,6 +5199,11 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     background-color: #E5ECF1;
     border-color: #DEE8F0;
     opacity: 1;
+}
+
+.domain-points .theme-btn{
+    max-width: fit-content;
+    width: 100%;
 }
 /* manage nameservers end */
 
@@ -5775,8 +5803,14 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     transform: rotate(180deg);
   }
 
-  .hiding-block {
-    display: none;
-  }
 
+/* my invoice start */
 
+.showing-entries ul li svg{
+    min-width: 19px;
+}
+.showing-entries ul li span{
+    max-width: 93px;
+}
+
+/* my invoice end */
