@@ -113,25 +113,8 @@ function maskPassword(input) {
 
 // Password type change end
 
-// active product start
 
-const quickActionsBtn = document.getElementById('quickActionsBtn');
-const quickActionsBox = document.getElementById('quickActionsBox');
-if (quickActionsBtn) {
-  quickActionsBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    quickActionsBox.classList.toggle('active');
-  });
 
-  document.body.addEventListener('click', function (e) {
-    if (e.target.id !== 'quickActionsBtn') {
-      quickActionsBox.classList.remove('active');
-      console.log(1)
-    }
-  });
-}
-
-// active product end
 
 // counter progressbar js start
 $(function () {
@@ -282,24 +265,13 @@ function toggleVisibility(element) {
   }
 }
 
-// check out start
-const chooseArrow = document.getElementById('choose-toggle-arrow')
-if (chooseArrow) {
-  chooseArrow.addEventListener('click', function () {
-    const domainContainer = document.getElementById('domain-container');
-    domainContainer.classList.toggle('hidden');
-    chooseArrow.classList.toggle('rotate');
-  });
-}
 
-const chooseAccountArrow = document.getElementById('choose-account-arrow')
-if (chooseAccountArrow) {
-  const accountContainer = document.getElementById('hiding-block');
-  chooseAccountArrow.addEventListener('click', function () {
-    accountContainer.classList.toggle('hidden');
-    chooseAccountArrow.classList.toggle('rotate');
-  });
-  accountContainer.classList.toggle('hidden');
-}
-// check out end
+document.getElementById('toggle-arrow').addEventListener('click', function() {
+  const domainContainer = document.getElementById('domain-container');
+  const arrow = document.getElementById('toggle-arrow');
 
+  domainContainer.classList.toggle('hidden');
+  arrow.classList.toggle('rotate');
+});
+
+document.getElementById('domain-container').classList.remove('hidden');
