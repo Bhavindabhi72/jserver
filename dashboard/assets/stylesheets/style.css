@@ -954,6 +954,10 @@ a:focus {
     border-radius: 3.2px;
 }
 
+.btn:disabled {
+    pointer-events: none;
+}
+
 .btn-outline-primary{
     background-color: var(--white);
     color: var(--primary-theme);
