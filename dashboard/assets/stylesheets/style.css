@@ -917,13 +917,15 @@ a:focus {
 }
 
 .btn{
-    padding: 15px 37px;
-    font-size: 15px;
-    font-weight: 500;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
     display: inline-block;
     border: 1px solid transparent;
-    border-radius: 8px;
+    border-radius: 4px;
     transition: 0.5s;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .btn:focus-visible{
@@ -938,6 +940,18 @@ a:focus {
 .btn-primary:hover{
     background-color: #0E6EFF;
     border-color:transparent;
+}
+
+.btn-lg {
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 4.8;
+}
+
+.btn-sm{
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 3.2px;
 }
 
 .btn-outline-primary{
