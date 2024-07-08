@@ -303,3 +303,46 @@ if (chooseAccountArrow) {
 }
 // check out end
 
+// lost password reset start
+
+function checkPasswordStrength(input) {
+  const value = input.value;
+  let strength = 0;
+
+  const hasUppercase = /[A-Z]/.test(value);
+  const hasSymbol = /[^A-Za-z0-9]/.test(value);
+  const isNotDictionary = /[1-9]/.test(value); 
+
+  updateRuleIndicator('rule-uppercase', hasUppercase);
+  updateRuleIndicator('rule-symbol', hasSymbol);
+  updateRuleIndicator('rule-dictionary', isNotDictionary);
+
+  if (hasUppercase) strength += 33;
+  if (/[0-9]/.test(value)) strength += 33;
+  if (hasSymbol) strength += 34;
+
+  const progressBar = document.getElementById('password-progress-bar');
+  progressBar.style.width = strength + '%';
+  progressBar.setAttribute('aria-valuenow', strength);
+
+  const strengthText = document.getElementById('password-strength-text');
+  if (strength === 100) {
+      strengthText.textContent = "Strong";
+  } else if (strength >= 66) {
+      strengthText.textContent = "Medium";
+  } else if (strength >= 33) {
+      strengthText.textContent = "Weak";
+  } 
+}
+
+function updateRuleIndicator(ruleId, isValid) {
+  const ruleElement = document.getElementById(ruleId);
+  const iconElement = ruleElement.querySelector('i');
+  if (isValid) {
+      iconElement.className = 'true-icon';
+  } else {
+      iconElement.className = 'false-icon';
+  }
+}
+
+// lost password reset end

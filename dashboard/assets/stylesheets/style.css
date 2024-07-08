@@ -916,6 +916,45 @@ a:focus {
     transition: all 0.3s;
 }
 
+.btn{
+    padding: 15px 37px;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.btn:focus-visible{
+    outline: none;
+}
+
+.btn-primary{
+    background-color: var(--primary-theme);
+    color: var(--white);
+}
+
+.btn-primary:hover{
+    background-color: #0E6EFF;
+    border-color:transparent;
+}
+
+.btn-outline-primary{
+    background-color: var(--white);
+    color: var(--primary-theme);
+    border-color: var(--primary-theme);
+}
+
+.btn-outline-primary:hover , .btn-outline-primary:focus  {
+    background-color: var(--primary-theme);
+    color: var(--white);
+}
+
+.btn:focus  , .btn:active{
+    outline: none !important;
+}
+
 .edit-btn{
     min-height: 36px;
     border-radius: 4px;
@@ -5178,7 +5217,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     font-size: 18px;
 }
 .manage-nameservers-domain-box{
-    padding: 33px 45px;
+    padding: 27px 45px;
     border-radius: 6px;
 }
 
@@ -5186,7 +5225,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     border-radius: 8px !important;
 }
 .manage-nameservers .manage-product-content-box-icon {
-    padding: 23px;
+    padding: 23px 23px 19px;
 }
 .manage-nameservers .manage-product-content-box-icon svg {
     width: 32px;
@@ -5205,6 +5244,12 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     max-width: fit-content;
     width: 100%;
 }
+
+.auto-renew .register-domain-unavailable-crad-box .account-security-crad-box{
+    padding: 19px 38px;
+}
+
+
 /* manage nameservers end */
 
 /* register domain unavailable start */
@@ -5814,3 +5859,49 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 }
 
 /* my invoice end */
+
+/* lost password reset start */
+
+.lost-password-reset-box .progress{
+    height: 5px;
+    margin: 27px 0px 8px;
+}
+
+.lost-password-reset-box .progress-bar {
+    background-color: #4ED283;
+}
+
+.password-strength span{
+    color: #51517C;
+}
+.password-strength{
+    color: #8893AC;
+}
+
+.new-password-rules{
+    padding: 0px 20px;
+}
+
+.false-icon , .true-icon{
+    width: 14px ;
+    height: 14px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.lost-password-reset-box .your-details-card-form{
+    margin-top: 40px;
+} 
+
+.true-icon {
+    background-color: #28a745;
+   
+}
+.false-icon {
+    background-color: #dc3545;
+}
+
+/* lost password reset end */
+
