@@ -324,6 +324,12 @@
     .js-blogs-information-box-card{
         padding: 5.25rem 2rem;
     }
+    .link-box {
+        padding: 20px;
+    }
+    .link-box p{
+        font-size: 14px;
+    }
 }
 
 @media (max-width:350px) {

@@ -1354,18 +1354,17 @@ code{
     padding: 0.2em;
 }
 
-.link-box.note {
-    background-color: rgb(213, 240, 195);
-    color: rgb(0, 12, 42);
-    
-}
-
 .link-box{
-    padding: 1em 1.25em;
+    padding: 25px 36px;
     font-size: 15px;
-    border-radius: 16px;
+    border-radius: 9px;
     line-height: 1.5em;
     margin: 10px 0px 20px ;
+    border-left: 9px solid;
+}
+
+.link-box p{
+    font-size: 16px;
 }
 
 .link-box.note p{
@@ -1387,23 +1386,25 @@ code{
 }
 
 .database{
-    background-color: rgb(198, 227, 255);
+    background-color: rgba(224, 248, 255, 1);
     color: rgb(0, 12, 42);
+    border-color: rgba(89, 188, 220, 1) !important;
+
 }
 
 .sudo-label{
-    background-color: rgb(41, 51, 77);
-    border-radius: 1em 1em 0px 0px;
-    min-height: 3.25em;
+    background-color: rgba(67, 69, 75, 1);
+    border-radius: 9px 9px 0px 0px;
+    min-height: 40px;
 }
 
 
 .language-sudo{
-    border-radius: 0px 0px 1em 1em;
-    background: rgb(17, 25, 46);
+    border-radius: 0px 0px 9px 9px;
+    background: rgba(44, 45, 50, 1);
     color: rgb(247, 248, 251);
     overflow: auto;
-    padding: 1.5em;
+    padding: 13px 20px;
     white-space: normal;
     overflow-wrap: normal;
     border: none;
@@ -1425,7 +1426,7 @@ code{
 }
 
 .sudo-toolbar code ol li{
-    font-size: 14px !important;
+    font-size: 16px !important;
 }
 
 .sudo-toolbar code ol li::before {
@@ -1445,31 +1446,38 @@ code{
 }
 
 .copy-btn > button{
-    background: rgb(105, 111, 176);
-    border-radius: 0.625em;
-    color: rgb(255, 255, 255);
+    background: transparent;
+    color: rgba(218, 224, 255, 1);
     cursor: pointer;
-    line-height: 1;
-    padding: 0.375em 0.5em;
-    transition: color 0.25s ease 0s, background 0.25s ease 0s;
     border: none;
     font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
- .copy-btn:hover > button,  .copy-btn:focus > button {
-    background: rgb(64, 73, 155);
+ .copy-btn:hover > button ,  .copy-btn:focus > button , .copy-btn:hover > button svg path{
     color: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
 }
 
 .link-box.warning {
-    background-color: rgb(255, 186, 181);
+    background-color: rgba(255, 233, 233, 1);
     color: rgb(0, 12, 42);
+    border-color: rgba(255, 143, 143, 1) !important;
+}
+
+.deploy-database{
+    background-color: rgba(255, 243, 224, 1);
+    color: rgb(0, 12, 42);
+    border-color: rgba(235, 194, 130, 1) !important;
 }
 
 .pre-optput  pre {
-    background: rgb(17, 25, 46);
+    background: rgba(67, 69, 75, 1);
     color: rgb(247, 248, 251);
-    border-radius: 1em;
+    border-radius: 9px;
     box-shadow: rgba(17, 25, 46, 0.1) 0px 0px 0px 0.125em inset;
     display: block;
     margin: 1em 0px;
@@ -1493,8 +1501,7 @@ code{
     white-space: pre;
     overflow-wrap: normal;
     width: 1px;
-    display: block;
-    
+    display: block;  
 }
 
 .pre-optput{
@@ -1504,7 +1511,7 @@ code{
 
 .copy-btn{
     position: absolute;
-    top: -36px;
+    top: -2.1em;
     right: 24px;
 }
 
@@ -1512,6 +1519,12 @@ code{
     left: 24px;
     right: auto;
 }
+
+.direction-rtl[dir=rtl] .link-box{
+    border-right: 9px solid;
+    border-left: none;
+}
+
 
 /* _ENDS >> JS-SECTION-WORDPRESS-SITES << JS */
 
