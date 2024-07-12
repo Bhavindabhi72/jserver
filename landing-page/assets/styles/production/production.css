@@ -1444,7 +1444,7 @@ code{
     display: inline-block;
 }
 
-.copy-btn > div > button{
+.copy-btn > button{
     background: rgb(105, 111, 176);
     border-radius: 0.625em;
     color: rgb(255, 255, 255);
@@ -1456,7 +1456,7 @@ code{
     font-size: 14px;
 }
 
- .copy-btn:hover > div > button,  .copy-btn:focus > div > button {
+ .copy-btn:hover > button,  .copy-btn:focus > button {
     background: rgb(64, 73, 155);
     color: rgb(255, 255, 255);
 }
@@ -1504,18 +1504,13 @@ code{
 
 .copy-btn{
     position: absolute;
-    right: 24px ;
-    top: -2.4em;
-    width: fit-content;
+    top: -36px;
+    right: 24px;
 }
 
-.direction-rtl-js .copy-btn {
+.direction-rtl[dir=rtl] .copy-btn{
     left: 24px;
     right: auto;
-}
-
-.direction-rtl-js {
-    direction: rtl;
 }
 
 /* _ENDS >> JS-SECTION-WORDPRESS-SITES << JS */
