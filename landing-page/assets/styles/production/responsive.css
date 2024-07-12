@@ -185,10 +185,6 @@
         width: 100%;
     }
 
-    .js-section-hero {
-        padding-top: 0;
-    }
-
     .js-section-hero .row>:nth-child(1) {
         order: 2;
     }

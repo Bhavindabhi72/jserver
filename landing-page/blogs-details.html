@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="direction-rtl" dir="rtl">
+<html lang="en" class="direction-rtl-js">
 
 <head>
     <!-- /* PAGE TITLE << JS */ -->
@@ -126,26 +126,26 @@
 
         <section class="js-section js-section-blog js-section-information">
             <div class="container">
-                
+
                 <div class="js-information-box">
                     <div class="js-information-step-sticky" id="stepsticky">
-                       
-                            <a href="#step1">Step 1 -
-                                <p>Security of WordPress sites - information of user names</p>
-                            </a>
-                       
+
+                        <a href="#step1">Step 1 -
+                            <p>Security of WordPress sites - information of user names</p>
+                        </a>
+
                         <hr>
-                    
-                            <a href="#step2">Step 2 -
-                                <p>Pictures for illustration and the test process</p>
-                            </a>
-                       
+
+                        <a href="#step2">Step 2 -
+                            <p>Pictures for illustration and the test process</p>
+                        </a>
+
                         <hr>
-                      
-                            <a href="#step3">Step 3 -
-                                <p>Recommendations for repair</p>
-                            </a>
-                    
+
+                        <a href="#step3">Step 3 -
+                            <p>Recommendations for repair</p>
+                        </a>
+
                         <hr>
                     </div>
                     <div class="js-blogs-information-box-card">
@@ -157,40 +157,101 @@
                                 <p>Uri Nachmani <span> is a Jetserver information security expert</span></p>
                             </div>
                             <img src="./assets/images/covers/js-information-security.png" alt="information-security"
-                                 class="js-information-security-image">
+                                class="js-information-security-image">
                             <h6>Risk level: low</h6>
                             <div class="js-information-details">
                                 <p>This flaw allows a malicious attacker to enumerate user names in various services,
                                     with the help of permissive settings in Web applications and with the correct use of
-                                    brute-force, the malicious attacker can reveal the user name of the management panel. Exposing this
-                                    sensitive information is a serious loophole because, if the management panel is not protected
-                                    in any way, the attacker can perform another brute-force attack on the password parameter,
-                                    thus completing the puzzle necessary to be able to penetrate the site's management area.
+                                    brute-force, the malicious attacker can reveal the user name of the management
+                                    panel. Exposing this
+                                    sensitive information is a serious loophole because, if the management panel is not
+                                    protected
+                                    in any way, the attacker can perform another brute-force attack on the password
+                                    parameter,
+                                    thus completing the puzzle necessary to be able to penetrate the site's management
+                                    area.
                                 </p>
-                                <p>In WordPress systems, there is a depolative definition which, with the help of the author
+                                <p>Start by updating the package manager cache. If this is the first time you’re using
+                                    sudo within this session, you’ll be prompted to provide your user’s password to
+                                    confirm you have the right privileges to manage system packages with
+                                    <code>apt</code>:
+                                </p>
+                                <p>In WordPress systems, there is a depolative definition which, with the help of the
+                                    author
                                     parameter, makes it possible to reveal the names of the users on the website,
-                                    revealing this information is possible because WordPress associates each author-editor with a
-                                    certain -id parameter, id number 1 will always be the user with the highest privileges, if this
-                                    definition is not Blocked ahead of time, you can run - Brute-force of numbers on the author
+                                    revealing this information is possible because WordPress associates each
+                                    author-editor with a
+                                    certain -id parameter, id number 1 will always be the user with the highest
+                                    privileges, if this
+                                    definition is not Blocked ahead of time, you can run - Brute-force of numbers on the
+                                    author
                                     parameter, the server's response will contain the Location header which will reveal
                                     the username associated with that id.</p>
                                 <p>During the robustness test, the Nmap tool and the script - http-wordpress-users were
                                     used, this script performed a brute-force of numbers while transferring the author
-                                    parameter to the site, the scan revealed the main user on the site - root, who is associated with
+                                    parameter to the site, the scan revealed the main user on the site - root, who is
+                                    associated with
                                     id number 1.</p>
                                 <p>A manual test can be done By accessing the address:
                                     http://3.120.144.6:31120/?author=1 and
                                     checking the location title returned from the server.</p>
+                            </div>
+                            <div class="link-box note">
+                                <p><strong>Note:</strong> Enabling this feature is something of a judgment call. If
+                                    enabled, passwords which don’t match the specified criteria will be rejected by
+                                    MySQL with an error. It is safe to leave validation disabled, <a href="#" class="a-link">collection
+                                        of guides</a> but you should always
+                                    use strong, unique passwords for database credentials.</p>
+                            </div>
+                            <div class="link-box database">
+                                <p>1-click deploy a database using <a href="#" class="a-link">DigitalOcean Managed Databases</a>. Let
+                                    DigitalOcean focus on scaling, maintenance, and upgrades for your database.</p>
+                            </div>
+                            <div class="sudo-label" title=""></div>
+                            <div class="sudo-toolbar">
+                                <pre class="language-sudo"><code><ol><li data-prefix="$"><span class="function">sudo</span> <span class="function">apt</span> update
+                            </li></ol>
+                            </code></pre>
+                            <div class="copy-btn">
+                                <div><button>Copy!</button></div>
+                            </div>
+                            </div>
+                            <div class="sudo-label" title=""></div>
+                            <div class="sudo-toolbar">
+                                <pre class="language-sudo"><code><ol><li data-prefix="$"><span class="function">sudo</span> <span class="function">apt</span> update
+                            </li></ol>
+                            </code></pre>
+                                <div class="copy-btn">
+                                    <div><button>Copied!</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link-box warning">
+                            <p><strong>Warning</strong>: As of July 2022, an error will occur when you run the
+                                <code>mysql_secure_installation</code> script without some further configuration. The
+                                reason is that this script will attempt to set a password for the installation’s
+                                <strong>root</strong> MySQL account but, by default on Ubuntu installations, this
+                                account is not configured to connect using a password.
+                            </p>
+                            <p>Prior to July 2022, this script would silently fail after attempting to set the
+                                <strong>root</strong> account password and continue on with the rest of the prompts.
+                                However, as of this writing the script will return the following error after you enter
+                                and confirm a password:
+                            </p>
+                            <div class="pre-optput">
+                                <pre><code><div class="output-label" title="Output">Output</div> ... Failed! Error: SET PASSWORD has no significance for user 'root'@'localhost' as the authentication method used doesn't store authentication data in the MySQL server. Please consider using ALTER USER instead if you want to change authentication parameters.
+                                 <br>New password:
+                                </code></pre>
                             </div>
                         </div>
                         <div id="step2">
                             <h2>Step 2 - Pictures for illustration and the test process</h2>
                             <p>Running the script and finding the user</p>
                             <img src="./assets/images/covers/js-information-illustration.png"
-                                 alt="information-illustration" class="js-information-illustration-image">
+                                alt="information-illustration" class="js-information-illustration-image">
                             <p>Illustration for the title - "location" after passing the parameter "author=1"</p>
                             <img src="./assets/images/covers/js-information-illustration2.png"
-                                 alt="js-information-illustration2" class="js-information-illustration2-image">
+                                alt="js-information-illustration2" class="js-information-illustration2-image">
                         </div>
                         <div id="step3">
                             <h2>Step 3 - Recommendations for repair</h2>
@@ -200,7 +261,8 @@
                             <span>This can be blocked in 2 ways:</span>
                             <ul>
                                 <li>Changing the Function.php code in the website template</li>
-                                <li>Server-level blocking by editing the .htaccess file and using mod_rewrite to set the rule.</li>
+                                <li>Server-level blocking by editing the .htaccess file and using mod_rewrite to set the
+                                    rule.</li>
                             </ul>
                             <span>An example of defining the security rule in the .htaccess file:</span>
                             <div class="js-rewritecond">
@@ -213,7 +275,7 @@
             </div>
         </section>
 
-        
+
 
         <!-- _ENDS >> SECTION | WORDPRESS SITES INFORMATION << JS -->
 
@@ -370,7 +432,7 @@
 
 
     <!-- /* _BEGIN >> REQUIRED SCRIPTS << JS */ -->
-     
+
     <script src="./assets/scripts/jquery-3.7.1.min.js"></script>
     <script src="./assets/scripts/bootstrap.min.js"></script>
     <script src="./assets/scripts/js-icon.js"></script>
