@@ -684,6 +684,19 @@ a:focus {
     transition: all 0.3s;
 }
 
+.showing-entries {
+    position: relative;
+}
+
+#actioncard{
+    top: 57% !important;
+    right: 17px;
+}
+#actioncards1{
+    top: 77% !important;
+    right: 17px;    
+}
+
 .direction-rtl .notification-dropbox-wrap {
     left: -30px;
     right: unset;
@@ -5217,7 +5230,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 
 .setting-card-box {
     min-width: 300px;
-    top: 183%;
+    top: 117%;
     left: -17px;
 }
 

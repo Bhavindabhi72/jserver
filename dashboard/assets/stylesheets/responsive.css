@@ -612,7 +612,12 @@
     }
     .login-register-form{
         flex-direction: column;
-
+    }
+    #actioncards1 {
+        top: 68% !important;
+    }
+    #actioncard {
+        top: 50% !important;
     }
 }
 @media (max-width: 900px) {
@@ -954,10 +959,6 @@
         right: -70px;
     }
 
-    .notifications-msg-dropbox-wrap.notification-dropbox-wrap .arrow-up {
-        right: 72px;
-    }
-
     .direction-rtl .notifications-msg-dropbox-wrap.notification-dropbox-wrap {
         left: -70px;
         right: unset;
@@ -1061,15 +1062,25 @@
     .bill-form-data{
 		max-height: 300px;
 	}
-	.setting-box {
-        padding: 16px 15px 7px;
+    .my-services-dropdown  {
+        min-width: auto;
+        width: 100%;
+        max-width: none;
     }
-    
-    .my-domains-body-content .my-services-dropdown{
-        margin-bottom: 20px;
+    .my-domains-body-content .table-search-bar .search-bar-wrap input , .my-domains-body-content .table-search-bar .search-bar-wrap{
+        width: 100% ;
+        max-width: none;
     }
-    .my-domains-body-content .table-search-bar .search-bar-wrap input{
-        margin: 20px 0px 10px;
+    .setting-card-box .arrow-up {
+        left: auto;
+        right: 30px !important;
+    }
+    .my-domains-body-content .setting-card-box{
+        right: 0px !important;
+        left: auto;
+    }
+    .search-bar-box{
+        margin-top: 15px;
     }
     .manage-nameservers .renew-domain-btn{
         width: max-content ;
@@ -1110,6 +1121,17 @@
     }
     .auto-renew .register-domain-unavailable-crad-box .account-security-crad-box{
         padding: 19px 16px;
+    }
+    .my-domains-body-content .table-search-bar , .my-domains-body-content .showing-entries {
+        display: block;
+    }
+    #actioncard {
+        top: 55% !important;
+        right: 10px;
+    }
+    #actioncards1 {
+        top: 71% !important;
+        right: 10px;
     }
 }
 
@@ -1223,11 +1245,7 @@
     .table-search-bar{
         display: block;
     }
-    .my-services-dropdown {
-        min-width: 100%;
-        max-width: 100%;
-        margin: 10px 0px ;
-    }
+    
 }
 
 @media (max-width: 399px) {
