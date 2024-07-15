@@ -404,6 +404,12 @@
     .admin-cloud-servers-col-4 {
         padding: 0 0 0 20px;
     }
+    #actioncard {
+        top: 56% !important;
+    }
+    #actioncards1 {
+        top: 75% !important;
+    }
 }
 
 @media (max-width: 1023px) {

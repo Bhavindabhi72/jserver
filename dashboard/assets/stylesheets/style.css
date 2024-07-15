@@ -689,13 +689,14 @@ a:focus {
 }
 
 #actioncard{
-    top: 57% !important;
-    right: 17px;
+    top: 53% !important;
+    right: 42px;
 }
 #actioncards1{
-    top: 77% !important;
-    right: 17px;    
+    top: 72% !important;
+    right: 42px;    
 }
+
 
 .direction-rtl .notification-dropbox-wrap {
     left: -30px;
@@ -780,7 +781,7 @@ a:focus {
     border-right: 8px solid transparent;
     border-bottom: 8px solid var(--white);
     position: absolute;
-    top: -8px;
+    top: -6px;
     right: 33px;
 }
 
