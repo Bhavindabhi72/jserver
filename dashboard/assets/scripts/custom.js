@@ -346,3 +346,4 @@ function updateRuleIndicator(ruleId, isValid) {
 }
 
 // lost password reset end
+
