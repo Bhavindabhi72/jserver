@@ -46,16 +46,20 @@
 
     /* Dashboard version 2*/
     --pale-blue: #F1F3FB;
+    --pale-blue-1: #F1F4FE;
+    --pale-blue-2: #D5DFFB;
+    --pale-lime: #D5EBC9;
+    --pale-teal: #BDE2DE;
     --silver-gray: #e5e8eb;
     --turquoise: #07CFC3;
     --turquoise-1: #00b3a8;
     --black-10: #0000001A;
-    --pale-blue-1: #F1F4FE;
     --silver-gray-1: #E1E1E1;
     --peach-puff: #FAE0C7;
-    --pale-lime: #D5EBC9;
-    --pale-blue-1: #D5DFFB;
-    --pale-teal: #BDE2DE;
+    --charcoal-gray: #333438;
+    --brown: #262424;
+    --slate-gray: #757888;
+
 }
 
 html {
@@ -66,7 +70,7 @@ html {
 body {
     background-image: linear-gradient(83.68deg, #A8C7E4 -5.66%, #D8ECFF 14.35%, rgba(216, 237, 255, 0) 172.88%);
     margin: 0;
-    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-family: 'BeVietnam', Arial, Helvetica, sans-serif;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -212,6 +216,11 @@ a:hover {
     justify-content: center;
 }
 
+.d-start {
+    display: flex;
+    align-items: flex-start;
+}
+
 .flex-column {
     flex-direction: column;
 }
@@ -231,6 +240,10 @@ a:hover {
 
 .mb-1 {
     margin-bottom: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
 }
 
 .mb-0 {
@@ -365,7 +378,7 @@ hr {
 }
 
 /* Font face start */
-@font-face {
+/* @font-face {
     font-family: 'Outfit';
     src: url('../fonts/Outfit-Bold.woff2') format('woff2'),
         url('../fonts/Outfit-Bold.woff') format('woff');
@@ -444,8 +457,63 @@ hr {
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+} */
+
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../fonts/be-vietnam/BeVietnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../fonts/be-vietnam/BeVietnam-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../fonts/be-vietnam/BeVietnam-Light.woff2') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../fonts/be-vietnam/BeVietnam-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../fonts/be-vietnam/BeVietnam-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../fonts/be-vietnam/BeVietnam-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../fonts/be-vietnam/BeVietnam-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Font face end */
 
@@ -1120,7 +1188,7 @@ a:focus {
     -ms-user-select: none;
     user-select: none;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -1203,6 +1271,7 @@ svg,
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 14px;
 }
 
 .language-select-wrap .wrapper-dropdown .dropdown li {
@@ -2056,7 +2125,7 @@ a.secure-client-btn:hover {
     display: flex;
     align-items: center;
     min-height: 50px;
-    color: #7d84ab;
+    color: var(--slate-gray);
 }
 
 .layout .sidebar .menu .menu-item a .menu-icon {
@@ -2082,6 +2151,7 @@ a.secure-client-btn:hover {
     white-space: nowrap;
     flex-grow: 1;
     transition: color 0.3s;
+    color: var(--slate-gray);
 }
 
 .sub-menu-list .menu-title {
@@ -2479,7 +2549,7 @@ a {
 }
 
 .sidebar-content .menu-icon svg path {
-    color: var(--cool-grey);
+    color: var(--slate-gray);
     transition: color 0.3s;
 
 }
@@ -2707,6 +2777,10 @@ a {
     height: 50px;
     border-radius: 100%;
     background-color: var(--brilliant-white);
+}
+
+.admin-dashboard-icon-box svg {
+    color: var(--slate-gray);
 }
 
 .admin-dashboard-content-box h4 {
@@ -6015,32 +6089,33 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     background-color: #dc3545;
 }
 
-
-
 /* dashboard v2 css */
 
-.deshboardv2 {
+body.dashboard-v2 {
     background: var(--pale-blue);
 }
 
-.admin-main-wrapv2 .sidebar-layout {
+.admin-main-wrap-v2 .sidebar-layout {
     border-left: 1px solid var(--silver-gray);
     border-right: 1px solid var(--silver-gray);
-    ;
 }
 
-.admin-main-wrapv2 .sidebar .sidebar-layout,
-.admin-main-wrapv2 .admin-header {
+.admin-main-wrap-v2 .sidebar .sidebar-layout,
+.admin-main-wrap-v2 .admin-header {
     background: var(--white);
 }
 
-.admin-main-wrapv2 .layout .sidebar .menu .main-menu {
+.admin-main-wrap-v2 .layout .sidebar .menu .main-menu {
     padding: 20px 5px;
 }
 
-.admin-main-wrapv2 .layout .sidebar .menu .main-menu-item a {
+.admin-main-wrap-v2 .layout .sidebar .menu .main-menu-item a {
     min-height: 45px;
     padding: 0px 20px;
+}
+
+.admin-main-wrap-v2 .layout .sidebar .menu .menu-item.sub-menu>a::after {
+    transform: rotate(45deg);
 }
 
 .upgrade-plan-card {
@@ -6066,17 +6141,17 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     box-shadow: 0px 4px 4px 0px #0000001A;
 }
 
-.admin-main-wrapv2 li.main-menu-item a.active,
-.admin-main-wrapv2 li.main-menu-item a:hover {
+.admin-main-wrap-v2 li.main-menu-item a.active,
+.admin-main-wrap-v2 li.main-menu-item a:hover {
     background-color: var(--pale-blue-1);
     border-radius: 8px;
 }
 
-.admin-main-wrapv2 li.menu-item {
+.admin-main-wrap-v2 li.menu-item {
     margin: 10px 0px;
 }
 
-.admin-main-wrapv2 .country-dropdown-menu .arrow,
+.admin-main-wrap-v2 .country-dropdown-menu .arrow,
 .profile-item .arrow {
     display: block;
     transform: rotate(180deg);
@@ -6091,7 +6166,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     text-decoration: none;
 }
 
-.admin-main-wrapv2 .admin-header-option ul .header-element {
+.admin-main-wrap-v2 .admin-header-option ul .header-element {
     border-left: 1px solid var(--silver-gray-1);
     padding: 0 15px;
     min-height: 41px;
@@ -6099,12 +6174,12 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     align-items: center;
 }
 
-.admin-main-wrapv2 .admin-header-option ul {
+.admin-main-wrap-v2 .admin-header-option ul {
     grid-gap: 0px;
 }
 
 
-.admin-main-wrapv2 .count-msg-number-box {
+.admin-main-wrap-v2 .count-msg-number-box {
     width: 18px;
     height: 18px;
     font-size: 8px;
@@ -6112,41 +6187,41 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     right: 5px;
 }
 
-/* [dir="rtl"] .admin-main-wrapv2 .admin-header-option ul .header-element{
+/* [dir="rtl"] .admin-main-wrap-v2 .admin-header-option ul .header-element{
     border-right: 1px solid var(--silver-gray-1);
     border-left: 0px;
 }
 
-[dir="rtl"] .admin-main-wrapv2 .count-msg-number-box {
+[dir="rtl"] .admin-main-wrap-v2 .count-msg-number-box {
     left: 6px;
     right: auto;
 }
 
-.admin-main-wrapv2  .admin-header-option{
+.admin-main-wrap-v2  .admin-header-option{
     margin-left: unset;
 }
 
-[dir="rtl"] .admin-main-wrapv2  .country-dropdown-menu .arrow{
+[dir="rtl"] .admin-main-wrap-v2  .country-dropdown-menu .arrow{
     right: auto;
     left: 10px;
 }
 
-[dir="rtl"] .admin-main-wrapv2 .layout .sidebar .menu .main-menu-item a .menu-icon {
+[dir="rtl"] .admin-main-wrap-v2 .layout .sidebar .menu .main-menu-item a .menu-icon {
     margin: 0 0 0 10px;
 }
 
-[dir="rtl"] .admin-main-wrapv2 .profile-item {
+[dir="rtl"] .admin-main-wrap-v2 .profile-item {
     padding: 0 0 0 30px;
 }
 
-[dir="rtl"] .admin-main-wrapv2 .profile-item .arrow{
+[dir="rtl"] .admin-main-wrap-v2 .profile-item .arrow{
     left: 0;
     right: auto;
 } */
 
 .admin-body-contentv2 .admin-head {
     font-size: 29px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .admin-body-contentv2 .admin-dashboard-icon-box {
@@ -6155,35 +6230,64 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
     background-color: var(--white);
 }
 
+.admin-main-wrap-v2 .admin-dashboard-boxes-wrap .admin-dashboard-box-col {
+    box-shadow: none;
+    padding: 24px;
+}
+
+.admin-main-wrap-v2 .admin-dashboard-content-box h6 {
+    margin: 5px 0;
+    color: #4E5057;
+}
+
 .admin-card-box-Products {
     background-color: var(--peach-puff);
 }
 
-.admin-body-contentv2 .admin-dashboard-content-box {
-    padding-left: 45px;
-}
-
-.admin-body-contentv2 .admin-dashboard-content-box h4 {
-    color: var(--black);
+.admin-card-box-Products:hover {
+    border-color: #e1b993
 }
 
 .admin-card-box-domains {
     background-color: var(--pale-lime);
 }
 
+.admin-card-box-domains:hover {
+    border-color: #aecd9e;
+}
+
 .admin-card-box-tickets {
-    background-color: var(--pale-blue-1);
+    background-color: var(--pale-blue-2);
+}
+
+.admin-card-box-tickets:hover {
+    border-color: #8fa9f1;
 }
 
 .admin-card-box-invoices {
     background-color: var(--pale-teal);
 }
 
+.admin-card-box-invoices:hover {
+    border-color: #7fc5be;
+}
+
+.admin-body-contentv2 .admin-dashboard-content-box h4 {
+    color: var(--black);
+}
+
+.admin-main-wrap-v2 .admin-dashboard-services-card-wrap .admin-card-box {
+    padding: 21px 15px;
+}
+
+.admin-main-wrap-v2 .admin-dashboard-services-card-wrap .admin-dashboard-services-head,
+.admin-main-wrap-v2 .admin-dashboard-services-card-wrap .admin-dashboard-services-details {
+    padding: 0px 15px;
+}
 
 .admin-body-contentv2 .admin-dashboard-services-head h5 {
     border: none;
     font-size: 17px;
-    font-weight: 700;
     color: var(--black);
     padding: 0;
 }
@@ -6191,4 +6295,13 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 .admin-body-contentv2 .admin-dashboard-services-head a {
     color: #7D8398;
     text-decoration: none;
+    font-size: 13px;
+}
+
+.dashboard-v2 .active-status {
+    color: #0BB6A1
+}
+
+.dashboard-v2 .admin-dashboard-services-head > hr {
+    margin-top: 10px;
 }

@@ -54,7 +54,8 @@
     .global-data-map {
         max-width: 80%;
     }
-    .personal-hosting-plan-card{
+
+    .personal-hosting-plan-card {
         padding: 20px;
         flex-direction: column;
         align-items: start;
@@ -69,13 +70,15 @@
     .cloud-service-right-col {
         max-width: var(--cloud-service-right-col);
     }
-	.open-ticket-content .admin-card-box {
-		padding: 43px  52px;
-	}
-	.upgrade-card-btns{
-	    flex-direction: column;
-		align-content: flex-end;		
-	}
+
+    .open-ticket-content .admin-card-box {
+        padding: 43px 52px;
+    }
+
+    .upgrade-card-btns {
+        flex-direction: column;
+        align-content: flex-end;
+    }
 
 }
 
@@ -87,6 +90,7 @@
     .w-50 {
         width: 50% !important;
     }
+
     #billingAddress .modal-content {
         padding: 40px 30px;
     }
@@ -148,19 +152,24 @@
     .cloud-servers-about-boxs h3 {
         font-size: 18px;
     }
-    .quick-shortcuts-row{
-        grid-gap: 10px;   
+
+    .quick-shortcuts-row {
+        grid-gap: 10px;
     }
-	.counter-progress-wrap .fill-circle{
+
+    .counter-progress-wrap .fill-circle {
         width: 160px;
     }
-    .usage-statistics-col{
+
+    .usage-statistics-col {
         padding: 0 10px;
     }
-    .ticket-reopen-footer-wrap .welcome-user-content h4{
+
+    .ticket-reopen-footer-wrap .welcome-user-content h4 {
         font-size: 16px;
     }
-    .accept-invite-crad-box{
+
+    .accept-invite-crad-box {
         padding: 50px 30px;
     }
 }
@@ -169,7 +178,8 @@
     .cloud-servers-optimized h1 {
         font-size: 50px;
     }
-	.choose-domain-content .manage-product-content-box-table{
+
+    .choose-domain-content .manage-product-content-box-table {
         align-items: center;
         display: flex;
     }
@@ -222,6 +232,7 @@
         min-width: 80px;
         font-size: 14px;
     }
+
     .quick-shortcuts-row {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -243,32 +254,38 @@
     .remove-btn {
         margin-left: 0px;
     }
-	.product-addons-content .manage-product-content-box-table-tab-2 , .backup-servers-content  .manage-product-content-box-table-tab-2{
+
+    .product-addons-content .manage-product-content-box-table-tab-2,
+    .backup-servers-content .manage-product-content-box-table-tab-2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    .domain-price-box{
+
+    .domain-price-box {
         max-width: 200px;
         min-height: 200px;
     }
 }
 
-@media (max-width: 1279px){
+@media (max-width: 1279px) {
     .billing-overview-col {
         --billing-overview-col-width: 150px;
     }
-    .d-block-xl{
-        display: block !important; 
+
+    .d-block-xl {
+        display: block !important;
     }
+
     .domain-required-box {
         padding: 42px 30px;
     }
-    .unpaid-invoice-box button{
+
+    .unpaid-invoice-box button {
         padding: 9px 15px;
         width: 141px;
     }
 }
+
 @media (min-width: 991px) and (max-width: 1330px) {
     .js-pricing-plan-benefits-list {
         padding: 0px;
@@ -280,7 +297,8 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .cloud-service-left-col .admin-dashboard-boxes-wrap,.upgrade-card-contain {
+    .cloud-service-left-col .admin-dashboard-boxes-wrap,
+    .upgrade-card-contain {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -333,7 +351,7 @@
     .build-your-servers-order-2 {
         order: 2;
     }
-  
+
     /* .modal-dialog {
         max-width: 500px;
         margin: auto;
@@ -343,26 +361,34 @@
         margin-left: 0;
         width: 45%;
     }
+
     .quick-shortcuts-row {
         grid-template-columns: repeat(3, 1fr);
     }
-	.upgrade-card-btns {
+
+    .upgrade-card-btns {
         justify-content: unset;
         margin-top: 30px;
     }
-	.support-ticket-repaly-head-wrap,.support-ticket-repaly-body-wrap{
+
+    .support-ticket-repaly-head-wrap,
+    .support-ticket-repaly-body-wrap {
         padding: 15px;
     }
-    .support-ticket-repaly-wrap{
+
+    .support-ticket-repaly-wrap {
         margin-top: 20px;
     }
-    .ticket-reopen-footer-wrap .welcome-admin-profile-wrap{
+
+    .ticket-reopen-footer-wrap .welcome-admin-profile-wrap {
         margin: 25px 0 20px;
     }
-    .admin-head{
+
+    .admin-head {
         font-size: 16px;
     }
-   /*  #billingAddress .modal-content {
+
+    /*  #billingAddress .modal-content {
         overflow-y: scroll;
         overflow-x: hidden;
     } */
@@ -392,9 +418,10 @@
     .cloud-servers-content-padding .row {
         align-items: center;
     }
-	.manage-firewall-firewall-content .billing-overview-col h5 {
+
+    .manage-firewall-firewall-content .billing-overview-col h5 {
         width: 422px;
-        padding: 0px 20px ;
+        padding: 0px 20px;
     }
 }
 
@@ -404,9 +431,11 @@
     .admin-cloud-servers-col-4 {
         padding: 0 0 0 20px;
     }
+
     #actioncard {
         top: 56% !important;
     }
+
     #actioncards1 {
         top: 75% !important;
     }
@@ -483,20 +512,24 @@
     .change-password-btns {
         margin-top: 30px;
     }
+
     .payment-method {
         display: block !important;
     }
+
     .recent-news-content .admin-card-box {
         min-height: 500px;
     }
-    .manage-product-content-box{
-        display: block; 
+
+    .manage-product-content-box {
+        display: block;
     }
 
-	.register-domain-content .viwe--btn{
+    .register-domain-content .viwe--btn {
         margin: 10px 20px;
     }
-    .domain-required-box{
+
+    .domain-required-box {
         display: block;
     }
 }
@@ -593,60 +626,78 @@
     .usage-statistics-col {
         width: 100%;
     }
+
     .manage-product-content-box .remove-btn {
         margin: 10px 24px;
     }
+
     .manage-product-content-box-table-tab-2 {
-        grid-template-columns : auto ;
+        grid-template-columns: auto;
     }
-    .usage-statistics-col:first-child{
+
+    .usage-statistics-col:first-child {
         border-width: 0 0 2px 0;
         border-bottom: 2px solid #EBEEF0;
     }
-    .usage-statistics-col{
+
+    .usage-statistics-col {
         padding: 20px;
     }
-	.support-ticket-repaly-body-row {
+
+    .support-ticket-repaly-body-row {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0;
     }
-	 .service-domain-box{
+
+    .service-domain-box {
         display: block;
     }
-    .domain-card{
+
+    .domain-card {
         margin: 10px 0px;
     }
-    .login-register-form{
+
+    .login-register-form {
         flex-direction: column;
     }
+
     #actioncards1 {
         top: 68% !important;
     }
+
     #actioncard {
         top: 50% !important;
     }
 }
+
 @media (max-width: 900px) {
-    .product-addons-content .manage-product-content-box-table-tab-2 , .backup-servers-content  .manage-product-content-box-table-tab-2{
+
+    .product-addons-content .manage-product-content-box-table-tab-2,
+    .backup-servers-content .manage-product-content-box-table-tab-2 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-	}
-    .unpaid-invoice-box{
+    }
+
+    .unpaid-invoice-box {
         display: block;
     }
-    .unpaid-invoice-box button{
+
+    .unpaid-invoice-box button {
         margin-top: 10px;
     }
 }
+
 @media (min-width: 767px) {
-	.modal-dialog-style-one{
-		width: 450px;
-	}
-  /*   #billingAddress .modal-content {
+    .modal-dialog-style-one {
+        width: 450px;
+    }
+
+    /*   #billingAddress .modal-content {
         width: 600px !important;
     } */
 
 }
+
 @media (max-width: 767px) {
     :root {
         --admin-header: 70px;
@@ -741,27 +792,32 @@
         display: none;
         font-size: 14px;
     }
+
     .sign-up-btn,
-    .primary-btn{
-      font-size: 14px;
-      padding: 10px;
-      min-height: 45px;
+    .primary-btn {
+        font-size: 14px;
+        padding: 10px;
+        min-height: 45px;
     }
-    .small-btn{
+
+    .small-btn {
         min-height: 25px;
     }
-	#billingAddress .modal-dialog{
-		width: calc(100% - 10%);
-	}
-	
-	.choose-domain-content .your-details-card-form{
-		padding: 10px 0px 30px ;
-		max-width: 80%;
-	}
-    .enter-promo-code{
+
+    #billingAddress .modal-dialog {
+        width: calc(100% - 10%);
+    }
+
+    .choose-domain-content .your-details-card-form {
+        padding: 10px 0px 30px;
+        max-width: 80%;
+    }
+
+    .enter-promo-code {
         display: block;
     }
-    .enter-promo-code input{
+
+    .enter-promo-code input {
         width: 100% !important;
         margin-bottom: 20px;
     }
@@ -771,8 +827,9 @@
     .col-sm-6 {
         width: 50%;
     }
-	#billingAddress .modal-content {
-       width: 481px !important;
+
+    #billingAddress .modal-content {
+        width: 481px !important;
     }
 }
 
@@ -780,32 +837,38 @@
     .checkbox-radio-wrap .custom-radio-group {
         margin-left: 30px;
     }
-	.admin-dashboard-services-detail-col.admin-form-group.cc-recipients-field-wrap input{
+
+    .admin-dashboard-services-detail-col.admin-form-group.cc-recipients-field-wrap input {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
-    .admin-dashboard-services-detail-col.admin-form-group.cc-recipients-field-wrap button{
+
+    .admin-dashboard-services-detail-col.admin-form-group.cc-recipients-field-wrap button {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
-	.direction-rtl .admin-dashboard-services-detail-col.admin-form-group.cc-recipients-field-wrap input{
+
+    .direction-rtl .admin-dashboard-services-detail-col.admin-form-group.cc-recipients-field-wrap input {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
     }
-    .direction-rtl .admin-dashboard-services-detail-col.admin-form-group.cc-recipients-field-wrap button{
+
+    .direction-rtl .admin-dashboard-services-detail-col.admin-form-group.cc-recipients-field-wrap button {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
     }
-	.temporary-ip-tab .your-details-card-form{
-		padding: 0px 40px;
-	}
-	.choose-domain-content .manage-product-content-box-table {
-		padding: 30px 33px 30px;
-	}
+
+    .temporary-ip-tab .your-details-card-form {
+        padding: 0px 40px;
+    }
+
+    .choose-domain-content .manage-product-content-box-table {
+        padding: 30px 33px 30px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -867,13 +930,15 @@
         min-height: 45px;
         border-radius: 8px;
     }
-    .quick-email-acc-wrap input:first-child{
+
+    .quick-email-acc-wrap input:first-child {
         border-radius: 8px 0 0 8px;
     }
 
     .quick-email-acc-wrap input:last-child {
         border-radius: 0 8px 8px 0;
     }
+
     .registration-form-wrap .form-stepper-horizontal li:not(:last-child):after {
         left: 45px;
         top: 20%;
@@ -884,16 +949,21 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0;
     }
-    .quick-shortcuts-row,.options-tab .form-row,.upgrade-card-contain  {
+
+    .quick-shortcuts-row,
+    .options-tab .form-row,
+    .upgrade-card-contain {
         grid-template-columns: repeat(2, 1fr);
     }
-	
-	.upgrade-card-contain{
-        grid-template-columns: repeat(1, 1fr);   
+
+    .upgrade-card-contain {
+        grid-template-columns: repeat(1, 1fr);
     }
-	.upgrade-card-contain{
-        grid-template-columns: repeat(1, 1fr);   
+
+    .upgrade-card-contain {
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .step-next-prev-btn-wrap button.navigate-prev-btn {
         top: 30px;
         left: 15px;
@@ -1001,7 +1071,7 @@
 
     .modal-content {
         padding: 40px 20px 40px;
-		border-radius: 25px;
+        border-radius: 25px;
     }
 
     .build-your-servers {
@@ -1037,107 +1107,146 @@
     .cloud-servers-optimized p {
         padding: 0 0px 18px;
     }
-    .model-hr{
+
+    .model-hr {
         margin: 20px 0px;
     }
-    .personal-hosting-plan-icon{
+
+    .personal-hosting-plan-icon {
         width: 50px;
         height: 50px;
     }
-    .additional-information-row h5{
+
+    .additional-information-row h5 {
         padding-left: 10px;
     }
-	.admin-dashboard-services-detail-col input{
+
+    .admin-dashboard-services-detail-col input {
         margin-bottom: 15px;
     }
+
     .admin-card-box {
         padding: 15px;
     }
-	.manage-firewall-firewall-content .billing-overview-row{
+
+    .manage-firewall-firewall-content .billing-overview-row {
         margin: 52px 0px 0px;
     }
-	.open-ticket-content .admin-card-box {
+
+    .open-ticket-content .admin-card-box {
         padding: 41px 24px;
     }
+
     .billingaddress-form {
         height: 210px;
     }
-    .review-checkout .your-details-card-form .primary-btn , .register-domain-content .your-details-card-form .primary-btn{
+
+    .review-checkout .your-details-card-form .primary-btn,
+    .register-domain-content .your-details-card-form .primary-btn {
         margin-top: 10px;
     }
-    .bill-form-data{
-		max-height: 300px;
-	}
-    .my-services-dropdown  {
+
+    .bill-form-data {
+        max-height: 300px;
+    }
+
+    .my-services-dropdown {
         min-width: auto;
         width: 100%;
         max-width: none;
     }
-    .my-domains-body-content .table-search-bar .search-bar-wrap input , .my-domains-body-content .table-search-bar .search-bar-wrap{
-        width: 100% ;
+
+    .my-domains-body-content .table-search-bar .search-bar-wrap input,
+    .my-domains-body-content .table-search-bar .search-bar-wrap {
+        width: 100%;
         max-width: none;
     }
+
     .setting-card-box .arrow-up {
         left: auto;
         right: 30px !important;
     }
-    .my-domains-body-content .setting-card-box{
+
+    .my-domains-body-content .setting-card-box {
         right: 0px !important;
         left: auto;
     }
-    .search-bar-box{
+
+    .search-bar-box {
         margin-top: 15px;
     }
-    .manage-nameservers .renew-domain-btn{
-        width: max-content ;
+
+    .manage-nameservers .renew-domain-btn {
+        width: max-content;
         padding: 14px 30px;
     }
+
     .back-up-servers-card {
         background-color: var(--primary-theme);
         padding: 45px 25px;
     }
-    .checkout-content .card-ghost-style{
-        padding: 20px  !important;
+
+    .checkout-content .card-ghost-style {
+        padding: 20px !important;
     }
-    .year-renewal{
+
+    .year-renewal {
         gap: 10px;
     }
+
     .chosse-domain-required {
         padding: 0px 10px;
     }
-    .quick-actions-box ul{
+
+    .quick-actions-box ul {
         padding: 35px 15px;
     }
-    
-    .quick-actions-box ul li a{
+
+    .quick-actions-box ul li a {
         width: 122px;
         height: 93.2px;
     }
-    .unpaid-invoice-box div{
-       display: block;
+
+    .unpaid-invoice-box div {
+        display: block;
     }
-    .domain-points .theme-btn{
-      padding: 14px;
+
+    .domain-points .theme-btn {
+        padding: 14px;
     }
+
     .temporary-ip-tab .your-details-card-form {
         padding: 0px;
     }
+
     .new-password-rules {
         padding: 0px;
     }
-    .auto-renew .register-domain-unavailable-crad-box .account-security-crad-box{
+
+    .auto-renew .register-domain-unavailable-crad-box .account-security-crad-box {
         padding: 19px 16px;
     }
-    .my-domains-body-content .table-search-bar , .my-domains-body-content .showing-entries {
+
+    .my-domains-body-content .table-search-bar,
+    .my-domains-body-content .showing-entries {
         display: block;
     }
+
     #actioncard {
         top: 55% !important;
         right: 10px;
     }
+
     #actioncards1 {
         top: 71% !important;
         right: 10px;
+    }
+
+    /*dashboard version 2*/
+    .admin-main-wrap-v2 .language-select-wrap .selected-display span,
+    .admin-main-wrap-v2 .language-select-wrap .dropdown li span,
+    .admin-main-wrap-v2 .admin-header-option .profile-item span {
+        display: none;
     }
 }
 
@@ -1201,57 +1310,72 @@
     }
 
     .terms-service-crad-box {
-        padding: 15px 16px ;
+        padding: 15px 16px;
     }
 
     .admin-card-box-style1 {
         padding: 20px 20px !important;
         margin: 20px 0px;
     }
-    
+
     .theme-btn {
         width: 100%;
     }
-    .manage-product-content-box div{
-        display: block; 
+
+    .manage-product-content-box div {
+        display: block;
     }
+
     .manage-product-content-box .remove-btn {
         margin: 10px 0px;
     }
-    .manage-product-content-box-icon{
+
+    .manage-product-content-box-icon {
         margin: 0px;
     }
+
     .manage-product-content-box-table .tab-container .tab-menu ul li a {
         padding: 5px 2px;
     }
-	.manage-product-content-box div,.manage-product-content-box h3{
-        display: block; 
+
+    .manage-product-content-box div,
+    .manage-product-content-box h3 {
+        display: block;
     }
-	.manage-product-content-box button,.manage-product-content-box-icon{
-		margin:0px;
-	}
-	.manage-product-content-box-icon{
-		padding: 10px 20px;
-	}
-	.manage-product-content-box-icon svg{
-		width: 20px;
-	}
-	.review-checkout-card-box-col .span-box {
+
+    .manage-product-content-box button,
+    .manage-product-content-box-icon {
+        margin: 0px;
+    }
+
+    .manage-product-content-box-icon {
+        padding: 10px 20px;
+    }
+
+    .manage-product-content-box-icon svg {
+        width: 20px;
+    }
+
+    .review-checkout-card-box-col .span-box {
         padding: 9px 18px;
     }
-    .display-block-xs{
+
+    .display-block-xs {
         display: block;
     }
-    .register-domain-content .viwe--btn{
+
+    .register-domain-content .viwe--btn {
         margin: 10px 0px;
     }
-    .manage-nameservers-domain-box{
+
+    .manage-nameservers-domain-box {
         padding: 25px 15px;
     }
-    .table-search-bar{
+
+    .table-search-bar {
         display: block;
     }
-    
+
 }
 
 @media (max-width: 399px) {
@@ -1262,10 +1386,12 @@
     .d-block399px {
         display: block;
     }
+
     .billing-overview-col {
         --billing-overview-col-width: 100px;
     }
-	.card-ghost-style {
+
+    .card-ghost-style {
         padding: 13px 13px;
     }
 }
@@ -1288,10 +1414,12 @@
     .admin-header .wrapper-dropdown .dropdown li {
         padding: 6px 5px;
     }
+
     .quick-shortcuts-row {
         grid-template-columns: repeat(1, 1fr);
     }
-    .personal-hosting-plan-flex{
+
+    .personal-hosting-plan-flex {
         flex-direction: column;
     }
 }
@@ -1308,8 +1436,10 @@
     .notification-dropbox-wrap {
         min-width: 270px;
     }
-	.manage-product-content-box-table-tab{
-		padding: 28px 19px;
-	}
+
+    .manage-product-content-box-table-tab {
+        padding: 28px 19px;
+    }
 }
+
 /* Responsive end */
