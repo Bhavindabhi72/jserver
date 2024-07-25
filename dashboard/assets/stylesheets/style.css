@@ -2402,7 +2402,7 @@ a.secure-client-btn:hover {
 
 .layout .sidebar.has-bg-image:not(.collapsed) .menu>ul>.sub-menu>.sub-menu-list {
   background-color: transparent;
-  padding: 0px 4rem;
+  padding: 0px 3rem;
 }
 
 .layout.rtl .sidebar .menu .menu-item a .menu-icon {
