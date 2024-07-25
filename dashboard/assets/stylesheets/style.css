@@ -6304,6 +6304,15 @@ a.transfer-domain span {
   margin: 0 10px;
 }
 
+.admin-user-info-right {
+  height: calc(100% - 3%);
+}
+
+.admin-user-info-right .admin-card-user-info {
+  padding-top: 3.81rem;
+  padding-bottom: 2.62rem;
+}
+
 .admin-card-user-info .welcome-user-profile {
   box-shadow: none;
   object-fit: cover;
@@ -6329,4 +6338,10 @@ a.transfer-domain span {
   border-radius: 100%;
   background-color: #F0F3FF;
   color: #254CEC;
+}
+
+.admin-affiliate-program .card-contain {
+  color: #424348;
+  padding-top: 1rem;
+  line-height: 2.68rem;
 }
