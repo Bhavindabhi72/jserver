@@ -536,7 +536,7 @@
 
 @media (max-width: 991px) {
     :root {
-        --sidebar-width: 220px;
+        --sidebar-width: 250px;
         --sidebar-xy-spacing: 10px;
         --admin-body-y: 25px;
         --admin-body-x: 25px;
