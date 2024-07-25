@@ -59,6 +59,18 @@
   --charcoal-gray: #333438;
   --brown: #262424;
   --slate-gray: #757888;
+  --pale-lavender: #f0f3ff;
+  --tawny: #e1b993;
+  --light-periwinkle: #8fa9f1;
+  --shamrock-green: #00c058;
+  --bright: #0bb6a1;
+  --calming: #7fc5be;
+  --olive-green: #aecd9e;
+  --slate-gray: #737789;
+  --slate-blue: #7d8398;
+  --charcoal: #4e5057;
+  --charcoal-gray: #424348;
+  --midnight-blue: #303341;
 }
 
 html {
@@ -6067,7 +6079,9 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 body.dashboard-v2 {
   background: var(--pale-blue);
 }
-
+.dashboard-v2 .admin-dashboard-services-detail-col{
+  padding-right: 0;
+}
 .admin-main-wrap-v2 .sidebar-layout {
   border-left: 1px solid var(--silver-gray);
   border-right: 1px solid var(--silver-gray);
@@ -6211,7 +6225,7 @@ body.dashboard-v2 {
 
 .admin-main-wrap-v2 .admin-dashboard-content-box h6 {
   margin: 5px 0;
-  color: #4e5057;
+  color: var(--charcoal);
 }
 
 .admin-card-box-Products {
@@ -6219,7 +6233,7 @@ body.dashboard-v2 {
 }
 
 .admin-card-box-Products:hover {
-  border-color: #e1b993;
+  border-color: var(--tawny);
 }
 
 .admin-card-box-domains {
@@ -6227,7 +6241,7 @@ body.dashboard-v2 {
 }
 
 .admin-card-box-domains:hover {
-  border-color: #aecd9e;
+  border-color: var(--olive-green);
 }
 
 .admin-card-box-tickets {
@@ -6235,7 +6249,7 @@ body.dashboard-v2 {
 }
 
 .admin-card-box-tickets:hover {
-  border-color: #8fa9f1;
+  border-color: var(--light-periwinkle);
 }
 
 .admin-card-box-invoices {
@@ -6243,7 +6257,7 @@ body.dashboard-v2 {
 }
 
 .admin-card-box-invoices:hover {
-  border-color: #7fc5be;
+  border-color: var(--calming);
 }
 
 .admin-body-contentv2 .admin-dashboard-content-box h4 {
@@ -6267,21 +6281,21 @@ body.dashboard-v2 {
 }
 
 .admin-body-contentv2 .admin-dashboard-services-head a {
-  color: #7d8398;
+  color: var(--slate-blue);
   text-decoration: none;
   font-size: 13px;
 }
 
 .dashboard-v2 .active-status .active {
-  color: #0bb6a1;
+  color: var(--bright);
 }
 
 .dashboard-v2 .pending-status .pending {
-  color: #fb9536;
+  color: var(--joyful-orange);
 }
 
 .dashboard-v2 .completed-status .completed {
-  color: #00c058;
+  color: var(--shamrock-green);
 }
 
 .dashboard-v2 .admin-dashboard-services-head>hr {
@@ -6319,12 +6333,12 @@ a.transfer-domain span {
 }
 
 .admin-card-user-info .user-name {
-  color: #303341;
+  color: var(--midnight-blue);
   font-weight: 600;
 }
 
 .admin-card-user-info .user-role {
-  color: #737789;
+  color: var(--slate-gray);
 }
 
 .user-action ul {
@@ -6336,12 +6350,12 @@ a.transfer-domain span {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background-color: #F0F3FF;
-  color: #254CEC;
+  background-color: var(--pale-lavender);
+  color: var(--primary-theme);
 }
 
 .admin-affiliate-program .card-contain {
-  color: #424348;
+  color: var(--charcoal-gray);
   padding-top: 1rem;
   line-height: 2.68rem;
 }
