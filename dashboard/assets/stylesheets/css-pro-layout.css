@@ -47,10 +47,10 @@
           width: 100% !important;
           -webkit-transition: none;
           transition: none; } }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       .layout .sidebar.break-point-sm {
         position: fixed;
-        left: calc(var(--sidebar-width) - 150%);
+        left: calc(var(--sidebar-width) - 165%);
         height: 100%;
         top: 0;
         z-index: 100; }
@@ -152,7 +152,7 @@
     @media (max-width: 480px) {
       .layout .sidebar-toggler.break-point-xs {
         display: initial; } }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       .layout .sidebar-toggler.break-point-sm {
         display: flex;
         align-items: center;
