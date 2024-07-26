@@ -183,9 +183,11 @@
         align-items: center;
         display: flex;
     }
+
     .admin-dashboard-boxes-wrap .admin-card-box:last-child {
         border-right: none;
     }
+
     .direction-rtl .admin-dashboard-boxes-wrap .admin-card-box:last-child {
         border-left: none;
     }
@@ -394,6 +396,16 @@
         font-size: 16px;
     }
 
+    .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+
+    .direction-rtl .dropdown-menu {
+        left: 0;
+        right: auto;
+    }
+
     /*  #billingAddress .modal-content {
         overflow-y: scroll;
         overflow-x: hidden;
@@ -551,6 +563,7 @@
     .layout .sidebar .pro-sidebar-logo img {
         max-width: 150px;
     }
+
     .admin-header-option {
         padding-right: 20px;
     }
@@ -599,6 +612,13 @@
         max-width: 470px;
         margin: auto;
     }
+    .direction-rtl .sidebar-toggler {
+        left: 20px;
+        right: unset;
+    }
+    .direction-rtl .admin-header-option {
+        padding: 0 0 0 40px;
+    }
 
     .js-footer .row>:nth-child(1) {
         order: 1;
@@ -619,7 +639,7 @@
     .build-your-servers h3 {
         font-size: 23px;
     }
-   
+
     .build-your-servers p {
         font-size: 13px;
         line-height: 21px;
@@ -748,15 +768,6 @@
 
     .admin-header-option ul {
         grid-gap: 15px;
-    }
-
-    .direction-rtl .sidebar-toggler {
-        left: 20px;
-        right: unset;
-    }
-
-    .direction-rtl .admin-header-option {
-        padding: 0 0 0 40px;
     }
 
     .header-login-cloud-dropdown .dropdown li span,
@@ -997,11 +1008,11 @@
     .admin-dashboard-boxes-wrap .admin-card-box {
         border: none !important;
     }
-    
-    .notification-dropbox-wrap{
+
+    .notification-dropbox-wrap {
         min-width: calc(430px - 100px);
     }
-      
+
     .admin-dashboard-services-detail-col {
         grid-gap: 0;
     }
@@ -1388,16 +1399,19 @@
         display: block;
     }
 
-    .admin-header .admin-header-option ul .header-element{
+    .admin-header .admin-header-option ul .header-element {
         padding: 0 8px;
     }
-    .arrow{
+
+    .arrow {
         margin-right: 0px
     }
-    .admin-header .profile-item{
+
+    .admin-header .profile-item {
         padding-right: 18px;
     }
-    .admin-header .count-msg-number-box{
+
+    .admin-header .count-msg-number-box {
         top: 0px;
         right: 0px;
     }

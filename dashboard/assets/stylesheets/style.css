@@ -2181,7 +2181,9 @@ a.secure-client-btn:hover {
   transition: color 0.3s;
   color: var(--slate-gray);
 }
-
+.layout .sidebar .menu .menu-item a .menu-title:hover{
+  white-space: normal;
+}
 .sub-menu-list .menu-title {
   position: relative;
   padding-left: 15px;
@@ -3013,11 +3015,10 @@ a {
 }
 
 .admin-dashboard-services-card-col .dropdown button:focus,
-.admin-dashboard-services-card-col .dropdown button:active {
+.admin-dashboard-services-card-col .dropdown button:active,
+.admin-dashboard-services-card-col .dropdown button {
   background-color: var(--primary-theme) !important;
-  ;
   border-color: var(--primary-theme) !important;
-  ;
 }
 
 .dropdown-menu>li>a:focus,
@@ -3030,16 +3031,6 @@ a {
 .admin-dashboard-services-card-col .dropdown button {
   padding: 6px 10px;
   font-size: 12px;
-}
-
-.dropdown-menu {
-  right: 0;
-  left: auto;
-}
-
-.direction-rtl .dropdown-menu {
-  left: 0;
-  right: auto;
 }
 
 .admin-dashboard-services-detail-col.admin-form-group input {
