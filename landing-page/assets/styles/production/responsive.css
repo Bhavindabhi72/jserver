@@ -2,10 +2,11 @@
     .container {
         width: 1530px;
     }
-    .js-section-website-details-content{
+
+    .js-section-website-details-content {
         max-width: 700px;
     }
-      
+
 }
 
 @media (max-width:1599px) {
@@ -25,10 +26,11 @@
         line-height: 170%;
         word-spacing: 2px;
     }
-    .js-section-website-details-content{
+
+    .js-section-website-details-content {
         max-width: 550px;
     }
-      
+
 }
 
 @media (max-width:1399px) {
@@ -54,24 +56,33 @@
         grid-gap: 20px 0;
     }
 
-    .js-tab-content-gutter-space{
+    .js-tab-content-gutter-space {
         margin-top: 4rem;
     }
-    .js-section-we-help .js-section-website-details-box , .js-section-about-us-details-box {
+
+    .js-section-we-help .js-section-website-details-box,
+    .js-section-about-us-details-box {
         display: block;
     }
-    .js-section-website-details-content{
+
+    .js-section-website-details-content {
         max-width: none;
     }
 
-      
+
 }
 
-@media (min-width: 992px){
-    .pricing-js-hosting-plan .js-pricing-plan-card.js-pricing-plan-card-dark{
+@media (min-width: 992px) {
+    .pricing-js-hosting-plan .js-pricing-plan-card.js-pricing-plan-card-dark {
         margin-top: calc(10px - var(--js-pricing-plan-top-space));
     }
-   
+    [dir="ltr"] .megamenu {
+        left: -18rem;
+        right: unset;
+    }
+    .megamenu {
+        right: -18rem;
+    }
 }
 
 @media (max-width:991px) {
@@ -112,13 +123,13 @@
         width: 100%;
     }
 
-    .js-navabr-toggle i{
+    .js-navabr-toggle i {
         width: 3.5rem;
         height: 3.5rem;
         color: var(--color-blue);
     }
 
-    .js-toggled{
+    .js-toggled {
         transform: rotate(-180deg);
         transition: all .4s;
     }
@@ -159,17 +170,39 @@
         line-height: 150%;
         word-spacing: 1px;
     }
+
     .pricing-js-section-plan-row {
         margin-top: 0;
     }
-    .pricing-js-hosting-plan .js-pricing-plan-card{
+
+    .pricing-js-hosting-plan .js-pricing-plan-card {
         margin-top: var(--js-pricing-plan-top-space);
     }
-    .js-section-wordPress-sites h1{
+
+    .js-section-wordPress-sites h1 {
         padding: 40px 1rem 20px;
     }
-    .js-hosting-price-table thead tr th{
+
+    .js-hosting-price-table thead tr th {
         font-size: 22px;
+    }
+
+    .megamenu {
+        position: relative;
+        box-shadow: none;
+        right: 0;
+        left: 0;
+        flex-wrap: wrap;
+        top: 1rem;
+        text-align: center;
+    }
+
+    .meg-title {
+        font-size: 11px;
+    }
+
+    .meg-description {
+        font-size: 10px
     }
 }
 
@@ -181,7 +214,7 @@
         text-align: center;
     }
 
-    .js-header .container{
+    .js-header .container {
         width: 100%;
     }
 
@@ -189,7 +222,8 @@
         order: 2;
     }
 
-    .js-section-hero .row>:nth-child(2)  , .js-section-wordpress-sites .row>:nth-child(1) {
+    .js-section-hero .row>:nth-child(2),
+    .js-section-wordpress-sites .row>:nth-child(1) {
         order: 1;
     }
 
@@ -243,25 +277,33 @@
         padding: 3rem 0;
     }
 
-    .js-website-hosting-content-col ul{
+    .js-website-hosting-content-col ul {
         grid-gap: 2rem;
     }
-    .js-section-wordpress-sites h1{
+
+    .js-section-wordpress-sites h1 {
         padding: 30px 0px;
     }
-    .js-information-step-sticky{
+
+    .js-information-step-sticky {
         display: none;
     }
+
     .js-section-website-details-box {
         padding: 18px;
     }
+
     .js-section-website-details-box ol {
         padding: 0px;
+    }
+
+    .text-md-center {
+        text-align: center;
     }
 }
 
 @media (max-width:575px) {
-    :root{
+    :root {
         --body-font-size: 14px;
     }
 
@@ -283,7 +325,8 @@
         align-items: center;
     }
 
-    .js-feature-grid,.js-website-hosting-content-col ul {
+    .js-feature-grid,
+    .js-website-hosting-content-col ul {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -301,34 +344,49 @@
         padding-top: 2rem;
     }
 
-    .js-footer-nav-link,.js-pricing-plan-benefits-content,.js-website-hosting-col p,
-    .js-features-text{
+    .js-footer-nav-link,
+    .js-pricing-plan-benefits-content,
+    .js-website-hosting-col p,
+    .js-features-text {
         font-size: 14px;
     }
+
     .js-website-hosting-col h4 {
         font-size: 16px;
     }
-    .js-website-hosting-content-col{
+
+    .js-website-hosting-content-col {
         padding: 15px 0;
     }
+
     .js-website-hosting-img-col {
         width: 50px;
         height: 50px;
     }
+
     /* .js-website-hosting-img-col::before{
         left: 25px;
     } */
     .js-website-hosting-col-1 .js-website-hosting-img-col::before {
         top: calc(100% - 60%);
     }
-    .js-blogs-information-box-card{
+
+    .js-blogs-information-box-card {
         padding: 5.25rem 2rem;
     }
+
     .link-box {
         padding: 20px;
     }
-    .link-box p{
+
+    .link-box p {
         font-size: 14px;
+    }
+
+    .js-error-area .visit-link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 

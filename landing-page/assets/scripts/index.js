@@ -45,6 +45,12 @@ if (isHeaderExist && isHeaderExist) {
 }
 
 
+jQuery('.js-nav-megamenu').click(function() {
+    jQuery(this).find('.dropdown-menu').toggleClass("megopen");
+    jQuery(this).find('.js-nav-link svg').toggleClass("up");
+    jQuery("#navbarToggler").click();
+});
+
 let inputField = document.getElementById('autosearchbar');
 inputField.addEventListener('input', changeAutoCompleteSearch);
 
