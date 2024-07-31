@@ -44,11 +44,15 @@ if (isHeaderExist && isHeaderExist) {
     console.log("Header is Not Available");
 }
 
+jQuery(document).ready(function () {
+    jQuery(".js-nav-megamenu").hover(
+        function () {
+            jQuery('.dropdown-menu', this).stop().fadeIn("fast");
+        },
 
-jQuery('.js-nav-megamenu').click(function() {
-    jQuery(this).find('.dropdown-menu').toggleClass("megopen");
-    jQuery(this).find('.js-nav-link svg').toggleClass("up");
-    jQuery("#navbarToggler").click();
+        function () {
+            jQuery('.dropdown-menu', this).stop().fadeOut("fast");
+        });
 });
 
 let inputField = document.getElementById('autosearchbar');
@@ -61,8 +65,8 @@ function changeAutoCompleteSearch({ target }) {
 
     if (data.length > 0) {
         searchListContain.classList.remove("d-none");
-    }else{
+    } else {
         searchListContain.classList.add("d-none");
-    } 
+    }
 }
 
