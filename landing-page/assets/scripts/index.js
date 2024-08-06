@@ -66,8 +66,10 @@ else{
 }
 
 
-let inputField = document.getElementById('autosearchbar');
-inputField.addEventListener('input', changeAutoCompleteSearch);
+if (document.getElementById('autosearchbar')) {
+    let inputField = document.getElementById('autosearchbar');
+    inputField.addEventListener('input', changeAutoCompleteSearch);
+}
 
 
 function changeAutoCompleteSearch({ target }) {
@@ -81,3 +83,18 @@ function changeAutoCompleteSearch({ target }) {
     } 
 }
 
+jQuery(document).on('click', '.seemore', function () {
+
+    var container = jQuery(this).closest(".js-pricing-plan-card").find(".js-pricing-plan-benefits-list .more-features");
+
+    if (!container.hasClass('active')) {
+        container.addClass('show').outerWidth();
+        container.addClass('active');
+    }
+    else {
+        container.removeClass('active').one('transitionend', function () {
+            container.removeClass('show');
+        });
+    }
+
+});

@@ -1,6 +1,6 @@
 :root {
     /* FONT FAMILY & UTILITIES */
-    --font-alpha: 'Outfit', Arial, Verdana, Sans-Serif;
+    --font-bevietnam: 'BeVietnam', Arial, Verdana, Sans-Serif;
 
     /* HEADING FONT SIZES */
     --font-size-heading1: 5.0rem;
@@ -27,8 +27,10 @@
     --color-blue-night: #01204D;
     --color-blue-night-1: #BEC9FB;
     --color-blue-night-2: #1E2E6F;
+    --color-blue-night-3: #EDF0FF;
     --color-blue-light: #EEF1FF;
     --color-gray: #5B6570;
+    --color-gray-1:#727272;
     --color-gray-light: #686F8D;
     --color-gray-light-two: #E7E7E7;
     --color-gray-dark: #4F5357;
@@ -37,6 +39,7 @@
     --color-gray-light-4: #8B8CAA;
     --color-gray-light-5: #BFC0C5;
     --color-green-light-1: #22D3B4;
+    --color-green-light-2: #16D0A3;
     --color-mainly-blue: #0000002E;
     --color-alice-blue: #F1F9FF;
     --color-pattens-blue:  #C7E4FE;

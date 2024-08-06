@@ -192,7 +192,15 @@
     z-index: 0;
     opacity: .5;
 }
+.more-features {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
+.more-features.active {
+    opacity: 1;
+}
 .js-hero-title {
     margin-bottom: 4.5rem;
     word-spacing: 1px;
@@ -236,10 +244,14 @@
 .js-section-plan {
     padding: 6rem 0;
     position: relative;
-    background: linear-gradient(180deg, #EDF6FF 0%, #E6F3FF 52.09%, #F2F9FF 100%);
+    background: #F1F3FB;
+}
+.small-description{
+    color: var(--color-gray-1);
+    font-size: 15px;
 }
 
-.js-section-plan::before {
+/* .js-section-plan::before {
     content: "";
     background: url("../../images/backgrounds/line-bg.svg");
     background-repeat: no-repeat;
@@ -253,7 +265,7 @@
     right: 0;
     z-index: 0;
 }
-
+ */
 .js-plan-title {
     position: relative;
     z-index: 1;
@@ -267,7 +279,9 @@
     grid-gap: 0 1.6rem;
     margin-top: 4rem;
     overflow: auto hidden;
-    padding: 0 0 2rem 0;
+    padding: 6px 0;
+    margin: auto;
+    width: 100%;
 }
 
 .js-nav-tabs,
@@ -278,13 +292,13 @@
 
 .js-nav-tabs>li {
     flex: 0 0 auto;
-    min-width: 23rem;
+    min-width: 10rem;
 }
-
-.js-nav-tabs>li>.js-nav-tab-item {
-    border: 1px solid #ECEFFC;
+.nav-tabs.js-nav-tabs{
     background-color: var(--color-white);
-    border-radius: 1rem;
+    border-radius: 7px;
+}
+.js-nav-tabs>li>.js-nav-tab-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,14 +307,14 @@
     position: relative;
     padding: 1.2rem 2.2rem;
     margin: 0;
+    cursor: pointer !important;
 }
 
 .js-nav-tabs>li>.js-nav-tab-item>span:nth-child(1) {
     color: var(--color-blue-night);
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.3rem;
-    margin-bottom: .4rem;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .js-nav-tabs>li>.js-nav-tab-item>span:nth-child(2) {
@@ -311,16 +325,22 @@
 }
 
 .js-nav-tabs>li.active>.js-nav-tab-item,
-.js-nav-tabs>li.active>.js-nav-tab-item:focus,
-.js-nav-tabs>li.active>.js-nav-tab-item:hover {
+.js-nav-tabs>li >.js-nav-tab-item:focus,
+.js-nav-tabs>li.active>.js-nav-tab-item:hover,
+.js-nav-tabs>li .js-nav-tab-item:hover {
     cursor: default;
-    color: var(--color-white);
-    background-color: var(--color-blue);
-    border: 1px solid var(--color-blue);
-    border-bottom-color: var(--color-blue);
+    color: var(--color-blue);
+    background-color: var(--color-blue-light);
+    border: 1px solid var(--color-blue-light);
+    border-bottom-color: var(--color-blue-light);
+    border-radius: 8px;
 }
-
-.js-nav-tabs>li.active>.js-nav-tab-item::after {
+.js-pricing-tag-content.image{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+/* .js-nav-tabs>li.active>.js-nav-tab-item::after {
     --js-nav-tab-triangel-size: 1.2rem;
     content: "";
     position: absolute;
@@ -331,12 +351,12 @@
     border-right: var(--js-nav-tab-triangel-size) solid transparent;
     border-bottom: var(--js-nav-tab-triangel-size) solid transparent;
     border-left: var(--js-nav-tab-triangel-size) solid transparent;
-}
+} */
 
 .js-nav-tabs>li.active>.js-nav-tab-item>span:nth-child(1),
 .js-nav-tabs>li.active>.js-nav-tab-item:focus>span:nth-child(1),
 .js-nav-tabs>li.active>.js-nav-tab-item:hover>span:nth-child(1) {
-    color: var(--color-white);
+    color: var(--color-blue);
 }
 
 .js-nav-tabs>li.active>.js-nav-tab-item>span:nth-child(2),
@@ -353,12 +373,16 @@
 
 .js-tab-content .row {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap;
     grid-gap: 3rem 0;
 }
-
+.plan-patent-bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    transform: translateY(99%);
+}
 .js-pricing-plan-card {
     --js-pricing-card-bg: var(--color-white);
     --js-pricing-card-tag-color: #0CD9C0;
@@ -366,15 +390,50 @@
 
     background-color: var(--js-pricing-card-bg);
     box-shadow: 0px 5px 11px 0px #00000014;
-    padding: 0 3rem 3rem;
-    border-radius: 1rem;
+    /* padding: 0 3rem 3rem; */
+    border-radius: 21px;
+}
+.js-pricing-plan-card .js-pricing-plan-top-content:before{
+    content: "";
+    background:url("../../images/backgrounds/js-bg-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    z-index: 0;
+    border-radius: 18px 18px 0 0;
 }
 
-.js-pricing-plan-card.js-pricing-plan-card-dark {
-    --js-pricing-card-bg: #080F2C;
-    --js-pricing-card-tag-color: #4065FF;
-    --js-pricing-card-text-color: var(--color-white);
+
+.js-pricing-plan-card .js-pricing-plan-top-content{
+    position: relative;
+    background-color: #DAE9FA;
+    padding: 5rem  2rem 2rem;
+    border-radius: 18px 18px 0 0;
 }
+/* .js-pricing-plan-top-content::after{
+    content: "";
+    background:url("../../images/backgrounds/js-plan-patent.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    z-index: 0;
+} */
 
 .js-pricing-plan-card.js-pricing-plan-card-light.store {
     --js-pricing-card-tag-color: #EF9429;
@@ -387,23 +446,29 @@
 
 
 .js-pricing-tag {
-    position: relative;
+    position: absolute;
+    left: -24px;
+    top: 27px;
+    color: #fff;
 }
 
 .js-pricing-tag-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 2.5rem;
-    border-radius: 0 0 20px 20px;
-    background-color: var(--js-pricing-card-tag-color);
-    color: white;
-    grid-gap: .8rem;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: 600;
-    position: relative;
-    margin-bottom: 2rem;
+    border-radius: 0 20px 20px 0px;
+    z-index: 1;
+    background: #7A9AB8;
+    margin-bottom: 0;
+    width: 100px;
+    box-shadow: 0px 4px 4px 0px #1284ED29;
+    padding: 2px 5px
+}
+.js-pricing-tag-content:after {
+    content: "";
+    position: absolute;
+    border-top: 24px solid #557089;
+    border-left: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+    left: 0px;
+    bottom: -48px;
 }
 
 
@@ -434,12 +499,12 @@
     margin-bottom: 6px;
     font-size: 2.6rem;
     line-height: 3.2rem;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--js-pricing-card-text-color);
 }
 
 .js-pricing-amount {
-    margin-bottom: 2rem;
+    margin-bottom: 0.4rem;
     font-size: 4.2rem;
     line-height: 5.2rem;
     font-weight: 700;
@@ -450,29 +515,15 @@
     width: 60%;
 }
 
-.js-pricing-divider {
-    margin: 2.8rem 0 1.9rem;
-    border-top: 1px solid var(--color-gray-light-two);
-}
-
-.js-pricing-plan-card.js-pricing-plan-card-dark .js-pricing-divider {
-    border-top: 1px solid var(--color-blue-night-2);
-}
-
-.js-pricing-plan-benefits-list {
+.js-pricing-plan-benefits-list{
     display: flex;
     flex-direction: column;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
+    padding: 8rem 4rem 3rem;
     color: var(--js-pricing-card-text-color);
 }
 
-.js-pricing-plan-card-dark .js-pricing-plan-benefits-list {
-    margin-bottom: 5rem;
-}
 
-.js-pricing-plan-card-dark {
-    box-shadow: 0px 23px 55px 0px rgb(12 32 115 / 28%);
-}
 
 .js-pricing-plan-benefits-content {
     display: flex;
@@ -504,6 +555,97 @@
     margin-top: calc(var(--js-pricing-plan-top-space) + 3rem);
 }
 
+.js-pricing-amount-group{
+    gap: 1rem;
+    margin-bottom: .8rem;
+}
+
+.js-pricing-discount{
+    text-decoration-line: line-through; 
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--color-gray);
+}
+
+.js-pricing-offer{
+    background-color: var(--color-green-light-2);
+    padding: 0px 9px;
+    border-radius: 7px;
+    z-index: 99;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.js-pricing-list-see-btn{
+    text-align: center;
+    padding: 0rem 0rem 3rem; 
+}
+
+.js-pricing-list-see-btn a{
+    background-color: var(--color-blue-night-3);
+    padding: 1rem;
+    color: var(--color-blue);
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.js-pricing-amount span{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.js-pricing-plan-benefits-list-item span{
+    line-height: normal;
+}
+
+.js-pricing-plan-card .js-form-button{
+    box-shadow: 0px 2px 5px 0px #1D22273B;
+    padding: 1.2rem 2.2rem;
+}
+
+.shadow-none{
+    box-shadow: none;
+}
+
+.js-pricing-plan-card-doat{
+    position: absolute;
+    right: 1.875rem;
+    top: 1.875rem;
+}
+
+.more-features li{
+    margin-bottom: 2rem;
+}
+
+[dir=rtl] .js-pricing-tag {
+    right: -24px;
+    left: auto;
+}
+
+[dir=rtl]  .js-pricing-tag-content {
+    border-radius: 20px 0px 0px 20px;
+}
+
+[dir=rtl] .js-pricing-tag-content:after {
+    border-right: 24px solid transparent;
+    border-left: 0 ;
+    left: auto;
+    right: 0;
+}
+
+[dir=rtl] .js-pricing-plan-card-doat {
+    left: 1.875rem;
+    right: auto;
+
+}
+
+.js-pricing-price-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
 /* _ENDS >> SECTION | PRICING PLAN << JS */
 
 

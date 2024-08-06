@@ -7,7 +7,7 @@
 
 body {
     font-size: var(--body-font-size);
-    font-family: var(--font-alpha);
+    font-family: var(--font-bevietnam);
     font-weight: var(--body-font-weight);
     line-height: var(--body-line-height);
     background-color: var(--body-color-bg);
@@ -113,7 +113,7 @@ h6,
 .h6 {
     margin: 0;
     color: var(--color-black);
-    font-family: var(--font-alpha);
+    font-family: var(--font-bevietnam);
     font-weight: var(--font-weight-headings);
     line-height: var(--line-height-headings);
 }
@@ -159,7 +159,7 @@ p,
     --text-font-size: var(--body-font-size);
     font-weight: var(--body-font-weight);
     font-size: var(--text-font-size);
-    font-family: var(--font-alpha);
+    font-family: var(--font-bevietnam);
     color: var(--color-black);
 }
 
@@ -356,7 +356,7 @@ a[disabled]:active {
 /* _ENDS >> LINK & ANCHOR LINK GLOBAL CUSTOM STYLES << JS */
 
 ul {
-    font-family: var(--font-alpha);
+    font-family: var(--font-bevietnam);
     list-style-type: none;
     padding: 0;
 }

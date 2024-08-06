@@ -73,15 +73,15 @@
 }
 
 @media (min-width: 992px) {
-    .pricing-js-hosting-plan .js-pricing-plan-card.js-pricing-plan-card-dark {
-        margin-top: calc(10px - var(--js-pricing-plan-top-space));
-    }
     [dir="ltr"] .megamenu {
         left: -18rem;
         right: unset;
     }
     .megamenu {
         right: -18rem;
+    }
+    .js-nav-tabs{
+        max-width: 70%;
     }
 }
 
@@ -204,6 +204,13 @@
     .meg-description {
         font-size: 10px
     }
+
+    .js-pricing-plan-card {
+        margin: 0 24px;
+    }
+    .js-pricing-tag-content {
+        width: 80px;
+    }
 }
 
 @media (max-width:767px) {
@@ -300,6 +307,9 @@
     .text-md-center {
         text-align: center;
     }
+    .js-pricing-plan-benefits-list-item span{
+        font-size: 1.6rem;
+    } 
 }
 
 @media (max-width:575px) {
@@ -387,7 +397,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
+    }  
 }
 
 @media (max-width:350px) {
