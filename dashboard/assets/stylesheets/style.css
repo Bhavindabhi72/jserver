@@ -2884,6 +2884,13 @@ a {
   border: 1px solid transparent;
   position: relative;
 }
+.postion-unset{
+  position: unset;
+}
+.admin-card-box .dropdown-menu{
+  top: auto;
+  left: auto;
+}
 
 .admin-user-info-right {
   height: calc(100% - 3%);
