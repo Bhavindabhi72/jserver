@@ -358,7 +358,6 @@ li {
 
 hr {
   border-top: 2px solid #ebeef0;
-  margin-top: 10px;
 }
 
 .exquisite-turquoise-bg {
@@ -1211,6 +1210,10 @@ a:focus {
   font-weight: 600;
 }
 
+.your-details-card-form .wrapper-dropdown.form-control  span.selected-display {
+  margin: 0%;
+}
+
 .scrollable-menu {
   height: auto;
   max-height: 200px;
@@ -1219,8 +1222,8 @@ a:focus {
 
 .arrow {
   height: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   float: right;
   rotate: 180deg;
   position: absolute;
@@ -1230,7 +1233,7 @@ a:focus {
 
 .selected-display {
   margin-left: 30px;
-  margin-right: 50px;
+  margin-right: 36px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
@@ -1553,11 +1556,12 @@ svg,
 /* registration form css end */
 /* registration-form-box css start */
 .registration-form-section {
-  --registration-form-box-width: 700px;
+  --registration-form-box-width: 1071px;
 }
 
+
 .registration-form-box {
-  background: linear-gradient(180deg, #e3f3ff 0%, #def0ff 50%, #d2e9fe 100%);
+  background: var(--white);
   max-width: var(--registration-form-box-width);
   width: 100%;
   min-height: 500px;
@@ -1565,8 +1569,15 @@ svg,
   margin-right: auto;
   padding: 60px 130px;
   box-shadow: 0px 11px 32px 0px rgba(68, 100, 182, 0.25);
-  border-radius: 30px;
+  border-radius: 18px;
 }
+
+.registration-formv2 .mt-label{
+  margin-top: 20px;
+}
+
+
+
 
 .registration-form-section {
   height: 100vh;
@@ -1602,6 +1613,10 @@ svg,
 .registration-form-col {
   margin: auto;
   padding: 30px 0;
+}
+
+.login-here{
+  text-decoration: underline ;
 }
 
 .language-select-wrap {
@@ -1685,7 +1700,7 @@ svg,
 
 a.secure-client-btn {
   background-color: rgba(255, 255, 255, 1);
-  border: 1px solid transparent;
+  border: 1px solid #CCD1DE;
   width: max-content;
   min-width: 250px;
   min-height: 50px;
@@ -1746,18 +1761,19 @@ a.secure-client-btn:hover {
 .custom-input {
   width: 100%;
   min-height: 50px;
-  background: rgba(209, 231, 251, 1);
-  border-color: rgba(170, 215, 255, 1);
-  border-radius: 14px;
+  background: rgb(255, 255, 255);
+  border-color: #CAD0D9;
+  border-radius: 10px;
   box-shadow: none;
   padding: 5px 21px;
   font-size: 16px;
   font-weight: 500;
   line-height: 20.16px;
+  color: var(--black);
 }
 
 .custom-input::placeholder {
-  color: rgba(131, 159, 185, 1);
+  color: #8893AC;
 }
 
 .custom-input:focus,
@@ -1827,7 +1843,7 @@ a.secure-client-btn:hover {
   font-weight: 500;
   line-height: 18.9px;
   text-align: center;
-  color: #565f71;
+  color: var(--black);
   grid-gap: 10px;
   display: flex;
   align-items: center;
@@ -1858,12 +1874,15 @@ a.secure-client-btn:hover {
 }
 
 .registration-form-data-wrap.registration-form-box {
-  padding: 40px 100px;
+  padding: 40px 13px;
   position: relative;
 }
 
+.registration-input-form{
+  padding: 0px 92px;
+}
+
 .step-footer-wrap {
-  padding: 20px 0;
   display: flex;
   align-items: center;
   grid-gap: 15px;
@@ -3095,9 +3114,9 @@ a.transfer-domain span {
 
 .admin-services-boxes-wrap .theme-btn {
   width: fit-content;
-  padding: 8px 30px;
+  padding: 6px 20px;
   border-color: #D0D4E3;
-  margin: 10px 0px 0px;
+  margin: auto 0px 0px;
 }
 
 .span-padding{
@@ -3166,7 +3185,7 @@ a.transfer-domain span {
 }
 
 .table-search-bar .search-bar-wrap input {
-  max-width: 350px;
+  max-width: 450px;
   padding-left: 45px;
   background-color: transparent;
   border-color: var(--christmas-silver);
@@ -3506,18 +3525,7 @@ table tbody tr:not(:last-child) {
 
 /* amcharts css end */
 /* your-details start */
-.your-details-card-form .custom-input {
-  width: 100%;
-  min-height: 50px;
-  background: rgba(240, 248, 255, 1);
-  border-color: rgba(170, 215, 255, 1);
-  border-radius: 8px;
-  box-shadow: none;
-  padding: 5px 21px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20.16px;
-}
+
 
 .your-details-card-form .custom-input:focus,
 .form-control:focus,
@@ -3531,10 +3539,7 @@ table tbody tr:not(:last-child) {
 .custom-input:hover,
 .form-control:hover,
 .form-control:focus,
-.table-search-bar .search-bar-wrap input:focus {
-  border-color: var(--primary-theme);
-  outline: none;
-}
+.table-search-bar .search-bar-wrap input:focus
 
 .your-details-card-form label {
   color: rgba(78, 79, 83, 1);
@@ -3558,10 +3563,7 @@ table tbody tr:not(:last-child) {
   box-shadow: 0px 8px 17px 0px #00000026;
 }
 
-.your-details-card-form .selected-display {
-  margin-left: 0px;
-  font-size: 14px;
-}
+
 
 .your-details-card-form .wrapper-dropdown .dropdown li:hover {
   background-color: rgb(223 235 245);
@@ -3654,7 +3656,7 @@ input[type="radio"] {
   padding-left: 28px;
 }
 
-.direction-rtl .account-details-card-box .arrow {
+.direction-rtl .account-details-card-box .arrow , .direction-rtl .registration-form-section  .arrow{
   left: 0;
   right: unset;
 }
@@ -4479,6 +4481,8 @@ input:checked+.slider .off-text {
   background-color: #f0f8ff;
 }
 
+
+
 .modal-content h4 {
   font-size: 21px;
   padding-bottom: 30px;
@@ -4832,6 +4836,11 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 
 .manage-product-content-box .small-btn {
   max-height: 35px;
+}
+
+
+.products-actions-box .arrow-svg{
+  left: 158px;
 }
 
 /* manage product end */
@@ -6155,6 +6164,21 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
   font-size: 16px !important;
   color: var(--black);
   border-radius: 8px;
+}
+
+.plan-menu{
+  border: none;
+  background-color: transparent;
+}
+
+.plan-menu-dropdown .dropdown-menu {
+  top: auto;
+  left: 60%;
+}
+
+.direction-rtl .plan-menu-dropdown{
+  margin-left: 0;
+  margin-right: auto;
 }
 
 /* accept invite start */
