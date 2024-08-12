@@ -577,6 +577,10 @@ h3,
   align-items: center;
 }
 
+.align-items-start{
+  align-items: start;
+}
+
 .justify-content-center {
   justify-content: center;
 }
@@ -2147,6 +2151,7 @@ a.secure-client-btn:hover {
   min-height: 50px;
   color: var(--slate-gray);
   padding: 0px 10px;
+  margin-top: 5px;
 }
 
 .layout .sidebar .menu-item.active a,
@@ -2219,7 +2224,7 @@ a.secure-client-btn:hover {
   border-left: 2px solid #c7cdda;
   bottom: 50px;
   height: 100%;
-  top: 0;
+  top: -5px;
   width: 1px;
   content: '';
   left: -20px;
@@ -2233,7 +2238,7 @@ a.secure-client-btn:hover {
   border-left:none;
 }
 .sub-menu-list ul li:last-child:before {
-  height: 18px;
+  height: 15px;
 }
 
 .sub-menu-list ul li:after {
@@ -2242,8 +2247,8 @@ a.secure-client-btn:hover {
   position: absolute;
   right: auto;
   border: solid #c7cdda;
-  height: 20px;
-  top: 5px;
+  height: 31px;
+  top: -10px;
   width: 28px;
   border-width: 0px 0px 2px 2px;
   border-radius: 0% 0% 0% 50%;
@@ -3068,6 +3073,44 @@ a.transfer-domain span {
 
 .admin-form-group .d-align {
   grid-gap: 15px;
+}
+
+.admin-services-boxes-wrap .admin-card-box{
+  padding: 24px;
+}
+
+.admin-services-boxes-wrap{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 25px;
+}
+
+.admin-services-boxes-wrap .active-true{
+  margin: 0 5px;
+}
+
+.admin-services-boxes-wrap hr{
+  margin: 20px 0px;
+}
+
+.admin-services-boxes-wrap .theme-btn {
+  width: fit-content;
+  padding: 8px 30px;
+  border-color: #D0D4E3;
+  margin: 10px 0px 0px;
+}
+
+.span-padding{
+  color: #FF8329 ;
+}
+
+.span-cancelled{
+  color: #FE585D;
+}
+
+.admin-body-contentv2 .my-services-dropdown  , .admin-body-contentv2 .table-search-bar .search-bar-wrap input{
+  background-color: var(--white) !important;
+  border-color: var(--white) !important;
 }
 
 /* admin-dashboard-services-card-wrap css end */
@@ -6273,3 +6316,6 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
   border-color: #dc3545;
   background-color: #dc3545;
 }
+
+
+
