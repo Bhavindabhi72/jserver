@@ -929,19 +929,17 @@
                   </div>
                   <div>
                     <form class="row your-details-card-form">
-                      <div class="col-xs-12">
+                      <div class="col-xs-4">
                         <label for="first-name" class="mt-label fw-500">First Name</label>
-                        <input type="text" id="first-name" class="form-control custom-input w-53"
-                          placeholder="First Name">
+                        <input type="text" id="first-name" class="form-control custom-input" placeholder="First Name">
                       </div>
-                      <div class="col-xs-12">
+                      <div class="col-xs-4">
                         <label for="last-name" class="mt-label fw-500">Last Name</label>
-                        <input type="text" id="last-name" class="form-control custom-input w-53"
-                          placeholder="Last Name">
+                        <input type="text" id="last-name" class="form-control custom-input" placeholder="Last Name">
                       </div>
-                      <div class="col-xs-12">
+                      <div class="col-xs-4">
                         <label for="email" class="mt-label fw-500">Email</label>
-                        <input type="email" id="email" class="settings-email form-control custom-input w-53"
+                        <input type="email" id="email" class="settings-email form-control custom-input"
                           placeholder="Email">
                       </div>
                       <div class="account-details-form-btn col-sm-12 w-100">
@@ -967,8 +965,8 @@
                           class="form-control custom-input w-53 fw-500 text-black" placeholder="*************"
                           oninput="maskPassword(this)">
                       </div>
-                      <div class="col-xs-12 password-input position-relative">
-                        <label for="new-password" class="mt-label fw-500 d-align w-53 justify-content-between">
+                      <div class="col-xs-12 col-sm-6 password-input position-relative">
+                        <label for="new-password" class="mt-label fw-500 d-align justify-content-between">
                           <div>New Password</div>
                           <div class="generate-password">
                             <button type="button" class="border-none" data-toggle="modal"
@@ -976,48 +974,48 @@
                           </div>
 
                         </label>
-                        <input type="text" id="new-password" class="form-control custom-input w-53 fw-500 text-black"
+                        <input type="text" id="new-password" class="form-control custom-input fw-500 text-black"
                           placeholder="*************" oninput="maskPassword(this)">
-                      </div>
-                      <div class="container">
-                        <div class="progress w-53">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                            aria-valuemax="100" style="width:50%">
-                            <span class="sr-only">70% Complete</span>
+                        <div class="container">
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                              aria-valuemax="100" style="width:50%">
+                              <span class="sr-only">70% Complete</span>
+                            </div>
+                          </div>
+                          <div
+                            class="terms-service-crad-box account-security-crad-box tips-good-password-card d-flex">
+                            <svg width="18" height="27" viewBox="0 0 18 27" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M9.03348 4.29496C9.44231 4.29496 9.77375 3.96352 9.77375 3.55469V1.53129C9.77375 1.12246 9.44231 0.791016 9.03348 0.791016C8.62466 0.791016 8.29321 1.12246 8.29321 1.53129V3.55469C8.29321 3.96352 8.62466 4.29496 9.03348 4.29496Z"
+                                fill="#E89534" />
+                              <path
+                                d="M17.4531 3.42386C17.164 3.13476 16.6953 3.13476 16.4062 3.42386L14.8269 5.0031C14.5378 5.29215 14.5378 5.76089 14.8269 6.04999C15.116 6.33909 15.5847 6.33909 15.8738 6.04999L17.4531 4.47075C17.7422 4.18165 17.7422 3.71291 17.4531 3.42386Z"
+                                fill="#E89534" />
+                              <path
+                                d="M3.23993 6.04999C3.52903 5.76094 3.52903 5.2922 3.23993 5.0031L1.66069 3.42386C1.37164 3.13476 0.902898 3.13476 0.613798 3.42386C0.324698 3.71291 0.324698 4.18165 0.613798 4.47075L2.19304 6.04999C2.48219 6.33914 2.95088 6.33909 3.23993 6.04999Z"
+                                fill="#E89534" />
+                              <path
+                                d="M9.03359 5.97266C4.9245 5.97266 1.58154 9.31562 1.58154 13.4247C1.58154 17.2342 5.13484 19.099 5.13484 21.3209H8.29332V17.5964C7.37637 17.2867 6.71408 16.4189 6.71408 15.3988C6.71408 14.9899 7.04552 14.6585 7.45435 14.6585C7.86318 14.6585 8.19462 14.9899 8.19462 15.3988C8.19462 15.8614 8.57097 16.2377 9.03359 16.2377C9.49621 16.2377 9.87256 15.8614 9.87256 15.3988C9.87256 14.9899 10.204 14.6585 10.6128 14.6585C11.0217 14.6585 11.3531 14.9899 11.3531 15.3988C11.3531 16.4189 10.6908 17.2867 9.77386 17.5964V21.3209H12.9323C12.9323 19.0983 16.4856 17.2358 16.4856 13.4247C16.4856 9.31562 13.1427 5.97266 9.03359 5.97266Z"
+                                fill="#E89534" />
+                              <path
+                                d="M5.13477 23.7385C5.13477 25.0174 6.17529 26.058 7.45428 26.058H10.6128C11.8918 26.058 12.9323 25.0174 12.9323 23.7385V22.8008H5.13477V23.7385Z"
+                                fill="#E89534" />
+                            </svg>
+                            <div class="ms-1">
+                              <p class="fw-500 text-black m-0">Tips for a good password</p>
+                              <p class="text-grey mb-0">Use both upper and lowercase characters Include at least one
+                                symbol (#
+                                $ ! % & etc...) Don't use dictionary words</p>
+                            </div>
                           </div>
                         </div>
-                        <div
-                          class="terms-service-crad-box account-security-crad-box w-53 tips-good-password-card d-flex">
-                          <svg width="18" height="27" viewBox="0 0 18 27" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M9.03348 4.29496C9.44231 4.29496 9.77375 3.96352 9.77375 3.55469V1.53129C9.77375 1.12246 9.44231 0.791016 9.03348 0.791016C8.62466 0.791016 8.29321 1.12246 8.29321 1.53129V3.55469C8.29321 3.96352 8.62466 4.29496 9.03348 4.29496Z"
-                              fill="#E89534" />
-                            <path
-                              d="M17.4531 3.42386C17.164 3.13476 16.6953 3.13476 16.4062 3.42386L14.8269 5.0031C14.5378 5.29215 14.5378 5.76089 14.8269 6.04999C15.116 6.33909 15.5847 6.33909 15.8738 6.04999L17.4531 4.47075C17.7422 4.18165 17.7422 3.71291 17.4531 3.42386Z"
-                              fill="#E89534" />
-                            <path
-                              d="M3.23993 6.04999C3.52903 5.76094 3.52903 5.2922 3.23993 5.0031L1.66069 3.42386C1.37164 3.13476 0.902898 3.13476 0.613798 3.42386C0.324698 3.71291 0.324698 4.18165 0.613798 4.47075L2.19304 6.04999C2.48219 6.33914 2.95088 6.33909 3.23993 6.04999Z"
-                              fill="#E89534" />
-                            <path
-                              d="M9.03359 5.97266C4.9245 5.97266 1.58154 9.31562 1.58154 13.4247C1.58154 17.2342 5.13484 19.099 5.13484 21.3209H8.29332V17.5964C7.37637 17.2867 6.71408 16.4189 6.71408 15.3988C6.71408 14.9899 7.04552 14.6585 7.45435 14.6585C7.86318 14.6585 8.19462 14.9899 8.19462 15.3988C8.19462 15.8614 8.57097 16.2377 9.03359 16.2377C9.49621 16.2377 9.87256 15.8614 9.87256 15.3988C9.87256 14.9899 10.204 14.6585 10.6128 14.6585C11.0217 14.6585 11.3531 14.9899 11.3531 15.3988C11.3531 16.4189 10.6908 17.2867 9.77386 17.5964V21.3209H12.9323C12.9323 19.0983 16.4856 17.2358 16.4856 13.4247C16.4856 9.31562 13.1427 5.97266 9.03359 5.97266Z"
-                              fill="#E89534" />
-                            <path
-                              d="M5.13477 23.7385C5.13477 25.0174 6.17529 26.058 7.45428 26.058H10.6128C11.8918 26.058 12.9323 25.0174 12.9323 23.7385V22.8008H5.13477V23.7385Z"
-                              fill="#E89534" />
-                          </svg>
-                          <div class="ms-1">
-                            <p class="fw-500 text-black m-0">Tips for a good password</p>
-                            <p class="text-grey mb-0">Use both upper and lowercase characters Include at least one symbol (#
-                              $ ! % & etc...) Don't use dictionary words</p>
-                          </div>
-                        </div>
                       </div>
-
-                      <div class="col-xs-12 password-input position-relative">
+                      <div class="col-xs-12 col-sm-6 password-input position-relative">
                         <label for="confirm-password" class="mt-label fw-500">Confirm Current Password</label>
                         <input type="text" id="confirm-password"
-                          class="form-control custom-input w-53 fw-500 text-black" placeholder="*************** "
+                          class="form-control custom-input fw-500 text-black" placeholder="*************** "
                           oninput="maskPassword(this)">
                       </div>
                       <div class="account-details-form-btn col-sm-12 w-100 change-password-btns">

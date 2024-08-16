@@ -905,6 +905,7 @@
     .choose-domain-content .manage-product-content-box-table {
         padding: 30px 33px 30px;
     }
+
 }
 
 @media (max-width: 575px) {
@@ -1015,7 +1016,20 @@
     .admin-dashboard-services-details {
         flex-wrap: wrap;
     }
-
+    
+    .rmb-0{
+        margin-bottom: 0;
+    }
+    .r-justify-space{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .d-xs-block{
+        display: block;
+    }
+    .mb-xs-10{
+        margin-bottom: 10px;
+    }
     /* .admin-dashboard-services-details .sign-up-btn {
         margin: 15px 0 0;
     } */
