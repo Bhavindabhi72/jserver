@@ -2966,6 +2966,16 @@ a {
   padding: 0px 15px;
 }
 
+.your-details-service {
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 10px 0px;
+}
+
+.your-details-service h4{
+  color: #5C6069 !important;
+}
+
 .admin-main-wrap .active-status .active {
   color: var(--bright);
 }
@@ -3039,6 +3049,15 @@ a {
 .admin-dashboard-services-detail-col a {
   font-size: 14px;
   text-decoration: underline;
+}
+
+.your-details-text-theme{
+  color: #333333;
+  text-decoration: none !important;
+}
+
+.your-details-theme-btn{
+  min-height: 35px;
 }
 
 .admin-dashboard-services-card-col .dropdown {
@@ -3116,7 +3135,7 @@ a.transfer-domain span {
   margin: 20px 0px;
 }
 
-.admin-services-boxes-wrap .theme-btn {
+.admin-services-boxes-wrap .theme-btn , .your-details-manage .your-details-theme-btn{
   min-width: fit-content;
   padding: 6px 20px;
   border-color: #D0D4E3;
@@ -3129,7 +3148,7 @@ a.transfer-domain span {
 }
 
 .span-cancelled{
-  color: #FE585D;
+  color: #FE4444;
 }
 
 .admin-body-contentv2 .my-services-dropdown  , .admin-body-contentv2 .table-search-bar .search-bar-wrap input{
@@ -3617,7 +3636,7 @@ table tbody tr:not(:last-child) {
 
 .label-indent {
   text-indent: -37px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   font-size: 15px;
   padding-right: 30px;
   cursor: pointer;
