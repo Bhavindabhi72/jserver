@@ -367,7 +367,6 @@
     } */
     .theme-btn {
         margin-left: 0;
-        width: 45%;
     }
 
     .quick-shortcuts-row {
@@ -772,10 +771,6 @@
         z-index: 999;
     }
 
-    .admin-header-option ul {
-        grid-gap: 15px;
-    }
-
     .header-login-cloud-dropdown .dropdown li span,
     .header-login-cloud-dropdown .selected-display span {
         display: none;
@@ -1082,9 +1077,6 @@
         padding: 14px 0;
     }
 
-    .notifications-msg-dropbox-wrap.notification-dropbox-wrap {
-        right: -70px;
-    }
 
     .direction-rtl .notifications-msg-dropbox-wrap.notification-dropbox-wrap {
         left: -70px;
@@ -1294,10 +1286,20 @@
     }
 
     /*dashboard version 2*/
-    .admin-main-wrap-v2 .language-select-wrap .selected-display span,
-    .admin-main-wrap-v2 .language-select-wrap .dropdown li span,
-    .admin-main-wrap-v2 .admin-header-option .profile-item span {
+    .admin-main-wrap .language-select-wrap .selected-display span,
+    .admin-main-wrap .language-select-wrap .dropdown li span,
+    .admin-main-wrap .admin-header-option .profile-item span {
         display: none;
+    }
+    .country-dropdown-menu .selected-display{
+        margin-right: 20px;
+    }
+    .notifications-msg-dropbox-wrap {
+        right: -120px !important;
+        transform: translate(18px , 5%) !important;
+      }
+      .notification-dropbox-wrap {
+        transform: translate(53px, 5%);
     }
 }
 
@@ -1369,10 +1371,6 @@
         margin: 20px 0px;
     }
 
-    .theme-btn {
-        width: 100%;
-    }
-
     .manage-product-content-box div {
         display: block;
     }
@@ -1428,21 +1426,12 @@
         gap: 10px;
     }
 
-    .admin-header .admin-header-option ul .header-element {
-        padding: 0 8px;
-    }
-
     .arrow {
         margin-right: 0px
     }
 
     .admin-header .profile-item {
         padding-right: 18px;
-    }
-
-    .admin-header .count-msg-number-box {
-        top: 0px;
-        right: 0px;
     }
     .services-heading{
         display: block;
@@ -1464,6 +1453,15 @@
 
     .card-ghost-style {
         padding: 13px 13px;
+    }
+    .theme-btn {
+        width: 100%;
+    }
+    .notification-dropbox-wrap{
+        right: 0;
+    }
+    .delete-btn{
+        width: 100% !important;
     }
 }
 

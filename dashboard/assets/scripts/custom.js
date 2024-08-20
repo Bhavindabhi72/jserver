@@ -7,17 +7,21 @@ function wrapperdropdown() {
     selected.addEventListener("click", () => {
       let arrow = selected.children[1];
 
-      if (selected.classList.contains("active")) {
-        handleDropdown(selected, arrow, false);
-      } else {
-        let currentActive = document.querySelector(".wrapper-dropdown.active");
+      if (selected.getAttribute("disabled") !== '' && selected.getAttribute('disabled') == null) {
+        console.log(1);
 
-        if (currentActive) {
-          let anotherArrow = currentActive.children[1];
-          handleDropdown(currentActive, anotherArrow, false);
+        if (selected.classList.contains("active")) {
+          handleDropdown(selected, arrow, false);
+        } else {
+          let currentActive = document.querySelector(".wrapper-dropdown.active");
+
+          if (currentActive) {
+            let anotherArrow = currentActive.children[1];
+            handleDropdown(currentActive, anotherArrow, false);
+          }
+
+          handleDropdown(selected, arrow, true);
         }
-
-        handleDropdown(selected, arrow, true);
       }
     });
 
