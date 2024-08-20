@@ -3117,10 +3117,11 @@ a.transfer-domain span {
 }
 
 .admin-services-boxes-wrap .theme-btn {
-  max-width: fit-content;
+  min-width: fit-content;
   padding: 6px 20px;
   border-color: #D0D4E3;
   margin: auto 0px 0px;
+  width: fit-content;
 }
 
 .span-padding{
