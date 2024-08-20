@@ -1463,6 +1463,9 @@
     .delete-btn{
         width: 100% !important;
     }
+    .contect-btn input{
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 360px) {

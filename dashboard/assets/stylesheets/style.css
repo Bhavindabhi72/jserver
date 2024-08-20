@@ -1269,7 +1269,7 @@ svg,
   margin: 0;
   padding: 0;
   list-style: none;
-  z-index: 99;
+  z-index: 8;
   border-radius: 20px;
   box-shadow: inherit;
   background: linear-gradient(180deg, #ffffff 0%, #eef6ff 54.04%, #dbebff 100%);
@@ -3117,7 +3117,7 @@ a.transfer-domain span {
 }
 
 .admin-services-boxes-wrap .theme-btn {
-  min-width: fit-content;
+  max-width: fit-content;
   padding: 6px 20px;
   border-color: #D0D4E3;
   margin: auto 0px 0px;
@@ -5759,7 +5759,6 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 .account-details-form-btn{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
