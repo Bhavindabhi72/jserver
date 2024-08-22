@@ -1023,7 +1023,7 @@ a:focus {
 .primary-btn {
   background-color: var(--primary-theme);
   border-radius: 8px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
   border: none;
   padding: 10px 24px;
@@ -1746,7 +1746,7 @@ a.secure-client-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 18.9px;
   text-align: left;
@@ -1755,6 +1755,10 @@ a.secure-client-btn {
   text-decoration: none;
   margin-bottom: 30px;
   transition: all 0.3s;
+}
+
+a.secure-client-btn span{
+  margin-top: 5px;
 }
 
 a.secure-client-btn:hover {

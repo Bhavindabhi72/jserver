@@ -959,7 +959,7 @@
         padding: 30px 15px;
     }
 
-    a.secure-client-btn {
+    a.secure-client-btn , .theme-btn{
         font-size: 14px;
     }
 
@@ -974,12 +974,6 @@
 
     .registration-form-wrap ul.form-stepper .form-stepper-circle span {
         font-size: 14px;
-    }
-
-    .custom-input,
-    .form-group .wrapper-dropdown {
-        min-height: 45px;
-        border-radius: 8px;
     }
 
     .quick-email-acc-wrap input:first-child {
