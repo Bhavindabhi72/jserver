@@ -350,3 +350,10 @@ function updateRuleIndicator(ruleId, isValid) {
 }
 
 // lost password reset end
+
+
+$(document).ready(function() {
+  $('#submit-btn').click(function() {
+      $('#login-alert').show();
+  });
+});

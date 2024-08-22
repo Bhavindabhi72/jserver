@@ -28,39 +28,41 @@
                <div class="registration-logo-country-dropmenu">
                   <img src="./assets/images/logo/logo.svg" class="img-fluid auth-logo" alt="" />
                   <div class="language-select-wrap">
-                     <div class="wrapper-dropdown" id="dropdown">
-                        <span class="selected-display d-flex align-items-center" id="destination">
-                           <h6>English</h6>
-                           <div class="selected-flag ml-auto">
-                              <img src="./assets/images/flag/english.svg" class="img-fluid" alt="" />
-                           </div>
-                        </span>
-                        <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                           xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
-                           <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round"></path>
-                        </svg>
-                        <ul class="dropdown">
-                           <li class="item" onclick="rtllang('english',event)">
-                              <h6>English</h6>
-                              <div class="selected-flag ml-auto">
-                                 <img src="./assets/images/flag/english.svg" class="img-fluid" alt="" />
-                              </div>
-                           </li>
-                           <li class="item" onclick="rtllang('hebrew',event)">
-                              <h6>Hebrew</h6>
-                              <div class="selected-flag ml-auto">
-                                 <img src="./assets/images/flag/hebrew.svg" class="img-fluid" alt="" />
-                              </div>
-                           </li>
-                           <li class="item" onclick="rtllang('arabic',event)">
-                              <h6>Arabic</h6>
-                              <div class="selected-flag ml-auto">
-                                 <img src="./assets/images/flag/arabic.svg" class="img-fluid" alt="" />
-                              </div>
-                           </li>
-                        </ul>
-                     </div>
+                     <div class="country-dropdown-menu">
+                        <div class="language-select-wrap">
+                            <div class="wrapper-dropdown" id="dropdown">
+                                <span class="selected-display d-flex align-items-center" id="destination">
+                                    <div class="selected-flag ml-auto">
+                                        <img src="./assets/images/flag/english.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <span>Eng</span>
+                                </span>
+                                <svg class="arrow" id="drp-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.74393 6.85643C5.63736 6.85705 5.53172 6.83662 5.43306 6.79632C5.3344 6.75603 5.24466 6.69665 5.169 6.6216L0.310411 1.76301C0.157929 1.61053 0.0722656 1.40372 0.0722656 1.18808C0.0722656 0.972436 0.157929 0.765627 0.310411 0.613145C0.462892 0.460663 0.669702 0.375 0.885344 0.375C1.10099 0.375 1.3078 0.460663 1.46028 0.613145L5.74393 4.9049L10.0276 0.621243C10.1825 0.488582 10.3818 0.419261 10.5856 0.427133C10.7894 0.435005 10.9827 0.51949 11.1269 0.663704C11.2711 0.807919 11.3556 1.00124 11.3635 1.20504C11.3713 1.40884 11.302 1.6081 11.1694 1.76301L6.31077 6.6216C6.15994 6.7712 5.95637 6.85554 5.74393 6.85643Z" fill="#5C5D62"></path>
+                                </svg>
+                                <ul class="dropdown">
+                                    <li class="item" onclick="rtllang('english',event)">
+                                        <div class="selected-flag">
+                                            <img src="./assets/images/flag/english.svg" class="img-fluid" alt="">
+                                        </div>
+                                        <span>Eng</span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="selected-flag" onclick="rtllang('hebrew',event)">
+                                            <img src="./assets/images/flag/hebrew.svg" class="img-fluid" alt="">
+                                        </div>
+                                        <span>Heb</span>
+                                    </li>
+                                    <li class="item" onclick="rtllang('arabic',event)">
+                                        <div class="selected-flag">
+                                            <img src="./assets/images/flag/arabic.svg" class="img-fluid" alt="">
+                                        </div>
+                                        <span>Arbi</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                   </div>
                </div>
                <hr>

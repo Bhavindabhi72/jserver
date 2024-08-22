@@ -172,6 +172,10 @@
     .accept-invite-crad-box {
         padding: 50px 30px;
     }
+    .login-form-box{
+        max-width: 593px;
+        padding: 41px 33px;
+      }
 }
 
 @media (min-width: 1400px) {
@@ -750,11 +754,6 @@
 
     .registration-form-box h3 {
         font-size: 24px;
-        margin: 0 0 20px;
-    }
-
-    .auth-logo {
-        margin: 0;
     }
 
     .form-step .divider {
@@ -820,7 +819,6 @@
     .primary-btn {
         font-size: 14px;
         padding: 10px;
-        min-height: 45px;
     }
 
     .small-btn {
@@ -1009,11 +1007,6 @@
         top: 30px;
         left: 15px;
     }
-
-    .registration-form-box h3 {
-        font-size: 20px;
-    }
-
     .layout .footer {
         padding-top: 0;
     }
@@ -1364,9 +1357,8 @@
         margin-left: 0;
     }
 
-    .sign-up-btn {
-        font-size: 13px;
-        min-height: 40px;
+    .login-btns .theme-btn{
+        padding: 9px;
     }
 
     .auth-logo {
@@ -1451,6 +1443,9 @@
     .services-heading{
         display: block;
     }
+    .registration-input-form  , .login-form{
+        padding: 0px ;
+    }
 }
 
 @media (max-width: 399px) {
@@ -1480,6 +1475,18 @@
     }
     .contect-btn input{
         margin-right: 0;
+    }
+    .login-form {
+        padding: 0px;
+    }
+    .remember-forgot-pass-text {
+        grid-gap: 11px;
+    }
+    .registration-form-box h6 {
+       display: block;
+    }
+    .auth-logo {
+        margin: 0;
     }
 }
 
@@ -1519,6 +1526,7 @@
     .admin-dashboard-services-card-wrap .admin-dashboard-services-head, .admin-dashboard-services-card-wrap .admin-dashboard-services-details{
         word-break: break-all
     }
+    
 }
 
 @media (max-width: 349px) {
