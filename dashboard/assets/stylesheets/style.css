@@ -1607,7 +1607,7 @@ svg,
   padding: 0px 57px;
 }
 
-.registration-title-box{
+.registration-header{
   margin-bottom: 30px;
 }
 
@@ -1886,6 +1886,7 @@ a.secure-client-btn:hover {
   align-items: center;
   justify-content: center;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .registration-form-box h6 a {

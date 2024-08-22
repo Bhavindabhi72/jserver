@@ -865,6 +865,18 @@
       .your-details-service {
         margin-top: 20px;
       }
+      .registration-input-form h6{
+        order: 2;
+      }
+      .registration-input-form .login-btns{
+        order: 1;
+      }
+      .registration-input-form .login-btns .secure-client-btn{
+        order: 2;
+      }
+      .registration-input-form .login-btns .theme-btn-active{
+        order: 1;
+      }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -944,7 +956,7 @@
     }
 
     .registration-form-data-wrap.registration-form-box {
-        padding: 20px 15px;
+        padding: 30px 15px;
     }
 
     a.secure-client-btn {
@@ -1296,7 +1308,9 @@
     /*dashboard version 2*/
     .admin-main-wrap .language-select-wrap .selected-display span,
     .admin-main-wrap .language-select-wrap .dropdown li span,
-    .admin-main-wrap .admin-header-option .profile-item span {
+    .admin-main-wrap .admin-header-option .profile-item span ,
+    .registration-form-box .language-select-wrap .selected-display span,
+    .registration-form-box .language-select-wrap .dropdown li span{
         display: none;
     }
     .country-dropdown-menu .selected-display{
@@ -1531,7 +1545,7 @@
 
 @media (max-width: 349px) {
     .registration-form-box {
-        padding: 15px;
+        padding: 30px 15px;
     }
 
     .registration-form-wrap .form-stepper-horizontal li {
