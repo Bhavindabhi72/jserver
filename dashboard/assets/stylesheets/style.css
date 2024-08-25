@@ -3240,7 +3240,7 @@ table thead th:not(:last-child) {
 }
 
 table tbody td {
-  padding: 10px;
+  padding: 5px;
 }
 
 table tbody td h4 {
