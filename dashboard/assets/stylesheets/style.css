@@ -36,13 +36,13 @@
   --cool-grey: #8893ac;
   --color-ghost-white: #f2f5ff;
   --dropdown-option-mt: 30px;
-  --sidebar-width: 308px;
+  --sidebar-width: 280px;
   --sidebar-xy-spacing: 10px;
   --sidebar-icon-width: 37px;
   --sidebar-icon-collapsed-width: 25px;
   --admin-header: 90px;
   --admin-body-y: 20px;
-  --admin-body-x: 36px;
+  --admin-body-x: 20px;
 
   /* Dashboard version 2*/
   --pale-blue: #F0F1F6;
@@ -174,6 +174,9 @@ a:hover {
 
 .p-1 {
   padding: 20px 0 !important;
+}
+.p-5 {
+  padding: 5px !important;
 }
 
 .my-1 {
@@ -392,87 +395,6 @@ hr {
   font-size: 14px;
 }
 
-/* Font face start */
-/* @font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/Outfit-Bold.woff2') format('woff2'),
-        url('../fonts/Outfit-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/Outfit-Black.woff2') format('woff2'),
-        url('../fonts/Outfit-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/Outfit-SemiBold.woff2') format('woff2'),
-        url('../fonts/Outfit-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/Outfit-Light.woff2') format('woff2'),
-        url('../fonts/Outfit-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/Outfit-Medium.woff2') format('woff2'),
-        url('../fonts/Outfit-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/Outfit-ExtraLight.woff2') format('woff2'),
-        url('../fonts/Outfit-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/Outfit-Regular.woff2') format('woff2'),
-        url('../fonts/Outfit-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/Outfit-Thin.woff2') format('woff2'),
-        url('../fonts/Outfit-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/Outfit-ExtraBold.woff2') format('woff2'),
-        url('../fonts/Outfit-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-} */
 
 @font-face {
   font-family: "BeVietnam";
@@ -547,7 +469,7 @@ h3,
   grid-gap: 0;
 }
 
-.gap-5 {
+.gap-30 {
   grid-gap: 30px;
 }
 
@@ -555,7 +477,10 @@ h3,
   grid-gap: 10px;
 }
 
-.gap-1half5 {
+.gap-5 {
+  grid-gap: 5px;
+}
+.gap-15 {
   grid-gap: 15px;
 }
 
@@ -1296,7 +1221,7 @@ svg,
 .wrapper-dropdown .dropdown li {
   padding: 6px 25px;
   line-height: 1.25;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 14px;
@@ -2769,7 +2694,7 @@ a {
   background: var(--white);
   box-shadow: -1px -1px 0.9px 0px #03336a1a inset;
   position: relative;
-  padding: 12px 36px;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
 }
@@ -2947,7 +2872,7 @@ a {
 .admin-card-box {
   background-color: var(--white);
   box-shadow: 0px 9px 12px 0px #0000000f;
-  margin-top: 25px;
+  margin-top: 20px;
   border-radius: 9px;
   padding: 20px;
   grid-gap: 15px;
@@ -3016,15 +2941,15 @@ a {
   color: #5C6069 !important;
 }
 
-.admin-main-wrap .active-status .active {
+.active-status .active {
   color: var(--bright);
 }
 
-.admin-main-wrap .pending-status .pending {
+.pending-status .pending {
   color: var(--joyful-orange);
 }
 
-.admin-main-wrap .completed-status .completed {
+.completed-status .completed {
   color: var(--shamrock-green);
 }
 
@@ -3157,14 +3082,14 @@ a.transfer-domain span {
   grid-gap: 15px;
 }
 
-.admin-services-boxes-wrap .admin-card-box{
+/* .admin-services-boxes-wrap .admin-card-box{
   padding: 24px;
-}
+} */
 
 .admin-services-boxes-wrap{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0 25px;
+  grid-gap: 0 20px;
 }
 
 .admin-services-boxes-wrap .active-true{
@@ -3187,7 +3112,7 @@ a.transfer-domain span {
   color: #FF8329 ;
 }
 
-.span-cancelled{
+.cancelled,.cancelled-status .cancelled{
   color: #FE4444;
 }
 
@@ -3279,7 +3204,6 @@ a.transfer-domain span {
 
 table {
   margin: 28px 0;
-  border: 1px solid #dee4f1;
 }
 
 .table-responsive {
@@ -3287,7 +3211,7 @@ table {
 }
 
 table thead {
-  background-color: #f2f6ff;
+  background-color: #F4F7FC;
 }
 
 table thead th {
@@ -3323,25 +3247,31 @@ table tbody td h4 {
   font-size: 16px;
 }
 
-table tbody tr:not(:last-child) {
-  border: 1px solid #dee4f1;
+table tbody tr{
+  border-bottom-color: #DEE4F1;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
+
 .table-footer-wrap .wrapper-dropdown {
-  margin: 0 15px;
-  background: #f1f9ff;
-  border-color: #c7e4fe;
+  margin: 0 8px;
+  background: #F3F6FF;
   padding: 5px;
-  border-radius: 4px;
+  border-radius: 20px;
   min-height: 34px;
+  border: none;
 }
 
 .table-footer-wrap .selected-display {
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 30px
 }
 
 .table-footer-wrap .wrapper-dropdown .dropdown li {
   font-size: 14px;
+  text-align: center;
+  padding: 5px 0;
 }
 
 .table-footer-wrap .wrapper-dropdown .dropdown li:hover {
@@ -3359,9 +3289,10 @@ table tbody tr:not(:last-child) {
 .pagination-wrap ul li {
   width: 34px;
   height: 34px;
-  border: 1px solid #c7e4fe;
-  background-color: #f1f9ff;
   border-radius: 100%;
+}
+.pagination-wrap ul li.active {
+  background-color: #F3F6FF;
 }
 
 .pagination-wrap ul li h6 {
@@ -3372,14 +3303,13 @@ table tbody tr:not(:last-child) {
 
 .pagination-wrap ul li:hover,
 .pagination-wrap ul li:active {
-  background-color: var(--primary-theme);
-  box-shadow: 0px 4px 4px 0px #376ae830;
+  background-color: #F3F6FF;
 }
-
+/*
 .pagination-wrap ul li:hover h6,
 .pagination-wrap ul li:active h6 {
   color: var(--white);
-}
+} */
 
 .pagination-wrap span {
   color: #73809e;
@@ -6442,4 +6372,33 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 
 .alert-box svg{
   min-width: fit-content;
+}
+
+/* Billing Page */
+.payment-method,.theme-table .admin-card-box{
+  box-shadow: none;
+}
+
+.payment-links,.card-header .title,.theme-table .title{
+  align-items: end;
+}
+.payment-links a,.payment-contain p{
+  color: var(--slate-blue);
+}
+.payment-links a{
+  text-decoration: none;
+  font-size: 13px;  
+  border-right: 1px;
+  border-right-style: solid;
+  border-right-color: #BDC4D3;
+  padding: 0 13px;
+}
+.payment-links a:last-child{
+  border: none;
+}
+.payment-contain .text{
+  padding: 0px 35px 0 7px;
+}
+.direction-rtl .payment-contain .text{
+  padding: 0px 7px 0 35px;
 }

@@ -9,7 +9,6 @@
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
   <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
@@ -682,149 +681,152 @@
                 </ul>
             </div>
           </div>
-          <div class="admin-body-content admin-body-contentv2">
+          <div class="admin-body-content">
             <div class="container-fluid">
+              <!-- start page title -->
               <div class="row">
-                <div class="col-sm-12 p-0 w-100">
-                  <div class="d-flex align-items-center flex-wrap showing-entries justify-content-between gap-2">
-                    <h4 class="admin-head m-0 head-line-border">Contacts</h4>
-                    <div class="d-flex wrapper-dropdown form-control custom-input align-items-center my-services-dropdown" id="language">
-                      <span class="selected-display d-flex align-items-center" id="destination">
-                        Choose contact
+                <div class="col-12 w-100">
+                    <div class="page-title  d-flex align-items-center flex-wrap showing-entries justify-content-between gap-2">
+                        <h4 class="fw-700 m-0">Contacts</h4>
+                        <div class="d-flex wrapper-dropdown form-control custom-input align-items-center my-services-dropdown" id="language">
+                          <span class="selected-display d-flex align-items-center" id="destination">
+                            Choose contact
+                          </span>
+                          <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          <ul class="dropdown">
+                            <li class="item d-flex align-items-center gap-1">
+                              <span>Contact - 1</span>
+                            </li>
+                            <li class="item d-flex align-items-center gap-1">
+                              <span>Contact - 2</span>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- end page title -->
+            
+              <div class="row admin-card-box p-5">
+                <form class="your-details-card-form">
+                  <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
+                    <label for="first-name" class="fw-500">First Name</label>
+                    <input type="text" id="First-name" class="form-control custom-input" placeholder="Micheal">
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
+                    <label for="last-name" class="fw-500">Last Name</label>
+                    <input type="text" id="last-name" class="form-control custom-input" placeholder="Ex. Wilson">
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
+                    <label for="email" class="fw-500">Email Address</label>
+                    <input type="Email" id="email" class="form-control custom-input" placeholder="example@gmail.com">
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
+                    <label for="company-name" class="fw-500">Company Name</label>
+                    <input type="text" id="company-name" class="form-control custom-input" placeholder="Enter company name">
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
+                    <label for="phone-number" class="fw-500">Mobile Number</label>
+                    <input type="number" id="phone-number" class="form-control custom-input" placeholder="+1 12456 78920">
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
+                    <label for="address-one" class="fw-500">Address </label>
+                    <input type="text" id="address-one" class="form-control custom-input" placeholder="Enter address">
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
+                    <label for="city" class="fw-500">City</label>
+                    <input type="text" id="city" class="form-control custom-input" placeholder="Enter city">
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
+                    <label for="state" class="fw-500">State</label>
+                    <div class="d-flex wrapper-dropdown form-control custom-input align-items-center mb-0" id="state">
+                      <span class="selected-display" id="destination">
+                        Select  state
                       </span>
-                      <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
                       </svg>
                       <ul class="dropdown">
-                        <li class="item d-flex align-items-center gap-1">
-                          <span>Contact - 1</span>
+                        <li class="item">
+                          Hula Valley
                         </li>
-                        <li class="item d-flex align-items-center gap-1">
-                          <span>Contact - 2</span>
+                        <li class="item">
+                          Hazor Region
                         </li>
                       </ul>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="admin-card-box account-details-card-box table-wrap admin-card-box-style2">
-              <form class="row your-details-card-form">
-                <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
-                  <label for="first-name" class="fw-500">First Name</label>
-                  <input type="text" id="First-name" class="form-control custom-input" placeholder="Micheal">
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
-                  <label for="last-name" class="fw-500">Last Name</label>
-                  <input type="text" id="last-name" class="form-control custom-input" placeholder="Ex. Wilson">
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
-                  <label for="email" class="fw-500">Email Address</label>
-                  <input type="Email" id="email" class="form-control custom-input" placeholder="example@gmail.com">
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
-                  <label for="company-name" class="fw-500">Company Name</label>
-                  <input type="text" id="company-name" class="form-control custom-input" placeholder="Enter company name">
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
-                  <label for="phone-number" class="fw-500">Mobile Number</label>
-                  <input type="number" id="phone-number" class="form-control custom-input" placeholder="+1 12456 78920">
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
-                  <label for="address-one" class="fw-500">Address </label>
-                  <input type="text" id="address-one" class="form-control custom-input" placeholder="Enter address">
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
-                  <label for="city" class="fw-500">City</label>
-                  <input type="text" id="city" class="form-control custom-input" placeholder="Enter city">
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
-                  <label for="state" class="fw-500">State</label>
-                  <div class="d-flex wrapper-dropdown form-control custom-input align-items-center mb-0" id="state">
-                    <span class="selected-display" id="destination">
-                      Select  state
-                    </span>
-                    <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                    </svg>
-                    <ul class="dropdown">
-                      <li class="item">
-                        Hula Valley
-                      </li>
-                      <li class="item">
-                        Hazor Region
-                      </li>
-                    </ul>
+                  <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
+                    <label for="zip-code" class="fw-500">Zip Code</label>
+                    <input type="text" id="zip-code" class="form-control custom-input" placeholder="Enter Zip code">
                   </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
-                  <label for="zip-code" class="fw-500">Zip Code</label>
-                  <input type="text" id="zip-code" class="form-control custom-input" placeholder="Enter Zip code">
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
-                  <label for="country" class="fw-500">Country</label>
-                  <div class="d-flex wrapper-dropdown form-control custom-input align-items-center" id="country ">
-                    <span class="selected-display" id="country">
-                      Select country
-                    </span>
-                    <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                    </svg>
-                    <ul class="dropdown">
-                      <li class="item">
-                        Israel
-                      </li>
-                      <li class="item">
-                        Israel
-                      </li>
-                    </ul>
+                  <div class="col-lg-3 col-sm-6 col-xs-12 mb-1">
+                    <label for="country" class="fw-500">Country</label>
+                    <div class="d-flex wrapper-dropdown form-control custom-input align-items-center" id="country ">
+                      <span class="selected-display" id="country">
+                        Select country
+                      </span>
+                      <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                      </svg>
+                      <ul class="dropdown">
+                        <li class="item">
+                          Israel
+                        </li>
+                        <li class="item">
+                          Israel
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <h3 class="col-sm-12 fw-500 text-black mt-0">Email Preferences</h3>
-                <div class="row email-preferences">
+                  <h3 class="col-sm-12 fw-500 text-black mt-0">Email Preferences</h3>
+                  <div class="row email-preferences">
 
-                  <div class="col-lg-4 form-check">
-                    <label class="fw-400 label-indent pr-xs-0" for="generalEmail"><input type="checkbox"
-                        class="your-details-card-checkbox" id="generalEmail"> General Emails - General Announcements &
-                      Password Reminders</label>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent pr-xs-0" for="generalEmail"><input type="checkbox"
+                          class="your-details-card-checkbox" id="generalEmail"> General Emails - General Announcements &
+                        Password Reminders</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent pr-xs-0"><input type="checkbox"
+                          class="your-details-card-checkbox">Invoice Emails - Invoices & Billing Reminders</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent pr-xs-0"><input type="checkbox"
+                          class="your-details-card-checkbox">Support Emails - Receive a copy of all support ticket
+                        communications created by the parent account holder</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent pr-xs-0"><input type="checkbox"
+                          class="your-details-card-checkbox col-sm-">Product Emails - Order Details, Welcome Emails,
+                        etc...</label>
+                    </div>
+                    <div class="col-lg-4 form-check">
+                      <label class="fw-400 label-indent pr-xs-0"><input type="checkbox"
+                          class="your-details-card-checkbox">Domain Emails - Renewal Notices, Registration Confirmations,
+                        etc...</label>
+                    </div>
                   </div>
-                  <div class="col-lg-4 form-check">
-                    <label class="fw-400 label-indent pr-xs-0"><input type="checkbox"
-                        class="your-details-card-checkbox">Invoice Emails - Invoices & Billing Reminders</label>
+                  <div class="account-details-form-btn col-sm-12 w-100 justify-content-between">
+                    <div class="d-flex align-items-center flex-wrap contect-btn">
+                      <input type="button" value="Cancel" class="theme-btn mx-6 fw-600">
+                      <input type="submit" value="Save Changes" class="theme-btn theme-btn-active mx-6 fw-600">
+                    </div>
+                    <button class="theme-btn mx-6 fw-600 d-flex align-items-center delete-btn"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5871 3.17463H13.2483V2.39504C13.2483 1.77476 13.0019 1.17989 12.5633 0.741284C12.1247 0.30268 11.5299 0.0562744 10.9096 0.0562744H6.23203C5.61175 0.0562744 5.01688 0.30268 4.57827 0.741284C4.13967 1.17989 3.89326 1.77476 3.89326 2.39504V3.17463H1.55449C1.34773 3.17463 1.14944 3.25677 1.00324 3.40297C0.857037 3.54917 0.774902 3.74746 0.774902 3.95422C0.774902 4.16098 0.857037 4.35928 1.00324 4.50548C1.14944 4.65168 1.34773 4.73381 1.55449 4.73381H1.60127L2.15478 13.551C2.21636 14.5423 2.65406 15.4728 3.3785 16.1523C4.10294 16.8318 5.05947 17.2092 6.05273 17.2073H11.1045C12.0977 17.2092 13.0542 16.8318 13.7787 16.1523C14.5031 15.4728 14.9408 14.5423 15.0024 13.551L15.5403 4.73381H15.5871C15.7939 4.73381 15.9922 4.65168 16.1384 4.50548C16.2846 4.35928 16.3667 4.16098 16.3667 3.95422C16.3667 3.74746 16.2846 3.54917 16.1384 3.40297C15.9922 3.25677 15.7939 3.17463 15.5871 3.17463ZM5.45244 2.39504C5.45244 2.18828 5.53458 1.98999 5.68078 1.84379C5.82698 1.69759 6.02527 1.61545 6.23203 1.61545H10.9096C11.1163 1.61545 11.3146 1.69759 11.4608 1.84379C11.607 1.98999 11.6892 2.18828 11.6892 2.39504V3.17463H5.45244V2.39504ZM13.4354 13.4574C13.3977 14.0517 13.1348 14.6092 12.7002 15.0162C12.2656 15.4233 11.6921 15.6493 11.0967 15.6481H6.04493C5.44948 15.6493 4.876 15.4233 4.44141 15.0162C4.00683 14.6092 3.74387 14.0517 3.70616 13.4574L3.16045 4.73381H13.9812L13.4354 13.4574Z" fill="#FA3F3F"/>
+                      <path d="M7.01299 7.07663C6.80623 7.07663 6.60794 7.15876 6.46174 7.30496C6.31553 7.45116 6.2334 7.64946 6.2334 7.85622V12.5338C6.2334 12.7405 6.31553 12.9388 6.46174 13.085C6.60794 13.2312 6.80623 13.3133 7.01299 13.3133C7.21975 13.3133 7.41804 13.2312 7.56424 13.085C7.71044 12.9388 7.79258 12.7405 7.79258 12.5338V7.85622C7.79258 7.64946 7.71044 7.45116 7.56424 7.30496C7.41804 7.15876 7.21975 7.07663 7.01299 7.07663Z" fill="#FA3F3F"/>
+                      <path d="M10.1302 7.07663C9.92342 7.07663 9.72512 7.15876 9.57892 7.30496C9.43272 7.45116 9.35059 7.64946 9.35059 7.85622V12.5338C9.35059 12.7405 9.43272 12.9388 9.57892 13.085C9.72512 13.2312 9.92342 13.3133 10.1302 13.3133C10.3369 13.3133 10.5352 13.2312 10.6814 13.085C10.8276 12.9388 10.9098 12.7405 10.9098 12.5338V7.85622C10.9098 7.64946 10.8276 7.45116 10.6814 7.30496C10.5352 7.15876 10.3369 7.07663 10.1302 7.07663Z" fill="#FA3F3F"/>
+                      </svg>
+                      <span>Delete Contact</span></button>
                   </div>
-                  <div class="col-lg-4 form-check">
-                    <label class="fw-400 label-indent pr-xs-0"><input type="checkbox"
-                        class="your-details-card-checkbox">Support Emails - Receive a copy of all support ticket
-                      communications created by the parent account holder</label>
-                  </div>
-                  <div class="col-lg-4 form-check">
-                    <label class="fw-400 label-indent pr-xs-0"><input type="checkbox"
-                        class="your-details-card-checkbox col-sm-">Product Emails - Order Details, Welcome Emails,
-                      etc...</label>
-                  </div>
-                  <div class="col-lg-4 form-check">
-                    <label class="fw-400 label-indent pr-xs-0"><input type="checkbox"
-                        class="your-details-card-checkbox">Domain Emails - Renewal Notices, Registration Confirmations,
-                      etc...</label>
-                  </div>
-                </div>
-                <div class="account-details-form-btn col-sm-12 w-100 justify-content-between">
-                  <div class="d-flex align-items-center flex-wrap contect-btn">
-                    <input type="button" value="Cancel" class="theme-btn mx-6 fw-600">
-                    <input type="submit" value="Save Changes" class="theme-btn theme-btn-active mx-6 fw-600">
-                  </div>
-                  <button class="theme-btn mx-6 fw-600 d-flex align-items-center delete-btn"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5871 3.17463H13.2483V2.39504C13.2483 1.77476 13.0019 1.17989 12.5633 0.741284C12.1247 0.30268 11.5299 0.0562744 10.9096 0.0562744H6.23203C5.61175 0.0562744 5.01688 0.30268 4.57827 0.741284C4.13967 1.17989 3.89326 1.77476 3.89326 2.39504V3.17463H1.55449C1.34773 3.17463 1.14944 3.25677 1.00324 3.40297C0.857037 3.54917 0.774902 3.74746 0.774902 3.95422C0.774902 4.16098 0.857037 4.35928 1.00324 4.50548C1.14944 4.65168 1.34773 4.73381 1.55449 4.73381H1.60127L2.15478 13.551C2.21636 14.5423 2.65406 15.4728 3.3785 16.1523C4.10294 16.8318 5.05947 17.2092 6.05273 17.2073H11.1045C12.0977 17.2092 13.0542 16.8318 13.7787 16.1523C14.5031 15.4728 14.9408 14.5423 15.0024 13.551L15.5403 4.73381H15.5871C15.7939 4.73381 15.9922 4.65168 16.1384 4.50548C16.2846 4.35928 16.3667 4.16098 16.3667 3.95422C16.3667 3.74746 16.2846 3.54917 16.1384 3.40297C15.9922 3.25677 15.7939 3.17463 15.5871 3.17463ZM5.45244 2.39504C5.45244 2.18828 5.53458 1.98999 5.68078 1.84379C5.82698 1.69759 6.02527 1.61545 6.23203 1.61545H10.9096C11.1163 1.61545 11.3146 1.69759 11.4608 1.84379C11.607 1.98999 11.6892 2.18828 11.6892 2.39504V3.17463H5.45244V2.39504ZM13.4354 13.4574C13.3977 14.0517 13.1348 14.6092 12.7002 15.0162C12.2656 15.4233 11.6921 15.6493 11.0967 15.6481H6.04493C5.44948 15.6493 4.876 15.4233 4.44141 15.0162C4.00683 14.6092 3.74387 14.0517 3.70616 13.4574L3.16045 4.73381H13.9812L13.4354 13.4574Z" fill="#FA3F3F"/>
-                    <path d="M7.01299 7.07663C6.80623 7.07663 6.60794 7.15876 6.46174 7.30496C6.31553 7.45116 6.2334 7.64946 6.2334 7.85622V12.5338C6.2334 12.7405 6.31553 12.9388 6.46174 13.085C6.60794 13.2312 6.80623 13.3133 7.01299 13.3133C7.21975 13.3133 7.41804 13.2312 7.56424 13.085C7.71044 12.9388 7.79258 12.7405 7.79258 12.5338V7.85622C7.79258 7.64946 7.71044 7.45116 7.56424 7.30496C7.41804 7.15876 7.21975 7.07663 7.01299 7.07663Z" fill="#FA3F3F"/>
-                    <path d="M10.1302 7.07663C9.92342 7.07663 9.72512 7.15876 9.57892 7.30496C9.43272 7.45116 9.35059 7.64946 9.35059 7.85622V12.5338C9.35059 12.7405 9.43272 12.9388 9.57892 13.085C9.72512 13.2312 9.92342 13.3133 10.1302 13.3133C10.3369 13.3133 10.5352 13.2312 10.6814 13.085C10.8276 12.9388 10.9098 12.7405 10.9098 12.5338V7.85622C10.9098 7.64946 10.8276 7.45116 10.6814 7.30496C10.5352 7.15876 10.3369 7.07663 10.1302 7.07663Z" fill="#FA3F3F"/>
-                    </svg>
-                    <span>Delete Contact</span></button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
 

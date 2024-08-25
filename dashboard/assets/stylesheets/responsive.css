@@ -738,8 +738,8 @@
         border-right: 1px solid #DADADA;
         padding: 0px 30px;
         margin: 0px 30px;
-      }
-
+    }
+  
 }
 
 @media (max-width: 767px) {
@@ -1453,6 +1453,15 @@
     }
     .registration-input-form  , .login-form{
         padding: 0px ;
+    }
+    .payment-method .card-wrapper{
+        display: block;
+    }
+    .payment-method .payment-contain{
+        justify-content: space-between;
+    }
+    .payment-contain .text{
+        padding: 0px;
     }
 }
 
