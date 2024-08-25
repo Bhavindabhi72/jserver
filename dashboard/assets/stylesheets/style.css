@@ -3242,6 +3242,7 @@ table thead th:not(:last-child) {
 
 table tbody td {
   padding: 10px 20px;
+  white-space: nowrap;  
 }
 
 table tbody td h4 {
