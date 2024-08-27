@@ -1276,6 +1276,16 @@ input[type=number]::-webkit-outer-spin-button {
     max-width: 648.25px;
 }
 
+.bg-cloud {
+    /* background: linear-gradient(92.19deg, #254CEC 1.81%, #152B86 99.13%); */
+    background: url(./../../images/backgrounds/hero-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
 .js-blogs-banner:hover {
     box-shadow: 0px 18px 67px 0px #0000002E;
     transition: 0.5s;
