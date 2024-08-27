@@ -64,4 +64,71 @@
     --js-footer-decoration-space: 16vw;
 
     --js-pricing-plan-top-space: 5rem;
+
+    /* FONT FAMILY & UTILITIES */
+    --font-bevietnam: 'BeVietnam', Arial, Verdana, Sans-Serif;
+
+    /* HEADING FONT SIZES */
+    --font-size-heading1: 5.0rem;
+    --font-size-heading2: 3.6rem;
+    --font-size-heading3: 3.2rem;
+    --font-size-heading4: 2.8rem;
+    --font-size-heading5: 2.4rem;
+    --font-size-heading6: 2.0rem;
+    --font-weight-headings: 600;
+    --line-height-headings: 130%;
+
+    /* BODY FONT SIZES */
+    --body-font-size: 1.5rem;
+    --body-font-weight: 400;
+    --body-line-height: 200%;
+    --body-color-bg: var(--color-white);
+    --body-color-fg: var(--color-black);
+
+    /* COLORS */
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-blue-accent-01: #6784ff;
+    --color-blue: #254CEC;
+    --color-blue1: #2851EF;
+    --color-blue-night: #01204D;
+    --color-blue-night-1: #BEC9FB;
+    --color-blue-night-2: #1E2E6F;
+    --color-blue-night-3: #EDF0FF;
+    --color-blue-light: #EEF1FF;
+    --color-gray: #5B6570;
+    --color-gray-1:#727272;
+    --color-gray-light: #686F8D;
+    --color-gray-light-two: #E7E7E7;
+    --color-gray-dark: #4F5357;
+    --color-gray-light-2: #ECECEC;
+    --color-gray-light-3: #3E434F;
+    --color-gray-light-4: #8B8CAA;
+    --color-gray-light-5: #BFC0C5;
+    --color-green-light-1: #22D3B4;
+    --color-green-light-2: #16D0A3;
+    --color-mainly-blue: #0000002E;
+    --color-alice-blue: #F1F9FF;
+    --color-pattens-blue:  #C7E4FE;
+    --color-white-smoke: #F4F4F4;
+
+    /* LINK COLORS */
+    --link-default-color: var(--color-gray);
+    --link-hovered-color: var(--color-blue);
+    --link-disable-color: var(--color-gray-light);
+    /* --link-disable-color: var(--color-olive); */
+
+    /* PLACEHOLDER */
+    --placeholder-inactive-color: var(--color-gray);
+    --placeholder-focused-color: var(--color-black);
+
+    /* TEXT SELECTIONS */
+    --select-text-color: var(--color-white);
+    --select-back-color: var(--color-blue-night);
+
+    /* CUSTOM VARIABLES */
+    --js-header-height: 10rem;
+    --js-footer-decoration-space: 16vw;
+
+    --js-pricing-plan-top-space: 5rem;
 }

@@ -160,7 +160,7 @@ p,
     font-weight: var(--body-font-weight);
     font-size: var(--text-font-size);
     font-family: var(--font-bevietnam);
-    color: var(--color-black);
+    color: var(--color-gray);
 }
 
 h1.small,
@@ -282,6 +282,13 @@ p.small,
 
 .justify-content-center{
     justify-content: center;
+}
+.justify-content-end{
+    justify-content: end;
+}
+
+.flex-column{
+    flex-direction: column;
 }
 
 .mb-0{

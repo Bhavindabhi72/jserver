@@ -211,6 +211,20 @@
     .js-pricing-tag-content {
         width: 80px;
     }
+    .js-hero-header {
+        max-width: unset;
+        padding: 50px 0px;
+    }
+    .help-box-detail .help-box-detail-title svg{
+        width: 25px;
+        height: auto;
+    }
+    .js-contact-form {
+        margin-right: 33px;
+    }
+    .js-contact-cover-wrapper {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width:767px) {
@@ -310,6 +324,24 @@
     .js-pricing-plan-benefits-list-item span{
         font-size: 1.6rem;
     } 
+    .js-cover-contact-img{
+        padding: 50px 0px;
+    }
+    .js-cover-contact-img img{
+        margin: auto;
+    }
+    .js-hero-header {
+        padding: 0px 0px 30px;
+    }
+    .contract-us-section .row{
+        flex-direction: column;
+    }
+    .js-contact-form {
+        margin-right: 0px;
+    }
+    .js-conatct-content-wrapper {
+        border-right: 0;
+    }
 }
 
 @media (max-width:575px) {
@@ -398,8 +430,26 @@
         flex-wrap: wrap;
         justify-content: center;
     }  
+    .help-box-detail {
+        padding: 20px 30px;
+    }
+    .chat-us h4 , .call-us h4{
+        font-size: 20px;
+    }
+    .chat-us svg , .call-us svg{
+        width: 30px;
+        height: 30px;
+    }
+    .js-section-help  .js-feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+@media (max-width:499px) {
+    .js-section-help  .js-feature-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 @media (max-width:350px) {
     html {
         font-size: 6px;

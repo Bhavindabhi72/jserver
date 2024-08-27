@@ -172,26 +172,12 @@
 
 .js-section-hero {
     position: relative;
-    background: #DCEEFF;
+    background: var(--color-blue1);
     padding: 6rem 0;
     /* height: calc(100vh - var(--js-header-height)); */
 }
 
-.js-section-hero::before {
-    content: "";
-    background: url("../../images/backgrounds/js-bg-hero.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: multiply;
-    z-index: 0;
-    opacity: .5;
-}
+
 .more-features {
     display: none;
     opacity: 0;
@@ -202,17 +188,18 @@
     opacity: 1;
 }
 .js-hero-title {
-    margin-bottom: 4.5rem;
+    margin-bottom: 3rem;
     word-spacing: 1px;
 }
 
-.js-hero-text {
-    word-spacing: 3px;
+.js-hero-header{
+    max-width: 566px;
+    padding: 92px 0px;
 }
 
+
 .pricing-js-section-hero {
-    /* background: linear-gradient(92.19deg, #254CEC 1.81%, #152B86 99.13%); */
-    background: url(./../../images/backgrounds/hero-banner.png);
+    background-color: var(--color-blue1);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -377,6 +364,7 @@
     flex-wrap: wrap;
     grid-gap: 3rem 0;
 }
+
 .plan-patent-bottom{
     width: 100%;
     position: absolute;
@@ -779,30 +767,17 @@
 
 /* _BEGIN >> SECTION | CONATCT << JS */
 .js-section-contact {
-    position: relative;
-}
-
-.js-section-contact::before {
-    content: "";
-    background-color: var(--color-blue);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    z-index: -1;
+    padding: 0;
 }
 
 .js-conatct-content-wrapper {
-    padding: 8.5rem 0;
+    border-right: 1px solid #E0ECF4;
 }
 
 .js-contact-bg-blue {
     position: relative;
 }
 
-.js-contact-cover-wrapper,
 .js-conatct-content-box {
     display: flex;
     flex-direction: column;
@@ -825,12 +800,11 @@
 }
 
 .js-contact-form {
-    width: 100%;
-    max-width: 51.5rem;
-    margin: 0 auto;
+    max-width: 100%;
+    margin-right: 65px;
     display: flex;
     flex-direction: column;
-    grid-gap: 2.5rem;
+    grid-gap: 2rem;
 }
 
 .js-contact-form label {
@@ -839,16 +813,50 @@
     line-height: 121%;
 }
 
+.js-conatct-content-wrapper h4{
+    font-size: 25px;
+    margin-bottom: 27px;
+    margin-right: 65px;
+}
+
+.js-contact-cover-wrapper{
+    margin-left: 40px;
+}
+
+.chat-us , .call-us{
+    gap: 20px;
+    padding: 27px 0px;
+}
+
+.call-us{
+    border-top: 1px solid #E0ECF4;
+}
+
+.js-contact-btn{
+    border: 1px solid #D0D4E3;
+    color: var(--color-blue);
+    padding: 9px 27px;
+    border-radius: 8px;
+}
+
+.chat-us h4 , .call-us h4{
+    font-size: 25px;
+}
+
+.contract-us-section .js-form-control {
+    line-height: 20px;
+}
+
 .js-form-control {
-    background: #F0F8FF;
-    border: 1px solid #DEE8F0;
-    border-radius: .8rem;
+    border: 1px solid #CAD0D9;
+    border-radius: 10px;
     padding: 1.5rem 2rem;
     height: auto;
     font-size: 14px;
     font-weight: 500;
     line-height: 120%;
     box-sizing: none;
+    color: var(--color-black);
     transition: all .35s;
 }
 
@@ -872,12 +880,13 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     color: var(--color-white);
     background: var(--color-blue);
-    padding: 1.2rem 2rem;
+    padding: 1.8rem 4rem;
     border-radius: .8rem;
-    font-size: 1.6rem;
+    font-size: 14px;
     line-height: 125%;
     font-weight: 600;
     transition: all 0.35s;
+    max-width: fit-content;
 }
 
 /* _ENDS >> SECTION | CONATCT << JS */
@@ -1883,23 +1892,37 @@ code {
 /* _ENDS >>  HOSTING PRICE << JS */
 
 
-.conatct-us-section {
+.js-section-help{
     background: linear-gradient(0deg, #EDF6FF 0%, #E6F3FF 52.09%, #F2F9FF 100%);
-    padding: 78px 0px;
+    padding: 40px 0px;
 }
 
-.conatct-us-box {
-    gap: 20px;
-}
-
-.conatct-us-box-detail {
-    width: 472.17px;
-    height: 326.8px;
+.help-box-detail {
+    width: 100%;
     background-color: var(--color-white);
-    flex-direction: column;
-    justify-content: center;
+    padding: 38px;
+    border-radius: 21px;
+}
+
+.help-mian-header p{
+    color: var(--color-gray-light);
+}
+
+.help-box-detail-title{
     align-items: center;
-    border-radius: 30px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.help-box-detail p{
+    color: var(--color-gray);
+    font-size: 15px;
+    margin: 0;
+    line-height: 24px;
+}
+
+.contract-us-section{
+    padding: 41px 0px;
 }
 
 .conatct-us-box {
