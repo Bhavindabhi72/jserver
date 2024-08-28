@@ -822,7 +822,7 @@
     .billing-table .dropdown-menu>li>a ,
     .payment-contain .dropdown-menu>li>a {
         display: flex;
-        gap: 5px;
+        gap: 10px;
         align-items: center;
         justify-content: flex-start;
     }
