@@ -6378,6 +6378,9 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 }
 
 /* Billing Page */
+.theme-table thead tr{
+  background: #FAFAFD;
+}
 .payment-method,.theme-table .admin-card-box{
   box-shadow: none;
 }
