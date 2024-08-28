@@ -771,11 +771,12 @@
         display: none;
     }
     .billing-documents{
-        position: absolute;
+       position: absolute;
        top: 50%;
        transform: translateY(-50%);
        right: 0px;
        z-index: 2;
+	   padding: 0 !important;
     }
     .billing-table tr{
         position: relative;
