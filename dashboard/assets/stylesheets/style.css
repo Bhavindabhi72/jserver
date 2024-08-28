@@ -3106,6 +3106,7 @@ a.transfer-domain span {
   border-color: #D0D4E3;
   margin: auto 0px 0px;
   width: fit-content;
+  min-height: auto;
 }
 
 .span-padding{

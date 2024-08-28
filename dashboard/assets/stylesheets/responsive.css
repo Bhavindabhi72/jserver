@@ -248,6 +248,9 @@
     .quick-shortcuts-row , .admin-services-boxes-wrap {
         grid-template-columns: repeat(2, 1fr);
     }
+    .my-services-dropdown {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 1360px) {
@@ -450,6 +453,20 @@
     .manage-firewall-firewall-content .billing-overview-col h5 {
         width: 422px;
         padding: 0px 20px;
+    }
+    .billing-table tbody td{
+        display: table-cell;
+    }
+    .billing-mix-date{
+        display: none;
+    }
+    .billing-documents .plan-menu-dropdown,
+    .payment-links a svg ,
+    .payment-contain .plan-menu-dropdown{
+        display: none;
+    }
+    .theme-table svg.filter{
+        display: none !important;
     }
 }
 
@@ -705,6 +722,129 @@
 
     #actioncard {
         top: 50% !important;
+    }
+    .billing-table tbody tr{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .billing-table thead tr{
+        display: none;
+    }
+    .billing-id p::before{
+        content: "ID#"
+    }
+    .billing-id p{
+        font-size: 15px;
+        font-weight: 600;
+        color: #333438;
+    }
+    .billing-id{
+        order: 1;
+    }
+    .billing-status{
+        order: 2;;
+    }
+    .billing-date{
+        order: 3;
+        min-width: max-content;
+    }
+
+    .billing-total,
+    .billing-status{
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: 20px
+    }
+
+    .billing-total{
+        order: 4;
+    }
+
+    .billing-total p{
+        font-size: 16px;
+        color: #333438;
+        font-weight: 600;
+    }
+
+    .billing-generated-date,
+    .billing-due-date{
+        display: none;
+    }
+    .billing-documents{
+        position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       right: 0px;
+       z-index: 2;
+    }
+    .billing-table tr{
+        position: relative;
+    }
+    .theme-table table tbody td {
+        white-space: wrap;
+    }
+    .theme-table .table-responsive {
+        overflow: unset;
+    }
+    .billing-documents-icon{
+        display: none;
+    }
+    .billing-table .dropdown-menu{
+        min-width: fit-content;
+        text-align: center;
+    }  
+    .billing-total span ,
+    .payment-links a span,
+    .payment-icon-button ,
+    .theme-table .table-search-bar .wrapper-dropdown .selected-display, 
+    .theme-table .table-search-bar .wrapper-dropdown .arrow{
+        display: none;
+    }
+    .billing-table tbody:first-of-type tr {
+        border-top: 1px solid #DEE4F1;
+    }
+    .billing-table .plan-menu{
+        padding: 0;
+    }
+    .billing-id , 
+    .billing-status{
+        padding-bottom: 3px !important;
+    }
+
+    .billing-date,
+    .billing-total{
+        padding-top: 3px !important;
+    }
+    .billing-documents:has(.plan-menu-dropdown.open) {
+        z-index: 3;
+    }
+    .billing-table .dropdown-menu>li>a ,
+    .payment-contain .dropdown-menu>li>a {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .payment-contain .dropdown-menu{
+        min-width: fit-content;
+    }
+    .payment-contain .dropdown-backdrop{
+        display: none;
+    }
+
+    .theme-table .table-search-bar .wrapper-dropdown,
+    .theme-table .table-search-bar .wrapper-dropdown .dropdown{
+        max-width: fit-content;
+        min-width: fit-content;
+    }
+    .theme-table .table-search-bar .wrapper-dropdown{
+        padding: 5px 10px;
+        order: 2;
+    }
+    .theme-table .table-search-bar .wrapper-dropdown .dropdown{
+        right: 0;
+        left: auto;
+        top: 46px;
     }
 }
 
@@ -1186,6 +1326,10 @@
         padding: 11px 15px;
     }
 
+    .admin-card-box.payment-method{
+        width: 100%;
+    }
+
     .manage-firewall-firewall-content .billing-overview-row {
         margin: 52px 0px 0px;
     }
@@ -1317,6 +1461,17 @@
       .notification-dropbox-wrap {
         transform: translate(53px, 5%);
     }
+    .billing-table tbody td {
+        padding: 10px 5px;
+    }
+    .theme-table .search-bar , 
+    .theme-table .table-search-bar .search-bar-wrap{
+        width: 100%;
+    }
+    .payment-method .card-wrapper{
+        justify-content: space-around;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -1463,6 +1618,12 @@
     .payment-contain .text{
         padding: 0px;
     }
+    .billing-mix-date{
+        font-size: 13px;
+    }
+    .theme-table .table-search-bar{
+        flex-wrap: nowrap;
+    }
 }
 
 @media (max-width: 399px) {
@@ -1505,6 +1666,9 @@
     .auth-logo {
         margin: 0;
     }
+    .billing-date {
+        min-width: min-content;
+    }
 }
 
 @media (max-width: 360px) {
@@ -1543,7 +1707,6 @@
     .admin-dashboard-services-card-wrap .admin-dashboard-services-head, .admin-dashboard-services-card-wrap .admin-dashboard-services-details{
         word-break: break-all
     }
-    
 }
 
 @media (max-width: 349px) {
