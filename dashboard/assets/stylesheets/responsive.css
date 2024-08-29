@@ -753,6 +753,11 @@
         content: "";
     }
 
+    .affiliates-table .billing-commission P,
+    .affiliates-table .billing-id p,
+    .affiliates-table .billing-amount{
+        font-weight: 600;
+    } 
 
     .billing-table thead tr{
         display: none;
