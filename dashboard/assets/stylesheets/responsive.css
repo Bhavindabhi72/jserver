@@ -302,6 +302,7 @@
         padding: 9px 15px;
         width: 141px;
     }
+    
 }
 
 @media (min-width: 991px) and (max-width: 1330px) {
@@ -733,6 +734,26 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+   
+
+    .billing-status .active-status{
+        height: 100%;
+    }
+    .affiliates-table .billing-status {
+        margin-right: 0px;
+    }
+
+    .affiliates-table .billing-commission p::before{
+        content: 'Commission: ';
+        font-weight: 500;
+    }
+
+    .affiliates-table .billing-id p::before {
+        content: "";
+    }
+
+
     .billing-table thead tr{
         display: none;
     }
@@ -741,22 +762,37 @@
     }
     .billing-id p{
         font-size: 15px;
-        font-weight: 600;
-        color: #333438;
+        font-weight: 700;
+        color: #000000;
     }
     .billing-id{
         order: 1;
     }
     .billing-status{
-        order: 2;;
+        order: 2;
     }
     .billing-date{
         order: 3;
         min-width: max-content;
     }
 
+    .billing-amount{
+        order: 4;
+        margin-right: 0 !important;
+    }
+
+    .billing-commission{
+        order: 5;
+    }
+
+    .billing-amount,
+    .billing-commission{
+        padding-top: 0 !important;
+    }
+
     .billing-total,
-    .billing-status{
+    .billing-status,
+    .billing-amount {
         max-width: fit-content;
         margin-left: auto;
         margin-right: 20px
@@ -814,7 +850,9 @@
         padding: 0;
     }
     .billing-id , 
-    .billing-status{
+    .billing-status ,
+    .affiliates-table .billing-date,
+    .billing-amount{
         padding-bottom: 3px !important;
     }
 
@@ -1076,6 +1114,12 @@
     .choose-domain-content .manage-product-content-box-table {
         padding: 30px 33px 30px;
     }
+    .admin-card-box{
+        min-width: 475px;
+    }
+    .payment-method{
+        margin-right: 13px;
+      }
 
 }
 
