@@ -2760,10 +2760,7 @@ a {
   display: flex;
   align-items: center;
 }
-.admin-header .admin-header-option ul .header-element {
-  border-right: 1px solid var(--silver-gray-1);
-  border-left: none;
-}
+
 .count-msg-number-box {
   width: 20px;
   height: 20px;
@@ -3621,16 +3618,20 @@ input[type="radio"] {
 }
 
 .theme-btn {
-  border: 1px solid var(--primary-theme);
+  border: 1px solid #D0D4E3;
   color: var(--primary-theme);
   background-color: var(--white);
-  padding: 10px 13.29px;
+  padding: 10px 21px;
   border-radius: 7.5px;
   font-size: 15px;
   margin-bottom: 10px;
-  min-width: 160px;
   text-align: center;
   min-height: 45px;
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
 }
 
 .theme-btn:hover {
@@ -3648,6 +3649,11 @@ input[type="radio"] {
 .theme-btn-active:hover {
   background: #0e6eff;
   color: var(--white);
+}
+
+a.theme-btn:hover{
+  color: white !important;
+  text-decoration: none;
 }
 
 .checkbox-div {
@@ -5360,7 +5366,6 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 /* manage firewall firewall end */
 
 /* affiliates start */
-
 .affiliates-content .permissions-btn {
   padding: 14px;
   max-height: 49px;
@@ -5372,6 +5377,41 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 
 .affiliates-content div.card-ghost-style {
   padding: 14px 36px;
+}
+
+.affiliates-content .admin-dashboard-boxes-wrap{
+  grid-template-columns: repeat(3 , 1fr);
+  grid-gap: 10px;
+}
+
+.affiliates-content .admin-card-list{
+  border-top: 1px solid #E8EAF0;
+  padding: 10px 7px;
+}
+
+.affiliates-content .admin-dashboard-boxes-wrap .admin-card-box{
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.referral-link{
+  background-color:  #F4F5F9;
+  border: 1px solid #E1E6EE;
+  padding: 11px 23px;
+  border-radius: 10px;
+  word-break: break-all;
+}
+
+.commissions-card-box .theme-btn{
+  padding: 5px 13px;
+  min-height: 35px;
+  margin: 0;
+  min-width: max-content;
+}
+
+.commissions-card-box .total-amount{
+  background-color:#F0F2FA;
+  border-top: 0;
 }
 
 /* affiliates end*/

@@ -251,6 +251,9 @@
     .my-services-dropdown {
         font-size: 14px;
     }
+    .request-withdrawal{
+        display: block;
+    }
 }
 
 @media (max-width: 1360px) {
@@ -313,7 +316,8 @@
     }
 
     .cloud-service-left-col .admin-dashboard-boxes-wrap,
-    .upgrade-card-contain {
+    .upgrade-card-contain ,
+    .affiliates-content .admin-dashboard-boxes-wrap {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -590,9 +594,11 @@
     }
 
     .admin-header-option {
-        padding-right: 20px;
+        padding-right: 35px;
     }
-
+    .admin-header .admin-header-option ul .header-element:last-child {
+        border-right: 1px solid var(--silver-gray-1);
+      }
     .welcome-admin-profile-wrap {
         flex-direction: column;
         align-items: start;
@@ -846,6 +852,10 @@
         right: 0;
         left: auto;
         top: 46px;
+    }
+    .affiliates-content .table-search-bar {
+        margin-left: auto;
+        width: auto;
     }
 }
 
@@ -1146,7 +1156,8 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .upgrade-card-contain {
+    .upgrade-card-contain ,
+    .affiliates-content .admin-dashboard-boxes-wrap{
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -1472,7 +1483,9 @@
     .payment-method .card-wrapper{
         justify-content: space-around;
     }
-    
+    .referral-link {
+        padding: 9px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1624,6 +1637,24 @@
     }
     .theme-table .table-search-bar{
         flex-wrap: nowrap;
+    }
+    .affiliates-content .table-search-bar {
+        margin-left: unset;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .affiliates-content  .search-bar-wrap {
+        width: 100%;
+    }
+    .payment-method h4 ,
+    .theme-table h4 {
+        font-size: 16px;
+    }
+    .payment-method .payment-contain .text h4{
+        font-size: 14px !important;
+    }
+    .payment-method .payment-contain .text p{
+        font-size: 12PX;
     }
 }
 
