@@ -462,10 +462,10 @@
     .billing-table tbody td{
         display: table-cell;
     }
-    .billing-mix-date{
+    .table-mix-date{
         display: none;
     }
-    .billing-documents .plan-menu-dropdown,
+    .table-documents .plan-menu-dropdown,
     .payment-links a svg ,
     .payment-contain .plan-menu-dropdown{
         display: none;
@@ -623,9 +623,9 @@
         width: 100%;
     }
 
-    table {
+    /* table {
         margin: 15px 0;
-    }
+    } */
 
     .table-footer-wrap {
         flex-direction: column;
@@ -737,87 +737,104 @@
 
    
 
-    .billing-status .active-status{
+    .table-status .active-status{
         height: 100%;
     }
-    .affiliates-table .billing-status {
+    .affiliates-table .table-status {
         margin-right: 0px;
     }
 
-    .affiliates-table .billing-commission p::before{
+    .affiliates-table .table-commission p::before{
         content: 'Commission: ';
         font-weight: 500;
     }
 
-    .affiliates-table .billing-id p::before {
+    .affiliates-table .table-id p::before {
         content: "";
     }
 
-    .affiliates-table .billing-commission P,
-    .affiliates-table .billing-id p,
-    .affiliates-table .billing-amount{
+    .affiliates-table .table-commission P,
+    .affiliates-table .table-id p,
+    .affiliates-table .table-amount{
         font-weight: 600;
     } 
 
     .billing-table thead tr{
         display: none;
     }
-    .billing-id p::before{
+    .table-id p::before{
         content: "ID#"
     }
-    .billing-id p{
+    .table-id p{
         font-size: 15px;
         font-weight: 700;
         color: #000000;
     }
-    .billing-id{
+    .table-id{
         order: 1;
     }
-    .billing-status{
+    .table-status{
         order: 2;
     }
-    .billing-date{
+    .table-date{
         order: 3;
         min-width: max-content;
     }
 
-    .billing-amount{
+    .table-amount{
         order: 4;
         margin-right: 0 !important;
     }
 
-    .billing-commission{
+    .direction-rtl .table-amount,
+    .direction-rtl .affiliates-content .table-status{
+        margin-right: auto !important;
+        margin-left: 0;
+    }
+
+    .direction-rtl .table-documents {
+        right: auto;
+        left: 0;
+    }
+
+    .direction-rtl .table-total,  
+    .direction-rtl .table-status {
+        margin-left: 20px;
+        margin-right: auto;
+    }
+
+    .table-commission{
         order: 5;
     }
 
-    .billing-amount,
-    .billing-commission{
+    .table-amount,
+    .table-commission{
         padding-top: 0 !important;
     }
 
-    .billing-total,
-    .billing-status,
-    .billing-amount {
+    .table-total,
+    .table-status,
+    .table-amount {
         max-width: fit-content;
         margin-left: auto;
         margin-right: 20px
     }
 
-    .billing-total{
+    .table-total{
         order: 4;
     }
 
-    .billing-total p{
+    .table-total p{
         font-size: 16px;
         color: #333438;
         font-weight: 600;
     }
 
-    .billing-generated-date,
-    .billing-due-date{
+    .table-generated-date,
+    .table-due-date{
         display: none;
     }
-    .billing-documents{
+    .table-documents{
        position: absolute;
        top: 50%;
        transform: translateY(-50%);
@@ -825,50 +842,50 @@
        z-index: 2;
 	   padding: 0 !important;
     }
-    .billing-table tr{
+    .theme-table tr{
         position: relative;
     }
     .theme-table table tbody td {
         white-space: wrap;
     }
-    .theme-table .table-responsive {
+    .theme-table .card-body {
         overflow: unset;
     }
-    .billing-documents-icon{
+    .table-documents-icon{
         display: none;
     }
-    .billing-table .dropdown-menu{
+    .theme-table .dropdown-menu{
         min-width: fit-content;
         text-align: center;
     }  
-    .billing-total span ,
+    .table-total span ,
     .payment-links a span,
     .payment-icon-button ,
     .theme-table .table-search-bar .wrapper-dropdown .selected-display, 
     .theme-table .table-search-bar .wrapper-dropdown .arrow{
         display: none;
     }
-    .billing-table tbody:first-of-type tr {
+    .theme-table tbody:first-of-type tr {
         border-top: 1px solid #DEE4F1;
     }
-    .billing-table .plan-menu{
+    .theme-table .plan-menu{
         padding: 0;
     }
-    .billing-id , 
-    .billing-status ,
-    .affiliates-table .billing-date,
-    .billing-amount{
+    .table-id , 
+    .table-status ,
+    .affiliates-table .table-date,
+    .table-amount{
         padding-bottom: 3px !important;
     }
 
-    .billing-date,
-    .billing-total{
+    .table-date,
+    .table-total{
         padding-top: 3px !important;
     }
-    .billing-documents:has(.plan-menu-dropdown.open) {
+    .table-documents:has(.plan-menu-dropdown.open) {
         z-index: 3;
     }
-    .billing-table .dropdown-menu>li>a ,
+    .table-table .dropdown-menu>li>a ,
     .payment-contain .dropdown-menu>li>a {
         display: flex;
         gap: 10px;
@@ -898,6 +915,9 @@
     }
     .affiliates-content .table-search-bar {
         margin-left: auto;
+        width: auto;
+    }
+    .theme-table .table-search-bar{
         width: auto;
     }
 }
@@ -962,6 +982,7 @@
     .admin-body-content {
         height: auto;
         overflow-y: unset;
+        overflow-x: hidden;
     }
 
     .admin-header {
@@ -1119,11 +1140,10 @@
     .choose-domain-content .manage-product-content-box-table {
         padding: 30px 33px 30px;
     }
-    .admin-card-box{
-        min-width: 475px;
-    }
+    
     .payment-method{
         margin-right: 13px;
+        min-width: 475px;
       }
 
 }
@@ -1387,7 +1407,7 @@
         padding: 11px 15px;
     }
 
-    .admin-card-box.payment-method{
+    .card.payment-method{
         width: 100%;
     }
 
@@ -1535,6 +1555,12 @@
     .referral-link {
         padding: 9px;
     }
+    .theme-table .table-search-bar{
+        width: 100%;
+    }
+    .admin-header{
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1681,7 +1707,7 @@
     .payment-contain .text{
         padding: 0px;
     }
-    .billing-mix-date{
+    .table-mix-date{
         font-size: 13px;
     }
     .theme-table .table-search-bar{
@@ -1747,7 +1773,7 @@
     .auth-logo {
         margin: 0;
     }
-    .billing-date {
+    .table-date {
         min-width: min-content;
     }
 }
