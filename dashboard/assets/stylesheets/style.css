@@ -2896,6 +2896,12 @@ a {
   padding: 0px 15px;
 }
 
+.admin-dashboard-services-details .admin-dashboard-services-detail-col .pending-status,
+.admin-dashboard-services-details .admin-dashboard-services-detail-col .completed-status{
+  min-width: fit-content;
+  margin-left: 9px;
+}
+
 .your-details-service {
   margin-top: 40px;
   flex-wrap: wrap;
@@ -6443,6 +6449,12 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
   border-right-color: #BDC4D3;
   padding: 0 13px;
 }
+
+.direction-rtl .payment-links a{
+  border-left: 1px solid #BDC4D3;
+  border-right: none ;
+}
+
 .payment-links a:last-child{
   border: none;
 }

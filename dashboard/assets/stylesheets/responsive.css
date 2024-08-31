@@ -234,12 +234,6 @@
         padding: 6px 15px;
     }
 
-    .wrapper-dropdown,
-    .wrapper-dropdown .dropdown {
-
-        font-size: 18px;
-    }
-
     .admin-dashboard-services-detail-col.admin-form-group button {
         min-width: 80px;
         font-size: 14px;
@@ -502,14 +496,6 @@
     .select-label {
         font-size: 12px;
     }
-
-    .wrapper-dropdown,
-    .wrapper-dropdown .dropdown {
-
-        font-size: 14px;
-    }
-
-   
 
     .setting-description {
         border-radius: 10px;
@@ -1327,7 +1313,7 @@
     }
 
     .direction-rtl .notification-dropbox-wrap {
-        left: -10px;
+        left: -114px;
     }
 
     .direction-rtl .notification-dropbox-wrap.top-extra-dropdown .arrow-up {
