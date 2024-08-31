@@ -1182,6 +1182,10 @@ svg,
   text-align: center;
 }
 
+.direction-rtl .language-select-wrap .wrapper-dropdown{
+  margin: 0px 0px 0px 10px;
+}
+
 .wrapper-dropdown .dropdown li:last-child {
   border-bottom: none;
 }
@@ -2678,6 +2682,11 @@ a {
   font-weight: 600;
 }
 
+.direction-rtl .profile-item{
+  padding-right: 0;
+  padding-left: 30px;
+}
+
 .profile-item:hover {
   text-decoration: none;
 }
@@ -2711,6 +2720,11 @@ a {
   min-height: 41px;
   display: flex;
   align-items: center;
+}
+
+.direction-rtl .admin-header .admin-header-option ul .header-element{
+  border-left: none;
+  border-right: 1px solid #e1e1e1;
 }
 
 .count-msg-number-box {
@@ -2844,6 +2858,11 @@ a {
   margin: 5px;
   border-right: 1px solid #E9ECF4;
   border-radius: 0;
+}
+
+.admin-dashboard-boxes-wrap .admin-card-box:hover{
+  border: 1px solid transparent;
+  border-right: 1px solid #E9ECF4;
 }
 .direction-rtl .admin-dashboard-boxes-wrap .admin-card-box {
   border-left: 1px solid #E9ECF4;
@@ -3085,8 +3104,20 @@ a.transfer-domain span {
   transform: rotate(180deg);
 }
 
+.direction-rtl .country-dropdown-menu .arrow,
+.direction-rtl .profile-item .arrow {
+  margin-right: 0;
+  right: auto;
+  left: 0;
+}
+
 .country-dropdown-menu .selected-display {
   margin-right: 30px;
+}
+
+.direction-rtl .country-dropdown-menu .selected-display {
+  margin-left: 30px;
+  margin-right: 20px;
 }
 
 /* custom dropdown css end */
@@ -3129,10 +3160,20 @@ a.transfer-domain span {
   min-height: 40px;
 }
 
+.direction-rtl .table-search-bar .search-bar-wrap input{
+  padding-left: 0;
+  padding-right: 45px;
+}
+
 .table-search-bar .search-bar-wrap span.search-icon {
   top: 50%;
   transform: translateY(-50%);
   left: 17px;
+}
+
+.direction-rtl .table-search-bar .search-bar-wrap span.search-icon {
+  left: auto;
+  right: 17px;
 }
 
 .table-search-bar .search-bar-wrap input:focus {
@@ -6369,7 +6410,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 
 /* Billing Page */
 .theme-table .card-body{
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 .theme-table thead tr{
   background: #F4F7FC;
@@ -6432,7 +6473,8 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 }
 
 .table-footer-wrap{
-  padding-top: 20px;
+  padding: 20px;
+  justify-content: space-between;
 }
 
 .crad-hr{
@@ -6440,7 +6482,7 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 }
 
 .theme-table .card-body{
-  padding-top: 0px;
+  padding: 0px 20px;
 }
 
 .pt-0{

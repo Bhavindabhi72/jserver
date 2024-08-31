@@ -598,7 +598,10 @@
         padding-right: 35px;
     }
     .admin-header .admin-header-option ul .header-element:last-child {
-        border-right: 1px solid var(--silver-gray-1);
+        border-right: 1px solid #e1e1e1;
+      }
+    .direction-rtl .admin-header .admin-header-option ul .header-element:last-child {
+        border-left: 1px solid #e1e1e1;
       }
     .welcome-admin-profile-wrap {
         flex-direction: column;
@@ -627,15 +630,7 @@
         margin: 15px 0;
     } */
 
-    .table-footer-wrap {
-        flex-direction: column;
-    }
-
-    .pagination-wrap {
-        margin-left: unset;
-        justify-content: center;
-        margin-top: 15px;
-    }
+    
 
     .text-alinggn-center-lg {
         text-align: center;
@@ -856,7 +851,6 @@
     }
     .theme-table .dropdown-menu{
         min-width: fit-content;
-        text-align: center;
     }  
     .table-total span ,
     .payment-links a span,
@@ -912,6 +906,10 @@
         right: 0;
         left: auto;
         top: 46px;
+    }
+    .direction-rtl .theme-table .table-search-bar .wrapper-dropdown .dropdown{
+        right: auto;
+        left: 0;
     }
     .affiliates-content .table-search-bar {
         margin-left: auto;
@@ -1145,7 +1143,6 @@
         margin-right: 13px;
         min-width: 475px;
       }
-
 }
 
 @media (max-width: 575px) {
@@ -1558,8 +1555,13 @@
     .theme-table .table-search-bar{
         width: 100%;
     }
-    .admin-header{
-        overflow: hidden;
+    .table-footer-wrap {
+        flex-direction: column;
+    }
+
+    .pagination-wrap {
+        margin-top: 15px;
+        justify-content: space-between;
     }
 }
 
@@ -1692,6 +1694,10 @@
     .admin-header .profile-item {
         padding-right: 18px;
     }
+    .direction-rtl .admin-header .profile-item {
+        padding-right: 0px;
+        padding-left: 18px;
+    }
     .services-heading{
         display: block;
     }
@@ -1731,6 +1737,10 @@
     .payment-method .payment-contain .text p{
         font-size: 12PX;
     }
+    .pagination-wrap ul li {
+        width: 27px;
+        height: 27px;
+    }   
 }
 
 @media (max-width: 399px) {
@@ -1792,6 +1802,10 @@
         margin-right: 15px;
         margin-left: 10px;
     }
+    .direction-rtl .admin-header .country-dropdown-menu .selected-display {
+        margin-right: 0;
+        margin-left: 15px;
+    }
 
     .admin-header .wrapper-dropdown .dropdown li {
         padding: 6px 5px;
@@ -1832,6 +1846,9 @@
     .manage-product-content-box-table-tab {
         padding: 28px 19px;
     }
+    .admin-header .admin-header-option ul .header-element {
+        padding: 0 12px;
+      }
 }
 
 /* Responsive end */
