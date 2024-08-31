@@ -309,6 +309,12 @@
     .js-pricing-plan-benefits-list {
         padding: 0px;
     }
+    /* .modal.in .modal-dialog {
+        -webkit-transform: translate(78px,  );
+        -ms-transform: translate(78px, 0);
+        -o-transform: translate(78px, 0);
+        transform: translate(78px, 0);
+    } */
 }
 
 @media (max-width: 1199px) {
@@ -1741,6 +1747,10 @@
         width: 27px;
         height: 27px;
     }   
+    .admin-dashboard-services-detail-col.admin-form-group .sign-up-btn,
+    .admin-dashboard-services-detail-col.admin-form-group .transfer-domain{
+        margin: auto;
+    }
 }
 
 @media (max-width: 399px) {

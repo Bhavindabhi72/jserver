@@ -2684,7 +2684,7 @@ a {
 
 .direction-rtl .profile-item{
   padding-right: 0;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .profile-item:hover {
@@ -3027,8 +3027,9 @@ a {
   min-width: 100px;
   max-width: unset;
   font-size: 16px;
-  padding: 5px 10px;
   max-width: 19rem;
+  padding: 0;
+  min-height: 40px
 }
 
 a.transfer-domain {
@@ -4229,6 +4230,7 @@ input:checked+.slider .off-text {
   position: relative;
 }
 
+
 .could-video-contain {
   display: contents;
 }
@@ -4468,6 +4470,7 @@ input:checked+.slider .off-text {
 .modal-content {
   padding: 62px 50px 47px;
   border-radius: 37px;
+  z-index: 1041;
   /*  margin-top: 20%; */
 }
 
@@ -4475,11 +4478,18 @@ input:checked+.slider .off-text {
   background-color: #f0f8ff;
 }
 
-
+.modal-open .overlay{
+  display: block;
+  position: absolute;
+}
 
 .modal-content h4 {
   font-size: 21px;
   padding-bottom: 30px;
+}
+
+.modal-backdrop.in{
+  display: none;
 }
 
 .model-center.in {
