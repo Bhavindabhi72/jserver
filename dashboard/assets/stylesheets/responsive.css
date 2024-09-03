@@ -459,7 +459,7 @@
         width: 422px;
         padding: 0px 20px;
     }
-    .billing-table tbody td{
+    .theme-table tbody td{
         display: table-cell;
     }
     .table-mix-date{
@@ -717,7 +717,7 @@
     #actioncard {
         top: 50% !important;
     }
-    .billing-table tbody tr{
+    .theme-table tbody tr{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -746,7 +746,7 @@
         font-weight: 600;
     } 
 
-    .billing-table thead tr{
+    .theme-table thead tr{
         display: none;
     }
     .table-id p::before{
@@ -757,19 +757,11 @@
         font-weight: 700;
         color: #000000;
     }
-    .table-id{
-        order: 1;
-    }
-    .table-status{
-        order: 2;
-    }
     .table-date{
-        order: 3;
         min-width: max-content;
     }
 
     .table-amount{
-        order: 4;
         margin-right: 0 !important;
     }
 
@@ -790,10 +782,6 @@
         margin-right: auto;
     }
 
-    .table-commission{
-        order: 5;
-    }
-
     .table-amount,
     .table-commission{
         padding-top: 0 !important;
@@ -805,10 +793,6 @@
         max-width: fit-content;
         margin-left: auto;
         margin-right: 20px
-    }
-
-    .table-total{
-        order: 4;
     }
 
     .table-total p{
@@ -910,6 +894,37 @@
     .theme-table .table-search-bar{
         width: auto;
     }
+
+    .order-lg-1{
+        order: 1;
+    }
+    .order-lg-2{
+        order: 2;
+    }
+    .order-lg-3{
+        order: 3;
+    }
+    .order-lg-4{
+        order: 4;
+    }
+    .order-lg-5{
+        order: 5;
+    }
+    .order-lg-6{
+        order: 6;
+    }
+    .table-assigned svg{
+        display: none;
+    }
+
+    .table-assigned p::before{
+        content: "Assigned To:";
+    }
+    .table-subject{
+        padding: 0 !important;
+    }
+
+
 }
 
 @media (max-width: 900px) {
@@ -943,7 +958,6 @@
         padding: 0px 30px;
         margin: 0px 30px;
     }
-  
 }
 
 @media (max-width: 767px) {
@@ -1135,6 +1149,9 @@
         margin-right: 13px;
         min-width: 475px;
       }
+      .modal-dialog{
+        width: 458px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1337,7 +1354,7 @@
     }
 
     .modal-content {
-        padding: 40px 20px 40px;
+        padding: 40px 8px;
         border-radius: 25px;
     }
 
@@ -1555,6 +1572,13 @@
         margin-top: 15px;
         justify-content: space-between;
     }
+    .modal .account-details-form-btn{
+        gap: 10px;
+        display: flex !important;
+      }
+    .modal-dialog{
+      margin: auto 5px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1736,6 +1760,9 @@
     .admin-dashboard-services-detail-col.admin-form-group .sign-up-btn,
     .admin-dashboard-services-detail-col.admin-form-group .transfer-domain{
         margin: auto;
+    }
+    .modal .account-details-form-btn .theme-btn{
+        max-width: fit-content;
     }
 }
 

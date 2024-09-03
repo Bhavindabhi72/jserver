@@ -26,6 +26,169 @@
     <main class="admin-main-wrap">
         <!-- layout html start -->
         <div class="layout has-sidebar fixed-sidebar fixed-header">
+            <!-- Model Add New Crad Start -->
+            <div class="modal fade model-center" id="add-new-card" role="dialog">
+                <div class="modal-dialog m-auto">
+                <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="text-center">
+                        <h4 class="modal-title text-black fw-600 fs-18">Add New Card</h4>
+                        </div>
+                        <div class="col-xs-12">
+                        <label for="nameon-card" class="mt-label fw-500 we-like-p">Name On Card</label>
+                        <input type="text" id="nameon-card" class="form-control custom-input fw-500 text-black"
+                            placeholder="e.g. Alyona Wilson">
+                        </div>
+                        <div class="col-xs-12">
+                            <label for="card-number" class="mt-label fw-500 we-like-p">Card Number</label>
+                            <div class="position-relative">
+                                <input type="number" id="card-number" class="form-control custom-input  fw-500 text-black"
+                                placeholder="4589 0000 0000 0000"  pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==12) return false;">
+                                <div class="position-absolute card-img">
+                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.7573 2.19531H8.86133V12.7881H14.7573V2.19531Z" fill="#FF5A00"/>
+                                        <path d="M9.25324 7.48767C9.25324 5.33554 10.265 3.42544 11.8175 2.19129C10.6749 1.29294 9.23362 0.75 7.66149 0.75C3.93724 0.75 0.923828 3.76342 0.923828 7.48767C0.923828 11.2119 3.93724 14.2253 7.66149 14.2253C9.23362 14.2253 10.6749 13.6824 11.8175 12.784C10.2628 11.5673 9.25324 9.6398 9.25324 7.48767Z" fill="#EB001B"/>
+                                        <path d="M22.712 7.48767C22.712 11.2119 19.6986 14.2253 15.9743 14.2253C14.4022 14.2253 12.9609 13.6824 11.8184 12.784C13.3905 11.5477 14.3826 9.6398 14.3826 7.48767C14.3826 5.33554 13.3709 3.42544 11.8184 2.19129C12.9587 1.29294 14.4 0.75 15.9722 0.75C19.6986 0.75 22.712 3.78304 22.712 7.48767Z" fill="#F79E1B"/>
+                                        </svg>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <label for="expiry-date" class="mt-label fw-500 we-like-p">Expiry Date</label>
+                                    <input type="month" id="expiry-date" class="form-control custom-input fw-500 text-black"
+                                    placeholder="MM / YYYY">
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                        <label for="cvv" class="mt-label fw-500 we-like-p">CVV/CVC2 Number</label>
+                                        <input type="password" id="cvv" class="form-control custom-input fw-500 text-black"
+                                        placeholder="***" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="col-xs-12">
+                        <!-- <button type="button" class="btn-default" data-dismiss="modal">Close</button> -->
+                        <div class="account-details-form-btn  justify-content-center d-flex align-items-center w-100 text-center">
+                            <input type="button" value="Cancel" class="theme-btn mx-6 fw-600" data-dismiss="modal">
+                            <input type="submit" value="Add Card" class="theme-btn theme-btn-active mx-6 fw-600">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Model Add New Crad  end --> 
+            <!-- Model Add Bank Start -->
+            <div class="modal fade model-center" id="add-bank" role="dialog">
+                <div class="modal-dialog m-auto">
+                <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="text-center">
+                        <h4 class="modal-title text-black fw-600 fs-18">Add Bank Details</h4>
+                        </div>
+                        <div class="col-xs-12">
+                        <label for="acoount-holder" class="mt-label fw-500 we-like-p">Account Holder Name</label>
+                        <input type="text" id="acoount-holder" class="form-control custom-input fw-500 text-black"
+                            placeholder="e.g. Alyona Wilson">
+                        </div>
+                        <div class="col-xs-12">
+                            <label for="account-number" class="mt-label fw-500 we-like-p">Account Number</label>
+                            <input type="number" id="account-number" class="form-control custom-input  fw-500 text-black"
+                            placeholder="458900000000"  pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;">
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <label for="bank-name" class="mt-label fw-500 we-like-p">Bank Name</label>
+                                    <input type="text" id="bank-name" class="form-control custom-input fw-500 text-black"
+                                    placeholder="Enter bank name">
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <label for="nameon-card" class="mt-label fw-500 we-like-p">Account Typee</label>
+                                    <div class="d-flex wrapper-dropdown form-control custom-input align-items-center my-services-dropdown w-100" id="language">
+                                        <span class="selected-display d-flex align-items-center" id="destination">
+                                            Saving
+                                        </span>
+                                        <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <ul class="dropdown">
+                                            <li class="item d-flex align-items-center gap-1">
+                                                <span>Saving</span>
+                                            </li>
+                                            <li class="item d-flex align-items-center gap-1">
+                                                <span>Current</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <label for="routing-number" class="mt-label fw-500 we-like-p">Sort Code/Routing Number</label>
+                            <input type="number" id="routing-number" class="form-control custom-input fw-500 text-black"
+                                placeholder="e.g.00-00-00">
+                            </div>
+                        <hr class="col-xs-12">
+                        <!-- <button type="button" class="btn-default" data-dismiss="modal">Close</button> -->
+                        <div class="account-details-form-btn  justify-content-center d-flex align-items-center w-100 text-center">
+                            <input type="button" value="Cancel" class="theme-btn mx-6 fw-600" data-dismiss="modal">
+                            <input type="submit" value="Add Card" class="theme-btn theme-btn-active mx-6 fw-600">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Model Add Bank end -->  
+             <!-- Model Add New Crad Start -->
+            <div class="modal fade model-center" id="edd-card" role="dialog">
+                <div class="modal-dialog m-auto">
+                <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="text-center">
+                        <h4 class="modal-title text-black fw-600 fs-18">Edit Card</h4>
+                        </div>
+                        <div class="col-xs-12">
+                        <label for="nameon-card" class="mt-label fw-500 we-like-p">Name On Card</label>
+                        <input type="text" id="nameon-card" class="form-control custom-input fw-500 text-black"
+                            placeholder="e.g. Alyona Wilson" value="Alyona Wilson">
+                        </div>
+                        <div class="col-xs-12">
+                            <label for="card-number" class="mt-label fw-500 we-like-p">Card Number</label>
+                            <div class="position-relative">
+                                <input type="number" id="card-number" class="form-control custom-input  fw-500 text-black"
+                                placeholder="4589 0000 0000 0000" value="4596564183492485" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==12) return false;">
+                                <div class="position-absolute card-img">
+                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.7573 2.19531H8.86133V12.7881H14.7573V2.19531Z" fill="#FF5A00"/>
+                                        <path d="M9.25324 7.48767C9.25324 5.33554 10.265 3.42544 11.8175 2.19129C10.6749 1.29294 9.23362 0.75 7.66149 0.75C3.93724 0.75 0.923828 3.76342 0.923828 7.48767C0.923828 11.2119 3.93724 14.2253 7.66149 14.2253C9.23362 14.2253 10.6749 13.6824 11.8175 12.784C10.2628 11.5673 9.25324 9.6398 9.25324 7.48767Z" fill="#EB001B"/>
+                                        <path d="M22.712 7.48767C22.712 11.2119 19.6986 14.2253 15.9743 14.2253C14.4022 14.2253 12.9609 13.6824 11.8184 12.784C13.3905 11.5477 14.3826 9.6398 14.3826 7.48767C14.3826 5.33554 13.3709 3.42544 11.8184 2.19129C12.9587 1.29294 14.4 0.75 15.9722 0.75C19.6986 0.75 22.712 3.78304 22.712 7.48767Z" fill="#F79E1B"/>
+                                        </svg>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <label for="expiry-date" class="mt-label fw-500 we-like-p">Expiry Date</label>
+                                    <input type="month" id="expiry-date" class="form-control custom-input fw-500 text-black"
+                                    placeholder="MM / YYYY" value="2024-03">
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                        <label for="cvv" class="mt-label fw-500 we-like-p">CVV/CVC2 Number</label>
+                                        <input type="password" id="cvv" class="form-control custom-input fw-500 text-black"
+                                        placeholder="***" value="523" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="col-xs-12">
+                        <!-- <button type="button" class="btn-default" data-dismiss="modal">Close</button> -->
+                        <div class="account-details-form-btn  justify-content-center d-flex align-items-center w-100 text-center">
+                            <input type="button" value="Cancel" class="theme-btn mx-6 fw-600" data-dismiss="modal">
+                            <input type="submit" value="Add Card" class="theme-btn theme-btn-active mx-6 fw-600">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Model Add New Crad  end --> 
             <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
                 <a id="btn-collapse" class="sidebar-collapser d-none">
                     <svg width="17" height="14" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -781,6 +944,7 @@
                             <!-- end page title -->
 
                             <!-- start payment method -->
+                            
                             <div class="row">
                                 <div class="card payment-method">
                                     <div class="card-header d-flex justify-content-between align-items-center gap-1 flex-wrap">
@@ -791,14 +955,14 @@
                                             <h4 class="fw-600 m-0 text-black">Payment Method</h4>
                                         </div>
                                         <div class="payment-links d-flex align-items-center">
-                                            <a href="javascript:void(0)" class="fw-600">
+                                            <a href="javascript:void(0)" data-toggle="modal" class="fw-600" data-target="#add-new-card">
                                                 <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M16.1595 0.335938H4.87826C4.26097 0.335937 3.64974 0.45752 3.07944 0.693743C2.50915 0.929967 1.99097 1.2762 1.55449 1.71269C0.672966 2.59421 0.177734 3.7898 0.177734 5.03646V12.5573C0.177734 13.8039 0.672966 14.9995 1.55449 15.8811C1.99097 16.3175 2.50915 16.6638 3.07944 16.9C3.64974 17.1362 4.26097 17.2578 4.87826 17.2578H12.3991C12.6484 17.2578 12.8875 17.1588 13.0638 16.9825C13.2401 16.8062 13.3392 16.567 13.3392 16.3177C13.3392 16.0684 13.2401 15.8293 13.0638 15.653C12.8875 15.4767 12.6484 15.3776 12.3991 15.3776H4.87826C4.13026 15.3776 3.4129 15.0805 2.88399 14.5516C2.35508 14.0226 2.05794 13.3053 2.05794 12.5573V7.85677H18.9798V8.79688C18.9798 9.04621 19.0789 9.28533 19.2552 9.46163C19.4315 9.63793 19.6706 9.73698 19.9199 9.73698C20.1693 9.73698 20.4084 9.63793 20.5847 9.46163C20.761 9.28533 20.86 9.04621 20.86 8.79688V5.03646C20.86 4.41918 20.7384 3.80794 20.5022 3.23765C20.266 2.66735 19.9198 2.14917 19.4833 1.71269C19.0468 1.2762 18.5286 0.929967 17.9583 0.693743C17.388 0.45752 16.7768 0.335938 16.1595 0.335938ZM2.05794 5.97656V5.03646C2.05794 4.28847 2.35508 3.57111 2.88399 3.0422C3.4129 2.51329 4.13026 2.21615 4.87826 2.21615H16.1595C16.9075 2.21615 17.6249 2.51329 18.1538 3.0422C18.6827 3.57111 18.9798 4.28847 18.9798 5.03646V5.97656H2.05794ZM8.63867 11.6172C8.888 11.6172 9.12712 11.7162 9.30343 11.8925C9.47973 12.0688 9.57878 12.308 9.57878 12.5573C9.57878 12.8066 9.47973 13.0457 9.30343 13.222C9.12712 13.3984 8.888 13.4974 8.63867 13.4974H4.87826C4.62892 13.4974 4.38981 13.3984 4.2135 13.222C4.0372 13.0457 3.93815 12.8066 3.93815 12.5573C3.93815 12.308 4.0372 12.0688 4.2135 11.8925C4.38981 11.7162 4.62892 11.6172 4.87826 11.6172H8.63867Z" fill="#7D8398"/>
                                                     <rect x="17.376" y="11.0345" width="1.77281" height="5.97266" rx="0.886405" fill="#7D8398"/>
                                                     <rect x="21.3525" y="13.1344" width="1.77281" height="6.17969" rx="0.886405" transform="rotate(90 21.3525 13.1344)" fill="#7D8398"/>
                                                     </svg>                                                    
                                                 <span>ADD NEW CARD</span></a>
-                                            <a href="javascript:void(0)" class="fw-600">
+                                            <a href="javascript:void(0)" data-toggle="modal" class="fw-600" data-target="#add-bank">
                                                 <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.42529 8.84668H2.5236V15.5026H4.42529V8.84668ZM10.1304 8.84668H8.22868V15.5026H10.1304V8.84668ZM18.2126 17.4043H0.146484V19.306H18.2126V17.4043ZM15.8355 8.84668H13.9338V14.1889H15.8355V8.84668ZM9.17953 2.43798L14.1334 5.04329H4.22562L9.17953 2.43798ZM9.17953 0.289062L0.146484 5.04329V6.94499H18.2126V5.04329L9.17953 0.289062Z" fill="#7D8398"/>
                                                     <rect x="19.6016" y="11.7422" width="1.77281" height="5.97266" fill="#7D8398"/>
@@ -819,7 +983,7 @@
                                                     <p class="mb-0">Exp. date 06/25</p>
                                                 </div>
                                                 <div class="d-flex align-items-center gap-1 payment-icon-button">
-                                                    <a href="#"><svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <a href="#" data-target="#edd-card" data-toggle="modal"><svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M2.46775 16.8824C2.6617 16.8824 2.70049 16.863 2.87504 16.8242L6.36615 16.126C6.73466 16.029 7.10317 15.8544 7.39409 15.5635L15.8503 7.10726C17.1498 5.80779 17.1498 3.57735 15.8503 2.27788L15.1327 1.52148C13.8333 0.222008 11.5834 0.222008 10.284 1.52148L1.82771 9.99712C1.55618 10.2687 1.36223 10.6566 1.26525 11.0251L0.528241 14.555C0.431265 15.2144 0.625216 15.8544 1.0907 16.3199C1.4592 16.6884 2.00227 16.8824 2.46775 16.8824ZM3.12718 11.3936L11.5834 2.91792C12.1459 2.35546 13.1738 2.35546 13.7169 2.91792L14.4539 3.65493C15.1133 4.31437 15.1133 5.24533 14.4539 5.88537L6.01704 14.361L2.42896 14.9623L3.12718 11.3936Z" fill="#757888"></path>
                                                             <path d="M15.7719 18.0781H1.45831C0.89585 18.0781 0.527344 18.4466 0.527344 19.0091C0.527344 19.5715 0.992825 19.9401 1.45831 19.9401H15.6943C16.2567 19.9401 16.7222 19.5715 16.7222 19.0091C16.7028 18.4466 16.2373 18.0781 15.7719 18.0781Z" fill="#757888"></path>
                                                         </svg></a>
@@ -840,7 +1004,7 @@
                                                         </svg>  
                                                   </button>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
-                                                      <li><a href="#">
+                                                      <li data-target="#edd-card" data-toggle="modal"><a href="#">
                                                         <svg width="13" height="17" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M2.46775 16.8824C2.6617 16.8824 2.70049 16.863 2.87504 16.8242L6.36615 16.126C6.73466 16.029 7.10317 15.8544 7.39409 15.5635L15.8503 7.10726C17.1498 5.80779 17.1498 3.57735 15.8503 2.27788L15.1327 1.52148C13.8333 0.222008 11.5834 0.222008 10.284 1.52148L1.82771 9.99712C1.55618 10.2687 1.36223 10.6566 1.26525 11.0251L0.528241 14.555C0.431265 15.2144 0.625216 15.8544 1.0907 16.3199C1.4592 16.6884 2.00227 16.8824 2.46775 16.8824ZM3.12718 11.3936L11.5834 2.91792C12.1459 2.35546 13.1738 2.35546 13.7169 2.91792L14.4539 3.65493C15.1133 4.31437 15.1133 5.24533 14.4539 5.88537L6.01704 14.361L2.42896 14.9623L3.12718 11.3936Z" fill="#757888"></path>
                                                             <path d="M15.7719 18.0781H1.45831C0.89585 18.0781 0.527344 18.4466 0.527344 19.0091C0.527344 19.5715 0.992825 19.9401 1.45831 19.9401H15.6943C16.2567 19.9401 16.7222 19.5715 16.7222 19.0091C16.7028 18.4466 16.2373 18.0781 15.7719 18.0781Z" fill="#757888"></path>
@@ -870,14 +1034,14 @@
                                             <h4 class="fw-600 m-0 text-black">Payment Method</h4>
                                         </div>
                                         <div class="payment-links d-flex align-items-center">
-                                            <a href="javascript:void(0)" class="fw-600">
+                                            <a href="javascript:void(0)" data-toggle="modal" class="fw-600" data-target="#add-new-card">
                                                 <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M16.1595 0.335938H4.87826C4.26097 0.335937 3.64974 0.45752 3.07944 0.693743C2.50915 0.929967 1.99097 1.2762 1.55449 1.71269C0.672966 2.59421 0.177734 3.7898 0.177734 5.03646V12.5573C0.177734 13.8039 0.672966 14.9995 1.55449 15.8811C1.99097 16.3175 2.50915 16.6638 3.07944 16.9C3.64974 17.1362 4.26097 17.2578 4.87826 17.2578H12.3991C12.6484 17.2578 12.8875 17.1588 13.0638 16.9825C13.2401 16.8062 13.3392 16.567 13.3392 16.3177C13.3392 16.0684 13.2401 15.8293 13.0638 15.653C12.8875 15.4767 12.6484 15.3776 12.3991 15.3776H4.87826C4.13026 15.3776 3.4129 15.0805 2.88399 14.5516C2.35508 14.0226 2.05794 13.3053 2.05794 12.5573V7.85677H18.9798V8.79688C18.9798 9.04621 19.0789 9.28533 19.2552 9.46163C19.4315 9.63793 19.6706 9.73698 19.9199 9.73698C20.1693 9.73698 20.4084 9.63793 20.5847 9.46163C20.761 9.28533 20.86 9.04621 20.86 8.79688V5.03646C20.86 4.41918 20.7384 3.80794 20.5022 3.23765C20.266 2.66735 19.9198 2.14917 19.4833 1.71269C19.0468 1.2762 18.5286 0.929967 17.9583 0.693743C17.388 0.45752 16.7768 0.335938 16.1595 0.335938ZM2.05794 5.97656V5.03646C2.05794 4.28847 2.35508 3.57111 2.88399 3.0422C3.4129 2.51329 4.13026 2.21615 4.87826 2.21615H16.1595C16.9075 2.21615 17.6249 2.51329 18.1538 3.0422C18.6827 3.57111 18.9798 4.28847 18.9798 5.03646V5.97656H2.05794ZM8.63867 11.6172C8.888 11.6172 9.12712 11.7162 9.30343 11.8925C9.47973 12.0688 9.57878 12.308 9.57878 12.5573C9.57878 12.8066 9.47973 13.0457 9.30343 13.222C9.12712 13.3984 8.888 13.4974 8.63867 13.4974H4.87826C4.62892 13.4974 4.38981 13.3984 4.2135 13.222C4.0372 13.0457 3.93815 12.8066 3.93815 12.5573C3.93815 12.308 4.0372 12.0688 4.2135 11.8925C4.38981 11.7162 4.62892 11.6172 4.87826 11.6172H8.63867Z" fill="#7D8398"/>
                                                     <rect x="17.376" y="11.0345" width="1.77281" height="5.97266" rx="0.886405" fill="#7D8398"/>
                                                     <rect x="21.3525" y="13.1344" width="1.77281" height="6.17969" rx="0.886405" transform="rotate(90 21.3525 13.1344)" fill="#7D8398"/>
                                                     </svg>                                                    
                                                 <span>ADD NEW CARD</span></a>
-                                            <a href="javascript:void(0)" class="fw-600">
+                                            <a href="javascript:void(0)" data-toggle="modal" class="fw-600" data-target="#add-bank">
                                                 <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.42529 8.84668H2.5236V15.5026H4.42529V8.84668ZM10.1304 8.84668H8.22868V15.5026H10.1304V8.84668ZM18.2126 17.4043H0.146484V19.306H18.2126V17.4043ZM15.8355 8.84668H13.9338V14.1889H15.8355V8.84668ZM9.17953 2.43798L14.1334 5.04329H4.22562L9.17953 2.43798ZM9.17953 0.289062L0.146484 5.04329V6.94499H18.2126V5.04329L9.17953 0.289062Z" fill="#7D8398"/>
                                                     <rect x="19.6016" y="11.7422" width="1.77281" height="5.97266" fill="#7D8398"/>
@@ -1030,20 +1194,20 @@
                                             </thead>
                                             <tbody>
                                               <tr>
-                                                <td class="table-id">
+                                                <td class="table-id order-lg-1">
                                                   <p class="fs-15 fw-400 text-black m-0">957920</p>
                                                 </td>
-                                                <td class="table-date">
+                                                <td class="table-date order-lg-3">
                                                   <p class="fs-15 fw-400 text-black m-0 table-generated-date">13th Aug 2024</p>
                                                   <p class="fs-15 fw-400 text-black m-0 table-mix-date">13th Aug 2024 to 14th Aug 2025</p>
                                                 </td>
                                                 <td class="table-due-date">
                                                   <p class="fs-15 fw-400 text-black m-0">14th Aug 2025</p>
                                                 </td>
-                                                <td class="table-total">
+                                                <td class="table-total order-lg-4">
                                                   <p class="fs-15 fw-400 text-black m-0">$14.99 <span>USD</span></p>
                                                 </td>
-                                                <td class="table-status">
+                                                <td class="table-status order-lg-2">
                                                     <div class="active-status d-flex align-items-center gap-1">
                                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
                                                             <path d="M7.6495 0.0234375C3.78974 0.0234375 0.649536 3.16357 0.649536 7.0234C0.649536 10.8832 3.78974 14.0234 7.6495 14.0234C11.5093 14.0234 14.6495 10.8832 14.6495 7.0234C14.6495 3.16357 11.5093 0.0234375 7.6495 0.0234375ZM11.669 5.84105L7.27128 10.2388C7.08429 10.4258 6.83572 10.5287 6.57131 10.5287C6.30689 10.5287 6.05832 10.4258 5.87133 10.2388L3.63 7.99743C3.44301 7.81044 3.34001 7.56188 3.34001 7.29746C3.34001 7.03297 3.44301 6.7844 3.63 6.59741C3.81691 6.41042 4.06548 6.30743 4.32997 6.30743C4.59439 6.30743 4.84303 6.41042 5.02995 6.59748L6.57123 8.1387L10.2689 4.44103C10.4559 4.25403 10.7045 4.15112 10.9689 4.15112C11.2333 4.15112 11.4819 4.25403 11.6689 4.44103C12.055 4.82713 12.055 5.45509 11.669 5.84105Z" fill="var(--bright)"></path>
@@ -1094,20 +1258,20 @@
                                                 </td>
                                               </tr>
                                               <tr>
-                                                <td class="table-id">
+                                                <td class="table-id order-lg-1">
                                                   <p class="fs-15 fw-400 text-black m-0">957920</p>
                                                 </td>
-                                                <td class="table-date">
+                                                <td class="table-date order-lg-3">
                                                   <p class="fs-15 fw-400 text-black m-0 table-generated-date">17th Aug 2024</p>
                                                   <p class="fs-15 fw-400 text-black m-0 table-mix-date">17th Aug 2024 to 18th Aug 2024</p>
                                                 </td>
                                                 <td class="table-due-date">
                                                   <p class="fs-15 fw-400 text-black m-0">18th Aug 2024</p>
                                                 </td>
-                                                <td class="table-total">
+                                                <td class="table-total order-lg-4">
                                                   <p class="fs-15 fw-400 text-black m-0">$10.99 <span>USD</span></p>
                                                 </td>
-                                                <td class="table-status">
+                                                <td class="table-status order-lg-2">
                                                     <div class="cancelled-status d-flex align-items-center gap-1">
                                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
                                                             <path d="M7.36116 14.0625C11.2297 14.0625 14.3658 10.9285 14.3658 7.0625C14.3658 3.19651 11.2297 0.0625 7.36116 0.0625C3.49263 0.0625 0.356567 3.19651 0.356567 7.0625C0.356567 10.9285 3.49263 14.0625 7.36116 14.0625Z" fill="#FE585D"></path>
@@ -1160,20 +1324,20 @@
                                                 </td>
                                               </tr>
                                               <tr>
-                                                <td class="table-id">
+                                                <td class="table-id order-lg-1">
                                                   <p class="fs-15 fw-400 text-black m-0">957920</p>
                                                 </td>
-                                                <td class="table-date">
+                                                <td class="table-date order-lg-3">
                                                   <p class="fs-15 fw-400 text-black m-0 table-generated-date">13th Aug 2024</p>
                                                   <p class="fs-15 fw-400 text-black m-0 table-mix-date">13th Aug 2024 to 13th Aug 2025</p>
                                                 </td>
                                                 <td class="table-due-date">
                                                   <p class="fs-15 fw-400 text-black m-0">15th Aug 2025</p>
                                                 </td>
-                                                <td class="table-total">
+                                                <td class="table-total order-lg-4">
                                                   <p class="fs-15 fw-400 text-black m-0">$10.99 <span>USD</span></p>
                                                 </td>
-                                                <td class="table-status">
+                                                <td class="table-status order-lg-2">
                                                     <div class="pending-status d-flex align-items-center gap-1">
                                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
                                                             <path d="M7.72304 0.0234375C3.58807 0.0234375 0.223761 3.39259 0.223755 7.52634C0.223762 11.6601 3.58807 15.0234 7.72304 15.0234C11.858 15.0234 15.2282 11.6601 15.2282 7.52634C15.2282 3.39259 11.858 0.0234375 7.72304 0.0234375ZM7.7245 3.0234C7.82303 3.02295 7.92068 3.0419 8.01186 3.0792C8.10304 3.1165 8.18598 3.17142 8.25592 3.24079C8.32586 3.31017 8.38145 3.39274 8.41949 3.48362C8.45754 3.5745 8.4773 3.67194 8.47765 3.77047L8.47619 7.05903L11.3496 8.75828C11.4348 8.80827 11.5093 8.87464 11.5688 8.95352C11.6283 9.03241 11.6716 9.12228 11.6963 9.21797C11.7209 9.31367 11.7264 9.41331 11.7124 9.51115C11.6984 9.60898 11.6653 9.70307 11.6148 9.78805C11.5644 9.87294 11.4977 9.94706 11.4186 10.0061C11.3395 10.0652 11.2495 10.1081 11.1538 10.1323C11.0581 10.1566 10.9586 10.1616 10.8609 10.1473C10.7633 10.133 10.6694 10.0996 10.5847 10.0489L7.34059 8.13431C7.22854 8.06728 7.13594 7.97216 7.07194 7.85835C7.00795 7.74453 6.97479 7.61592 6.97573 7.48533L6.9772 3.77056C6.97805 3.57267 7.05708 3.38306 7.19705 3.24313C7.33703 3.1032 7.52662 3.02418 7.7245 3.0234Z" fill="#FF8329"></path>

@@ -3089,9 +3089,8 @@ a.transfer-domain span {
   color: #FE4444;
 }
 
-.admin-body-contentv2 .my-services-dropdown  , .admin-body-contentv2 .table-search-bar .search-bar-wrap input{
+.my-services-dropdown  , .table-search-bar .search-bar-wrap input{
   background-color: var(--white) !important;
-  border-color: var(--white) !important;
 }
 
 /* admin-dashboard-services-card-wrap css end */
@@ -4474,15 +4473,23 @@ input:checked+.slider .off-text {
 }
 
 .modal-content {
-  padding: 62px 50px 47px;
-  border-radius: 37px;
+  padding: 20px 15px 22px;
+  border-radius: 15px;
   z-index: 1041;
-  /*  margin-top: 20%; */
 }
 
-.modal-content .custom-input {
-  background-color: #f0f8ff;
+.modal-content hr{
+  max-width: -webkit-fill-available;
 }
+
+.modal-content .my-services-dropdown{
+  min-width: 183px;
+}
+
+.modal-content .mt-label {
+  margin-top: 10px;
+}
+
 
 .modal-open .overlay{
   display: block;
@@ -4490,8 +4497,7 @@ input:checked+.slider .off-text {
 }
 
 .modal-content h4 {
-  font-size: 21px;
-  padding-bottom: 30px;
+  font-size: 18px;
 }
 
 .modal-backdrop.in{
@@ -4502,6 +4508,11 @@ input:checked+.slider .off-text {
   display: flex !important;
 }
 
+.card-img{
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 /* account security security settings end */
 
 /* email history start */
@@ -5789,6 +5800,22 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
   border-color: #C6C9D6;
 }
 
+.modal .account-details-form-btn .theme-btn{
+  max-width: 184px;
+  width: 100%;
+  margin: 0;
+}
+
+.modal .account-details-form-btn{
+  gap: 30px;
+}
+
+.modal .my-services-dropdown{
+  width: 100% !important;
+  margin: 0;
+  max-width: none;
+}
+
 .account-details-form-btn .delete-btn:hover{
   border-color: #FA3F3F;
 }
@@ -6509,4 +6536,71 @@ a.d-flex.align-items-center.justify-content-center.transition-all-03.gap-1.older
 
 .pt-0{
   padding-top: 0;
+}
+
+/* tickets */
+
+.tickets-card{
+  background-color: transparent;
+  border: none;
+
+}
+
+.tickets-card .card-body{
+  padding: 0;
+}
+
+.tickets-card table thead{
+  background-color: transparent;
+}
+
+.tickets-card  thead tr{
+  background: transparent;
+}
+
+.priority-icon::before{
+  content: "● ";
+  font-size: 18px;
+}
+
+.priority-high{
+  color: #EC4545;
+}
+
+.priority-low{
+  color: #30C989 ;
+}
+
+.priority-medium{
+  color: #F98D0F;
+}
+
+.tickets-card table thead th{
+  padding: 0 20px;
+}
+
+.tickets-card table tbody tr{
+  border: none;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.tickets-card table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.tickets-card tbody tr td:first-child {
+  border-top-left-radius: 16px; 
+  border-bottom-left-radius: 16px;
+}
+
+.tickets-card tbody tr td:last-child {
+  border-top-right-radius: 16px; 
+  border-bottom-right-radius: 16px;
+}
+
+.tickets-card table tbody td {
+  padding: 27px 20px;
 }

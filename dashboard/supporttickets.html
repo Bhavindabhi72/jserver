@@ -647,847 +647,477 @@
                         </div>
                       </div>
                     <div class="admin-body-content">
-                        <h4 class="admin-head m-0 head-line-border">My Support Tickets </h4>
-                        <div class="tab-container">
-                            <div class="tab-menu">
-                                <ul class="d-flex align-items-center w-100">
-                                    <li><a href="#"
-                                            class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1 active-a"
-                                            data-id="tab1">All Ticket</a></li>
-                                    <li><a href="#"
-                                            class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                                            data-id="tab2">Open<span class="d-align-justify">1</span></a></li>
-                                    <li><a href="#"
-                                            class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                                            data-id="tab3">Answered<span class="d-align-justify">1</span></a></li>
-                                    <li><a href="#"
-                                            class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                                            data-id="tab4">Customer-Reply<span class="d-align-justify">1</span></a></li>
-                                    <li><a href="#"
-                                            class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1"
-                                            data-id="tab5">Closed <span class="d-align-justify">1</span></a></li>
-                                    <li><a href="open-ticket.html"
-                                            class="tab-a d-flex align-items-center justify-content-center transition-all-03 gap-1">Open
-                                            New Ticket</a></li>
-
+                        <div class="page-title d-flex align-items-center flex-wrap showing-entries justify-content-between gap-2">
+                            <h4 class="fw-700 m-0">My Products &amp; Services</h4>
+                            <div class="table-search-bar d-flex align-items-center">
+                              <div class="d-flex wrapper-dropdown form-control custom-input align-items-center my-services-dropdown border-none" id="language">
+                                <span class="selected-display d-flex align-items-center" id="destination">
+                                    All Ticket
+                                </span>
+                                <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <ul class="dropdown">
+                                  <li class="item d-flex align-items-center gap-1">
+                                    <span>Open - 6</span>
+                                  </li>
+                                  <li class="item d-flex align-items-center gap-1">
+                                    <span>Answered - 1</span>
+                                  </li>
+                                  <li class="item d-flex align-items-center gap-1">
+                                    <span>Customer-Reply - 2</span>
+                                  </li>
+                                  <li class="item d-flex align-items-center gap-1">
+                                    <span>Closed - 2</span>
+                                  </li>
+                                  <li class="item d-flex align-items-center gap-1">
+                                    <a href="open-ticket.html" class="text-black">Open New Ticket</a>
+                                  </li>
                                 </ul>
-                            </div>
-                            <div class="tab tab-active" data-id="tab1">
-                                <div class="admin-card-box table-wrap">
-                                    <div class="d-flex align-items-center flex-wrap">
-                                        <h5 class="mb-0">Showing 1 to 4 of 10 entries</h5>
-                                        <div class="table-search-bar ms-auto d-flex align-items-center">
-                                            <div class="search-bar-wrap position-relative">
-                                                <input type="search" placeholder="Search"
-                                                    class="form-control custom-input" />
-                                                <span class="search-icon position-absolute line-height-0">
-                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z"
-                                                            fill="#848998" />
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <button class="primary-btn">Go</button>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="w-100">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Department
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Subject
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Last Updated
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Status
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Support</h4>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">#35619745435</h4>
-                                                        <a href="javascript:void(0)"
-                                                            class="text-primary-theme fw-500">Support-Ticket-Test</a>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Wednesday, April 17, 2024</h4>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="primary-btn small-btn exquisite-turquoise-bg">Open</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Support</h4>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">#35619745435</h4>
-                                                        <a href="javascript:void(0)"
-                                                            class="text-primary-theme fw-500">Support-Ticket-Test</a>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Wednesday, April 17, 2024</h4>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="primary-btn small-btn exquisite-turquoise-bg">Answered</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Support</h4>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">#35619745435</h4>
-                                                        <a href="javascript:void(0)"
-                                                            class="text-primary-theme fw-500">Support-Ticket-Test</a>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Wednesday, April 17, 2024</h4>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="primary-btn small-btn exquisite-turquoise-bg">Reply</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Support</h4>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">#35619745435</h4>
-                                                        <a href="javascript:void(0)"
-                                                            class="text-primary-theme fw-500">Support-Ticket-Test</a>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Wednesday, April 17, 2024</h4>
-                                                    </td>
-                                                    <td>
-                                                        <button class="primary-btn small-btn red-bg">Closed</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="table-footer-wrap d-flex align-items-center flex-wrap">
-                                        <div class="d-flex align-items-center">
-                                            <h4 class="fw-500 mb-0">Show</h4>
-                                            <div class="wrapper-dropdown form-control custom-input"
-                                                id="dropdown">
-                                                <span class="selected-display" id="destination">
-                                                    10
-                                                </span>
-                                                <svg class="arrow" id="drp-arrow" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="transition-all ml-auto rotate-180">
-                                                    <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                                <ul class="dropdown">
-                                                    <li class="item">
-                                                        10
-                                                    </li>
-                                                    <li class="item">
-                                                        09
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <h4 class="fw-500 mb-0">entries</h4>
-                                        </div>
-                                        <div
-                                            class="ms-auto pagination-wrap d-flex align-items-center gap-15 flex-wrap">
-                                            <span class="line-height-0 cursor-pointer transition-all-03">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <ul class="d-flex align-items-center gap-15 flex-wrap">
-                                                <li class="d-align-justify cursor-pointer transition-all-03">
-                                                    <h6>1</h6>
-                                                </li>
-                                                <li class="d-align-justify cursor-pointer transition-all-03">
-                                                    <h6>2</h6>
-                                                </li>
-                                            </ul>
-                                            <span class="line-height-0 cursor-pointer transition-all-03">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
+                              </div>
+                              
+                                <div class="search-bar-wrap position-relative w-100">
+                                  <input type="search" placeholder="Search" class="form-control custom-input border-none">
+                                  <span class="search-icon position-absolute line-height-0">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z" fill="#848998"></path>
+                                    </svg>
+                                  </span>
                                 </div>
+                         
                             </div>
-                            <div class="tab" data-id="tab2">
-                                <div class="admin-card-box table-wrap">
-                                    <div class="d-flex align-items-center flex-wrap">
-                                        <h5 class="mb-0">Showing 1 to 1 of 10 entries</h5>
-                                        <div class="table-search-bar ms-auto d-flex align-items-center">
-                                            <div class="search-bar-wrap position-relative">
-                                                <input type="search" placeholder="Search"
-                                                    class="form-control custom-input" />
-                                                <span class="search-icon position-absolute line-height-0">
-                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z"
-                                                            fill="#848998" />
-                                                    </svg>
-                                                </span>
+                          </div>
+                          <div class="theme-table w-100">
+                            <div class="card table-wrap tickets-card">
+                                <div class="card-body">
+                                  <table class="w-100">
+                                    <thead>
+                                      <tr>
+                                        <th class="border-none text-black">
+                                         Ticket ID
+                                        </th>
+                                        <th class="border-none text-black">
+                                            Subject
+                                        </th>
+                                        <th class="border-none text-black">
+                                            Request Date
+                                        </th>
+                                        <th class="border-none text-black">
+                                            Priority
+                                        </th>
+                                        <th class="border-none text-black">
+                                            Assigned To
+                                        </th>
+                                        <th class="border-none text-black">
+                                            Status 
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="table-id order-lg-1">
+                                          <p class="fs-15 fw-400 text-black m-0">#215642</p>
+                                        </td>
+                                        <td class="table-subject order-lg-3">
+                                          <p class="fs-15 fw-400 text-black m-0 ">How to deposit money to my portal?</p>
+                                        </td>
+                                        <td class="order-lg-5">
+                                          <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7561 9.07364C15.1785 9.07364 15.5209 8.73121 15.5209 8.30879C15.5209 7.88638 15.1785 7.54395 14.7561 7.54395C14.3336 7.54395 13.9912 7.88638 13.9912 8.30879C13.9912 8.73121 14.3336 9.07364 14.7561 9.07364Z" fill="#5B6570"/>
+                                                <path d="M16.5148 1.80313H15.5205V1.03828C15.5205 0.615859 15.1781 0.273438 14.7557 0.273438C14.3333 0.273438 13.9908 0.615859 13.9908 1.03828V1.80313H10.5108V1.03828C10.5108 0.615859 10.1684 0.273438 9.74594 0.273438C9.32351 0.273438 8.98109 0.615859 8.98109 1.03828V1.80313H5.53928V1.03828C5.53928 0.615859 5.19686 0.273438 4.77443 0.273438C4.35201 0.273438 4.00959 0.615859 4.00959 1.03828V1.80313H3.05353C1.36658 1.80313 -0.00585938 3.17557 -0.00585938 4.86252V16.7941C-0.00585938 18.4811 1.36658 19.8535 3.05353 19.8535H8.90461C9.32703 19.8535 9.66945 19.5111 9.66945 19.0887C9.66945 18.6662 9.32703 18.3238 8.90461 18.3238H3.05353C2.21005 18.3238 1.52383 17.6376 1.52383 16.7941V4.86252C1.52383 4.01905 2.21005 3.33282 3.05353 3.33282H4.00959V4.09767C4.00959 4.5201 4.35201 4.86252 4.77443 4.86252C5.19686 4.86252 5.53928 4.5201 5.53928 4.09767V3.33282H8.98109V4.09767C8.98109 4.5201 9.32351 4.86252 9.74594 4.86252C10.1684 4.86252 10.5108 4.5201 10.5108 4.09767V3.33282H13.9908V4.09767C13.9908 4.5201 14.3333 4.86252 14.7557 4.86252C15.1781 4.86252 15.5205 4.5201 15.5205 4.09767V3.33282H16.5148C17.3583 3.33282 18.0445 4.01905 18.0445 4.86252V9.22215C18.0445 9.64457 18.3869 9.98699 18.8094 9.98699C19.2318 9.98699 19.5742 9.64457 19.5742 9.22215V4.86252C19.5742 3.17557 18.2018 1.80313 16.5148 1.80313Z" fill="#5B6570"/>
+                                                <path d="M14.9467 10.5985C12.3951 10.5985 10.3193 12.6743 10.3193 15.2258C10.3193 17.7773 12.3951 19.8531 14.9467 19.8531C17.4982 19.8531 19.574 17.7773 19.574 15.2258C19.574 12.6743 17.4982 10.5985 14.9467 10.5985ZM14.9467 18.3234C13.2386 18.3234 11.849 16.9339 11.849 15.2258C11.849 13.5177 13.2386 12.1282 14.9467 12.1282C16.6547 12.1282 18.0443 13.5177 18.0443 15.2258C18.0443 16.9339 16.6547 18.3234 14.9467 18.3234Z" fill="#5B6570"/>
+                                                <path d="M16.0565 14.4619H15.7123V13.6588C15.7123 13.2364 15.3699 12.894 14.9475 12.894C14.525 12.894 14.1826 13.2364 14.1826 13.6588V15.2267C14.1826 15.6492 14.525 15.9916 14.9475 15.9916H16.0565C16.4789 15.9916 16.8213 15.6492 16.8213 15.2267C16.8213 14.8043 16.4789 14.4619 16.0565 14.4619Z" fill="#5B6570"/>
+                                                <path d="M11.4289 9.07364C11.8513 9.07364 12.1938 8.73121 12.1938 8.30879C12.1938 7.88638 11.8513 7.54395 11.4289 7.54395C11.0065 7.54395 10.6641 7.88638 10.6641 8.30879C10.6641 8.73121 11.0065 9.07364 11.4289 9.07364Z" fill="#5B6570"/>
+                                                <path d="M8.10078 12.4025C8.5232 12.4025 8.86563 12.0601 8.86563 11.6377C8.86563 11.2153 8.5232 10.8728 8.10078 10.8728C7.67837 10.8728 7.33594 11.2153 7.33594 11.6377C7.33594 12.0601 7.67837 12.4025 8.10078 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 9.07364C5.19605 9.07364 5.53848 8.73121 5.53848 8.30879C5.53848 7.88638 5.19605 7.54395 4.77364 7.54395C4.35122 7.54395 4.00879 7.88638 4.00879 8.30879C4.00879 8.73121 4.35122 9.07364 4.77364 9.07364Z" fill="#5B6570"/>
+                                                <path d="M4.77364 12.4025C5.19605 12.4025 5.53848 12.0601 5.53848 11.6377C5.53848 11.2153 5.19605 10.8728 4.77364 10.8728C4.35122 10.8728 4.00879 11.2153 4.00879 11.6377C4.00879 12.0601 4.35122 12.4025 4.77364 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 15.7223C5.19605 15.7223 5.53848 15.3798 5.53848 14.9574C5.53848 14.535 5.19605 14.1926 4.77364 14.1926C4.35122 14.1926 4.00879 14.535 4.00879 14.9574C4.00879 15.3798 4.35122 15.7223 4.77364 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 15.7223C8.5232 15.7223 8.86563 15.3798 8.86563 14.9574C8.86563 14.535 8.5232 14.1926 8.10078 14.1926C7.67837 14.1926 7.33594 14.535 7.33594 14.9574C7.33594 15.3798 7.67837 15.7223 8.10078 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 9.07364C8.5232 9.07364 8.86563 8.73121 8.86563 8.30879C8.86563 7.88638 8.5232 7.54395 8.10078 7.54395C7.67837 7.54395 7.33594 7.88638 7.33594 8.30879C7.33594 8.73121 7.67837 9.07364 8.10078 9.07364Z" fill="#5B6570"/>
+                                                </svg>                                                
+                                            <span> 12th Aug 2024 at 14:19</span>
+                                        </td>
+                                        <td class="table-status order-lg-2">
+                                          <p class="fs-15 fw-400 priority-high m-0"><span class="priority-icon"></span>High</p>
+                                        </td>
+                                        <td class="order-lg-4 table-assigned">
+                                            <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.90626 2.27344C6.24941 2.27344 4.90625 3.61659 4.90625 5.27344C4.90625 6.9303 6.24941 8.27345 7.90626 8.27345C9.56316 8.27345 10.9063 6.9303 10.9063 5.27344C10.9063 3.61659 9.56316 2.27344 7.90626 2.27344ZM2.90625 5.27344C2.90625 2.51202 5.14483 0.273438 7.90626 0.273438C10.6677 0.273438 12.9063 2.51202 12.9063 5.27344C12.9063 8.03485 10.6677 10.2734 7.90626 10.2734C5.14483 10.2734 2.90625 8.03485 2.90625 5.27344ZM20.6134 6.56633C21.0039 6.95686 21.0039 7.59005 20.6134 7.98055L16.6134 11.9806C16.2229 12.3711 15.5897 12.3711 15.1992 11.9806L13.1992 9.98055C12.8087 9.59005 12.8087 8.95685 13.1992 8.56635C13.5897 8.17585 14.2229 8.17585 14.6134 8.56635L15.9063 9.85925L19.1992 6.56633C19.5897 6.17581 20.2229 6.17581 20.6134 6.56633ZM3.10891 12.613C4.38047 11.7653 6.07952 11.2735 7.90626 11.2735C9.73296 11.2735 11.4321 11.7653 12.7036 12.613C13.9682 13.4561 14.9063 14.7305 14.9063 16.2735C14.9063 16.8258 14.4586 17.2735 13.9063 17.2735C13.354 17.2735 12.9063 16.8258 12.9063 16.2735C12.9063 15.6073 12.5012 14.8818 11.5942 14.2771C10.6942 13.6771 9.39326 13.2735 7.90626 13.2735C6.41929 13.2735 5.11832 13.6771 4.21831 14.2771C3.31131 14.8818 2.90625 15.6073 2.90625 16.2735C2.90625 16.8258 2.45853 17.2735 1.90625 17.2735C1.35397 17.2735 0.90625 16.8258 0.90625 16.2735C0.90625 14.7305 1.84434 13.4561 3.10891 12.613Z" fill="#5B6570"/>
+                                                </svg>
+                                                <span>Johnson Wilson</span>
+                                            </p>
+                                        </td>
+                                        <td class="table-status order-lg-6"> 
+                                            <div class="active-status d-flex align-items-center gap-1">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
+                                                    <path d="M7.6495 0.0234375C3.78974 0.0234375 0.649536 3.16357 0.649536 7.0234C0.649536 10.8832 3.78974 14.0234 7.6495 14.0234C11.5093 14.0234 14.6495 10.8832 14.6495 7.0234C14.6495 3.16357 11.5093 0.0234375 7.6495 0.0234375ZM11.669 5.84105L7.27128 10.2388C7.08429 10.4258 6.83572 10.5287 6.57131 10.5287C6.30689 10.5287 6.05832 10.4258 5.87133 10.2388L3.63 7.99743C3.44301 7.81044 3.34001 7.56188 3.34001 7.29746C3.34001 7.03297 3.44301 6.7844 3.63 6.59741C3.81691 6.41042 4.06548 6.30743 4.32997 6.30743C4.59439 6.30743 4.84303 6.41042 5.02995 6.59748L6.57123 8.1387L10.2689 4.44103C10.4559 4.25403 10.7045 4.15112 10.9689 4.15112C11.2333 4.15112 11.4819 4.25403 11.6689 4.44103C12.055 4.82713 12.055 5.45509 11.669 5.84105Z" fill="var(--bright)"></path>
+                                                </svg>
+                                                <span class="active">Resolved</span>
                                             </div>
-                                            <button class="primary-btn">Go</button>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="w-100">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Department
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Subject
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Last Updated
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Status
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Support</h4>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">#35619745435</h4>
-                                                        <a href="javascript:void(0)"
-                                                            class="text-primary-theme fw-500">Support-Ticket-Test</a>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Wednesday, April 17, 2024</h4>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="primary-btn small-btn exquisite-turquoise-bg">Open</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="table-footer-wrap d-flex align-items-center flex-wrap">
-                                        <div class="d-flex align-items-center">
-                                            <h4 class="fw-500 mb-0">Show</h4>
-                                            <div class="wrapper-dropdown form-control custom-input"
-                                                id="dropdown">
-                                                <span class="selected-display" id="destination">
-                                                    10
-                                                </span>
-                                                <svg class="arrow" id="drp-arrow" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="transition-all ml-auto rotate-180">
-                                                    <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-id">
+                                          <p class="fs-15 fw-400 text-black m-0">#32156</p>
+                                        </td>
+                                        <td class="table-date">
+                                          <p class="fs-15 fw-400 text-black m-0 ">My app is buggy Jetserve helps now on my issue.</p>
+                                        </td>
+                                        <td class="">
+                                          <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7561 9.07364C15.1785 9.07364 15.5209 8.73121 15.5209 8.30879C15.5209 7.88638 15.1785 7.54395 14.7561 7.54395C14.3336 7.54395 13.9912 7.88638 13.9912 8.30879C13.9912 8.73121 14.3336 9.07364 14.7561 9.07364Z" fill="#5B6570"/>
+                                                <path d="M16.5148 1.80313H15.5205V1.03828C15.5205 0.615859 15.1781 0.273438 14.7557 0.273438C14.3333 0.273438 13.9908 0.615859 13.9908 1.03828V1.80313H10.5108V1.03828C10.5108 0.615859 10.1684 0.273438 9.74594 0.273438C9.32351 0.273438 8.98109 0.615859 8.98109 1.03828V1.80313H5.53928V1.03828C5.53928 0.615859 5.19686 0.273438 4.77443 0.273438C4.35201 0.273438 4.00959 0.615859 4.00959 1.03828V1.80313H3.05353C1.36658 1.80313 -0.00585938 3.17557 -0.00585938 4.86252V16.7941C-0.00585938 18.4811 1.36658 19.8535 3.05353 19.8535H8.90461C9.32703 19.8535 9.66945 19.5111 9.66945 19.0887C9.66945 18.6662 9.32703 18.3238 8.90461 18.3238H3.05353C2.21005 18.3238 1.52383 17.6376 1.52383 16.7941V4.86252C1.52383 4.01905 2.21005 3.33282 3.05353 3.33282H4.00959V4.09767C4.00959 4.5201 4.35201 4.86252 4.77443 4.86252C5.19686 4.86252 5.53928 4.5201 5.53928 4.09767V3.33282H8.98109V4.09767C8.98109 4.5201 9.32351 4.86252 9.74594 4.86252C10.1684 4.86252 10.5108 4.5201 10.5108 4.09767V3.33282H13.9908V4.09767C13.9908 4.5201 14.3333 4.86252 14.7557 4.86252C15.1781 4.86252 15.5205 4.5201 15.5205 4.09767V3.33282H16.5148C17.3583 3.33282 18.0445 4.01905 18.0445 4.86252V9.22215C18.0445 9.64457 18.3869 9.98699 18.8094 9.98699C19.2318 9.98699 19.5742 9.64457 19.5742 9.22215V4.86252C19.5742 3.17557 18.2018 1.80313 16.5148 1.80313Z" fill="#5B6570"/>
+                                                <path d="M14.9467 10.5985C12.3951 10.5985 10.3193 12.6743 10.3193 15.2258C10.3193 17.7773 12.3951 19.8531 14.9467 19.8531C17.4982 19.8531 19.574 17.7773 19.574 15.2258C19.574 12.6743 17.4982 10.5985 14.9467 10.5985ZM14.9467 18.3234C13.2386 18.3234 11.849 16.9339 11.849 15.2258C11.849 13.5177 13.2386 12.1282 14.9467 12.1282C16.6547 12.1282 18.0443 13.5177 18.0443 15.2258C18.0443 16.9339 16.6547 18.3234 14.9467 18.3234Z" fill="#5B6570"/>
+                                                <path d="M16.0565 14.4619H15.7123V13.6588C15.7123 13.2364 15.3699 12.894 14.9475 12.894C14.525 12.894 14.1826 13.2364 14.1826 13.6588V15.2267C14.1826 15.6492 14.525 15.9916 14.9475 15.9916H16.0565C16.4789 15.9916 16.8213 15.6492 16.8213 15.2267C16.8213 14.8043 16.4789 14.4619 16.0565 14.4619Z" fill="#5B6570"/>
+                                                <path d="M11.4289 9.07364C11.8513 9.07364 12.1938 8.73121 12.1938 8.30879C12.1938 7.88638 11.8513 7.54395 11.4289 7.54395C11.0065 7.54395 10.6641 7.88638 10.6641 8.30879C10.6641 8.73121 11.0065 9.07364 11.4289 9.07364Z" fill="#5B6570"/>
+                                                <path d="M8.10078 12.4025C8.5232 12.4025 8.86563 12.0601 8.86563 11.6377C8.86563 11.2153 8.5232 10.8728 8.10078 10.8728C7.67837 10.8728 7.33594 11.2153 7.33594 11.6377C7.33594 12.0601 7.67837 12.4025 8.10078 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 9.07364C5.19605 9.07364 5.53848 8.73121 5.53848 8.30879C5.53848 7.88638 5.19605 7.54395 4.77364 7.54395C4.35122 7.54395 4.00879 7.88638 4.00879 8.30879C4.00879 8.73121 4.35122 9.07364 4.77364 9.07364Z" fill="#5B6570"/>
+                                                <path d="M4.77364 12.4025C5.19605 12.4025 5.53848 12.0601 5.53848 11.6377C5.53848 11.2153 5.19605 10.8728 4.77364 10.8728C4.35122 10.8728 4.00879 11.2153 4.00879 11.6377C4.00879 12.0601 4.35122 12.4025 4.77364 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 15.7223C5.19605 15.7223 5.53848 15.3798 5.53848 14.9574C5.53848 14.535 5.19605 14.1926 4.77364 14.1926C4.35122 14.1926 4.00879 14.535 4.00879 14.9574C4.00879 15.3798 4.35122 15.7223 4.77364 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 15.7223C8.5232 15.7223 8.86563 15.3798 8.86563 14.9574C8.86563 14.535 8.5232 14.1926 8.10078 14.1926C7.67837 14.1926 7.33594 14.535 7.33594 14.9574C7.33594 15.3798 7.67837 15.7223 8.10078 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 9.07364C8.5232 9.07364 8.86563 8.73121 8.86563 8.30879C8.86563 7.88638 8.5232 7.54395 8.10078 7.54395C7.67837 7.54395 7.33594 7.88638 7.33594 8.30879C7.33594 8.73121 7.67837 9.07364 8.10078 9.07364Z" fill="#5B6570"/>
+                                                </svg>                                                
+                                            <span> 11th Aug 2024 at 10:19</span>
+                                        </td>
+                                        <td class="table-total">
+                                          <p class="fs-15 fw-400 priority-high m-0"><span class="priority-icon"></span>High</p>
+                                        </td>
+                                        <td class="table-">
+                                            <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.90626 2.27344C6.24941 2.27344 4.90625 3.61659 4.90625 5.27344C4.90625 6.9303 6.24941 8.27345 7.90626 8.27345C9.56316 8.27345 10.9063 6.9303 10.9063 5.27344C10.9063 3.61659 9.56316 2.27344 7.90626 2.27344ZM2.90625 5.27344C2.90625 2.51202 5.14483 0.273438 7.90626 0.273438C10.6677 0.273438 12.9063 2.51202 12.9063 5.27344C12.9063 8.03485 10.6677 10.2734 7.90626 10.2734C5.14483 10.2734 2.90625 8.03485 2.90625 5.27344ZM20.6134 6.56633C21.0039 6.95686 21.0039 7.59005 20.6134 7.98055L16.6134 11.9806C16.2229 12.3711 15.5897 12.3711 15.1992 11.9806L13.1992 9.98055C12.8087 9.59005 12.8087 8.95685 13.1992 8.56635C13.5897 8.17585 14.2229 8.17585 14.6134 8.56635L15.9063 9.85925L19.1992 6.56633C19.5897 6.17581 20.2229 6.17581 20.6134 6.56633ZM3.10891 12.613C4.38047 11.7653 6.07952 11.2735 7.90626 11.2735C9.73296 11.2735 11.4321 11.7653 12.7036 12.613C13.9682 13.4561 14.9063 14.7305 14.9063 16.2735C14.9063 16.8258 14.4586 17.2735 13.9063 17.2735C13.354 17.2735 12.9063 16.8258 12.9063 16.2735C12.9063 15.6073 12.5012 14.8818 11.5942 14.2771C10.6942 13.6771 9.39326 13.2735 7.90626 13.2735C6.41929 13.2735 5.11832 13.6771 4.21831 14.2771C3.31131 14.8818 2.90625 15.6073 2.90625 16.2735C2.90625 16.8258 2.45853 17.2735 1.90625 17.2735C1.35397 17.2735 0.90625 16.8258 0.90625 16.2735C0.90625 14.7305 1.84434 13.4561 3.10891 12.613Z" fill="#5B6570"/>
                                                 </svg>
-                                                <ul class="dropdown">
-                                                    <li class="item">
-                                                        10
-                                                    </li>
-                                                    <li class="item">
-                                                        09
-                                                    </li>
-                                                </ul>
+                                                <span>Maria Smith</span>
+                                            </p>
+                                        </td>
+                                        <td class="table-status"> 
+                                            <div class="pending-status d-flex align-items-center gap-1">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
+                                                    <path d="M7.72304 0.0234375C3.58807 0.0234375 0.223761 3.39259 0.223755 7.52634C0.223762 11.6601 3.58807 15.0234 7.72304 15.0234C11.858 15.0234 15.2282 11.6601 15.2282 7.52634C15.2282 3.39259 11.858 0.0234375 7.72304 0.0234375ZM7.7245 3.0234C7.82303 3.02295 7.92068 3.0419 8.01186 3.0792C8.10304 3.1165 8.18598 3.17142 8.25592 3.24079C8.32586 3.31017 8.38145 3.39274 8.41949 3.48362C8.45754 3.5745 8.4773 3.67194 8.47765 3.77047L8.47619 7.05903L11.3496 8.75828C11.4348 8.80827 11.5093 8.87464 11.5688 8.95352C11.6283 9.03241 11.6716 9.12228 11.6963 9.21797C11.7209 9.31367 11.7264 9.41331 11.7124 9.51115C11.6984 9.60898 11.6653 9.70307 11.6148 9.78805C11.5644 9.87294 11.4977 9.94706 11.4186 10.0061C11.3395 10.0652 11.2495 10.1081 11.1538 10.1323C11.0581 10.1566 10.9586 10.1616 10.8609 10.1473C10.7633 10.133 10.6694 10.0996 10.5847 10.0489L7.34059 8.13431C7.22854 8.06728 7.13594 7.97216 7.07194 7.85835C7.00795 7.74453 6.97479 7.61592 6.97573 7.48533L6.9772 3.77056C6.97805 3.57267 7.05708 3.38306 7.19705 3.24313C7.33703 3.1032 7.52662 3.02418 7.7245 3.0234Z" fill="#FF8329"></path>
+                                                </svg>
+                                                <span class="pending">Padding</span>
                                             </div>
-                                            <h4 class="fw-500 mb-0">entries</h4>
-                                        </div>
-                                        <div
-                                            class="ms-auto pagination-wrap d-flex align-items-center gap-15 flex-wrap">
-                                            <span class="line-height-0 cursor-pointer transition-all-03">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z"
-                                                        fill="currentColor" />
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-id">
+                                          <p class="fs-15 fw-400 text-black m-0">#56211</p>
+                                        </td>
+                                        <td class="table-date">
+                                          <p class="fs-15 fw-400 text-black m-0 ">How to deposit money to my portal?</p>
+                                        </td>
+                                        <td class="">
+                                          <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7561 9.07364C15.1785 9.07364 15.5209 8.73121 15.5209 8.30879C15.5209 7.88638 15.1785 7.54395 14.7561 7.54395C14.3336 7.54395 13.9912 7.88638 13.9912 8.30879C13.9912 8.73121 14.3336 9.07364 14.7561 9.07364Z" fill="#5B6570"/>
+                                                <path d="M16.5148 1.80313H15.5205V1.03828C15.5205 0.615859 15.1781 0.273438 14.7557 0.273438C14.3333 0.273438 13.9908 0.615859 13.9908 1.03828V1.80313H10.5108V1.03828C10.5108 0.615859 10.1684 0.273438 9.74594 0.273438C9.32351 0.273438 8.98109 0.615859 8.98109 1.03828V1.80313H5.53928V1.03828C5.53928 0.615859 5.19686 0.273438 4.77443 0.273438C4.35201 0.273438 4.00959 0.615859 4.00959 1.03828V1.80313H3.05353C1.36658 1.80313 -0.00585938 3.17557 -0.00585938 4.86252V16.7941C-0.00585938 18.4811 1.36658 19.8535 3.05353 19.8535H8.90461C9.32703 19.8535 9.66945 19.5111 9.66945 19.0887C9.66945 18.6662 9.32703 18.3238 8.90461 18.3238H3.05353C2.21005 18.3238 1.52383 17.6376 1.52383 16.7941V4.86252C1.52383 4.01905 2.21005 3.33282 3.05353 3.33282H4.00959V4.09767C4.00959 4.5201 4.35201 4.86252 4.77443 4.86252C5.19686 4.86252 5.53928 4.5201 5.53928 4.09767V3.33282H8.98109V4.09767C8.98109 4.5201 9.32351 4.86252 9.74594 4.86252C10.1684 4.86252 10.5108 4.5201 10.5108 4.09767V3.33282H13.9908V4.09767C13.9908 4.5201 14.3333 4.86252 14.7557 4.86252C15.1781 4.86252 15.5205 4.5201 15.5205 4.09767V3.33282H16.5148C17.3583 3.33282 18.0445 4.01905 18.0445 4.86252V9.22215C18.0445 9.64457 18.3869 9.98699 18.8094 9.98699C19.2318 9.98699 19.5742 9.64457 19.5742 9.22215V4.86252C19.5742 3.17557 18.2018 1.80313 16.5148 1.80313Z" fill="#5B6570"/>
+                                                <path d="M14.9467 10.5985C12.3951 10.5985 10.3193 12.6743 10.3193 15.2258C10.3193 17.7773 12.3951 19.8531 14.9467 19.8531C17.4982 19.8531 19.574 17.7773 19.574 15.2258C19.574 12.6743 17.4982 10.5985 14.9467 10.5985ZM14.9467 18.3234C13.2386 18.3234 11.849 16.9339 11.849 15.2258C11.849 13.5177 13.2386 12.1282 14.9467 12.1282C16.6547 12.1282 18.0443 13.5177 18.0443 15.2258C18.0443 16.9339 16.6547 18.3234 14.9467 18.3234Z" fill="#5B6570"/>
+                                                <path d="M16.0565 14.4619H15.7123V13.6588C15.7123 13.2364 15.3699 12.894 14.9475 12.894C14.525 12.894 14.1826 13.2364 14.1826 13.6588V15.2267C14.1826 15.6492 14.525 15.9916 14.9475 15.9916H16.0565C16.4789 15.9916 16.8213 15.6492 16.8213 15.2267C16.8213 14.8043 16.4789 14.4619 16.0565 14.4619Z" fill="#5B6570"/>
+                                                <path d="M11.4289 9.07364C11.8513 9.07364 12.1938 8.73121 12.1938 8.30879C12.1938 7.88638 11.8513 7.54395 11.4289 7.54395C11.0065 7.54395 10.6641 7.88638 10.6641 8.30879C10.6641 8.73121 11.0065 9.07364 11.4289 9.07364Z" fill="#5B6570"/>
+                                                <path d="M8.10078 12.4025C8.5232 12.4025 8.86563 12.0601 8.86563 11.6377C8.86563 11.2153 8.5232 10.8728 8.10078 10.8728C7.67837 10.8728 7.33594 11.2153 7.33594 11.6377C7.33594 12.0601 7.67837 12.4025 8.10078 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 9.07364C5.19605 9.07364 5.53848 8.73121 5.53848 8.30879C5.53848 7.88638 5.19605 7.54395 4.77364 7.54395C4.35122 7.54395 4.00879 7.88638 4.00879 8.30879C4.00879 8.73121 4.35122 9.07364 4.77364 9.07364Z" fill="#5B6570"/>
+                                                <path d="M4.77364 12.4025C5.19605 12.4025 5.53848 12.0601 5.53848 11.6377C5.53848 11.2153 5.19605 10.8728 4.77364 10.8728C4.35122 10.8728 4.00879 11.2153 4.00879 11.6377C4.00879 12.0601 4.35122 12.4025 4.77364 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 15.7223C5.19605 15.7223 5.53848 15.3798 5.53848 14.9574C5.53848 14.535 5.19605 14.1926 4.77364 14.1926C4.35122 14.1926 4.00879 14.535 4.00879 14.9574C4.00879 15.3798 4.35122 15.7223 4.77364 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 15.7223C8.5232 15.7223 8.86563 15.3798 8.86563 14.9574C8.86563 14.535 8.5232 14.1926 8.10078 14.1926C7.67837 14.1926 7.33594 14.535 7.33594 14.9574C7.33594 15.3798 7.67837 15.7223 8.10078 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 9.07364C8.5232 9.07364 8.86563 8.73121 8.86563 8.30879C8.86563 7.88638 8.5232 7.54395 8.10078 7.54395C7.67837 7.54395 7.33594 7.88638 7.33594 8.30879C7.33594 8.73121 7.67837 9.07364 8.10078 9.07364Z" fill="#5B6570"/>
+                                                </svg>                                                
+                                            <span> 10th Aug 2024 at 13:18</span>
+                                        </td>
+                                        <td class="table-total">
+                                          <p class="fs-15 fw-400 priority-low m-0"><span class="priority-icon"></span>Low</p>
+                                        </td>
+                                        <td class="table-">
+                                            <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.90626 2.27344C6.24941 2.27344 4.90625 3.61659 4.90625 5.27344C4.90625 6.9303 6.24941 8.27345 7.90626 8.27345C9.56316 8.27345 10.9063 6.9303 10.9063 5.27344C10.9063 3.61659 9.56316 2.27344 7.90626 2.27344ZM2.90625 5.27344C2.90625 2.51202 5.14483 0.273438 7.90626 0.273438C10.6677 0.273438 12.9063 2.51202 12.9063 5.27344C12.9063 8.03485 10.6677 10.2734 7.90626 10.2734C5.14483 10.2734 2.90625 8.03485 2.90625 5.27344ZM20.6134 6.56633C21.0039 6.95686 21.0039 7.59005 20.6134 7.98055L16.6134 11.9806C16.2229 12.3711 15.5897 12.3711 15.1992 11.9806L13.1992 9.98055C12.8087 9.59005 12.8087 8.95685 13.1992 8.56635C13.5897 8.17585 14.2229 8.17585 14.6134 8.56635L15.9063 9.85925L19.1992 6.56633C19.5897 6.17581 20.2229 6.17581 20.6134 6.56633ZM3.10891 12.613C4.38047 11.7653 6.07952 11.2735 7.90626 11.2735C9.73296 11.2735 11.4321 11.7653 12.7036 12.613C13.9682 13.4561 14.9063 14.7305 14.9063 16.2735C14.9063 16.8258 14.4586 17.2735 13.9063 17.2735C13.354 17.2735 12.9063 16.8258 12.9063 16.2735C12.9063 15.6073 12.5012 14.8818 11.5942 14.2771C10.6942 13.6771 9.39326 13.2735 7.90626 13.2735C6.41929 13.2735 5.11832 13.6771 4.21831 14.2771C3.31131 14.8818 2.90625 15.6073 2.90625 16.2735C2.90625 16.8258 2.45853 17.2735 1.90625 17.2735C1.35397 17.2735 0.90625 16.8258 0.90625 16.2735C0.90625 14.7305 1.84434 13.4561 3.10891 12.613Z" fill="#5B6570"/>
                                                 </svg>
-                                            </span>
-                                            <ul class="d-flex align-items-center gap-15 flex-wrap">
-                                                <li class="d-align-justify cursor-pointer transition-all-03">
-                                                    <h6>1</h6>
-                                                </li>
-                                                <li class="d-align-justify cursor-pointer transition-all-03">
-                                                    <h6>2</h6>
-                                                </li>
-                                            </ul>
-                                            <span class="line-height-0 cursor-pointer transition-all-03">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z"
-                                                        fill="currentColor" />
+                                                <span>Robert McComas</span>
+                                            </p>
+                                        </td>
+                                        <td class="table-status"> 
+                                            <div class="active-status d-flex align-items-center gap-1">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
+                                                    <path d="M7.6495 0.0234375C3.78974 0.0234375 0.649536 3.16357 0.649536 7.0234C0.649536 10.8832 3.78974 14.0234 7.6495 14.0234C11.5093 14.0234 14.6495 10.8832 14.6495 7.0234C14.6495 3.16357 11.5093 0.0234375 7.6495 0.0234375ZM11.669 5.84105L7.27128 10.2388C7.08429 10.4258 6.83572 10.5287 6.57131 10.5287C6.30689 10.5287 6.05832 10.4258 5.87133 10.2388L3.63 7.99743C3.44301 7.81044 3.34001 7.56188 3.34001 7.29746C3.34001 7.03297 3.44301 6.7844 3.63 6.59741C3.81691 6.41042 4.06548 6.30743 4.32997 6.30743C4.59439 6.30743 4.84303 6.41042 5.02995 6.59748L6.57123 8.1387L10.2689 4.44103C10.4559 4.25403 10.7045 4.15112 10.9689 4.15112C11.2333 4.15112 11.4819 4.25403 11.6689 4.44103C12.055 4.82713 12.055 5.45509 11.669 5.84105Z" fill="var(--bright)"></path>
                                                 </svg>
-                                            </span>
-                                        </div>
-                                    </div>
+                                                <span class="active fw-600">Resolved</span>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-id">
+                                          <p class="fs-15 fw-400 text-black m-0">#326512</p>
+                                        </td>
+                                        <td class="table-date">
+                                          <p class="fs-15 fw-400 text-black m-0 ">My app is buggy Jetserve helps now on my issue.</p>
+                                        </td>
+                                        <td class="">
+                                          <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7561 9.07364C15.1785 9.07364 15.5209 8.73121 15.5209 8.30879C15.5209 7.88638 15.1785 7.54395 14.7561 7.54395C14.3336 7.54395 13.9912 7.88638 13.9912 8.30879C13.9912 8.73121 14.3336 9.07364 14.7561 9.07364Z" fill="#5B6570"/>
+                                                <path d="M16.5148 1.80313H15.5205V1.03828C15.5205 0.615859 15.1781 0.273438 14.7557 0.273438C14.3333 0.273438 13.9908 0.615859 13.9908 1.03828V1.80313H10.5108V1.03828C10.5108 0.615859 10.1684 0.273438 9.74594 0.273438C9.32351 0.273438 8.98109 0.615859 8.98109 1.03828V1.80313H5.53928V1.03828C5.53928 0.615859 5.19686 0.273438 4.77443 0.273438C4.35201 0.273438 4.00959 0.615859 4.00959 1.03828V1.80313H3.05353C1.36658 1.80313 -0.00585938 3.17557 -0.00585938 4.86252V16.7941C-0.00585938 18.4811 1.36658 19.8535 3.05353 19.8535H8.90461C9.32703 19.8535 9.66945 19.5111 9.66945 19.0887C9.66945 18.6662 9.32703 18.3238 8.90461 18.3238H3.05353C2.21005 18.3238 1.52383 17.6376 1.52383 16.7941V4.86252C1.52383 4.01905 2.21005 3.33282 3.05353 3.33282H4.00959V4.09767C4.00959 4.5201 4.35201 4.86252 4.77443 4.86252C5.19686 4.86252 5.53928 4.5201 5.53928 4.09767V3.33282H8.98109V4.09767C8.98109 4.5201 9.32351 4.86252 9.74594 4.86252C10.1684 4.86252 10.5108 4.5201 10.5108 4.09767V3.33282H13.9908V4.09767C13.9908 4.5201 14.3333 4.86252 14.7557 4.86252C15.1781 4.86252 15.5205 4.5201 15.5205 4.09767V3.33282H16.5148C17.3583 3.33282 18.0445 4.01905 18.0445 4.86252V9.22215C18.0445 9.64457 18.3869 9.98699 18.8094 9.98699C19.2318 9.98699 19.5742 9.64457 19.5742 9.22215V4.86252C19.5742 3.17557 18.2018 1.80313 16.5148 1.80313Z" fill="#5B6570"/>
+                                                <path d="M14.9467 10.5985C12.3951 10.5985 10.3193 12.6743 10.3193 15.2258C10.3193 17.7773 12.3951 19.8531 14.9467 19.8531C17.4982 19.8531 19.574 17.7773 19.574 15.2258C19.574 12.6743 17.4982 10.5985 14.9467 10.5985ZM14.9467 18.3234C13.2386 18.3234 11.849 16.9339 11.849 15.2258C11.849 13.5177 13.2386 12.1282 14.9467 12.1282C16.6547 12.1282 18.0443 13.5177 18.0443 15.2258C18.0443 16.9339 16.6547 18.3234 14.9467 18.3234Z" fill="#5B6570"/>
+                                                <path d="M16.0565 14.4619H15.7123V13.6588C15.7123 13.2364 15.3699 12.894 14.9475 12.894C14.525 12.894 14.1826 13.2364 14.1826 13.6588V15.2267C14.1826 15.6492 14.525 15.9916 14.9475 15.9916H16.0565C16.4789 15.9916 16.8213 15.6492 16.8213 15.2267C16.8213 14.8043 16.4789 14.4619 16.0565 14.4619Z" fill="#5B6570"/>
+                                                <path d="M11.4289 9.07364C11.8513 9.07364 12.1938 8.73121 12.1938 8.30879C12.1938 7.88638 11.8513 7.54395 11.4289 7.54395C11.0065 7.54395 10.6641 7.88638 10.6641 8.30879C10.6641 8.73121 11.0065 9.07364 11.4289 9.07364Z" fill="#5B6570"/>
+                                                <path d="M8.10078 12.4025C8.5232 12.4025 8.86563 12.0601 8.86563 11.6377C8.86563 11.2153 8.5232 10.8728 8.10078 10.8728C7.67837 10.8728 7.33594 11.2153 7.33594 11.6377C7.33594 12.0601 7.67837 12.4025 8.10078 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 9.07364C5.19605 9.07364 5.53848 8.73121 5.53848 8.30879C5.53848 7.88638 5.19605 7.54395 4.77364 7.54395C4.35122 7.54395 4.00879 7.88638 4.00879 8.30879C4.00879 8.73121 4.35122 9.07364 4.77364 9.07364Z" fill="#5B6570"/>
+                                                <path d="M4.77364 12.4025C5.19605 12.4025 5.53848 12.0601 5.53848 11.6377C5.53848 11.2153 5.19605 10.8728 4.77364 10.8728C4.35122 10.8728 4.00879 11.2153 4.00879 11.6377C4.00879 12.0601 4.35122 12.4025 4.77364 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 15.7223C5.19605 15.7223 5.53848 15.3798 5.53848 14.9574C5.53848 14.535 5.19605 14.1926 4.77364 14.1926C4.35122 14.1926 4.00879 14.535 4.00879 14.9574C4.00879 15.3798 4.35122 15.7223 4.77364 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 15.7223C8.5232 15.7223 8.86563 15.3798 8.86563 14.9574C8.86563 14.535 8.5232 14.1926 8.10078 14.1926C7.67837 14.1926 7.33594 14.535 7.33594 14.9574C7.33594 15.3798 7.67837 15.7223 8.10078 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 9.07364C8.5232 9.07364 8.86563 8.73121 8.86563 8.30879C8.86563 7.88638 8.5232 7.54395 8.10078 7.54395C7.67837 7.54395 7.33594 7.88638 7.33594 8.30879C7.33594 8.73121 7.67837 9.07364 8.10078 9.07364Z" fill="#5B6570"/>
+                                                </svg>                                                
+                                            <span> 05th Aug 2024 at 13:14</span>
+                                        </td>
+                                        <td class="table-total">
+                                          <p class="fs-15 fw-400 priority-medium m-0"><span class="priority-icon"></span>Medium</p>
+                                        </td>
+                                        <td class="table-">
+                                            <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.90626 2.27344C6.24941 2.27344 4.90625 3.61659 4.90625 5.27344C4.90625 6.9303 6.24941 8.27345 7.90626 8.27345C9.56316 8.27345 10.9063 6.9303 10.9063 5.27344C10.9063 3.61659 9.56316 2.27344 7.90626 2.27344ZM2.90625 5.27344C2.90625 2.51202 5.14483 0.273438 7.90626 0.273438C10.6677 0.273438 12.9063 2.51202 12.9063 5.27344C12.9063 8.03485 10.6677 10.2734 7.90626 10.2734C5.14483 10.2734 2.90625 8.03485 2.90625 5.27344ZM20.6134 6.56633C21.0039 6.95686 21.0039 7.59005 20.6134 7.98055L16.6134 11.9806C16.2229 12.3711 15.5897 12.3711 15.1992 11.9806L13.1992 9.98055C12.8087 9.59005 12.8087 8.95685 13.1992 8.56635C13.5897 8.17585 14.2229 8.17585 14.6134 8.56635L15.9063 9.85925L19.1992 6.56633C19.5897 6.17581 20.2229 6.17581 20.6134 6.56633ZM3.10891 12.613C4.38047 11.7653 6.07952 11.2735 7.90626 11.2735C9.73296 11.2735 11.4321 11.7653 12.7036 12.613C13.9682 13.4561 14.9063 14.7305 14.9063 16.2735C14.9063 16.8258 14.4586 17.2735 13.9063 17.2735C13.354 17.2735 12.9063 16.8258 12.9063 16.2735C12.9063 15.6073 12.5012 14.8818 11.5942 14.2771C10.6942 13.6771 9.39326 13.2735 7.90626 13.2735C6.41929 13.2735 5.11832 13.6771 4.21831 14.2771C3.31131 14.8818 2.90625 15.6073 2.90625 16.2735C2.90625 16.8258 2.45853 17.2735 1.90625 17.2735C1.35397 17.2735 0.90625 16.8258 0.90625 16.2735C0.90625 14.7305 1.84434 13.4561 3.10891 12.613Z" fill="#5B6570"/>
+                                                </svg>
+                                                <span>Rosie Montag</span>
+                                            </p>
+                                        </td>
+                                        <td class="table-status"> 
+                                            <div class="active-status d-flex align-items-center gap-1">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
+                                                    <path d="M7.6495 0.0234375C3.78974 0.0234375 0.649536 3.16357 0.649536 7.0234C0.649536 10.8832 3.78974 14.0234 7.6495 14.0234C11.5093 14.0234 14.6495 10.8832 14.6495 7.0234C14.6495 3.16357 11.5093 0.0234375 7.6495 0.0234375ZM11.669 5.84105L7.27128 10.2388C7.08429 10.4258 6.83572 10.5287 6.57131 10.5287C6.30689 10.5287 6.05832 10.4258 5.87133 10.2388L3.63 7.99743C3.44301 7.81044 3.34001 7.56188 3.34001 7.29746C3.34001 7.03297 3.44301 6.7844 3.63 6.59741C3.81691 6.41042 4.06548 6.30743 4.32997 6.30743C4.59439 6.30743 4.84303 6.41042 5.02995 6.59748L6.57123 8.1387L10.2689 4.44103C10.4559 4.25403 10.7045 4.15112 10.9689 4.15112C11.2333 4.15112 11.4819 4.25403 11.6689 4.44103C12.055 4.82713 12.055 5.45509 11.669 5.84105Z" fill="var(--bright)"></path>
+                                                </svg>
+                                                <span class="active fw-600">Resolved</span>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-id">
+                                          <p class="fs-15 fw-400 text-black m-0">#854751</p>
+                                        </td>
+                                        <td class="table-date">
+                                          <p class="fs-15 fw-400 text-black m-0 ">How to deposit money to my portal?</p>
+                                        </td>
+                                        <td class="">
+                                          <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7561 9.07364C15.1785 9.07364 15.5209 8.73121 15.5209 8.30879C15.5209 7.88638 15.1785 7.54395 14.7561 7.54395C14.3336 7.54395 13.9912 7.88638 13.9912 8.30879C13.9912 8.73121 14.3336 9.07364 14.7561 9.07364Z" fill="#5B6570"/>
+                                                <path d="M16.5148 1.80313H15.5205V1.03828C15.5205 0.615859 15.1781 0.273438 14.7557 0.273438C14.3333 0.273438 13.9908 0.615859 13.9908 1.03828V1.80313H10.5108V1.03828C10.5108 0.615859 10.1684 0.273438 9.74594 0.273438C9.32351 0.273438 8.98109 0.615859 8.98109 1.03828V1.80313H5.53928V1.03828C5.53928 0.615859 5.19686 0.273438 4.77443 0.273438C4.35201 0.273438 4.00959 0.615859 4.00959 1.03828V1.80313H3.05353C1.36658 1.80313 -0.00585938 3.17557 -0.00585938 4.86252V16.7941C-0.00585938 18.4811 1.36658 19.8535 3.05353 19.8535H8.90461C9.32703 19.8535 9.66945 19.5111 9.66945 19.0887C9.66945 18.6662 9.32703 18.3238 8.90461 18.3238H3.05353C2.21005 18.3238 1.52383 17.6376 1.52383 16.7941V4.86252C1.52383 4.01905 2.21005 3.33282 3.05353 3.33282H4.00959V4.09767C4.00959 4.5201 4.35201 4.86252 4.77443 4.86252C5.19686 4.86252 5.53928 4.5201 5.53928 4.09767V3.33282H8.98109V4.09767C8.98109 4.5201 9.32351 4.86252 9.74594 4.86252C10.1684 4.86252 10.5108 4.5201 10.5108 4.09767V3.33282H13.9908V4.09767C13.9908 4.5201 14.3333 4.86252 14.7557 4.86252C15.1781 4.86252 15.5205 4.5201 15.5205 4.09767V3.33282H16.5148C17.3583 3.33282 18.0445 4.01905 18.0445 4.86252V9.22215C18.0445 9.64457 18.3869 9.98699 18.8094 9.98699C19.2318 9.98699 19.5742 9.64457 19.5742 9.22215V4.86252C19.5742 3.17557 18.2018 1.80313 16.5148 1.80313Z" fill="#5B6570"/>
+                                                <path d="M14.9467 10.5985C12.3951 10.5985 10.3193 12.6743 10.3193 15.2258C10.3193 17.7773 12.3951 19.8531 14.9467 19.8531C17.4982 19.8531 19.574 17.7773 19.574 15.2258C19.574 12.6743 17.4982 10.5985 14.9467 10.5985ZM14.9467 18.3234C13.2386 18.3234 11.849 16.9339 11.849 15.2258C11.849 13.5177 13.2386 12.1282 14.9467 12.1282C16.6547 12.1282 18.0443 13.5177 18.0443 15.2258C18.0443 16.9339 16.6547 18.3234 14.9467 18.3234Z" fill="#5B6570"/>
+                                                <path d="M16.0565 14.4619H15.7123V13.6588C15.7123 13.2364 15.3699 12.894 14.9475 12.894C14.525 12.894 14.1826 13.2364 14.1826 13.6588V15.2267C14.1826 15.6492 14.525 15.9916 14.9475 15.9916H16.0565C16.4789 15.9916 16.8213 15.6492 16.8213 15.2267C16.8213 14.8043 16.4789 14.4619 16.0565 14.4619Z" fill="#5B6570"/>
+                                                <path d="M11.4289 9.07364C11.8513 9.07364 12.1938 8.73121 12.1938 8.30879C12.1938 7.88638 11.8513 7.54395 11.4289 7.54395C11.0065 7.54395 10.6641 7.88638 10.6641 8.30879C10.6641 8.73121 11.0065 9.07364 11.4289 9.07364Z" fill="#5B6570"/>
+                                                <path d="M8.10078 12.4025C8.5232 12.4025 8.86563 12.0601 8.86563 11.6377C8.86563 11.2153 8.5232 10.8728 8.10078 10.8728C7.67837 10.8728 7.33594 11.2153 7.33594 11.6377C7.33594 12.0601 7.67837 12.4025 8.10078 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 9.07364C5.19605 9.07364 5.53848 8.73121 5.53848 8.30879C5.53848 7.88638 5.19605 7.54395 4.77364 7.54395C4.35122 7.54395 4.00879 7.88638 4.00879 8.30879C4.00879 8.73121 4.35122 9.07364 4.77364 9.07364Z" fill="#5B6570"/>
+                                                <path d="M4.77364 12.4025C5.19605 12.4025 5.53848 12.0601 5.53848 11.6377C5.53848 11.2153 5.19605 10.8728 4.77364 10.8728C4.35122 10.8728 4.00879 11.2153 4.00879 11.6377C4.00879 12.0601 4.35122 12.4025 4.77364 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 15.7223C5.19605 15.7223 5.53848 15.3798 5.53848 14.9574C5.53848 14.535 5.19605 14.1926 4.77364 14.1926C4.35122 14.1926 4.00879 14.535 4.00879 14.9574C4.00879 15.3798 4.35122 15.7223 4.77364 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 15.7223C8.5232 15.7223 8.86563 15.3798 8.86563 14.9574C8.86563 14.535 8.5232 14.1926 8.10078 14.1926C7.67837 14.1926 7.33594 14.535 7.33594 14.9574C7.33594 15.3798 7.67837 15.7223 8.10078 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 9.07364C8.5232 9.07364 8.86563 8.73121 8.86563 8.30879C8.86563 7.88638 8.5232 7.54395 8.10078 7.54395C7.67837 7.54395 7.33594 7.88638 7.33594 8.30879C7.33594 8.73121 7.67837 9.07364 8.10078 9.07364Z" fill="#5B6570"/>
+                                                </svg>                                                
+                                            <span> 22th Jul 2024 at 11:19</span>
+                                        </td>
+                                        <td class="table-total">
+                                          <p class="fs-15 fw-400 priority-low m-0"><span class="priority-icon"></span>Low</p>
+                                        </td>
+                                        <td class="table-">
+                                            <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.90626 2.27344C6.24941 2.27344 4.90625 3.61659 4.90625 5.27344C4.90625 6.9303 6.24941 8.27345 7.90626 8.27345C9.56316 8.27345 10.9063 6.9303 10.9063 5.27344C10.9063 3.61659 9.56316 2.27344 7.90626 2.27344ZM2.90625 5.27344C2.90625 2.51202 5.14483 0.273438 7.90626 0.273438C10.6677 0.273438 12.9063 2.51202 12.9063 5.27344C12.9063 8.03485 10.6677 10.2734 7.90626 10.2734C5.14483 10.2734 2.90625 8.03485 2.90625 5.27344ZM20.6134 6.56633C21.0039 6.95686 21.0039 7.59005 20.6134 7.98055L16.6134 11.9806C16.2229 12.3711 15.5897 12.3711 15.1992 11.9806L13.1992 9.98055C12.8087 9.59005 12.8087 8.95685 13.1992 8.56635C13.5897 8.17585 14.2229 8.17585 14.6134 8.56635L15.9063 9.85925L19.1992 6.56633C19.5897 6.17581 20.2229 6.17581 20.6134 6.56633ZM3.10891 12.613C4.38047 11.7653 6.07952 11.2735 7.90626 11.2735C9.73296 11.2735 11.4321 11.7653 12.7036 12.613C13.9682 13.4561 14.9063 14.7305 14.9063 16.2735C14.9063 16.8258 14.4586 17.2735 13.9063 17.2735C13.354 17.2735 12.9063 16.8258 12.9063 16.2735C12.9063 15.6073 12.5012 14.8818 11.5942 14.2771C10.6942 13.6771 9.39326 13.2735 7.90626 13.2735C6.41929 13.2735 5.11832 13.6771 4.21831 14.2771C3.31131 14.8818 2.90625 15.6073 2.90625 16.2735C2.90625 16.8258 2.45853 17.2735 1.90625 17.2735C1.35397 17.2735 0.90625 16.8258 0.90625 16.2735C0.90625 14.7305 1.84434 13.4561 3.10891 12.613Z" fill="#5B6570"/>
+                                                </svg>
+                                                <span>David Jones</span>
+                                            </p>
+                                        </td>
+                                        <td class="table-status"> 
+                                            <div class="pending-status d-flex align-items-center gap-1">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
+                                                    <path d="M7.72304 0.0234375C3.58807 0.0234375 0.223761 3.39259 0.223755 7.52634C0.223762 11.6601 3.58807 15.0234 7.72304 15.0234C11.858 15.0234 15.2282 11.6601 15.2282 7.52634C15.2282 3.39259 11.858 0.0234375 7.72304 0.0234375ZM7.7245 3.0234C7.82303 3.02295 7.92068 3.0419 8.01186 3.0792C8.10304 3.1165 8.18598 3.17142 8.25592 3.24079C8.32586 3.31017 8.38145 3.39274 8.41949 3.48362C8.45754 3.5745 8.4773 3.67194 8.47765 3.77047L8.47619 7.05903L11.3496 8.75828C11.4348 8.80827 11.5093 8.87464 11.5688 8.95352C11.6283 9.03241 11.6716 9.12228 11.6963 9.21797C11.7209 9.31367 11.7264 9.41331 11.7124 9.51115C11.6984 9.60898 11.6653 9.70307 11.6148 9.78805C11.5644 9.87294 11.4977 9.94706 11.4186 10.0061C11.3395 10.0652 11.2495 10.1081 11.1538 10.1323C11.0581 10.1566 10.9586 10.1616 10.8609 10.1473C10.7633 10.133 10.6694 10.0996 10.5847 10.0489L7.34059 8.13431C7.22854 8.06728 7.13594 7.97216 7.07194 7.85835C7.00795 7.74453 6.97479 7.61592 6.97573 7.48533L6.9772 3.77056C6.97805 3.57267 7.05708 3.38306 7.19705 3.24313C7.33703 3.1032 7.52662 3.02418 7.7245 3.0234Z" fill="#FF8329"></path>
+                                                </svg>
+                                                <span class="pending">Padding</span>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-id">
+                                          <p class="fs-15 fw-400 text-black m-0">#321546</p>
+                                        </td>
+                                        <td class="table-date">
+                                          <p class="fs-15 fw-400 text-black m-0 ">My app is buggy Jetserve helps now on my issue.</p>
+                                        </td>
+                                        <td class="">
+                                          <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7561 9.07364C15.1785 9.07364 15.5209 8.73121 15.5209 8.30879C15.5209 7.88638 15.1785 7.54395 14.7561 7.54395C14.3336 7.54395 13.9912 7.88638 13.9912 8.30879C13.9912 8.73121 14.3336 9.07364 14.7561 9.07364Z" fill="#5B6570"/>
+                                                <path d="M16.5148 1.80313H15.5205V1.03828C15.5205 0.615859 15.1781 0.273438 14.7557 0.273438C14.3333 0.273438 13.9908 0.615859 13.9908 1.03828V1.80313H10.5108V1.03828C10.5108 0.615859 10.1684 0.273438 9.74594 0.273438C9.32351 0.273438 8.98109 0.615859 8.98109 1.03828V1.80313H5.53928V1.03828C5.53928 0.615859 5.19686 0.273438 4.77443 0.273438C4.35201 0.273438 4.00959 0.615859 4.00959 1.03828V1.80313H3.05353C1.36658 1.80313 -0.00585938 3.17557 -0.00585938 4.86252V16.7941C-0.00585938 18.4811 1.36658 19.8535 3.05353 19.8535H8.90461C9.32703 19.8535 9.66945 19.5111 9.66945 19.0887C9.66945 18.6662 9.32703 18.3238 8.90461 18.3238H3.05353C2.21005 18.3238 1.52383 17.6376 1.52383 16.7941V4.86252C1.52383 4.01905 2.21005 3.33282 3.05353 3.33282H4.00959V4.09767C4.00959 4.5201 4.35201 4.86252 4.77443 4.86252C5.19686 4.86252 5.53928 4.5201 5.53928 4.09767V3.33282H8.98109V4.09767C8.98109 4.5201 9.32351 4.86252 9.74594 4.86252C10.1684 4.86252 10.5108 4.5201 10.5108 4.09767V3.33282H13.9908V4.09767C13.9908 4.5201 14.3333 4.86252 14.7557 4.86252C15.1781 4.86252 15.5205 4.5201 15.5205 4.09767V3.33282H16.5148C17.3583 3.33282 18.0445 4.01905 18.0445 4.86252V9.22215C18.0445 9.64457 18.3869 9.98699 18.8094 9.98699C19.2318 9.98699 19.5742 9.64457 19.5742 9.22215V4.86252C19.5742 3.17557 18.2018 1.80313 16.5148 1.80313Z" fill="#5B6570"/>
+                                                <path d="M14.9467 10.5985C12.3951 10.5985 10.3193 12.6743 10.3193 15.2258C10.3193 17.7773 12.3951 19.8531 14.9467 19.8531C17.4982 19.8531 19.574 17.7773 19.574 15.2258C19.574 12.6743 17.4982 10.5985 14.9467 10.5985ZM14.9467 18.3234C13.2386 18.3234 11.849 16.9339 11.849 15.2258C11.849 13.5177 13.2386 12.1282 14.9467 12.1282C16.6547 12.1282 18.0443 13.5177 18.0443 15.2258C18.0443 16.9339 16.6547 18.3234 14.9467 18.3234Z" fill="#5B6570"/>
+                                                <path d="M16.0565 14.4619H15.7123V13.6588C15.7123 13.2364 15.3699 12.894 14.9475 12.894C14.525 12.894 14.1826 13.2364 14.1826 13.6588V15.2267C14.1826 15.6492 14.525 15.9916 14.9475 15.9916H16.0565C16.4789 15.9916 16.8213 15.6492 16.8213 15.2267C16.8213 14.8043 16.4789 14.4619 16.0565 14.4619Z" fill="#5B6570"/>
+                                                <path d="M11.4289 9.07364C11.8513 9.07364 12.1938 8.73121 12.1938 8.30879C12.1938 7.88638 11.8513 7.54395 11.4289 7.54395C11.0065 7.54395 10.6641 7.88638 10.6641 8.30879C10.6641 8.73121 11.0065 9.07364 11.4289 9.07364Z" fill="#5B6570"/>
+                                                <path d="M8.10078 12.4025C8.5232 12.4025 8.86563 12.0601 8.86563 11.6377C8.86563 11.2153 8.5232 10.8728 8.10078 10.8728C7.67837 10.8728 7.33594 11.2153 7.33594 11.6377C7.33594 12.0601 7.67837 12.4025 8.10078 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 9.07364C5.19605 9.07364 5.53848 8.73121 5.53848 8.30879C5.53848 7.88638 5.19605 7.54395 4.77364 7.54395C4.35122 7.54395 4.00879 7.88638 4.00879 8.30879C4.00879 8.73121 4.35122 9.07364 4.77364 9.07364Z" fill="#5B6570"/>
+                                                <path d="M4.77364 12.4025C5.19605 12.4025 5.53848 12.0601 5.53848 11.6377C5.53848 11.2153 5.19605 10.8728 4.77364 10.8728C4.35122 10.8728 4.00879 11.2153 4.00879 11.6377C4.00879 12.0601 4.35122 12.4025 4.77364 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 15.7223C5.19605 15.7223 5.53848 15.3798 5.53848 14.9574C5.53848 14.535 5.19605 14.1926 4.77364 14.1926C4.35122 14.1926 4.00879 14.535 4.00879 14.9574C4.00879 15.3798 4.35122 15.7223 4.77364 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 15.7223C8.5232 15.7223 8.86563 15.3798 8.86563 14.9574C8.86563 14.535 8.5232 14.1926 8.10078 14.1926C7.67837 14.1926 7.33594 14.535 7.33594 14.9574C7.33594 15.3798 7.67837 15.7223 8.10078 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 9.07364C8.5232 9.07364 8.86563 8.73121 8.86563 8.30879C8.86563 7.88638 8.5232 7.54395 8.10078 7.54395C7.67837 7.54395 7.33594 7.88638 7.33594 8.30879C7.33594 8.73121 7.67837 9.07364 8.10078 9.07364Z" fill="#5B6570"/>
+                                                </svg>                                                
+                                            <span> 20th Jul 2024 at 11:12</span>
+                                        </td>
+                                        <td class="table-total">
+                                          <p class="fs-15 fw-400 priority-low m-0"><span class="priority-icon"></span>Low</p>
+                                        </td>
+                                        <td class="table-">
+                                            <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.90626 2.27344C6.24941 2.27344 4.90625 3.61659 4.90625 5.27344C4.90625 6.9303 6.24941 8.27345 7.90626 8.27345C9.56316 8.27345 10.9063 6.9303 10.9063 5.27344C10.9063 3.61659 9.56316 2.27344 7.90626 2.27344ZM2.90625 5.27344C2.90625 2.51202 5.14483 0.273438 7.90626 0.273438C10.6677 0.273438 12.9063 2.51202 12.9063 5.27344C12.9063 8.03485 10.6677 10.2734 7.90626 10.2734C5.14483 10.2734 2.90625 8.03485 2.90625 5.27344ZM20.6134 6.56633C21.0039 6.95686 21.0039 7.59005 20.6134 7.98055L16.6134 11.9806C16.2229 12.3711 15.5897 12.3711 15.1992 11.9806L13.1992 9.98055C12.8087 9.59005 12.8087 8.95685 13.1992 8.56635C13.5897 8.17585 14.2229 8.17585 14.6134 8.56635L15.9063 9.85925L19.1992 6.56633C19.5897 6.17581 20.2229 6.17581 20.6134 6.56633ZM3.10891 12.613C4.38047 11.7653 6.07952 11.2735 7.90626 11.2735C9.73296 11.2735 11.4321 11.7653 12.7036 12.613C13.9682 13.4561 14.9063 14.7305 14.9063 16.2735C14.9063 16.8258 14.4586 17.2735 13.9063 17.2735C13.354 17.2735 12.9063 16.8258 12.9063 16.2735C12.9063 15.6073 12.5012 14.8818 11.5942 14.2771C10.6942 13.6771 9.39326 13.2735 7.90626 13.2735C6.41929 13.2735 5.11832 13.6771 4.21831 14.2771C3.31131 14.8818 2.90625 15.6073 2.90625 16.2735C2.90625 16.8258 2.45853 17.2735 1.90625 17.2735C1.35397 17.2735 0.90625 16.8258 0.90625 16.2735C0.90625 14.7305 1.84434 13.4561 3.10891 12.613Z" fill="#5B6570"/>
+                                                </svg>
+                                                <span>Cindy Robbins</span>
+                                            </p>
+                                        </td>
+                                        <td class="table-status"> 
+                                            <div class="active-status d-flex align-items-center gap-1">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
+                                                    <path d="M7.6495 0.0234375C3.78974 0.0234375 0.649536 3.16357 0.649536 7.0234C0.649536 10.8832 3.78974 14.0234 7.6495 14.0234C11.5093 14.0234 14.6495 10.8832 14.6495 7.0234C14.6495 3.16357 11.5093 0.0234375 7.6495 0.0234375ZM11.669 5.84105L7.27128 10.2388C7.08429 10.4258 6.83572 10.5287 6.57131 10.5287C6.30689 10.5287 6.05832 10.4258 5.87133 10.2388L3.63 7.99743C3.44301 7.81044 3.34001 7.56188 3.34001 7.29746C3.34001 7.03297 3.44301 6.7844 3.63 6.59741C3.81691 6.41042 4.06548 6.30743 4.32997 6.30743C4.59439 6.30743 4.84303 6.41042 5.02995 6.59748L6.57123 8.1387L10.2689 4.44103C10.4559 4.25403 10.7045 4.15112 10.9689 4.15112C11.2333 4.15112 11.4819 4.25403 11.6689 4.44103C12.055 4.82713 12.055 5.45509 11.669 5.84105Z" fill="var(--bright)"></path>
+                                                </svg>
+                                                <span class="active fw-600">Resolved</span>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-id">
+                                          <p class="fs-15 fw-400 text-black m-0">#989546</p>
+                                        </td>
+                                        <td class="table-date">
+                                          <p class="fs-15 fw-400 text-black m-0 ">How to deposit money to my portal?</p>
+                                        </td>
+                                        <td class="">
+                                          <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7561 9.07364C15.1785 9.07364 15.5209 8.73121 15.5209 8.30879C15.5209 7.88638 15.1785 7.54395 14.7561 7.54395C14.3336 7.54395 13.9912 7.88638 13.9912 8.30879C13.9912 8.73121 14.3336 9.07364 14.7561 9.07364Z" fill="#5B6570"/>
+                                                <path d="M16.5148 1.80313H15.5205V1.03828C15.5205 0.615859 15.1781 0.273438 14.7557 0.273438C14.3333 0.273438 13.9908 0.615859 13.9908 1.03828V1.80313H10.5108V1.03828C10.5108 0.615859 10.1684 0.273438 9.74594 0.273438C9.32351 0.273438 8.98109 0.615859 8.98109 1.03828V1.80313H5.53928V1.03828C5.53928 0.615859 5.19686 0.273438 4.77443 0.273438C4.35201 0.273438 4.00959 0.615859 4.00959 1.03828V1.80313H3.05353C1.36658 1.80313 -0.00585938 3.17557 -0.00585938 4.86252V16.7941C-0.00585938 18.4811 1.36658 19.8535 3.05353 19.8535H8.90461C9.32703 19.8535 9.66945 19.5111 9.66945 19.0887C9.66945 18.6662 9.32703 18.3238 8.90461 18.3238H3.05353C2.21005 18.3238 1.52383 17.6376 1.52383 16.7941V4.86252C1.52383 4.01905 2.21005 3.33282 3.05353 3.33282H4.00959V4.09767C4.00959 4.5201 4.35201 4.86252 4.77443 4.86252C5.19686 4.86252 5.53928 4.5201 5.53928 4.09767V3.33282H8.98109V4.09767C8.98109 4.5201 9.32351 4.86252 9.74594 4.86252C10.1684 4.86252 10.5108 4.5201 10.5108 4.09767V3.33282H13.9908V4.09767C13.9908 4.5201 14.3333 4.86252 14.7557 4.86252C15.1781 4.86252 15.5205 4.5201 15.5205 4.09767V3.33282H16.5148C17.3583 3.33282 18.0445 4.01905 18.0445 4.86252V9.22215C18.0445 9.64457 18.3869 9.98699 18.8094 9.98699C19.2318 9.98699 19.5742 9.64457 19.5742 9.22215V4.86252C19.5742 3.17557 18.2018 1.80313 16.5148 1.80313Z" fill="#5B6570"/>
+                                                <path d="M14.9467 10.5985C12.3951 10.5985 10.3193 12.6743 10.3193 15.2258C10.3193 17.7773 12.3951 19.8531 14.9467 19.8531C17.4982 19.8531 19.574 17.7773 19.574 15.2258C19.574 12.6743 17.4982 10.5985 14.9467 10.5985ZM14.9467 18.3234C13.2386 18.3234 11.849 16.9339 11.849 15.2258C11.849 13.5177 13.2386 12.1282 14.9467 12.1282C16.6547 12.1282 18.0443 13.5177 18.0443 15.2258C18.0443 16.9339 16.6547 18.3234 14.9467 18.3234Z" fill="#5B6570"/>
+                                                <path d="M16.0565 14.4619H15.7123V13.6588C15.7123 13.2364 15.3699 12.894 14.9475 12.894C14.525 12.894 14.1826 13.2364 14.1826 13.6588V15.2267C14.1826 15.6492 14.525 15.9916 14.9475 15.9916H16.0565C16.4789 15.9916 16.8213 15.6492 16.8213 15.2267C16.8213 14.8043 16.4789 14.4619 16.0565 14.4619Z" fill="#5B6570"/>
+                                                <path d="M11.4289 9.07364C11.8513 9.07364 12.1938 8.73121 12.1938 8.30879C12.1938 7.88638 11.8513 7.54395 11.4289 7.54395C11.0065 7.54395 10.6641 7.88638 10.6641 8.30879C10.6641 8.73121 11.0065 9.07364 11.4289 9.07364Z" fill="#5B6570"/>
+                                                <path d="M8.10078 12.4025C8.5232 12.4025 8.86563 12.0601 8.86563 11.6377C8.86563 11.2153 8.5232 10.8728 8.10078 10.8728C7.67837 10.8728 7.33594 11.2153 7.33594 11.6377C7.33594 12.0601 7.67837 12.4025 8.10078 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 9.07364C5.19605 9.07364 5.53848 8.73121 5.53848 8.30879C5.53848 7.88638 5.19605 7.54395 4.77364 7.54395C4.35122 7.54395 4.00879 7.88638 4.00879 8.30879C4.00879 8.73121 4.35122 9.07364 4.77364 9.07364Z" fill="#5B6570"/>
+                                                <path d="M4.77364 12.4025C5.19605 12.4025 5.53848 12.0601 5.53848 11.6377C5.53848 11.2153 5.19605 10.8728 4.77364 10.8728C4.35122 10.8728 4.00879 11.2153 4.00879 11.6377C4.00879 12.0601 4.35122 12.4025 4.77364 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 15.7223C5.19605 15.7223 5.53848 15.3798 5.53848 14.9574C5.53848 14.535 5.19605 14.1926 4.77364 14.1926C4.35122 14.1926 4.00879 14.535 4.00879 14.9574C4.00879 15.3798 4.35122 15.7223 4.77364 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 15.7223C8.5232 15.7223 8.86563 15.3798 8.86563 14.9574C8.86563 14.535 8.5232 14.1926 8.10078 14.1926C7.67837 14.1926 7.33594 14.535 7.33594 14.9574C7.33594 15.3798 7.67837 15.7223 8.10078 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 9.07364C8.5232 9.07364 8.86563 8.73121 8.86563 8.30879C8.86563 7.88638 8.5232 7.54395 8.10078 7.54395C7.67837 7.54395 7.33594 7.88638 7.33594 8.30879C7.33594 8.73121 7.67837 9.07364 8.10078 9.07364Z" fill="#5B6570"/>
+                                                </svg>                                                
+                                            <span>10th Jul 2024 at 13:10</span>
+                                        </td>
+                                        <td class="table-total">
+                                          <p class="fs-15 fw-400 priority-medium m-0"><span class="priority-icon"></span>Medium</p>
+                                        </td>
+                                        <td class="table-">
+                                            <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.90626 2.27344C6.24941 2.27344 4.90625 3.61659 4.90625 5.27344C4.90625 6.9303 6.24941 8.27345 7.90626 8.27345C9.56316 8.27345 10.9063 6.9303 10.9063 5.27344C10.9063 3.61659 9.56316 2.27344 7.90626 2.27344ZM2.90625 5.27344C2.90625 2.51202 5.14483 0.273438 7.90626 0.273438C10.6677 0.273438 12.9063 2.51202 12.9063 5.27344C12.9063 8.03485 10.6677 10.2734 7.90626 10.2734C5.14483 10.2734 2.90625 8.03485 2.90625 5.27344ZM20.6134 6.56633C21.0039 6.95686 21.0039 7.59005 20.6134 7.98055L16.6134 11.9806C16.2229 12.3711 15.5897 12.3711 15.1992 11.9806L13.1992 9.98055C12.8087 9.59005 12.8087 8.95685 13.1992 8.56635C13.5897 8.17585 14.2229 8.17585 14.6134 8.56635L15.9063 9.85925L19.1992 6.56633C19.5897 6.17581 20.2229 6.17581 20.6134 6.56633ZM3.10891 12.613C4.38047 11.7653 6.07952 11.2735 7.90626 11.2735C9.73296 11.2735 11.4321 11.7653 12.7036 12.613C13.9682 13.4561 14.9063 14.7305 14.9063 16.2735C14.9063 16.8258 14.4586 17.2735 13.9063 17.2735C13.354 17.2735 12.9063 16.8258 12.9063 16.2735C12.9063 15.6073 12.5012 14.8818 11.5942 14.2771C10.6942 13.6771 9.39326 13.2735 7.90626 13.2735C6.41929 13.2735 5.11832 13.6771 4.21831 14.2771C3.31131 14.8818 2.90625 15.6073 2.90625 16.2735C2.90625 16.8258 2.45853 17.2735 1.90625 17.2735C1.35397 17.2735 0.90625 16.8258 0.90625 16.2735C0.90625 14.7305 1.84434 13.4561 3.10891 12.613Z" fill="#5B6570"/>
+                                                </svg>
+                                                <span>Ruben Moodie</span>
+                                            </p>
+                                        </td>
+                                        <td class="table-status"> 
+                                            <div class="active-status d-flex align-items-center gap-1">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
+                                                    <path d="M7.6495 0.0234375C3.78974 0.0234375 0.649536 3.16357 0.649536 7.0234C0.649536 10.8832 3.78974 14.0234 7.6495 14.0234C11.5093 14.0234 14.6495 10.8832 14.6495 7.0234C14.6495 3.16357 11.5093 0.0234375 7.6495 0.0234375ZM11.669 5.84105L7.27128 10.2388C7.08429 10.4258 6.83572 10.5287 6.57131 10.5287C6.30689 10.5287 6.05832 10.4258 5.87133 10.2388L3.63 7.99743C3.44301 7.81044 3.34001 7.56188 3.34001 7.29746C3.34001 7.03297 3.44301 6.7844 3.63 6.59741C3.81691 6.41042 4.06548 6.30743 4.32997 6.30743C4.59439 6.30743 4.84303 6.41042 5.02995 6.59748L6.57123 8.1387L10.2689 4.44103C10.4559 4.25403 10.7045 4.15112 10.9689 4.15112C11.2333 4.15112 11.4819 4.25403 11.6689 4.44103C12.055 4.82713 12.055 5.45509 11.669 5.84105Z" fill="var(--bright)"></path>
+                                                </svg>
+                                                <span class="active fw-600">Resolved</span>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-id">
+                                          <p class="fs-15 fw-400 text-black m-0">#452135</p>
+                                        </td>
+                                        <td class="table-date">
+                                          <p class="fs-15 fw-400 text-black m-0 ">My app is buggy Jetserve helps now on my issue.</p>
+                                        </td>
+                                        <td class="">
+                                          <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7561 9.07364C15.1785 9.07364 15.5209 8.73121 15.5209 8.30879C15.5209 7.88638 15.1785 7.54395 14.7561 7.54395C14.3336 7.54395 13.9912 7.88638 13.9912 8.30879C13.9912 8.73121 14.3336 9.07364 14.7561 9.07364Z" fill="#5B6570"/>
+                                                <path d="M16.5148 1.80313H15.5205V1.03828C15.5205 0.615859 15.1781 0.273438 14.7557 0.273438C14.3333 0.273438 13.9908 0.615859 13.9908 1.03828V1.80313H10.5108V1.03828C10.5108 0.615859 10.1684 0.273438 9.74594 0.273438C9.32351 0.273438 8.98109 0.615859 8.98109 1.03828V1.80313H5.53928V1.03828C5.53928 0.615859 5.19686 0.273438 4.77443 0.273438C4.35201 0.273438 4.00959 0.615859 4.00959 1.03828V1.80313H3.05353C1.36658 1.80313 -0.00585938 3.17557 -0.00585938 4.86252V16.7941C-0.00585938 18.4811 1.36658 19.8535 3.05353 19.8535H8.90461C9.32703 19.8535 9.66945 19.5111 9.66945 19.0887C9.66945 18.6662 9.32703 18.3238 8.90461 18.3238H3.05353C2.21005 18.3238 1.52383 17.6376 1.52383 16.7941V4.86252C1.52383 4.01905 2.21005 3.33282 3.05353 3.33282H4.00959V4.09767C4.00959 4.5201 4.35201 4.86252 4.77443 4.86252C5.19686 4.86252 5.53928 4.5201 5.53928 4.09767V3.33282H8.98109V4.09767C8.98109 4.5201 9.32351 4.86252 9.74594 4.86252C10.1684 4.86252 10.5108 4.5201 10.5108 4.09767V3.33282H13.9908V4.09767C13.9908 4.5201 14.3333 4.86252 14.7557 4.86252C15.1781 4.86252 15.5205 4.5201 15.5205 4.09767V3.33282H16.5148C17.3583 3.33282 18.0445 4.01905 18.0445 4.86252V9.22215C18.0445 9.64457 18.3869 9.98699 18.8094 9.98699C19.2318 9.98699 19.5742 9.64457 19.5742 9.22215V4.86252C19.5742 3.17557 18.2018 1.80313 16.5148 1.80313Z" fill="#5B6570"/>
+                                                <path d="M14.9467 10.5985C12.3951 10.5985 10.3193 12.6743 10.3193 15.2258C10.3193 17.7773 12.3951 19.8531 14.9467 19.8531C17.4982 19.8531 19.574 17.7773 19.574 15.2258C19.574 12.6743 17.4982 10.5985 14.9467 10.5985ZM14.9467 18.3234C13.2386 18.3234 11.849 16.9339 11.849 15.2258C11.849 13.5177 13.2386 12.1282 14.9467 12.1282C16.6547 12.1282 18.0443 13.5177 18.0443 15.2258C18.0443 16.9339 16.6547 18.3234 14.9467 18.3234Z" fill="#5B6570"/>
+                                                <path d="M16.0565 14.4619H15.7123V13.6588C15.7123 13.2364 15.3699 12.894 14.9475 12.894C14.525 12.894 14.1826 13.2364 14.1826 13.6588V15.2267C14.1826 15.6492 14.525 15.9916 14.9475 15.9916H16.0565C16.4789 15.9916 16.8213 15.6492 16.8213 15.2267C16.8213 14.8043 16.4789 14.4619 16.0565 14.4619Z" fill="#5B6570"/>
+                                                <path d="M11.4289 9.07364C11.8513 9.07364 12.1938 8.73121 12.1938 8.30879C12.1938 7.88638 11.8513 7.54395 11.4289 7.54395C11.0065 7.54395 10.6641 7.88638 10.6641 8.30879C10.6641 8.73121 11.0065 9.07364 11.4289 9.07364Z" fill="#5B6570"/>
+                                                <path d="M8.10078 12.4025C8.5232 12.4025 8.86563 12.0601 8.86563 11.6377C8.86563 11.2153 8.5232 10.8728 8.10078 10.8728C7.67837 10.8728 7.33594 11.2153 7.33594 11.6377C7.33594 12.0601 7.67837 12.4025 8.10078 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 9.07364C5.19605 9.07364 5.53848 8.73121 5.53848 8.30879C5.53848 7.88638 5.19605 7.54395 4.77364 7.54395C4.35122 7.54395 4.00879 7.88638 4.00879 8.30879C4.00879 8.73121 4.35122 9.07364 4.77364 9.07364Z" fill="#5B6570"/>
+                                                <path d="M4.77364 12.4025C5.19605 12.4025 5.53848 12.0601 5.53848 11.6377C5.53848 11.2153 5.19605 10.8728 4.77364 10.8728C4.35122 10.8728 4.00879 11.2153 4.00879 11.6377C4.00879 12.0601 4.35122 12.4025 4.77364 12.4025Z" fill="#5B6570"/>
+                                                <path d="M4.77364 15.7223C5.19605 15.7223 5.53848 15.3798 5.53848 14.9574C5.53848 14.535 5.19605 14.1926 4.77364 14.1926C4.35122 14.1926 4.00879 14.535 4.00879 14.9574C4.00879 15.3798 4.35122 15.7223 4.77364 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 15.7223C8.5232 15.7223 8.86563 15.3798 8.86563 14.9574C8.86563 14.535 8.5232 14.1926 8.10078 14.1926C7.67837 14.1926 7.33594 14.535 7.33594 14.9574C7.33594 15.3798 7.67837 15.7223 8.10078 15.7223Z" fill="#5B6570"/>
+                                                <path d="M8.10078 9.07364C8.5232 9.07364 8.86563 8.73121 8.86563 8.30879C8.86563 7.88638 8.5232 7.54395 8.10078 7.54395C7.67837 7.54395 7.33594 7.88638 7.33594 8.30879C7.33594 8.73121 7.67837 9.07364 8.10078 9.07364Z" fill="#5B6570"/>
+                                                </svg>                                                
+                                            <span>1st Jul 2024 at 12:19</span>
+                                        </td>
+                                        <td class="table-total">
+                                          <p class="fs-15 fw-400 priority-medium m-0"><span class="priority-icon"></span>Medium</p>
+                                        </td>
+                                        <td class="table-">
+                                            <p class="fs-15 fw-400 text-black m-0 d-align gap-1">
+                                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.90626 2.27344C6.24941 2.27344 4.90625 3.61659 4.90625 5.27344C4.90625 6.9303 6.24941 8.27345 7.90626 8.27345C9.56316 8.27345 10.9063 6.9303 10.9063 5.27344C10.9063 3.61659 9.56316 2.27344 7.90626 2.27344ZM2.90625 5.27344C2.90625 2.51202 5.14483 0.273438 7.90626 0.273438C10.6677 0.273438 12.9063 2.51202 12.9063 5.27344C12.9063 8.03485 10.6677 10.2734 7.90626 10.2734C5.14483 10.2734 2.90625 8.03485 2.90625 5.27344ZM20.6134 6.56633C21.0039 6.95686 21.0039 7.59005 20.6134 7.98055L16.6134 11.9806C16.2229 12.3711 15.5897 12.3711 15.1992 11.9806L13.1992 9.98055C12.8087 9.59005 12.8087 8.95685 13.1992 8.56635C13.5897 8.17585 14.2229 8.17585 14.6134 8.56635L15.9063 9.85925L19.1992 6.56633C19.5897 6.17581 20.2229 6.17581 20.6134 6.56633ZM3.10891 12.613C4.38047 11.7653 6.07952 11.2735 7.90626 11.2735C9.73296 11.2735 11.4321 11.7653 12.7036 12.613C13.9682 13.4561 14.9063 14.7305 14.9063 16.2735C14.9063 16.8258 14.4586 17.2735 13.9063 17.2735C13.354 17.2735 12.9063 16.8258 12.9063 16.2735C12.9063 15.6073 12.5012 14.8818 11.5942 14.2771C10.6942 13.6771 9.39326 13.2735 7.90626 13.2735C6.41929 13.2735 5.11832 13.6771 4.21831 14.2771C3.31131 14.8818 2.90625 15.6073 2.90625 16.2735C2.90625 16.8258 2.45853 17.2735 1.90625 17.2735C1.35397 17.2735 0.90625 16.8258 0.90625 16.2735C0.90625 14.7305 1.84434 13.4561 3.10891 12.613Z" fill="#5B6570"/>
+                                                </svg>
+                                                <span>Rebecca Alexander</span>
+                                            </p>
+                                        </td>
+                                        <td class="table-status"> 
+                                            <div class="active-status d-flex align-items-center gap-1">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="active-true">
+                                                    <path d="M7.6495 0.0234375C3.78974 0.0234375 0.649536 3.16357 0.649536 7.0234C0.649536 10.8832 3.78974 14.0234 7.6495 14.0234C11.5093 14.0234 14.6495 10.8832 14.6495 7.0234C14.6495 3.16357 11.5093 0.0234375 7.6495 0.0234375ZM11.669 5.84105L7.27128 10.2388C7.08429 10.4258 6.83572 10.5287 6.57131 10.5287C6.30689 10.5287 6.05832 10.4258 5.87133 10.2388L3.63 7.99743C3.44301 7.81044 3.34001 7.56188 3.34001 7.29746C3.34001 7.03297 3.44301 6.7844 3.63 6.59741C3.81691 6.41042 4.06548 6.30743 4.32997 6.30743C4.59439 6.30743 4.84303 6.41042 5.02995 6.59748L6.57123 8.1387L10.2689 4.44103C10.4559 4.25403 10.7045 4.15112 10.9689 4.15112C11.2333 4.15112 11.4819 4.25403 11.6689 4.44103C12.055 4.82713 12.055 5.45509 11.669 5.84105Z" fill="var(--bright)"></path>
+                                                </svg>
+                                                <span class="active fw-600">Resolved</span>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
-                            </div>
-                            <div class="tab" data-id="tab3">
-                                <div class="admin-card-box table-wrap">
-                                    <div class="d-flex align-items-center flex-wrap">
-                                        <h5 class="mb-0">Showing 1 to 1 of 10 entries</h5>
-                                        <div class="table-search-bar ms-auto d-flex align-items-center">
-                                            <div class="search-bar-wrap position-relative">
-                                                <input type="search" placeholder="Search"
-                                                    class="form-control custom-input" />
-                                                <span class="search-icon position-absolute line-height-0">
-                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z"
-                                                            fill="#848998" />
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <button class="primary-btn">Go</button>
-                                        </div>
+                                <div class="table-footer-wrap d-flex align-items-center flex-wrap">
+                                    <div class="d-flex align-items-center">
+                                      <h4 class="fw-500 mb-0 text-cool-grey">Show</h4>
+                                      <div class="wrapper-dropdown form-control custom-input " id="dropdown">
+                                        <span class="selected-display" id="destination">
+                                          10
+                                        </span>
+                                        <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <ul class="dropdown">
+                                          <li class="item">
+                                            10
+                                          </li>
+                                          <li class="item">
+                                            09
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <h4 class="fw-500 mb-0 text-cool-grey">entries</h4>
                                     </div>
-                                    <div class="table-responsive">
-                                        <table class="w-100">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Department
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Subject
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Last Updated
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Status
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Support</h4>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">#35619745435</h4>
-                                                        <a href="javascript:void(0)"
-                                                            class="text-primary-theme fw-500">Support-Ticket-Test</a>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Wednesday, April 17, 2024</h4>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="primary-btn small-btn exquisite-turquoise-bg">Answered</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="table-footer-wrap d-flex align-items-center flex-wrap">
-                                        <div class="d-flex align-items-center">
-                                            <h4 class="fw-500 mb-0">Show</h4>
-                                            <div class="wrapper-dropdown form-control custom-input"
-                                                id="dropdown">
-                                                <span class="selected-display" id="destination">
-                                                    10
-                                                </span>
-                                                <svg class="arrow" id="drp-arrow" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="transition-all ml-auto rotate-180">
-                                                    <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                                <ul class="dropdown">
-                                                    <li class="item">
-                                                        10
-                                                    </li>
-                                                    <li class="item">
-                                                        09
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <h4 class="fw-500 mb-0">entries</h4>
-                                        </div>
-                                        <div
-                                            class="ms-auto pagination-wrap d-flex align-items-center gap-15 flex-wrap">
-                                            <span class="line-height-0 cursor-pointer transition-all-03">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <ul class="d-flex align-items-center gap-15 flex-wrap">
-                                                <li class="d-align-justify cursor-pointer transition-all-03">
-                                                    <h6>1</h6>
-                                                </li>
-                                                <li class="d-align-justify cursor-pointer transition-all-03">
-                                                    <h6>2</h6>
-                                                </li>
-                                            </ul>
-                                            <span class="line-height-0 cursor-pointer transition-all-03">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab" data-id="tab4">
-                                <div class="admin-card-box table-wrap">
-                                    <div class="d-flex align-items-center flex-wrap">
-                                        <h5 class="mb-0">Showing 1 to 1 of 10 entries</h5>
-                                        <div class="table-search-bar ms-auto d-flex align-items-center">
-                                            <div class="search-bar-wrap position-relative">
-                                                <input type="search" placeholder="Search"
-                                                    class="form-control custom-input" />
-                                                <span class="search-icon position-absolute line-height-0">
-                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z"
-                                                            fill="#848998" />
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <button class="primary-btn">Go</button>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="w-100">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Department
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Subject
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Last Updated
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Status
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Support</h4>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">#35619745435</h4>
-                                                        <a href="javascript:void(0)"
-                                                            class="text-primary-theme fw-500">Support-Ticket-Test</a>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Wednesday, April 17, 2024</h4>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="primary-btn small-btn exquisite-turquoise-bg">Reply</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="table-footer-wrap d-flex align-items-center flex-wrap">
-                                        <div class="d-flex align-items-center">
-                                            <h4 class="fw-500 mb-0">Show</h4>
-                                            <div class="wrapper-dropdown form-control custom-input"
-                                                id="dropdown">
-                                                <span class="selected-display" id="destination">
-                                                    10
-                                                </span>
-                                                <svg class="arrow" id="drp-arrow" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="transition-all ml-auto rotate-180">
-                                                    <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                                <ul class="dropdown">
-                                                    <li class="item">
-                                                        10
-                                                    </li>
-                                                    <li class="item">
-                                                        09
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <h4 class="fw-500 mb-0">entries</h4>
-                                        </div>
-                                        <div
-                                            class="ms-auto pagination-wrap d-flex align-items-center gap-15 flex-wrap">
-                                            <span class="line-height-0 cursor-pointer transition-all-03">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <ul class="d-flex align-items-center gap-15 flex-wrap">
-                                                <li class="d-align-justify cursor-pointer transition-all-03">
-                                                    <h6>1</h6>
-                                                </li>
-                                                <li class="d-align-justify cursor-pointer transition-all-03">
-                                                    <h6>2</h6>
-                                                </li>
-                                            </ul>
-                                            <span class="line-height-0 cursor-pointer transition-all-03">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab" data-id="tab5">
-                                <div class="admin-card-box table-wrap">
-                                    <div class="d-flex align-items-center flex-wrap">
-                                        <h5 class="mb-0">Showing 1 to 1 of 10 entries</h5>
-                                        <div class="table-search-bar ms-auto d-flex align-items-center">
-                                            <div class="search-bar-wrap position-relative">
-                                                <input type="search" placeholder="Search"
-                                                    class="form-control custom-input" />
-                                                <span class="search-icon position-absolute line-height-0">
-                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M7.303 0.861328C3.43979 0.861328 0.292847 4.00826 0.292847 7.87149C0.292847 11.7347 3.43979 14.8878 7.303 14.8878C8.95309 14.8878 10.4707 14.3095 11.6701 13.3494L14.5901 16.2678C14.7374 16.4091 14.9343 16.487 15.1384 16.4849C15.3425 16.4828 15.5377 16.4009 15.6821 16.2567C15.8265 16.1125 15.9088 15.9174 15.9111 15.7133C15.9135 15.5092 15.8358 15.3123 15.6948 15.1647L12.7748 12.2447C13.7357 11.0435 14.3147 9.52349 14.3147 7.87149C14.3147 4.00826 11.1662 0.861328 7.303 0.861328ZM7.303 2.4195C10.3241 2.4195 12.755 4.85037 12.755 7.87149C12.755 10.8926 10.3241 13.3296 7.303 13.3296C4.28187 13.3296 1.851 10.8926 1.851 7.87149C1.851 4.85037 4.28187 2.4195 7.303 2.4195Z"
-                                                            fill="#848998" />
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <button class="primary-btn">Go</button>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="w-100">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Department
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Subject
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Last Updated
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="d-flex align-items-center gap-1">
-                                                            Status
-                                                            <span class="line-height-0">
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path
-                                                                        d="M18.2072 9.0428 12.0001 2.83569 5.79297 9.0428 7.20718 10.457 12.0001 5.66412 16.793 10.457 18.2072 9.0428ZM5.79282 14.9572 11.9999 21.1643 18.207 14.9572 16.7928 13.543 11.9999 18.3359 7.20703 13.543 5.79282 14.9572Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Support</h4>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">#35619745435</h4>
-                                                        <a href="javascript:void(0)"
-                                                            class="text-primary-theme fw-500">Support-Ticket-Test</a>
-                                                    </td>
-                                                    <td>
-                                                        <h4 class="fw-500 m-0 text-black">Wednesday, April 17, 2024</h4>
-                                                    </td>
-                                                    <td>
-                                                        <button class="primary-btn small-btn red-bg">Closed</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="table-footer-wrap d-flex align-items-center flex-wrap">
-                                        <div class="d-flex align-items-center">
-                                            <h4 class="fw-500 mb-0">Show</h4>
-                                            <div class="wrapper-dropdown form-control custom-input"
-                                                id="dropdown">
-                                                <span class="selected-display" id="destination">
-                                                    10
-                                                </span>
-                                                <svg class="arrow" id="drp-arrow" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="transition-all ml-auto rotate-180">
-                                                    <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                                <ul class="dropdown">
-                                                    <li class="item">
-                                                        10
-                                                    </li>
-                                                    <li class="item">
-                                                        09
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <h4 class="fw-500 mb-0">entries</h4>
-                                        </div>
-                                        <div
-                                            class="ms-auto pagination-wrap d-flex align-items-center gap-15 flex-wrap">
-                                            <span class="line-height-0 cursor-pointer transition-all-03">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <ul class="d-flex align-items-center gap-15 flex-wrap">
-                                                <li class="d-align-justify cursor-pointer transition-all-03">
-                                                    <h6>1</h6>
-                                                </li>
-                                                <li class="d-align-justify cursor-pointer transition-all-03">
-                                                    <h6>2</h6>
-                                                </li>
-                                            </ul>
-                                            <span class="line-height-0 cursor-pointer transition-all-03">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                        </div>
+                                    <div class="pagination-wrap d-flex align-items-center gap-1 flex-wrap">
+                                      <span class="line-height-0 cursor-pointer transition-all-03">
+                                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M0.621351 5.39686C0.62078 5.2982 0.639689 5.20041 0.676994 5.10907C0.714298 5.01774 0.769264 4.93467 0.838739 4.86463L5.33643 0.36694C5.47758 0.225785 5.66903 0.146484 5.86866 0.146484C6.06828 0.146484 6.25973 0.225785 6.40088 0.36694C6.54204 0.508095 6.62134 0.699543 6.62134 0.899167C6.62134 1.09879 6.54204 1.29024 6.40088 1.43139L2.42792 5.39686L6.39339 9.36232C6.51619 9.50572 6.58036 9.69018 6.57308 9.87884C6.56579 10.0675 6.48758 10.2465 6.35408 10.38C6.22058 10.5135 6.04161 10.5917 5.85295 10.599C5.66429 10.6063 5.47983 10.5421 5.33643 10.4193L0.838739 5.92159C0.700252 5.78196 0.622179 5.59351 0.621351 5.39686Z" fill="#73809e
+                                          "></path>
+                                        </svg>
+                                      </span>
+                                      <a href="javascript:void(0)" class="text-decoration-none text-cool-grey">Previous</a>
+                                      <ul class="d-flex align-items-center gap-5 flex-wrap">
+                                        <li class="d-align-justify cursor-pointer transition-all-03 active">
+                                          <h6>1</h6>
+                                        </li>
+                                        <li class="d-align-justify cursor-pointer transition-all-03">
+                                          <h6>2</h6>
+                                        </li>
+                                        <li class="d-align-justify cursor-pointer transition-all-03">
+                                          <h6>3</h6>
+                                        </li>
+                                        <li class="d-align-justify cursor-pointer transition-all-03">
+                                          <h6>4</h6>
+                                        </li>
+                                      </ul>
+                                      <a href="javascript:void(0)" class="text-decoration-none text-cool-grey">Next</a>
+                                      <span class="line-height-0 cursor-pointer transition-all-03">
+                                        <svg class="text-black" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M6.41893 5.3949C6.4195 5.29625 6.40059 5.19845 6.36329 5.10712C6.32598 5.01579 6.27102 4.93272 6.20154 4.86268L1.70385 0.364987C1.5627 0.223832 1.37125 0.144531 1.17163 0.144531C0.972004 0.144531 0.780556 0.223832 0.639401 0.364987C0.498246 0.506142 0.418945 0.69759 0.418945 0.897214C0.418945 1.09684 0.498246 1.28828 0.639401 1.42944L4.61236 5.3949L0.646897 9.36037C0.52409 9.50377 0.459918 9.68823 0.467205 9.87689C0.474492 10.0656 0.552702 10.2445 0.686204 10.378C0.819706 10.5115 0.998669 10.5897 1.18733 10.597C1.37599 10.6043 1.56045 10.5401 1.70385 10.4173L6.20154 5.91963C6.34003 5.78001 6.4181 5.59156 6.41893 5.3949Z" fill="#73809e"></path>
+                                        </svg>
+                                      </span>
                                     </div>
                                 </div>
                             </div>
