@@ -2,42 +2,34 @@
     .container {
         width: 1530px;
     }
-
     .js-section-website-details-content {
         max-width: 700px;
     }
-
 }
 
 @media (max-width:1599px) {
     html {
         font-size: 9px;
     }
-
     .js-navbar-nav {
         grid-gap: 0 2rem;
     }
-
     .js-navbar-brand {
         max-width: 20rem;
     }
-
     .js-features-text {
         line-height: 170%;
         word-spacing: 2px;
     }
-
     .js-section-website-details-content {
         max-width: 550px;
     }
-
 }
 
 @media (max-width:1399px) {
     html {
         font-size: 8px;
     }
-
     .js-navbar-nav {
         grid-gap: 0 3rem;
     }
@@ -397,11 +389,9 @@
     :root {
         --body-font-size: 14px;
     }
-
     .js-feature-banner {
         overflow: hidden;
     }
-
     .js-feature-banner-decoration {
         width: 150%;
     }
@@ -455,9 +445,6 @@
         height: 50px;
     }
 
-    /* .js-website-hosting-img-col::before{
-        left: 25px;
-    } */
     .js-website-hosting-col-1 .js-website-hosting-img-col::before {
         top: calc(100% - 60%);
     }

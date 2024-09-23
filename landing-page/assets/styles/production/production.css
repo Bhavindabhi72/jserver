@@ -209,20 +209,6 @@
     content: unset;
 }
 
-/* .pricing-js-section-hero::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: url(./../../images/backgrounds/clud-banner.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    mix-blend-mode: hard-light;
-    opacity: .4;
-} */
 /* _ENDS >> SECTION | HERO << JS */
 
 /* _BEGIN >> SECTION | PRICING PLAN << JS */
@@ -236,21 +222,6 @@
     font-size: 15px;
 }
 
-/* .js-section-plan::before {
-    content: "";
-    background: url("../../images/backgrounds/line-bg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 92%;
-    position: absolute;
-    top: 2%;
-    left: 0;
-    right: 0;
-    z-index: 0;
-}
- */
 .js-section-hero-landing::before{
     content: "";
     background: url("../../images/backgrounds/clud-banner.png");
@@ -347,18 +318,6 @@
     align-items: center;
     justify-content: center;
 }
-/* .js-nav-tabs>li.active>.js-nav-tab-item::after {
-    --js-nav-tab-triangel-size: 1.2rem;
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-top: var(--js-nav-tab-triangel-size) solid var(--color-blue);
-    border-right: var(--js-nav-tab-triangel-size) solid transparent;
-    border-bottom: var(--js-nav-tab-triangel-size) solid transparent;
-    border-left: var(--js-nav-tab-triangel-size) solid transparent;
-} */
 
 .js-nav-tabs>li.active>.js-nav-tab-item>span:nth-child(1),
 .js-nav-tabs>li.active>.js-nav-tab-item:focus>span:nth-child(1),
@@ -426,22 +385,6 @@
     padding: 5rem  2rem 2rem;
     border-radius: 18px 18px 0 0;
 }
-/* .js-pricing-plan-top-content::after{
-    content: "";
-    background:url("../../images/backgrounds/js-plan-patent.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: multiply;
-    z-index: 0;
-} */
 
 .js-pricing-plan-card.js-pricing-plan-card-light.store {
     --js-pricing-card-tag-color: #EF9429;
@@ -451,7 +394,6 @@
     flex-direction: column;
     justify-content: center;
 }
-
 
 .js-pricing-tag {
     position: absolute;
@@ -479,7 +421,6 @@
     bottom: -48px;
 }
 
-
 .js-pricing-tag-decor-start,
 .js-pricing-tag-decor-end {
     position: absolute;
@@ -501,7 +442,6 @@
     width: 2rem;
     height: 2rem;
 }
-
 
 .js-pricing-title {
     margin-bottom: 6px;
@@ -984,10 +924,6 @@ input[type=number]::-webkit-outer-spin-button {
     transition: all 0.35s;
 }
 
-/* .js-button:hover {
-    color: var(--color-white);
-} */
-
 /* _ENDS >> SECTION | WITH US << JS */
 
 /* _BEGIN >> SECTION | TECH SUPPORT << JS */
@@ -1071,7 +1007,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
 }
 
-
 .js-footer-nav-title {
     line-height: 120%;
     margin-bottom: 2.5rem;
@@ -1087,7 +1022,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .js-footer-nav-link {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 200%;
     color: var(--color-black);
 }
@@ -1120,7 +1055,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .js-footer-copyright-bar p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 200%;
     padding: 4.4rem 0;
     color: var(--color-gray-dark);
@@ -1212,7 +1147,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* _ENDS >> JS-SECTION-WEBSITE-HOSTING << JS */
-
 
 /* _BIGINS >> JS-SECTION-DOAMIAN << JS */
 
@@ -1313,7 +1247,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .bg-cloud {
-    /* background: linear-gradient(92.19deg, #254CEC 1.81%, #152B86 99.13%); */
     background: url(./../../images/backgrounds/hero-banner.png);
     background-position: center;
     background-size: cover;
@@ -1329,7 +1262,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* _ENDS >> JS-SECTION-DATABASE << JS */
 
-
 /* _BIGINS >> JS-SECTION-WEB-HOSTING-BLOG << JS */
 
 .js-section-blog {
@@ -1338,7 +1270,6 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
     background: linear-gradient(0deg, #EDF6FF 0%, #E6F3FF 52.09%, #F2F9FF 100%);
 }
-
 
 .js-blogs-banner {
     background: var(--color-white);
@@ -1408,7 +1339,6 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-
 }
 
 .js-blogs-pages-number li a:hover,
@@ -1435,8 +1365,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* _BIGINS >> JS-SECTION-WORDPRESS-SITES << JS */
 
-
-
 .js-section-wordpress-sites .js-hero-text,
 .js-section-wordpress-sites h1 {
     text-align: center;
@@ -1462,7 +1390,6 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 16px;
     background-color: var(--color-white);
     overflow: auto;
-
 }
 
 .js-information-box {
@@ -1492,7 +1419,6 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 16px;
     margin-bottom: 0;
     font-weight: 600;
-
 }
 
 .js-security-expert p span {
@@ -1650,7 +1576,6 @@ code {
     background-color: rgba(224, 248, 255, 1);
     color: rgb(0, 12, 42);
     border-color: rgba(89, 188, 220, 1) !important;
-
 }
 
 .sudo-label {
@@ -1658,7 +1583,6 @@ code {
     border-radius: 9px 9px 0px 0px;
     min-height: 40px;
 }
-
 
 .language-sudo {
     border-radius: 0px 0px 9px 9px;
@@ -1788,7 +1712,6 @@ code {
     border-left: none;
 }
 
-
 /* _ENDS >> JS-SECTION-WORDPRESS-SITES << JS */
 
 /* _BIGINS >> INTERNET-SERVICE << JS */
@@ -1838,7 +1761,6 @@ code {
     list-style-position: inside;
 }
 
-
 /* _ENDS >> INTERNET-SERVICE << JS */
 
 /* _BIGINS >> DEVOPS SUPPORT  << JS */
@@ -1854,7 +1776,6 @@ code {
 
 .js-feature-banner-details {
     color: var(--color-white);
-
 }
 
 .js-section-we-help .js-feature-banner-content {
@@ -1875,7 +1796,6 @@ code {
 }
 
 /* _ENDS >>  DEVOPS SUPPORT << JS */
-
 
 /* _BIGINS >> ABOUT US << JS */
 
@@ -1937,6 +1857,7 @@ code {
 
 /* _ENDS >>  HOSTING PRICE << JS */
 
+/* _BEGIN >>  CONTECT US << JS */
 
 .js-section-help{
     background: linear-gradient(0deg, #EDF6FF 0%, #E6F3FF 52.09%, #F2F9FF 100%);
@@ -1976,29 +1897,7 @@ code {
     justify-content: center;
 }
 
-.address-icon,
-.contact-icon,
-.email-icon {
-    height: 78px;
-    width: 78px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 7px 14px 0px #D5D5D7;
-    margin-bottom: 20px;
-}
-
-.address-icon {
-    background-color: #13B2E5 !important;
-}
-
-.contact-icon {
-    background-color: #14A4A2 !important;
-}
-
-.email-icon {
-    background-color: #FF7F00 !important;
-}
+/* _ENDS >>  CONTECT US << JS */
 
 /* _BEGIN >>  404 PRICE << JS */
 .js-error-area .js-section-error {
@@ -2038,7 +1937,6 @@ code {
 }
 
 /* _ENDS >>  404 PRICE << JS */
-
 
 /* _BEGIN >>  SERVER FARM << JS */
 
@@ -2180,9 +2078,9 @@ code {
 
 .js-section-features .js-features-text{
     color: #313336;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 300;
-    line-height: 34px; 
+    line-height: 30px; 
     letter-spacing: normal;
     word-spacing: normal;
 }
