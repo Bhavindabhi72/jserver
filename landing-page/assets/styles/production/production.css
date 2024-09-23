@@ -6,8 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-
     position: fixed;
     top: 0;
     left: 0;
@@ -253,6 +251,28 @@
     z-index: 0;
 }
  */
+.js-section-hero-landing::before{
+    content: "";
+    background: url("../../images/backgrounds/clud-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    z-index: 0;
+}
+
+.js-section-hero-landing{
+    position: relative;
+    background-color: #DCEEFF;
+}
+
 .js-plan-title {
     position: relative;
     z-index: 1;
@@ -325,7 +345,7 @@
 .js-pricing-tag-content.image{
     display: flex;
     align-items: center;
-    gap: 0.3rem;
+    justify-content: center;
 }
 /* .js-nav-tabs>li.active>.js-nav-tab-item::after {
     --js-nav-tab-triangel-size: 1.2rem;
@@ -521,6 +541,10 @@
     font-size: 16px;
     line-height: 2.1rem;
     font-weight: 400;
+}
+
+.js-pricing-plan-benefits-content svg{
+    min-width: fit-content;
 }
 
 .js-pricing-plan-benefits-content i {
@@ -767,21 +791,40 @@
 
 /* _BEGIN >> SECTION | CONATCT << JS */
 .js-section-contact {
-    padding: 0;
+    position: relative;
 }
 
-.js-conatct-content-wrapper {
-    border-right: 1px solid #E0ECF4;
+.js-section-contact::before {
+    content: "";
+    background-color: var(--color-blue);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+
+#jsContact .js-conatct-content-wrapper {
+    padding: 8.5rem 0;
 }
 
 .js-contact-bg-blue {
     position: relative;
 }
 
+.js-contact-cover-wrapper,
 .js-conatct-content-box {
     display: flex;
     flex-direction: column;
     grid-gap: 6rem;
+}
+
+.contract-us-section .js-contact-cover-wrapper{
+    grid-gap: 3rem;
+    padding: 0px 30px ;
+    margin-top: 20px;
 }
 
 .js-contact-cover-placeholder {
@@ -799,12 +842,40 @@
     transform: translateX(-50%);
 }
 
+.chat-us ,
+.call-us{
+    gap: 10px;
+}
+
+.js-contact-btn{
+    border-radius: 8px;
+    border: 1px solid #D0D4E3;
+    color: #254CEC;
+    font-weight: 600;
+    padding: 10px 14px;
+}
+
 .js-contact-form {
-    max-width: 100%;
-    margin-right: 65px;
+    width: 100%;
+    max-width: 51.5rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    grid-gap: 2rem;
+    grid-gap: 2.5rem;
+}
+
+.contract-us-section .js-contact-form {
+    margin: 0;
+    max-width: 90%;
+    margin-top: 30px;
+}
+
+.contract-us-section .js-conatct-content-wrapper{
+    border-right: 1px solid #E0ECF4;
+}
+
+.contract-us-section .js-form-control {
+    background: white;
 }
 
 .js-contact-form label {
@@ -813,50 +884,16 @@
     line-height: 121%;
 }
 
-.js-conatct-content-wrapper h4{
-    font-size: 25px;
-    margin-bottom: 27px;
-    margin-right: 65px;
-}
-
-.js-contact-cover-wrapper{
-    margin-left: 40px;
-}
-
-.chat-us , .call-us{
-    gap: 20px;
-    padding: 27px 0px;
-}
-
-.call-us{
-    border-top: 1px solid #E0ECF4;
-}
-
-.js-contact-btn{
-    border: 1px solid #D0D4E3;
-    color: var(--color-blue);
-    padding: 9px 27px;
-    border-radius: 8px;
-}
-
-.chat-us h4 , .call-us h4{
-    font-size: 25px;
-}
-
-.contract-us-section .js-form-control {
-    line-height: 20px;
-}
-
 .js-form-control {
-    border: 1px solid #CAD0D9;
-    border-radius: 10px;
+    background: #F0F8FF;
+    border: 1px solid #DEE8F0;
+    border-radius: .8rem;
     padding: 1.5rem 2rem;
     height: auto;
     font-size: 14px;
     font-weight: 500;
     line-height: 120%;
     box-sizing: none;
-    color: var(--color-black);
     transition: all .35s;
 }
 
@@ -880,15 +917,14 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     color: var(--color-white);
     background: var(--color-blue);
-    padding: 1.8rem 4rem;
+    padding: 1.2rem 2rem;
     border-radius: .8rem;
-    font-size: 14px;
+    font-size: 1.6rem;
     line-height: 125%;
     font-weight: 600;
     transition: all 0.35s;
-    max-width: fit-content;
+    max-width: 271px;
 }
-
 /* _ENDS >> SECTION | CONATCT << JS */
 
 /* _BEGIN >> SECTION | WITH US << JS */
@@ -1965,11 +2001,11 @@ code {
 }
 
 /* _BEGIN >>  404 PRICE << JS */
-.js-error-area .js-section {
+.js-error-area .js-section-error {
     height: 100Vh;
     display: flex;
     align-items: center;
-    background: var(--color-white);
+    background: url(../../images/backgrounds/bg-error.svg);
 }
 
 .color-blue {
@@ -1979,21 +2015,22 @@ code {
 .js-error-area h1 {
     color: var(--color-black);
     margin-bottom: 1.5rem;
-    font-size: 5.93rem;
+    font-size: 90px;
 }
 
 .js-error-area p {
-    font-size: 1.81rem;
+    font-size: 29px;
+    line-height: 30px;
 }
 
 .js-error-area .visit-link {
-    margin-top: 4rem;
-    ;
+    margin-top: 77px;
 }
 
 .js-error-area .visit-link a {
     text-decoration: underline;
     color: var(--color-blue);
+    font-size: 18px;
 }
 
 .js-error-area .visit-link a:last-child {
@@ -2001,3 +2038,198 @@ code {
 }
 
 /* _ENDS >>  404 PRICE << JS */
+
+
+/* _BEGIN >>  SERVER FARM << JS */
+
+.js-section-hero.js-server-farm .ratio-1x1 {
+    --js-aspect-ratio: 31%;
+    margin-top: 20px;
+}
+
+.js-section-database.js-server-farm .js-section-database-imput-box input {
+    min-height: 45px;
+}
+
+.js-section-database.js-server-farm .js-section-database-imput-box {
+    margin: 20px 0px 0px;
+}
+
+.js-section-about-box{
+    grid-gap: 25px;
+}
+
+.js-section-about-box .help-box-detail{
+    padding: 25px 20px;
+}
+
+.js-section-about-box .help-box-detail h6{
+    font-size: 17px;
+}
+
+.js-section-about-box .help-box-detail .help-box-detail-title{
+    gap: 20px;
+    align-items: start;
+}
+
+.js-section-about-box .help-box-detail .help-box-detail-title svg{
+    min-width: 44px;
+}
+
+.js-section-about-box .help-box-detail p{
+    font-size: 14px;
+}
+
+.js-section-about-box .help-box-detail a{
+    font-size: 14px;
+    text-decoration: underline;
+    color: var(--color-blue);
+}
+
+.js-section-data-centers{
+    background: linear-gradient(0deg, #EDF6FF 0%, #E6F3FF 52.09%, #EDF6FF 100%);
+}
+
+.data-centers-map{
+    position: relative;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.data-centers-map svg{
+    position: absolute;
+    object-fit: contain;
+    top: 40%;
+    left: 49%;
+    transform: translate(-49%, -49%);
+    width: 56%;
+    height: auto;
+}
+
+.js-section-data-centers p{
+    font-weight: 500;
+}
+
+.country-box{
+    background-color: var(--color-white);
+    padding: 22px 37px;
+    max-width: fit-content;
+    border-radius: 17px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.country-box-shedow{
+    box-shadow: 0px 18.39px 41.38px 0px #47628A40;
+}
+
+.country-box span{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.country-box-container{
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.js-section-speed-test h4{
+    margin-bottom: 30px;
+}
+
+.js-section-about-box .help-box-detail:hover{
+    box-shadow: 0px 18.39px 41.38px 0px #47628A40;
+    transition: 0.6s;
+}
+
+.help-box-detail-text{
+    color: rgba(49, 51, 54, 1) !important;
+}
+
+/* _ENDS >>  SERVER FARM << JS */
+
+/* _BEGIN >>  FEATURES << JS */
+
+.features-bg-white{
+    background: white;
+}
+
+.js-section-features{
+    padding: 56px 0px;
+    position: relative;
+}
+
+.js-server-farm.js-section-features .ratio-1x1 {
+    --js-aspect-ratio: 40%;
+    margin-bottom: 20px;
+}
+
+.js-section-features .js-features-title {
+    color: #000;
+    font-size: 25px;
+    line-height: 29px; 
+    letter-spacing: 0.75px;
+    margin-bottom: 10px;
+}
+
+.js-section-features .js-features-text{
+    color: #313336;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 34px; 
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.features-bg-gray{
+    background: #F1F3FB;
+}
+
+.features-bg-gray .row{
+    flex-direction: row-reverse;
+}
+
+.js-features-contact-us{
+    padding: 58px 0px; 
+}
+
+.contact-us-row{
+    justify-content: center;
+    gap: 27px;
+}
+
+.contact-us-box{
+    max-width: 320px;
+    border-radius: 21px;
+    background: #FFF;
+    padding: 44px 45px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-us-box p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.js-features-contact-us-btn{
+    padding: 37px 0px;
+    background: linear-gradient(180deg, #EDF6FF 0%, #E6F3FF 52.09%, #EDF6FF 100%);
+}
+
+.js-features-contact-us-btn a{
+    width: 213.313px;
+    height: 47px;
+    font-size: 16px;
+}
+
+/* _ENDS >>  FEATURES << JS */

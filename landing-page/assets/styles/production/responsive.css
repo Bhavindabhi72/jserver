@@ -68,8 +68,22 @@
     .js-section-website-details-content {
         max-width: none;
     }
-
-
+    .country-box-container {
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .country-box {
+        padding: 18px;
+    }
+    .country-box img{
+        width: 25px;
+    }
+    .country-box span {
+        font-size: 14px;
+    }
+    .js-error-area h1 {
+        font-size: 65px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -202,7 +216,7 @@
     }
 
     .meg-description {
-        font-size: 10px
+        font-size: 10px;
     }
 
     .js-pricing-plan-card {
@@ -219,11 +233,29 @@
         width: 25px;
         height: auto;
     }
-    .js-contact-form {
+    .contract-us-section .js-contact-form {
         margin-right: 33px;
     }
     .js-contact-cover-wrapper {
         margin-left: 0px;
+    }
+    .js-section-about-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .js-error-area h1 {
+        font-size: 35px;
+    }
+    .js-error-area p {
+        font-size: 17px;
+    }
+    .js-error-area .visit-link a:last-child {
+        margin: 10px 0;
+    }
+    .js-error-area .visit-link a{
+        display: block;
+    }
+    .js-error-area .visit-link {
+        margin-top: 50px;
     }
 }
 
@@ -336,14 +368,31 @@
     .contract-us-section .row{
         flex-direction: column;
     }
-    .js-contact-form {
+    .contract-us-section .js-contact-form {
         margin-right: 0px;
     }
     .js-conatct-content-wrapper {
         border-right: 0;
     }
+    .js-error-area .js-section-error {
+        height: 100%;
+    }
+    .contract-us-section .js-contact-form {
+        max-width: 100%;
+    }
+    .contract-us-section .js-conatct-content-wrapper {
+        border-right: none;
+    }
+    .country-box-container{
+        justify-content: normal;
+    }
 }
 
+@media (max-width:661px) {
+    .js-section-about-box {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
 @media (max-width:575px) {
     :root {
         --body-font-size: 14px;
@@ -428,6 +477,7 @@
     .js-error-area .visit-link {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
     }  
     .help-box-detail {
@@ -442,6 +492,14 @@
     }
     .js-section-help  .js-feature-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .js-section-features .js-features-title {
+        font-size: 19px;
+    }
+    
+    .js-section-features .js-features-text{
+        font-size: 14px;
+        line-height: 28px;
     }
 }
 
